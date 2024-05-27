@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/editor/:match*",
-      "destination": "https://pixel-stories-app.vercel.app/:match*"
+      "source": "/svelte/:match*",
+      "destination": "https://svelte.dev/:match*"
     }
   ]
 }
