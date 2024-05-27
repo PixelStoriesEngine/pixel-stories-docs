@@ -1,8 +1,12 @@
 {
   "rewrites": [
     {
+      "source": "/editor/",
+      "destination": "https://pixelstories-f7hnsbgij-truman-personal.vercel.app"
+    },
+    {
       "source": "/editor/:match*",
-      "destination": "https://pixelstories-git-map-editor-truman-personal.vercel.app/editor/:match*"
+      "destination": "https://pixelstories-f7hnsbgij-truman-personal.vercel.app/:match*"
     }
   ]
 }
