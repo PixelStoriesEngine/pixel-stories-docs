@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/svelte/:match*",
-      "destination": "https://svelte.dev/:match*"
+      "source": "/editor/:match*",
+      "destination": "https://pixelstories-git-map-editor-truman-personal.vercel.app/editor/:match*"
     }
   ]
 }
