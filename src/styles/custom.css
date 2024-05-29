@@ -1,7 +1,7 @@
 /* Dark mode colors. */
 :root {
   --sl-color-accent-low: #361925;
-  --sl-color-accent: #a63f6e;
+  --sl-color-accent: #eb8ec3;
   --sl-color-accent-high: #e3bcca;
   --sl-color-white: #ffffff;
   --sl-color-gray-1: #eeeeee;
@@ -15,7 +15,7 @@
 /* Light mode colors. */
 :root[data-theme="light"] {
   --sl-color-accent-low: #ebced8;
-  --sl-color-accent: #a84170;
+  --sl-color-accent: #eb8ec3;
   --sl-color-accent-high: #4e2134;
   --sl-color-white: #181818;
   --sl-color-gray-1: #272727;
@@ -26,4 +26,16 @@
   --sl-color-gray-6: #eeeeee;
   --sl-color-gray-7: #f6f6f6;
   --sl-color-black: #ffffff;
+}
+
+.action.primary {
+  background: var(--sl-color-text-accent);
+  color: var(--sl-color-white);
+  font-weight: 500;
+}
+
+[aria-current="page"],
+[aria-current="page"]:hover,
+[aria-current="page"]:focus {
+  color: var(--sl-color-white);
 }
