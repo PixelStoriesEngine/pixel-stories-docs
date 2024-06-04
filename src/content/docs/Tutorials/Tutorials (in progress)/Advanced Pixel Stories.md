@@ -1,9 +1,6 @@
 ---
-
-title: Example Guide
-
+title: Advanced Pixel Stories
 description: A guide in my new Starlight docs site.
-
 ---
 Advanced tutorial
 Make a second map,

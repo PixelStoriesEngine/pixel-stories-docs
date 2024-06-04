@@ -9,3 +9,5 @@ Pixel Stories is a game engine designed specifically for story-driven adventures
 Our guides explain how to accomplish some specific scenarios within the engine.
 
 See our reference for details about events and specific features.
+
+![](../../assets/images/sdwad.png)

@@ -23,15 +23,25 @@ export default defineConfig({
       sidebar: [
         {
           label: "Tutorials",
-          autogenerate: { directory: "tutorials" },
+          items: [
+            { label: "Getting Started", link: "/getting-started/" },
+            {
+              label: "Basic Pixel Stories",
+              link: "/tutorials/tutorials-in-progress/basic-pixel-stories/",
+            },
+            {
+              label: "Advanced Pixel Stories",
+              link: "/tutorials/tutorials-in-progress/advanced-pixel-stories/",
+            },
+          ],
+        },
+        {
+          label: "Explainations",
+          autogenerate: { directory: "Explanations" },
         },
         {
           label: "How-to Guides",
-          autogenerate: { directory: "guides" },
-        },
-        {
-          label: "Reference",
-          autogenerate: { directory: "reference" },
+          autogenerate: { directory: "Guides" },
         },
       ],
     }),

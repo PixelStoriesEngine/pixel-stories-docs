@@ -1,6 +1,5 @@
 ---
-title: Example Guide
-
+title: Basic Pixel Stories
 description: A guide in my new Starlight docs site.
 ---
 
