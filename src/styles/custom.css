@@ -39,3 +39,18 @@
 [aria-current="page"]:focus {
   color: var(--sl-color-white);
 }
+
+img[width="64"],
+img[width="32"],
+img[width="16"],
+img[height="64"],
+img[height="32"],
+img[height="16"] {
+  min-width: 200px;
+  image-rendering: pixelated;
+}
+img {
+  max-height: 65vh;
+  object-fit: contain;
+  width: min-content;
+}

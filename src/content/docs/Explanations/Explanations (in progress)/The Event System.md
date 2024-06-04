@@ -3,7 +3,6 @@ title: Example Guide
 
 description: A guide in my new Starlight docs site.
 ---
-
 talk about events and event groups in detail
 
 previous notes:

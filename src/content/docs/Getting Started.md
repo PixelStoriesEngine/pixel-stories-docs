@@ -10,4 +10,4 @@ Our guides explain how to accomplish some specific scenarios within the engine.
 
 See our reference for details about events and specific features.
 
-![](../../assets/images/sdwad.png)
+Maybe include some pictures on what can be created with Pixel Stories
