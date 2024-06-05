@@ -99,7 +99,7 @@ The word within the bracket adds a name for the dialog. The name will display in
 
 Now we will add another event, `Move actor`. Again, select `Joseph` and we can set the path for the actor. Click on `Set move path` and click to add points in the map where the actor will walk to. The actor will walk to the first point, then the next, and so on. For this event, let's set the character to walk to the tree. 
 
-![](../../../../assets/images/walk%20to%20tree.png)
+![](../../../../assets/images/walk-to-tree.png)
 
 Once the dialog and move actor events are set up in the event group, we can add the event group in our initial events list. The initial events list is what runs when the map first loads.
 
@@ -107,7 +107,7 @@ In the `Events` section, add the `Add event group` event. Select the event group
 
 Set the trigger type to `Interact` and put the trigger position where our character spawns in the map.
 
-![](../../../../assets/images/Basic%20Pixel%20Stories.png)
+![](../../../../assets/images/Basic-Pixel-Stories.png)
 
 Now we're done configuring this section and ready to play test! Head over to `Play test` and try pressing the action button `x` where the character is. We'll see the sequence play out.
 
