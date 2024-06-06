@@ -3,7 +3,7 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://stargazers.club",
+  site: "https://pixelstories.io",
   integrations: [
     starlight({
       title: "Pixel Stories User Guide",
@@ -21,10 +21,10 @@ export default defineConfig({
         "./src/styles/custom.css",
       ],
       sidebar: [
+        { label: "Getting Started", link: "/getting-started/" },
         {
           label: "Tutorials",
           items: [
-            { label: "Getting Started", link: "/getting-started/" },
             {
               label: "Basic Pixel Stories",
               link: "/tutorials/basic-pixel-stories/",

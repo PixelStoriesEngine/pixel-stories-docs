@@ -1,9 +1,9 @@
 ---
 title: Basic Pixel Stories
-description: A guide in my new Starlight docs site.
+description: A beginners guide to Pixel Stories
 ---
 
-In this tutorial, we will create a simple story game with a map, dialog, and character. You can find the resulting project here! ADD_PROJECT_LINK
+In this tutorial, we will be creating a map with terrain and objects, adding animations and actors, as well as implementing a bit of the event system. You can find <a href="https://app.pixelstories.io/embed/9JqZWsEk20" target="_blank">the final project here</a>!
 
 ## Make a New Story Project
 
@@ -120,4 +120,4 @@ Now we're done configuring this section and ready to play test! Head over to `Pl
 
 Thanks for going through this basic tutorial! We've gone through creating our map with terrain and objects, adding animations and actors, as well as a bit of the event system.
 
-To learn more powerful features in Pixel Stories, go through the [Advanced Tutorial](Advanced%20Pixel%20Stories.md). We'll be covering connecting two maps, adding a simple puzzle using variables and conditionals, and the approach for doing multiple endings.
+To learn more powerful features in Pixel Stories, go through the [Advanced Tutorial](content/docs/tutorials/advanced-pixel-stories.md). We'll be covering connecting two maps, adding a simple puzzle using variables and conditionals, and the approach for doing multiple endings.
