@@ -27,11 +27,11 @@ export default defineConfig({
             { label: "Getting Started", link: "/getting-started/" },
             {
               label: "Basic Pixel Stories",
-              link: "/tutorials/tutorials-in-progress/basic-pixel-stories/",
+              link: "/tutorials/basic-pixel-stories/",
             },
             {
               label: "Advanced Pixel Stories",
-              link: "/tutorials/tutorials-in-progress/advanced-pixel-stories/",
+              link: "/tutorials/advanced-pixel-stories/",
             },
           ],
         },

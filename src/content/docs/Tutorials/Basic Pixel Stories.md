@@ -92,14 +92,14 @@ Navigate to the `Events` section of our map. Within the `Event groups`, add a ne
 [Skeleton]
 Hello friend!
 Thank you for bringing me into this world.
-I'd like to see about this tree.
+I'd like to check out this tree.
 ```
 
 The word within the bracket adds a name for the dialog. The name will display in the dialog box until it is changed or reset with empty brackets `[]`. 
 
 Now we will add another event, `Move actor`. Again, select `Joseph` and we can set the path for the actor. Click on `Set move path` and click to add points in the map where the actor will walk to. The actor will walk to the first point, then the next, and so on. For this event, let's set the character to walk to the tree. 
 
-![](../../../../assets/images/walk-to-tree.png)
+![](../../../../assets/images/walk-to-tree-1.png)
 
 Once the dialog and move actor events are set up in the event group, we can add the event group in our initial events list. The initial events list is what runs when the map first loads.
 
