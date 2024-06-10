@@ -21,7 +21,13 @@ export default defineConfig({
         "./src/styles/custom.css",
       ],
       sidebar: [
-        { label: "Getting Started", link: "/getting-started/" },
+        {
+          label: "Start Here",
+          items: [
+            { label: "Getting Started", link: "/getting-started/" },
+            { label: "Why Pixel Stories?", link: "/why-pixel-stories/" },
+          ],
+        },
         {
           label: "Tutorials",
           items: [
@@ -47,25 +53,27 @@ export default defineConfig({
               link: "/features/map-editor/",
             },
             {
-              label: "Variables and Progression",
+              label: "Variables and Conditionals",
               link: "/features/variables-and-conditionals/",
             },
           ],
         },
         {
-          label: "Events",
+          label: "Reference",
           items: [
             {
               label: "Events Reference",
-              link: "/events/events-reference/",
-            },
-            {
-              label: "Spawn Actor",
-              link: "/events/spawn-actor/",
-            },
-            {
-              label: "Remove Actor",
-              link: "/events/remove-actor/",
+              collapsed: true,
+              items: [
+                {
+                  label: "Spawn Actor",
+                  link: "/events/spawn-actor/",
+                },
+                {
+                  label: "Remove Actor",
+                  link: "/events/remove-actor/",
+                },
+              ],
             },
           ],
         },
