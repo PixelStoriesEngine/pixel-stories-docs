@@ -1,6 +1,6 @@
 ---
-title: Mapping with Pixel Stories
-description: A guide in my new Starlight docs site.
+title: Map Editor
+description: Using the map editor with Pixel Stories
 ---
 
 ## Map Objects

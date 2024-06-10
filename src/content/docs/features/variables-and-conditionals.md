@@ -1,7 +1,6 @@
 ---
-title: Example Guide
-
-description: A guide in my new Starlight docs site.
+title: Variables and Conditionals
+description: Manage game progression with variables and conditionals
 ---
 
 explain how conditionals and variables work

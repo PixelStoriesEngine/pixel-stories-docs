@@ -36,12 +36,42 @@ export default defineConfig({
           ],
         },
         {
-          label: "Explainations",
-          autogenerate: { directory: "Explanations" },
+          label: "Features",
+          items: [
+            {
+              label: "Events system",
+              link: "/features/events-system/",
+            },
+            {
+              label: "Map Editor",
+              link: "/features/map-editor/",
+            },
+            {
+              label: "Variables and Progression",
+              link: "/features/variables-and-conditionals/",
+            },
+          ],
+        },
+        {
+          label: "Events",
+          items: [
+            {
+              label: "Events Reference",
+              link: "/events/events-reference/",
+            },
+            {
+              label: "Spawn Actor",
+              link: "/events/spawn-actor/",
+            },
+            {
+              label: "Remove Actor",
+              link: "/events/remove-actor/",
+            },
+          ],
         },
         {
           label: "How-to Guides",
-          autogenerate: { directory: "Guides" },
+          autogenerate: { directory: "/guides" },
         },
       ],
     }),

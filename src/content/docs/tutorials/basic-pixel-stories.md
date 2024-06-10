@@ -2,12 +2,11 @@
 title: Basic Pixel Stories
 description: A beginners guide to Pixel Stories
 ---
-
 In this tutorial, we will be creating a map with terrain and objects, adding animations and actors, as well as implementing a bit of the event system. You can find <a href="https://app.pixelstories.io/embed/9JqZWsEk20" target="_blank">the final project here</a>!
 
 ## Make a New Story Project
 
-To get started, first we have to launch the editor and create a new story. After that, you will be put right into the editor!
+To get started, first we have to launch the editor and create a new story. After that, you will be put right into the editor.
 
 ## Creating Our First Map
 

@@ -1,7 +1,6 @@
 ---
-title: Example Guide
-
-description: A guide in my new Starlight docs site.
+title: The Event System
+description: Using the events system in Pixel Stories
 ---
 talk about events and event groups in detail
 
