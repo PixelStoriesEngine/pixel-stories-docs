@@ -2,13 +2,15 @@
 title: Basic Pixel Stories
 description: A beginners guide to Pixel Stories
 ---
-In this tutorial, we will be creating a map with terrain and objects, adding animations and actors, as well as implementing a bit of the event system. You can find <a href="https://app.pixelstories.io/embed/9JqZWsEk20" target="_blank">the final project here</a>!
 
-## Make a New Story Project
+In this tutorial, we will be creating a map with terrain and objects, adding animations and actors, as well as implementing a bit of the event system. To follow along, <a href="https://app.pixelstories.io/editor" target="_blank">open the game engine</a> in your browser and <a href="https://api.pixelstories.io/storage/v1/object/public/misc/Basic_Tutorial_Assets.zip" download> download the assets </a> for this tutorial.
+
+You can find the finished project <a href="https://app.pixelstories.io/embed/9JqZWsEk20" target="_blank">here</a>!
+## New Story Project
 
 To get started, first we have to launch the editor and create a new story. After that, you will be put right into the editor.
 
-## Creating Our First Map
+## Our First Map
 
 Right now our story doesn't have any maps. Create a new map by clicking "Create new map." Now we're prompted to enter map information. Let's name our map "Hello World." We can leave our map tile size at 16px.
 
@@ -37,13 +39,13 @@ _Tip: you can change the grid snapping options within the toolbar._
 
 ![](../../../assets/images/resulting-terrain.png)
 
-## Setting Player Sprite
+## Setting the Player Sprite
 
 Our story's player actor is currently occupied by a ghost... His name is Ghosty, and he is the fallback sprite for any actors without defined animations. Let's change our player character by adding a new animation. Head over to _Game assets > Animations_
 
 We'll see that there aren't any animations right now. Click "Add animation" and paste or drop the sprite sheet below. Set the frame width and height to be 32px. Set the frame rate to 6 frames per second. Let's name it "Skeleton walk left."
 
-Walk right:
+Walk left:
 ![](../../../assets/images/walk-left.png)
 
 Now head over to _Game assets > Actors_. Click on the player actor and set their walking left animation to the one we just added. Use the arrow keys to walk in the game and you should see the animation update!
@@ -57,7 +59,7 @@ Walk up:
 Walk down:
 ![](../../../assets/images/wakdown.png)
 
-## Our First Dialog Event
+## Adding a Dialog Event
 
 With our map ready, let's add a dialog event! Navigate to the `Events` section in our map. Add an event and select the `Dialog Event`. It will be the first in the list. The event may take a few seconds to load, which is normal.
 
@@ -72,7 +74,7 @@ Each line within the text area is a new dialog box in the game.
 
 Now let's head back to the map and to the `Play test` section. Click `Start map events` and we'll see the dialog we've written. Woohoo!
 
-## Adding First Character
+## Adding the First Character
 
 Our game is missing some a character. In this section we'll add a character into the game.
 
@@ -84,7 +86,7 @@ Head over to the play test section and we'll see the character spawn in after th
 
 ![](../../../assets/images/friend.png)
 
-## Interact With the Character, and They Run Away…
+## Game Interaction with the Character
 
 Now that we have a character in the game, the possibilities are endless! But let's stick to something simple: interacting with the character, playing some dialog, then moving away.
 
