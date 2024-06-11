@@ -1,10 +1,11 @@
 ---
-title: The Game Engine Designed for Story Driven Games
-description: Pixel Stories lets you build compelling story-driven games.
+title: The Game Engine for Story-driven Adventure Games
+description: Pixel Stories is the modern game engine built for making story-rich puzzle adventure games.
 template: splash
 hero:
-  tagline: Pixel Stories lets you build compelling story-driven games.
-
+  tagline: Pixel Stories is the modern game engine built for making story-rich puzzle adventure games.
+  image:
+    html: <div><iframe src="https://app.pixelstories.io/embed/9JqZWsEk20" style="border-radius:20px;" frameBorder="0" height="400px" width="500px" ></iframe></div>
   actions:
     - text: Launch editor
       link: https://app.pixelstories.io
@@ -20,44 +21,16 @@ hero:
 
 import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 
-## Demo
-
-<iframe
-  src="https://app.pixelstories.io/embed/9JqZWsEk20"
-  style="border:0px #ffffff none;height:600px;"
-  name="myiFrame"
-  scrolling="no"
-  frameborder="1"
-  marginheight="0px"
-  marginwidth="0px"
-  height="600px"
-  width="800px"
-  allowfullscreen
-></iframe>
-
-## Core features
-
 <CardGrid>
-  <Card title="World building" icon="pen">
-    Create the game world with integrated auto tiling and object placement.
-  </Card>
-  <Card title="Integrate story with gameplay" icon="puzzle">
-    Our eventing system keeps it simple to add interactions and puzzle
-    mechanics.
-  </Card>
-  <Card title="Make choices matter" icon="open-book">
-    We make multiple endings simple with map modules and variables manager.
-  </Card>
-  <Card title="Custom assets first" icon="laptop">
-    Story games are best with unique aesthetics. Thats why we facilitate custom
-    art and assets.
-  </Card>
+  <LinkCard
+    title="Read user guide"
+    description="Check out our guides!"
+    href="/getting-started"
+  ></LinkCard>
+  <LinkCard
+    title="Join our Discord"
+    description="Get involved in our growing community on our Discord server!"
+    icon="discord"
+    href="https://discord.gg/XN9EaUh26g"
+  ></LinkCard>
 </CardGrid>
-
-## Our community
-
-<LinkCard
-  title="Join our Discord"
-  description="Get involved in our growing community on our Discord server!"
-  icon="open-book"
-></LinkCard>

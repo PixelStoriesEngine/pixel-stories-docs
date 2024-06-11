@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
@@ -18,14 +19,21 @@ export default defineConfig({
       },
       customCss: [
         // Relative path to your custom CSS file
+        "./src/styles/tailwind.css",
         "./src/styles/custom.css",
       ],
       sidebar: [
         {
           label: "Start Here",
           items: [
-            { label: "Getting Started", link: "/getting-started/" },
-            { label: "Why Pixel Stories?", link: "/why-pixel-stories/" },
+            {
+              label: "Getting Started",
+              link: "/getting-started/",
+            },
+            {
+              label: "Why Pixel Stories?",
+              link: "/why-pixel-stories/",
+            },
           ],
         },
         {
@@ -33,11 +41,11 @@ export default defineConfig({
           items: [
             {
               label: "Basic Pixel Stories",
-              link: "/tutorials/basic-pixel-stories/",
+              link: "/tutorials/basic/",
             },
             {
               label: "Advanced Pixel Stories",
-              link: "/tutorials/advanced-pixel-stories/",
+              link: "/tutorials/advanced/",
             },
           ],
         },
@@ -73,9 +81,12 @@ export default defineConfig({
         },
         {
           label: "How-to Guides",
-          autogenerate: { directory: "/guides" },
+          autogenerate: {
+            directory: "/guides",
+          },
         },
       ],
     }),
+    tailwind(),
   ],
 });
