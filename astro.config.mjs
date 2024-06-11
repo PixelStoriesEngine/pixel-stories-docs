@@ -43,10 +43,10 @@ export default defineConfig({
               label: "Basic Pixel Stories",
               link: "/tutorials/basic/",
             },
-            {
-              label: "Advanced Pixel Stories",
-              link: "/tutorials/advanced/",
-            },
+            // {
+            //   label: "Advanced Pixel Stories",
+            //   link: "/tutorials/advanced/",
+            // },
           ],
         },
         {
@@ -60,10 +60,10 @@ export default defineConfig({
               label: "Map Editor",
               link: "/features/map-editor/",
             },
-            {
-              label: "Variables and Conditionals",
-              link: "/features/variables-and-conditionals/",
-            },
+            // {
+            //   label: "Variables and Conditionals",
+            //   link: "/features/variables-and-conditionals/",
+            // },
           ],
         },
         {
@@ -79,12 +79,12 @@ export default defineConfig({
             },
           ],
         },
-        {
-          label: "How-to Guides",
-          autogenerate: {
-            directory: "/guides",
-          },
-        },
+        // {
+        //   label: "How-to Guides",
+        //   autogenerate: {
+        //     directory: "/guides",
+        //   },
+        // },
       ],
     }),
     tailwind(),

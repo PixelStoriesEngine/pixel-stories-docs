@@ -2,7 +2,7 @@
 title: Remove Actor
 description: Reference to the remove actor event
 ---
-The remove actor event removes an actor from the game map. 
+The remove actor event removes an actor from the game map. It is useful for creating the effect of a character going into a door or leaving from a scene.
 
 ## Configuration
 
