@@ -3,8 +3,6 @@ title: Map Editor
 description: Using the map editor with Pixel Stories
 ---
 
-
-
 ### Auto Tiling with Terrains
 
 One of the standout features of the map editor is its auto-tiling capability. Auto tiling simplifies the process of creating complex and visually cohesive maps by automatically adjusting tiles based on their surroundings.

@@ -62,18 +62,12 @@ export default defineConfig({
           label: "Reference",
           items: [
             {
-              label: "Events Reference",
-              collapsed: true,
-              items: [
-                {
-                  label: "Spawn Actor",
-                  link: "/events/spawn-actor/",
-                },
-                {
-                  label: "Remove Actor",
-                  link: "/events/remove-actor/",
-                },
-              ],
+              label: "Spawn Actor",
+              link: "/events/spawn-actor/",
+            },
+            {
+              label: "Remove Actor",
+              link: "/events/remove-actor/",
             },
           ],
         },
