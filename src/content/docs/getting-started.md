@@ -2,7 +2,8 @@
 title: Getting Started
 description: Getting started with Pixel Stories
 ---
-Pixel Stories is a game engine designed specifically for story-driven adventures games. Our game engine can be launched in any modern web browser. Right now the application is free for early access users. You can jump right into the engine <a href="https://app.pixelstories.io" target="_blank">here</a>!
+Pixel Stories is a game engine designed specifically for story-driven adventures games. Our game engine can be launched in any modern web browser. Right now the application is free for early access users. You can jump right into the engine <a href="https://app.pixelstories.io" target="_blank">here</a>! 
+
 
 ## Basic Tutorial
 
@@ -11,3 +12,7 @@ The basic tutorial will get you familiar with the engine's interface and basic t
 ## Early Access Note
 
 The Pixel Stories game engine is in early development. As an early user, you may encounter bugs or unexpected errors. Please report any bugs, feedback, or suggestions you have through our [Google form](https://forms.gle/76x3G1mkUQpKvbG7A). Thank you and we appreciate your support as an early adopter!
+
+## Community
+
+Pixel Stories would not be possible without you and the community! [Join our Discord](https://discord.gg/XN9EaUh26g) if you'd like to get help, share your project, or give feedback/suggestions for the game engine.
