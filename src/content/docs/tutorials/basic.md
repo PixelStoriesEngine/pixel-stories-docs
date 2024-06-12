@@ -8,18 +8,18 @@ In this tutorial, we will be creating a map with terrain and objects, adding ani
 You can find the finished project <a href="https://app.pixelstories.io/embed/9JqZWsEk20" target="_blank">here</a>!
 ## New Story Project
 
-To get started, first we have to launch the editor and create a new story. After that, you will be put right into the editor.
+To get started, first we have to launch the game engine and create a new story. After we've created a new story, we'll be put right into the engine. Within the `Settings` tab, we can name our game "Pixel Stories Tutorial."
 
 ## Our First Map
 
-Right now our story doesn't have any maps. Create a new map by clicking "Create new map." Now we're prompted to enter map information. Let's name our map "Hello World." We can leave our map tile size at 16px.
+Right now our story doesn't have any maps. Create a new map by clicking "Create new map" in the `Maps` tab. Now we're prompted to enter map information. Let's name our map "Hello World." We can leave our map tile size at 16px.
 
-Head over to the edit map section. You'll see that there are no terrains. Let's use the following image as the source for our terrain.
+Head over to the `Edit map > Edit terrains` section. You'll see that there are no terrains. Let's add the following image for our terrain.
 
 ![](../../../assets/images/terrain-3.png)
 _Hint: right click image to copy it from browser._
 
-Click add terrain, then paste or drop in the terrain source image. You should see a preview for the terrain. That is how it will look when used in the map.
+Click add terrain, then paste or drop in the terrain source image above. You should see a preview for the terrain. That is how it will look when used in the map.
 
 _Hint: You can add different terrain source layouts by selecting the mode._
 
@@ -29,11 +29,11 @@ Add this terrain. Now we see it in the list of terrains. Select that terrain and
 
 ## Adding Map Objects
 
-Our map feels rather empty now... With just a road and no trees or rocks. Let's add those objects in! Head over to the objects subsection and click "Add object." Paste or drop in this tree sprite.
+Our map feels rather empty now... With just a road and no trees or rocks. Let's add those objects in! Head over to the `Edit map > Edit objects` section and click "Add object." Paste or drop in this tree sprite.
 
 ![](../../../assets/images/tree-2.png)
 
-There are options to configure this object, but we can leave it as is for now. Add the object and now we can select it to place them in the map!
+There are options to configure this object, but we can leave it as is for now. Add the object. Then we can select it to place them in the map. When we're in the `Edit objects` section, we can move, place, and delete objects with the tools in the toolbar. 
 
 _Tip: you can change the grid snapping options within the toolbar._
 
@@ -41,14 +41,16 @@ _Tip: you can change the grid snapping options within the toolbar._
 
 ## Setting the Player Sprite
 
-Our story's player actor is currently occupied by a ghost... His name is Ghosty, and he is the fallback sprite for any actors without defined animations. Let's change our player character by adding a new animation. Head over to _Game assets > Animations_
+Our story's player actor is currently occupied by a ghost... His name is Ghosty, and he is the fallback sprite for any actors without defined animations. Let's change our player character by adding a new animation. Head over to `Game assets > Animations`
 
-We'll see that there aren't any animations right now. Click "Add animation" and paste or drop the sprite sheet below. Set the frame width and height to be 32px. Set the frame rate to 6 frames per second. Let's name it "Skeleton walk left."
+We'll see that there aren't any animations right now. Click "Add animation" and paste or drop the sprite sheet below. 
 
 Walk left:
 ![](../../../assets/images/walk-left.png)
 
-Now head over to _Game assets > Actors_. Click on the player actor and set their walking left animation to the one we just added. Use the arrow keys to walk in the game and you should see the animation update!
+Set the frame width and height to be 32px. Set the frame rate to 6 frames per second. Let's name the animation "Skeleton walk left."
+
+Now head over to `Game assets > Actors`. Click on the player actor and set their walking left animation to the one we just added. Head over to the `Play test` section and use the arrow keys to walk in the game and you should see the animation update!
 
 Without any other animations set, the actor will infer the other directions. We can add the other animations for walking right, up and down.
 
