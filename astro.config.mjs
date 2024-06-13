@@ -1,10 +1,15 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import tailwind from "@astrojs/tailwind";
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://pixelstories.io",
+  output: "server",
+  adapter: vercel({
+    webAnalytics: { enabled: true },
+  }),
   integrations: [
     starlight({
       title: "Pixel Stories User Guide",
