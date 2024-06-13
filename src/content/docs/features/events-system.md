@@ -45,14 +45,14 @@ An event group is a chain of events bundled together to run sequentially. Event 
 
 Below is the table of all the current events and a brief description:
 
-| Event Name          | Description                                               |
-|---------------------|-----------------------------------------------------------|
-| Dialog              | Create and manage conversations between characters.       |
-| Timer               | Trigger actions after a set time interval.                |
-| Set Player Position | Change the player's location within the map.              |
-| Spawn Actor         | Introduce new characters or objects into the game world.  |
-| Remove Actor        | Remove characters or objects from the game world.         |
-| Move Actor          | Control the movement of characters or objects.            |
-| Add Event Group     | Bundle multiple events into a sequential group.           |
-| Remove Event Group  | Delete a previously defined group of events.              |
-| Set Variable        | Modify game variables to influence gameplay.              |
+| Event Name          | Description                                              |
+| ------------------- | -------------------------------------------------------- |
+| Dialog              | Create and manage conversations between characters.      |
+| Timer               | Trigger actions after a set time interval.               |
+| Set Player Position | Change the player's location within the map.             |
+| Spawn Actor         | Introduce new characters or objects into the game world. |
+| Remove Actor        | Remove characters or objects from the game world.        |
+| Move Actor          | Control the movement of characters or objects.           |
+| Add Event Group     | Bundle multiple events into a sequential group.          |
+| Remove Event Group  | Delete a previously defined group of events.             |
+| Set Variable        | Modify game variables to influence gameplay.             |
