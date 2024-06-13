@@ -82,6 +82,14 @@ export default defineConfig({
               label: "Remove Actor",
               link: "/events/remove-actor/",
             },
+            {
+              label: "Move Actor",
+              link: "/events/move-actor/",
+            },
+            {
+              label: "Transfer Player",
+              link: "/events/transfer-player/",
+            },
           ],
         },
         // {
