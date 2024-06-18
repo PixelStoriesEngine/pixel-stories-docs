@@ -22,6 +22,10 @@ export default defineConfig({
         github: "https://github.com/tdgao/pixel-stories-docs",
         discord: "https://discord.gg/XN9EaUh26g",
       },
+      components: {
+        // Override the default `SocialIcons` component.
+        SocialIcons: "./src/components/NavButtons.astro",
+      },
       customCss: [
         // Relative path to your custom CSS file
         "./src/styles/tailwind.css",
