@@ -72,7 +72,7 @@ export default defineConfig({
           ],
         },
         {
-          label: "Reference",
+          label: "Events Reference",
           items: [
             {
               label: "Spawn Actor",
