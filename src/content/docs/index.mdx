@@ -3,8 +3,8 @@ title: Pixel Stories
 description: Pixel Stories empowers you to create captivating narrative adventures with an intuitive, no-code game engine.
 template: splash
 hero:
-  title: The Modern Game Engine for Story-rich Adventure Games
-  tagline: Pixel Stories empowers you to create captivating narrative adventures with an intuitive, no-code game engine.
+  title: Create captivating Story-rich Adventure Games
+  tagline: Pixel Stories is the modern game engine for building story-driven adventure puzzle games.
   image:
     alt: A glittering, interested, happy ghost
     file: ../../assets/logo-outline.svg
@@ -25,28 +25,72 @@ editUrl: false
 import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 
 <div style="display:flex;flex-direction:column;align-items:center;">
-  <code style="background:transparent;">
-    <h2>A Short Demo Game</h2>
-  </code>
+  <h3>Made with the Pixel Stories Engine</h3>
   <iframe
     src="https://app.pixelstories.io/embed/nCxTyr5YeB"
-    style="border-radius:20px;width:70vw;max-width:800px;max-height:90vh;aspect-ratio:4/3;"
+    style="border-radius:20px;width:70vw;max-width:900px;max-height:90vh;aspect-ratio:4/3;"
     frameBorder="0"
   ></iframe>
 </div>
 
-<CardGrid>
+<div style="display:flex;flex-direction:column;gap:12px;max-width:800px;margin:52px auto;">
+
+<h3 style="text-align:center;">Our Features Make it Easy</h3>
+
+<div style="display:flex;flex-direction:column;gap-12px;">
+
+<div>
+  <Card title="Built for Story-driven Games" icon="open-book">
+    Our engine is designed specifically for creating immersive, story-rich
+    adventure games.
+  </Card>
+</div>
+<div>
+  <Card title="Modern No-code Interface" icon="star">
+    Easily create story-rich games without any coding skills required.
+  </Card>
+</div>
+
+<div>
+  <Card title="Web-based Game Engine" icon="laptop">
+    Start creating immediately by accessing the engine in any browser.
+  </Card>
+</div>
+
+<div>
+  <Card title="Cross Platform Export" icon="rocket">
+    Simply share your game with a link or effortlessly publish your games across
+    multiple platforms.
+  </Card>
+</div>
+
+</div>
+
+</div>
+
+<div style="display:flex;flex-direction:column;gap:12px;max-width:800px;margin:52px auto;">
+
+<h3 style="text-align:center;">Start Your Creation Journey Today</h3>
+
+<div>
   <LinkCard
-    title="Read user guide"
-    description="Check out our guides!"
+    title="Getting started with the engine"
+    description="See our quick guide on getting started!"
     href="/getting-started"
   ></LinkCard>
   <LinkCard
+    title="Basic and Quick Tutorial"
+    description="Get familiar with the engine with our Basics tutorial."
+    href="/tutorials/basic"
+  ></LinkCard>
+  <LinkCard
     title="Join our Discord"
-    description="Get involved in our growing community on our Discord server!"
+    description="Get support, share your work, and see what's happening in our growing community on Discord!"
     icon="discord"
     href="https://discord.gg/XN9EaUh26g"
   ></LinkCard>
-</CardGrid>
+</div>
+
+</div>
 
 <div style="height:400vh;"></div>
