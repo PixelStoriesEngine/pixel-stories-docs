@@ -26,6 +26,9 @@ export default defineConfig({
         // Override the default `SocialIcons` component.
         SocialIcons: "./src/components/NavButtons.astro",
       },
+      editLink: {
+        baseUrl: "https://github.com/tdgao/pixel-stories-docs",
+      },
       customCss: [
         // Relative path to your custom CSS file
         "./src/styles/tailwind.css",
