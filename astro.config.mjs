@@ -43,6 +43,10 @@ export default defineConfig({
               label: "Why Pixel Stories?",
               link: "/why-pixel-stories/",
             },
+            {
+              label: "Default Assets",
+              link: "/assets/",
+            },
           ],
         },
         {

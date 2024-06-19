@@ -7,11 +7,18 @@ The event system in Pixel Stories is a powerful and flexible tool that enables d
 
 The following are the current Pixel Stories events divided into the following categories:
 
-| Essential Events    | Actor Events | Control Flow Events |
-| ------------------- | ------------ | ------------------- |
-| Dialog Event        | Spawn Actor  | Add Event Group     |
-| Timer               | Remove Actor | Remove Event Group  |
-| Set Player Position | Move Actor   | Set Variable        |
+* **Essential Events**
+	* Dialog Event
+	* Timer
+	* Set Player Position
+* **Actor Events**
+	* Spawn Actor
+	* Remove Actor
+	* Move Actor
+* **Control Flow Events**
+	* Add Event Group
+	* Remove Event Group
+	* Set Variable
 
 ### How Events Work
 
