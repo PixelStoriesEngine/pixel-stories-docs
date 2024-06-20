@@ -47,8 +47,13 @@ img[height="64"],
 img[height="32"],
 img[height="16"] {
   min-width: 200px;
+}
+
+img {
+  min-width: 80px;
   image-rendering: pixelated;
 }
+
 img {
   max-height: 65vh;
   object-fit: contain;
