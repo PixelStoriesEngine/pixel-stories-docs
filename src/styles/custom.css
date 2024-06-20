@@ -28,15 +28,15 @@
   --sl-color-black: #ffffff;
 }
 
-.action.primary {
+:root[data-theme="light"] .action.primary {
   background: var(--sl-color-text-accent);
   color: var(--sl-color-white);
   font-weight: 500;
 }
 
-[aria-current="page"],
-[aria-current="page"]:hover,
-[aria-current="page"]:focus {
+:root[data-theme="light"] [aria-current="page"],
+:root[data-theme="light"] [aria-current="page"]:hover,
+:root[data-theme="light"] [aria-current="page"]:focus {
   color: var(--sl-color-white);
 }
 
