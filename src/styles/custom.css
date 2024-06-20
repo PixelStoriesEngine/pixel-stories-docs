@@ -63,12 +63,12 @@ img {
 /* HERO styles */
 
 :root {
-  --purple-hsl: 285, 60%, 60%;
+  --purple-hsl: 240, 60%, 60%;
   --overlay-blurple: hsla(var(--purple-hsl), 0.2);
 }
 
 :root[data-theme="light"] {
-  --purple-hsl: 285, 85%, 65%;
+  --purple-hsl: 240, 85%, 65%;
 }
 
 [data-has-hero] .page {
