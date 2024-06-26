@@ -28,6 +28,13 @@ Events are the building blocks that control what happens in your game. When a pl
 
 An event group is a chain of events bundled together to run sequentially. Event groups are added to the map and can be triggered by player interaction, touch, or automatically right when the event is added. The event group is added by placing an Add Event Group event in the map's initial events.
 
+<div style="max-width:550px;">
+
+Example Event Group:
+![](../../../assets/images/events-system.png)
+
+</div>
+
 ### How Group Events Work
 
 1. When a group of events runs, each event occurs one after the other in the specified order. 
