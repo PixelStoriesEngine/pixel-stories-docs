@@ -19,6 +19,7 @@ export default defineConfig({
         replacesTitle: true,
       },
       social: {
+        youtube: "https://www.youtube.com/channel/UC62czApVKmYFH8clyDqKiVQ",
         github: "https://github.com/tdgao/pixel-stories-docs",
         discord: "https://discord.gg/XN9EaUh26g",
       },
