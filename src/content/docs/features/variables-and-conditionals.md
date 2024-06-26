@@ -1,6 +1,7 @@
 ---
 title: Variables and Conditionals
 description: Manage game progression with variables and conditionals
+draft: true
 ---
 
 explain how conditionals and variables work

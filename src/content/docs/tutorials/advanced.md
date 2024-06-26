@@ -1,6 +1,7 @@
 ---
 title: Advanced Pixel Stories
 description: The advanced Pixel Stories tutorial
+draft: true
 ---
 
 In this tutorial, we will be creating a story which includes two maps, using the transfer event to connect them, and implementing multiple endings into the game.
