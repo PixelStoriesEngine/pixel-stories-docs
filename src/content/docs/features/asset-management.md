@@ -15,7 +15,11 @@ The following are the features which make assets easy to handle in Pixel Stories
 
 When adding an asset, you can drag and drop files directly into game engine. The asset will be uploaded immediately into the engine.
 
+<div style="max-width:400px">
+
 ![](../../../assets/images/asset-management.png)
+
+</div>
 
 ### Replaceable Assets
 

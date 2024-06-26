@@ -78,13 +78,13 @@ export default defineConfig({
               link: "/features/map-editor/",
             },
             {
+              label: "Variables and Branching",
+              link: "/features/variables-and-conditionals/",
+            },
+            {
               label: "Asset Management",
               link: "/features/asset-management/",
             },
-            // {
-            //   label: "Variables and Conditionals",
-            //   link: "/features/variables-and-conditionals/",
-            // },
           ],
         },
         {
