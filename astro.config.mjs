@@ -77,6 +77,10 @@ export default defineConfig({
               label: "Map Editor",
               link: "/features/map-editor/",
             },
+            {
+              label: "Asset Management",
+              link: "/features/asset-management/",
+            },
             // {
             //   label: "Variables and Conditionals",
             //   link: "/features/variables-and-conditionals/",
