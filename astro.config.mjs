@@ -79,7 +79,7 @@ export default defineConfig({
             },
             {
               label: "Variables and Branching",
-              link: "/features/variables-and-conditionals/",
+              link: "/features/variables-and-branching/",
             },
             {
               label: "Asset Management",
