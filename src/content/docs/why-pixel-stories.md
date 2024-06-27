@@ -28,3 +28,8 @@ Control your story in the game with events. Trigger events based on player actio
 Build branching storylines and design multiple paths and endings depending on player choices. Our events system combined with variables and conditional branching make it possible.
 
 
+## Let's Create an Amazing Engine, Together
+
+Our goal and mission is to create the best engine for building story-rich video games. The engine is free and in early access beta testing. A lot of the features can change based on your needs and opinions. We would really love your feedback or suggestions. Your help will make this engine awesome! 
+
+Feel free to let us know through our [Discord](https://discord.gg/XN9EaUh26g) or [feedback form](https://forms.gle/76x3G1mkUQpKvbG7A). 

@@ -2,7 +2,9 @@
 title: Default Game Assets
 description: Free default assets to help get started!
 ---
-Our vision is to facilitate creativity and empower unique storytelling through video games. However, art and assets can be hard to come by! So we provide a range of default assets that can be used to build prototypes, proof of concepts, or serve as placeholders until your custom art is ready. 
+Our vision is to facilitate creativity and empower unique storytelling through video games. However, art and assets can be hard to come by! So we provide some default assets that can be used to build prototypes, proof of concepts, or serve as placeholders until your custom art is ready. 
+
+Keep in mind, all assets in the engine are replaceable at any time. So don't feel locked in to a specific style!
 
 ## How to Use the Assets
 
