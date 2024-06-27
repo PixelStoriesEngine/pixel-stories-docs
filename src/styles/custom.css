@@ -40,17 +40,8 @@
   color: var(--sl-color-white);
 }
 
-img[width="64"],
-img[width="32"],
-img[width="16"],
-img[height="64"],
-img[height="32"],
-img[height="16"] {
-  min-width: 200px;
-}
-
 img {
-  min-width: 80px;
+  min-width: 150px;
   image-rendering: pixelated;
 }
 

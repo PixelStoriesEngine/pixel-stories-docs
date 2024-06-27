@@ -2,16 +2,85 @@
 title: Map Editor
 description: Using the map editor with Pixel Stories
 ---
+The following sections explain how the map editor in Pixel Stories works. The key features include terrains, auto tiling, terrain layers, map objects, and collisions. They all work together to create beautiful, interesting, and dynamic game maps.
 
-### Auto Tiling with Terrains
+## Terrains
 
-One of the standout features of the map editor is its auto-tiling capability. Auto tiling simplifies the process of creating complex and visually cohesive maps by automatically adjusting tiles based on their surroundings.
+In Pixel Stories, terrains are created by providing a source tileset and selecting the type. We currently support 4 types of tilesets.
 
-#### How Auto Tiling Works
+Basic
+![](../../../assets/images/basic-border.png)
 
-Auto tiling uses a source tile set to determine how each tile connects with its neighboring tiles. Here’s a breakdown of the process:
+Basic full (includes extra tile for border detail)
+![](../../../assets/images/basic-full-border.png)
 
-1. **Source Tile Set**: A collection of tiles that includes all possible connections and variations needed to create seamless transitions between different tiles.
-2. **Inference**: The auto-tiling system analyzes the source tile set to understand how tiles should connect to one another. It identifies patterns and rules for tile placement.
-3. **Tile Set Layouts**: There are different types of source tile set layouts available. You can select the one that best fits your design needs. Common layouts include square grids, hexagonal grids, and more.
-4. **Automatic Generation**: Once a source tile set and layout are selected, the auto tile set is automatically generated. This ensures that when you place tiles in the map editor, they will automatically adjust to fit together seamlessly, reducing the need for manual adjustments and ensuring a polished look.
+RPG Maker
+![](../../../assets/images/rpgmaker.png)
+
+<div style="max-width:400px;">
+
+Wang
+![](../../../assets/images/map-editor.png)
+
+</div>
+
+### Auto Tiling
+
+Once the terrain is created, an auto tileset is generated in the background and the terrain can now be drawn into the map! Auto tiling uses the auto tileset and determines how each tile connects with its neighboring tiles.
+
+<div style="max-width:400px;">
+
+![](../../../assets/images/map-editor-1.png)
+
+</div>
+
+
+### Terrain Layers
+
+You also have full control of the layers and how tiles should be placed on top of each other.
+
+<div style="max-width:275px">
+
+![](../../../assets/images/map-editor-3.png)
+
+</div>
+
+When you use tiles without borders, you can place them on top of a layer and they will fit in seamlessly. This feature is very useful if you want to connect multiple terrains.
+
+<div style="max-width:400px;">
+
+![](../../../assets/images/map-editor-2.png)
+
+</div>
+
+
+## Map Objects
+
+Each map object is individually added into the game. Instead of building on top of a tileset, when you have a new object to add, you simply add the asset in. 
+
+<div style="max-width:275px">
+
+![](../../../assets/images/map-editor-5.png)
+
+</div>
+
+When you place the object in the map, depth sorting is automatically handled. Meaning any actors or player will show behind the map object.
+
+<div style="max-width:275px">
+
+![](../../../assets/images/map-editor-5.png)
+
+</div>
+
+
+## Collisions
+
+The way Pixel Stories handles collisions is by simply drawing collision boxes into the map. 
+
+<div style="max-width:275px">
+
+![](../../../assets/images/map-editor-6.png)
+
+</div>
+
+
