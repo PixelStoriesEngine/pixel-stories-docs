@@ -4,14 +4,21 @@ description: Why Pixel Stories?
 ---
 Pixel Stories is the game engine designed from the ground up for building top down pixel style story-driven games. We make it easy to add characters, build the game world, create adventures, and have multiple endings. Our game engine leverages modern web technologies and design philosophies to create the best experience for the user. If you are looking to place your focus more on character design, rich narratives, and world-building, then Pixel Stories is for you.
 
-## Features
+## Engine Features
 
-Pixel Stories has the standard features, by default, to create story-rich pixel games:
+Pixel Stories has the standard features, by default, to create story-rich games. Below are some of the main features.
 
-- **Map Editor**: Our intuitive map editor allows you to easily design and customize your game world.
-- **Actors**: Add and manage characters within your game.
-- **Events System**: Control your story in the game with events. Trigger events based on player actions, or other conditions to create an interactive game world.
-- **Story Progression and Multiple Endings**: Build branching storylines and design multiple paths and endings depending on player choices. 
+### Map Editor
+
+Our intuitive map editor allows you to easily design and customize your game world. Make edits on the fly and build the world as your story evolves.
+
+### Events System
+
+Control your story in the game with events. Trigger events based on player actions, or other conditions to create an interactive game world.
+
+### Story Progression and Multiple Endings
+
+Build branching storylines and design multiple paths and endings depending on player choices. Our events system combined with variables and conditional branching make it possible.
 
 ## Ease of Use
 
