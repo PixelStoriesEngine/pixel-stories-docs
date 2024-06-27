@@ -5,7 +5,7 @@ description: How asset management works in Pixel Stories
 
 Asset management in Pixel Stories is designed to help users effectively manage all types of game assets. Game assets include images, animations, actors, sounds/music, and variables.
 
-Uploading assets into Pixel Stories is designed to be simple for users. Each asset is individually uploaded into the game to improve organization and facilitate building your game step by step.
+Uploading assets into Pixel Stories is designed to be simple for users. Each asset is individually uploaded into the game engine and always replaceable.
 
 ## Key Features
 
