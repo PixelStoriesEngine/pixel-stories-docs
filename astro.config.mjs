@@ -77,10 +77,10 @@ export default defineConfig({
               label: "Map Editor",
               link: "/features/map-editor/",
             },
-            // {
-            //   label: "Variables and Branching",
-            //   link: "/features/variables-and-branching/",
-            // },
+            {
+              label: "Variables and Branching",
+              link: "/features/variables-and-branching/",
+            },
             {
               label: "Asset Management",
               link: "/features/asset-management/",
