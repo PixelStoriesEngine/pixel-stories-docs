@@ -25,6 +25,8 @@ Wang
 
 </div>
 
+Each map has a defined tile size. The tile size can be any size (i.e. 16px, 32px, 48px, 64px, even 12px). Add tilesets imported in the map must have the same tile size as the map. For instance, a 32px tile size map should only use 32px tilesets to create terrains. Keep in mind, different maps can have different tile sizes.
+
 ### Auto Tiling
 
 Once the terrain is created, an auto tileset is generated in the background and the terrain can now be drawn into the map! Auto tiling uses the auto tileset and determines how each tile connects with its neighboring tiles.
