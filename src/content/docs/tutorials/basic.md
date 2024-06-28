@@ -1,11 +1,14 @@
 ---
-title: Basic Pixel Stories
+title: Quick and Basic Pixel Stories
 description: A beginners guide to Pixel Stories
 ---
 
 In this tutorial, we will be creating a map with terrain and objects, adding animations and actors, as well as implementing a bit of the event system. To follow along, <a href="https://app.pixelstories.io/editor" target="_blank">open the game engine</a> in your browser and <a href="https://api.pixelstories.io/storage/v1/object/public/misc/Basic_Tutorial_Assets.zip" download> download the assets </a> for this tutorial.
 
-You can find the finished project <a href="https://app.pixelstories.io/embed/9JqZWsEk20" target="_blank">here</a>!
+When we complete this tutorial, you will be exposed to all the tools needed to start creating your story-driven game immediately!
+
+You can find the finished project <a href="https://app.pixelstories.io/embed/9JqZWsEk20" target="_blank">here</a>.
+
 ## New Story Project
 
 To get started, first we have to launch the game engine and create a new story. After we've created a new story, we'll be put right into the engine. Within the `Settings` tab, we can name our game "Pixel Stories Tutorial."
@@ -14,14 +17,14 @@ To get started, first we have to launch the game engine and create a new story. 
 
 Right now our story doesn't have any maps. Create a new map by clicking "Create new map" in the `Maps` tab. Now we're prompted to enter map information. Let's name our map "Hello World." We can leave our map tile size at 16px.
 
-Head over to the `Edit map > Edit terrains` section. You'll see that there are no terrains. Let's add the following image for our terrain. Click add terrain, then paste or drop in the terrain source image below. 
+Head over to the `Edit map > Edit terrains` section. You'll see that there are no terrains. Let's add the following image for our terrain. Click add terrain, then paste or drop in the terrain source image below.
 
 ![](../../../assets/images/terrain-3.png)
 _Hint: right click image to copy it from browser._
 
-You should see a preview for the terrain. That's how it will look when used in the map. Once we add the terrain, we see it in the list of terrains. Click on the terrain to select it and draw into the map. Let's add a little bit of land. 
+You should see a preview for the terrain. That's how it will look when used in the map. Once we add the terrain, we see it in the list of terrains. Click on the terrain to select it and draw into the map. Let's add a little bit of land.
 
-We can find the terrain editing tool in the toolbar on top of the game window. There are tools to pan, draw, and erase. 
+We can find the terrain editing tool in the toolbar on top of the game window. There are tools to pan, draw, and erase.
 
 ![](../../../assets/images/resulting-map.png)
 
@@ -41,14 +44,14 @@ _Tip: you can change the grid snapping options within the toolbar._
 
 Our story's player actor is currently occupied by a ghost... His name is Ghosty, the fallback sprite for any actors without defined animations. Let's change our player character by adding a new animation. Head over to `Game assets > Animations`.
 
-We see that there aren't any animations right now. Click "Add animation" and paste or drop the sprite sheet below. 
+We see that there aren't any animations right now. Click "Add animation" and paste or drop the sprite sheet below.
 
 Walk left:
 ![](../../../assets/images/walk-left.png)
 
 Set the frame width and height to be 32px. Set the frame rate to 6 frames per second. Let's name the animation "Skeleton walk left."
 
-Now head over to `Game assets > Actors > Player`. Set the player's walking left animation to the one we just added. Test it out at the `Play test` tab and we'll see the player sprite in action. We can move around with the arrow keys. 
+Now head over to `Game assets > Actors > Player`. Set the player's walking left animation to the one we just added. Test it out at the `Play test` tab and we'll see the player sprite in action. We can move around with the arrow keys.
 
 Without any other animations set, the actor will infer the other directions. We can add the other animations for walking right, up and down. Try adding them and play testing the result!
 
@@ -65,9 +68,9 @@ Our game needs a character to bring some fun. In this section we'll add a charac
 
 Navigate to `Game assets > Actors` and add a new actor. We'll see that the configuration is missing animations. We could add another set of animations for this new character, but to save some time, let's use the same ones as the player. Name this character "Joseph."
 
-To add the character into the game, we'll add a `Spawn actor` event.  Head back to our map into the `Events` section. Under the map events, click the `+ Event` button and select the `Spawn actor ` event. The event may take a few seconds to load, which is normal. 
+To add the character into the game, we'll add a `Spawn actor` event. Head back to our map into the `Events` section. Under the map events, click the `+ Event` button and select the `Spawn actor ` event. The event may take a few seconds to load, which is normal.
 
-For the event configuration, select the actor to spawn as `Joseph`. Then we set the spawn position by clicking on `Set position` and click on a point in the map next to the player. 
+For the event configuration, select the actor to spawn as `Joseph`. Then we set the spawn position by clicking on `Set position` and click on a point in the map next to the player.
 
 Head over to the play test section and we'll see the character spawn in.
 
@@ -94,7 +97,7 @@ Now let's head back to the map and to the `Play test` section. Click `Start map 
 
 ## Interact with the Character
 
-The dialog we have now simply shows when the event is run. To play dialog when the player interacts in the game, we will use event groups. 
+The dialog we have now simply shows when the event is run. To play dialog when the player interacts in the game, we will use event groups.
 
 In the `Event groups` section, add a new event group. We can name it "Skeleton talks." Add a `Dialog event` to this event group. We'll add the following dialog:
 
@@ -125,4 +128,4 @@ Now we're done configuring this section and ready to play test! Head over to `Pl
 
 Thanks for going through this basic tutorial! We've gone through creating our map with terrain and objects, adding animations and actors, as well as a bit of the event system. [Join our community on Discord](https://discord.gg/XN9EaUh26g) if you'd like to get more help or give feedback/suggestions.
 
-Good luck in your game development journey with Pixel Stories!
+Good luck in your game creation journey with Pixel Stories!

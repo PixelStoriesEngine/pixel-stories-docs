@@ -2,6 +2,7 @@
 title: Map Editor
 description: Using the map editor with Pixel Stories
 ---
+
 The following sections explain how the map editor in Pixel Stories works. The key features include terrains, auto tiling, terrain layers, map objects, and collisions. They all work together to create beautiful, interesting, and dynamic game maps.
 
 ## Terrains
@@ -34,7 +35,6 @@ Once the terrain is created, an auto tileset is generated in the background and 
 
 </div>
 
-
 ### Terrain Layers
 
 You also have full control of the layers and how tiles should be placed on top of each other.
@@ -53,10 +53,9 @@ When you use tiles without borders, you can place them on top of a layer and the
 
 </div>
 
-
 ## Map Objects
 
-Each map object is individually added into the game. Instead of building on top of a tileset, when you have a new object to add, you simply add the asset in. 
+Each map object is individually added into the game. Instead of building on top of a tileset, when you have a new object to add, you simply add the asset in.
 
 <div style="max-width:275px">
 
@@ -72,15 +71,14 @@ When you place the object in the map, depth sorting is automatically handled. Me
 
 </div>
 
-
 ## Collisions
 
-The way Pixel Stories handles collisions is by simply drawing collision boxes into the map. 
+The way Pixel Stories handles collisions is by simply drawing collision boxes into the map.
+
+In the example below, the player is bounded within the box and cannot walk right through trees.
 
 <div style="max-width:275px">
 
 ![](../../../assets/images/map-editor-6.png)
 
 </div>
-
-
