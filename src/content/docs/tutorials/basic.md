@@ -19,7 +19,12 @@ Right now our story doesn't have any maps. Create a new map by clicking "Create 
 
 Head over to the `Edit map > Edit terrains` section. You'll see that there are no terrains. Let's add the following image for our terrain. Click add terrain, then paste or drop in the terrain source image below.
 
+<pixel-art>
+
 ![](../../../assets/images/terrain-3.png)
+
+</pixel-art>
+
 _Hint: right click image to copy it from browser._
 
 You should see a preview for the terrain. That's how it will look when used in the map. Once we add the terrain, we see it in the list of terrains. Click on the terrain to select it and draw into the map. Let's add a little bit of land.
@@ -32,7 +37,11 @@ We can find the terrain editing tool in the toolbar on top of the game window. T
 
 Our map feels rather empty now... With just some land and no trees. Let's add in some trees! Head over to `Edit map > Edit objects` and click "Add object." Paste or drop in this tree sprite.
 
+<pixel-art>
+
 ![](../../../assets/images/tree-2.png)
+
+</pixel-art>
 
 There are options to configure this object, but we can leave it as is for now. Add the object. Then we can select it to place them in the map. We can move, place, and delete objects with the tools in the toolbar. Note, we are only able to edit objects while in the `Edit objects` section.
 
