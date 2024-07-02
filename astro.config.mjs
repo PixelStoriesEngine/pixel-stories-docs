@@ -57,7 +57,7 @@ export default defineConfig({
           label: "Getting Started Tutorial",
           items: [
             {
-              label: "Project Set up",
+              label: "Project Set-up",
               link: "/tutorials/basic",
             },
             {
