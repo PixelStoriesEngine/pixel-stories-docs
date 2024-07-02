@@ -110,6 +110,10 @@ export default defineConfig({
               label: "Transfer Player",
               link: "/events/transfer-player/",
             },
+            {
+              label: "Dialog",
+              link: "/events/dialog/",
+            },
           ],
         },
         // {
