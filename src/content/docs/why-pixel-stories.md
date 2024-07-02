@@ -9,7 +9,7 @@ Pixel Stories is the no-code game engine designed from the ground up for buildin
 
 One of the primary goals of Pixel Stories is to eliminate the tedious workflows commonly found in other game engines. We focus on the user experience because we know that a bad user experience leads to frustration and hinders creativity.
 
-Pixel Stories streamlines the gane creation process, allowing you to focus on the narrative, world-building, and character design. Our intuitive interfaces, comprehensive tools, and efficient workflows ensure that even those new to game development can create high-quality, immersive games with ease.
+Pixel Stories streamlines the game creation process, allowing you to focus on the narrative, world-building, and character design. Our intuitive interfaces, comprehensive tools, and efficient workflows ensure that even those new to game development can create high-quality, immersive games with ease.
 
 ## Engine Features
 

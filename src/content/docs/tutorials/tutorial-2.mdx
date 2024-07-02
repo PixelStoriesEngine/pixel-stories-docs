@@ -40,9 +40,24 @@ Dialog is written in a specific format. Each line within the text area represent
 
 Our current set up will play the dialog event when the map loads. But what if we want to play dialog when the player interacts with something? To do this, let's add an event group.
 
-### New Event Group
+### How Event Groups Work
 
-Event groups are a chain of events bundled together to run sequentially.
+To make the senario possible, it's important to understand how event groups work. Once you get it, they will be the most powerful feature in your toolkit.
+
+Event groups are a chain of events bundled together to run sequentially. They are separate from the map events which play when the map loads. To play the event group, it must be added to the map through the `Add event group` event. The event group can also be removed with the `Remove event group` event.
+
+When an event group is added, they can be trigger via:
+
+- `Interact`, the player is next to event group and presses `Enter` or `X` to trigger it.
+- `Touch`, the player walks up to the event group tile.
+- `None`, event group plays when added.
+
+You can imagine a map having many event groups. With this system, it's possible to build puzzles, dynamic interactions, and interesting game mechanics.
+
+The follow is an example of a map which has several event groups added in:
+![](../../../assets/images/event-groups-illistration.png)
+
+### New Event Group
 
 <Steps>
 
