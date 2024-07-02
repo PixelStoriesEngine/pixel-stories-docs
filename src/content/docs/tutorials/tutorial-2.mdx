@@ -1,0 +1,73 @@
+---
+title: Interactive Dialog
+description: A beginners guide to Pixel Stories
+---
+
+import { Steps } from "@astrojs/starlight/components";
+
+With our map and characters created, now we can add some dialog. After all, they are the bread and butter of story-driven games!
+
+## Adding Dialog
+
+<Steps>
+
+1. Navigate to `Maps > Map 1 > Events`.
+2. Click `+ Event` and add the `Spawn actor` event.
+3. In the event configuration: <br/>
+   Paste the following dialog text:
+
+   ```
+   Hello World
+   [Joe]
+   This is written by Joe.
+   Hello from Joe!
+   []
+   Joe doesn't want to talk.
+   ```
+
+4. Navigate to `Play test` and we should see the dialog play. <br/>
+   Press `Enter` or `X` to play the next dialog.
+
+</Steps>
+
+### Dialog Format
+
+In the game when the dialog event plays, it will show the text we've written in a dialog box.
+
+Dialog is written in a specific format. Each line within the text area represents a new dialog box in the game. The word within the bracket adds a name for the dialog. The name will display in the dialog box until it is changed or reset with empty brackets `[]`.
+
+## Adding Interaction
+
+Our current set up will play the dialog event when the map loads. But what if we want to play dialog when the player interacts with something? To do this, let's add an event group.
+
+### New Event Group
+
+Event groups are a chain of events bundled together to run sequentially.
+
+<Steps>
+
+1. Navigate to `Maps > Map 1 > Events` at the `Event groups` section.
+2. Click `+ Add event group`.
+3. Click the name to rename the event group as "Talking tree."
+4. Add a new dialog event in the event group: <br/>
+   Paste the following dialog text:
+
+   ```
+   Hello World!
+   This is the tree talking.
+   ```
+
+5. Under the `Map Events` section, add the `Add event group` event.
+   - Select `Talking tree` for the event group to play.
+   - Set the trigger type to interact.
+   - Set the trigger position to a tree in the map.
+
+</Steps>
+
+Now head over to `Play test` and walk up to the tree. When we press `Enter` or `X`, we should see the dialog play.
+
+## That's All For Now!
+
+Thanks for going through this tutorial! We've gone through creating our map with terrain and objects, adding animations and actors, as well as a bit of the event system. [Join our community on Discord](https://discord.gg/XN9EaUh26g) if you'd like to get more help or give feedback/suggestions.
+
+Good luck in your game creation journey with Pixel Stories!

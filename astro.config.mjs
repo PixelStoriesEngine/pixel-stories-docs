@@ -54,16 +54,20 @@ export default defineConfig({
           ],
         },
         {
-          label: "Tutorials",
+          label: "Getting Started Tutorial",
           items: [
             {
-              label: "Basic Pixel Stories",
-              link: "/tutorials/basic/",
+              label: "Project Set up",
+              link: "/tutorials/basic",
             },
-            // {
-            //   label: "Advanced Pixel Stories",
-            //   link: "/tutorials/advanced/",
-            // },
+            {
+              label: "Map and Characters",
+              link: "/tutorials/tutorial-1/",
+            },
+            {
+              label: "Interactive Dialog",
+              link: "/tutorials/tutorial-2/",
+            },
           ],
         },
         {
