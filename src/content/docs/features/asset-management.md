@@ -41,6 +41,19 @@ Since our game engine is web-based, we can automatically support a wide range of
 
 - .png
 - .jpeg
-- .gif (only first frame will show)
 - .svg
 - .webp
+
+## Animations Format
+
+To import animations, they must be in the format of single row sprite strips. Such as the one below.
+
+<pixel-art>
+
+![](../../../assets/images/assets-3.png)
+
+</pixel-art>
+
+If you asset came in a spritesheet grid, you can use a spritesheet editing tool like [Aesprite](https://www.aseprite.org) or [EZGif](https://ezgif.com/sprite-cutter).
+
+The engine does not currently support animations that come in a GIF format. To use a gif, [EZGif gif to spritesheet](https://ezgif.com/gif-to-sprite) can convert to a sprite strip.
