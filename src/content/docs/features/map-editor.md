@@ -10,18 +10,38 @@ The following sections explain how the map editor in Pixel Stories works. The ke
 In Pixel Stories, terrains are created by providing a source tileset and selecting the type. We currently support 4 types of tilesets.
 
 Basic
+
+<pixel-art>
+
 ![](../../../assets/images/basic-border.png)
 
+</pixel-art>
+
 Basic full (includes extra tile for border detail)
+
+<pixel-art>
+
 ![](../../../assets/images/basic-full-border.png)
 
+</pixel-art>
+
 RPG Maker
+
+<pixel-art>
+
 ![](../../../assets/images/rpgmaker.png)
+
+</pixel-art>
 
 <div style="max-width:400px;">
 
 Wang
+
+<pixel-art>
+
 ![](../../../assets/images/map-editor.png)
+
+</pixel-art>
 
 </div>
 
