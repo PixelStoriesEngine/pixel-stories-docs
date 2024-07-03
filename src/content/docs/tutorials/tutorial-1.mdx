@@ -5,6 +5,15 @@ description: A beginners guide to Pixel Stories
 
 import { Steps } from "@astrojs/starlight/components";
 
+In this tutorial, we'll create our first map and add a new character.
+
+<a
+  href="https://api.pixelstories.io/storage/v1/object/public/misc/Basic_Tutorial_Assets.zip"
+  download
+>
+  Download the tutorial assets here.
+</a>
+
 ## Adding a Map
 
 Right now our game is blank because it doesn't have any maps. Let's add our first map.
@@ -73,7 +82,7 @@ Make sure you are under the `Edit map > Edit objects` tab while drawing or erasi
 
 ## Adding a Character
 
-Now that we have a map, we can add a new character into it! Characters in Pixel Stories are called `Actors`. We'll create them under the `sGame assets` tab
+Now that we have a map, we can add a new character into it! Characters in Pixel Stories are called `Actors`. We'll create them under the `Game assets` tab.
 
 ### New Actor
 
@@ -104,7 +113,7 @@ The new character we spawned in will not have any animations, so we see it with 
 
 ### Adding Animations
 
-To add an animation, we will go back to the actor.
+To add an animation for the character, we will go back to the actor settings.
 
 <Steps>
 
@@ -132,14 +141,23 @@ To add an animation, we will go back to the actor.
    ![](../../../assets/images/wakdown.png)
    </pixel-art>
    _Use the `Copy settings` button to copy the animation settings and paste for the other animations_
+6. In the actor's walking animation set, select the corresponding animations for each direction. <br/>
 
 </Steps>
 
-![](../../../assets/images/friend.png)
+The final actor animations should look like this:
+
+<div style="max-width:350px;">
+  ![](../../../assets/images/walking-animations-config.png)
+</div>
+
+Head over to `Play test` and we'll see that the character now has the skeleton animations. But since it's not moving, we won't be able to see how the walking animations look. Let's make the character move in the next section.
+
+![](../../../assets/images/actor-with-ghost.png)
 
 ### Making the Character Move
 
-To see the animations take place, we will make our new character move.
+To see the animations take place, let's make our new character walk around.
 
 <Steps>
 
@@ -151,3 +169,5 @@ To see the animations take place, we will make our new character move.
 4. Navigate to `Play test` and we should see the actor spawned in the map.
 
 </Steps>
+
+In the next part of this tutorial, we'll cover how to add dialog and interactions with event groups.
