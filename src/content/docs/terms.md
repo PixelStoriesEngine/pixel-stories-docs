@@ -2,6 +2,7 @@
 title: Terms of Use and Privacy Policy
 description: The following are the terms of use and privacy policy for Pixel Stories
 template: splash
+editUrl: false
 ---
 
 By using Pixel Stories, you are agreeing to the following terms of service and privacy policy.

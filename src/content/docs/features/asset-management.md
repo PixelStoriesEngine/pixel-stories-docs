@@ -54,6 +54,6 @@ To import animations, they must be in the format of single row sprite strips. Su
 
 </pixel-art>
 
-If you asset came in a spritesheet grid, you can use a spritesheet editing tool like [Aesprite](https://www.aseprite.org) or [EZGif](https://ezgif.com/sprite-cutter).
+If you asset came in a spritesheet grid, you can use a spritesheet editing tool like [EZGif Spritesheet cutter](https://ezgif.com/sprite-cutter) to slice the spritesheet into rows.
 
 The engine does not currently support animations that come in a GIF format. To use a gif, [EZGif gif to spritesheet](https://ezgif.com/gif-to-sprite) can convert to a sprite strip.
