@@ -51,8 +51,9 @@ Example Event Group:
 
 ## Important Notes
 
-- **Events Only Play While the Player Is in the Map**: Events are scoped to the map they are created in, meaning they cannot change things outside of their map.
-- **Global Scope of Variables**: Unlike events, variables are globally scoped, allowing them to influence gameplay across different maps.
+- Events Only Play While the Player Is in the Map. Events are scoped to the map they are created in, meaning they cannot change things outside of their map.
+
+- Unlike events, variables are globally scoped, allowing them to influence gameplay across different maps.
 
 ## Table of Events
 
