@@ -12,7 +12,7 @@ With our map and characters created, now we can add some dialog. After all, they
 <Steps>
 
 1. Navigate to `Maps > Map 1 > Events`.
-2. Click `+ Event` and add the `Spawn actor` event.
+2. Click `+ Event` and add the `Dialog` event.
 3. In the event configuration: <br/>
    Paste the following dialog text:
 
@@ -32,27 +32,25 @@ With our map and characters created, now we can add some dialog. After all, they
 
 ### Dialog Format
 
-In the game when the dialog event plays, it will show the text we've written in a dialog box.
-
 Dialog is written in a specific format. Each line within the text area represents a new dialog box in the game. The word within the bracket adds a name for the dialog. The name will display in the dialog box until it is changed or reset with empty brackets `[]`.
 
-## Adding Interaction
+## Adding an Interaction
 
 Our current set up will play the dialog event when the map loads. But what if we want to play dialog when the player interacts with something? To do this, let's add an event group.
 
 ### How Event Groups Work
 
-To make the senario possible, it's important to understand how event groups work. Once you get it, they will be the most powerful feature in your toolkit.
+To make the senario possible, it's important to understand how event groups work. Once you know how to use event groups, they will be the most powerful feature in your toolkit.
 
-Event groups are a chain of events bundled together to run sequentially. They are separate from the map events which play when the map loads. To play the event group, it must be added to the map through the `Add event group` event. The event group can also be removed with the `Remove event group` event.
+Event groups are simply a group of events separate from the map's initial events. The map's initial events play one after another when the map loads. To play the event group's events, we must add it to the map with the `Add event group` event. When it's time to remove the event group from the map, we can use the `Remove event group` event.
 
-When an event group is added, they can be trigger via:
+When an event group is added, they can be triggered via:
 
 - `Interact`, the player is next to event group and presses `Enter` or `X` to trigger it.
 - `Touch`, the player walks up to the event group tile.
-- `None`, event group plays when added.
+- `None`, event group plays immediately when added.
 
-You can imagine a map having many event groups. With this system, it's possible to build puzzles, dynamic interactions, and interesting game mechanics.
+We can imagine a map having many event groups. With this system, it's possible to build puzzles, dynamic interactions, and interesting story game mechanics.
 
 The follow is an example of a map which has several event groups added in:
 ![](../../../assets/images/event-groups-illistration.png)
