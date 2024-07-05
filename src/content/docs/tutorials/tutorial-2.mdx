@@ -7,7 +7,15 @@ import { Steps } from "@astrojs/starlight/components";
 
 With our map and characters created, now we can add some dialog. After all, they are the bread and butter of story-driven games!
 
-## Adding Dialog
+## Showing Dialog
+
+The dialog event shows text in a dialog box in the game.
+
+### Dialog Format
+
+Dialog is written in a specific format. Each line within the text area represents a new dialog box in the game. The word within the bracket adds a name for the dialog. The name will display in the dialog box until it is changed or reset with empty brackets `[]`.
+
+### Adding Dialog
 
 <Steps>
 
@@ -30,10 +38,6 @@ With our map and characters created, now we can add some dialog. After all, they
 
 </Steps>
 
-### Dialog Format
-
-Dialog is written in a specific format. Each line within the text area represents a new dialog box in the game. The word within the bracket adds a name for the dialog. The name will display in the dialog box until it is changed or reset with empty brackets `[]`.
-
 ## Adding an Interaction
 
 Our current set up will play the dialog event when the map loads. But what if we want to play dialog when the player interacts with something? To do this, let's add an event group.
@@ -44,7 +48,13 @@ To make the senario possible, it's important to understand how event groups work
 
 Event groups are simply a group of events separate from the map's initial events. The map's initial events play one after another when the map loads. To play the event group's events, we must add it to the map with the `Add event group` event. When it's time to remove the event group from the map, we can use the `Remove event group` event.
 
-When an event group is added, they can be triggered via:
+:::note
+
+An event group's events will never play until they are added into the map with an `Add event group` event!
+
+:::
+
+When an event group is added with the `Add event group` event, they can be triggered via:
 
 - `Interact`, the player is next to event group and presses `Enter` or `X` to trigger it.
 - `Touch`, the player walks up to the event group tile.
@@ -60,7 +70,7 @@ The follow is an example of a map which has several event groups added in:
 <Steps>
 
 1. Navigate to `Maps > Map 1 > Events` at the `Event groups` section.
-2. Click `+ Add event group`.
+2. Click `+ Create event group`.
 3. Click the name to rename the event group as "Talking tree."
 4. Add a new dialog event in the event group: <br/>
    Paste the following dialog text:
@@ -78,6 +88,8 @@ The follow is an example of a map which has several event groups added in:
 </Steps>
 
 Now head over to `Play test` and walk up to the tree. When we press `Enter` or `X`, we should see the dialog play.
+
+One thing to note, the event group will not be added until the other events are finished playing.
 
 ## That's All For Now!
 

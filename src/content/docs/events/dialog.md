@@ -3,7 +3,7 @@ title: Dialog
 description: Reference to the insert_event_name event
 ---
 
-The dialog event shows text in a dialog box with in the game. It can be used with event groups to create dynamic narratives between characters in your game.
+The dialog event shows text in a dialog box in the game. It can be used with event groups to create dynamic narratives between characters in your game.
 
 <br/>
 
