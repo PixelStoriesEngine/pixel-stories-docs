@@ -38,6 +38,12 @@ Dialog is written in a specific format. Each line within the text area represent
 
 </Steps>
 
+:::note
+
+Events play one after another. So if you had an actor move event before the dialog, the dialog only shows after the actor is finished moving.
+
+:::
+
 ## Adding an Interaction
 
 Our current set up will play the dialog event when the map loads. But what if we want to play dialog when the player interacts with something? To do this, let's add an event group.
@@ -62,7 +68,7 @@ When an event group is added with the `Add event group` event, they can be trigg
 
 We can imagine a map having many event groups. With this system, it's possible to build puzzles, dynamic interactions, and interesting story game mechanics.
 
-The follow is an example of a map which has several event groups added in:
+The follow is a sketch of a map which has several event groups added in:
 ![](../../../assets/images/event-groups-illistration.png)
 
 ### New Event Group
@@ -80,14 +86,17 @@ The follow is an example of a map which has several event groups added in:
    This is the tree talking.
    ```
 
-5. Under the `Map Events` section, add the `Add event group` event.
+5. Under the `Map Events` section <br/>
+   Add an event and choose the `Add event group` event.
    - Select `Talking tree` for the event group to play.
    - Set the trigger type to interact.
    - Set the trigger position to a tree in the map.
 
 </Steps>
 
-Now head over to `Play test` and walk up to the tree. When we press `Enter` or `X`, we should see the dialog play.
+![](../../../assets/images/add-event-group.png)
+
+Now head over to `Play test` and use `Arrow keys` or `WASD` to walk up to the tree. When we press `Enter` or `X`, we should see the dialog play.
 
 One thing to note, the event group will not be added until the other events are finished playing.
 
