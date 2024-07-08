@@ -13,7 +13,7 @@ The dialog event shows text in a dialog box in the game.
 
 ### Dialog Format
 
-Dialog is written in a specific format. Each line within the text area represents a new dialog box in the game. The word within the bracket adds a name for the dialog. The name will display in the dialog box until it is changed or reset with empty brackets `[]`.
+Dialog is written in a specific format. Each line within the text area represents a new dialog box in the game. The word within the bracket adds a name for the dialog, e.g. `[Joseph]`. The name will display in the dialog box until it is changed or reset with empty brackets `[]`.
 
 ### Adding Dialog
 
@@ -33,7 +33,7 @@ Dialog is written in a specific format. Each line within the text area represent
    Joe doesn't want to talk.
    ```
 
-4. Navigate to `Play test` and we should see the dialog play. <br/>
+4. Navigate to `Play test` and we should see the dialog play after the other events finish. <br/>
    Press `Enter` or `X` to play the next dialog.
 
 </Steps>
@@ -87,7 +87,7 @@ The follow is a sketch of a map which has several event groups added in:
    ```
 
 5. Under the `Map Events` section <br/>
-   Add an event and choose the `Add event group` event.
+   Add an event and choose the `Add event group` event (see image below).
    - Select `Talking tree` for the event group to play.
    - Set the trigger type to interact.
    - Set the trigger position to a tree in the map.
@@ -96,9 +96,9 @@ The follow is a sketch of a map which has several event groups added in:
 
 ![](../../../assets/images/add-event-group.png)
 
-Now head over to `Play test` and use `Arrow keys` or `WASD` to walk up to the tree. When we press `Enter` or `X`, we should see the dialog play.
-
 One thing to note, the event group will not be added until the other events are finished playing.
+
+Now head over to `Play test` and use `Arrow keys` or `WASD` to walk up to the tree. When we press `Enter` or `X`, we should see the dialog play.
 
 ## That's All For Now!
 

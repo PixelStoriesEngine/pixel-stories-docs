@@ -80,13 +80,15 @@ Make sure you are under the `Edit map > Edit objects` tab while drawing or erasi
 
 ![](../../../assets/images/resulting-terrain.png)
 
+Now we can try testing the game! Navigate to the `Play test` tab. Click into the game and you can use the `arrow` or `WASD` keys to walk around. The ghost in the screen is the player character.
+
 ## Adding a Character
 
 Now that we have a map, we can add a new character into it! Characters in Pixel Stories are called `Actors`. We'll create them under the `Game assets` tab.
 
 ### New Actor
 
-First let's create a barebones actor (actor with no animation sprite) and add it to the map.
+First, let's create an actor with no animation sprite and add it to the map.
 
 <Steps>
 
@@ -97,7 +99,7 @@ First let's create a barebones actor (actor with no animation sprite) and add it
 
 </Steps>
 
-With this barebones actor, we can add it into the map with a `Spawn actor` event.
+With this spriteless actor, we can add it into the map with a `Spawn actor` event.
 
 <Steps>
 
@@ -110,7 +112,7 @@ With this barebones actor, we can add it into the map with a `Spawn actor` event
 
 </Steps>
 
-The new character we spawned in will not have any animations, so we see it with a ghost body.
+The new character we spawned in will not have any animation sprites, so we see it with a ghost body.
 
 ![](../../../assets/images/friend-ghost.png)
 
@@ -174,7 +176,8 @@ To see the animations take place, let's make our new character walk around.
 2. Click `+ Event` and add the `Move actor` event.
 3. In the event configuration:
    - Select the actor to move as `Joseph`.
-   - Click `Set move path` and click in map to set the movement path.
+   - Click `Set move path` and click in map to set the movement path. <br/>
+     _Note: currently the game engine does not show the initial position of the actor. It will be added in the next release!_
 4. Navigate to `Play test` and we should see the actor spawned in the map.
 
 </Steps>
