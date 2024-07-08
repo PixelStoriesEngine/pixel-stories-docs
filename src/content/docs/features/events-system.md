@@ -32,9 +32,9 @@ The following are the current Pixel Stories events divided into the following ca
 
 Events are the building blocks that control what happens in your game. When a player first enters a map, the map runs the initial set of events. These events can include actions like showing a dialog, moving an actor, or starting a wait timer.
 
-## Event Groups
+### Event Groups
 
-Event groups are simply a group of events separate from the map's initial events. Event groups are added to the map and can be triggered by player interaction, touch, or automatically right when the event is added. The event group is added by placing an Add Event Group event in the map's initial events.
+Event groups are a group of events separate from the map's initial events.
 
 <div style="max-width:550px;">
 
@@ -45,15 +45,24 @@ Example Event Group:
 
 ### How Group Events Work
 
-1. When a group of events runs, each event occurs one after the other in the specified order.
-2. The "Add Event Group" event allows you to configure triggers for the event group. These triggers define how and when the event group will start.
-3. Event groups can be added or removed based on game conditions. This enables puzzles and multiple endings to be possible in your game.
+The map's initial events play one after another when the map loads. To play the event group's events, we must add it to the map with the `Add event group` event. When it's time to remove the event group from the map, we can use the `Remove event group` event.
 
-## Important Notes
+When an event group is added with the `Add event group` event, they can be triggered via:
 
-- Events Only Play While the Player Is in the Map. Events are scoped to the map they are created in, meaning they cannot change things outside of their map.
+- `Interact`, the player is next to event group and presses `Enter` or `X` to trigger it.
+- `Touch`, the player walks up to the event group tile.
+- `None`, event group plays immediately when added.
 
-- Unlike events, variables are globally scoped, allowing them to influence gameplay across different maps.
+Imagine a map having many event groups. With this system, it's possible to build puzzles, dynamic interactions, and interesting story game mechanics.
+
+The follow is a sketch of a map which has several event groups added in:
+![](../../../assets/images/event-groups-illistration.png)
+
+:::note
+
+An event group's events will never play until they are added into the map with an `Add event group` event!
+
+:::
 
 ## Table of Events
 

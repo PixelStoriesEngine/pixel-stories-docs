@@ -50,26 +50,9 @@ Our current set up will play the dialog event when the map loads. But what if we
 
 ### How Event Groups Work
 
-To make the senario possible, it's important to understand how event groups work. Once you know how to use event groups, they will be the most powerful feature in your toolkit.
+Event groups are a group of events separate from the map's initial events which play on map load. To play the event group's events, we must add it to the map with the `Add event group` event. Once added to the map, they can be triggered by player `Interact` or `Touch`.
 
-Event groups are simply a group of events separate from the map's initial events. The map's initial events play one after another when the map loads. To play the event group's events, we must add it to the map with the `Add event group` event. When it's time to remove the event group from the map, we can use the `Remove event group` event.
-
-:::note
-
-An event group's events will never play until they are added into the map with an `Add event group` event!
-
-:::
-
-When an event group is added with the `Add event group` event, they can be triggered via:
-
-- `Interact`, the player is next to event group and presses `Enter` or `X` to trigger it.
-- `Touch`, the player walks up to the event group tile.
-- `None`, event group plays immediately when added.
-
-We can imagine a map having many event groups. With this system, it's possible to build puzzles, dynamic interactions, and interesting story game mechanics.
-
-The follow is a sketch of a map which has several event groups added in:
-![](../../../assets/images/event-groups-illistration.png)
+Event groups is the feature that allows for multiple endings, dynamic interactions, and puzzles. Learn more about [how event groups work](/features/events-system/#how-group-events-work).
 
 ### New Event Group
 
@@ -82,7 +65,6 @@ The follow is a sketch of a map which has several event groups added in:
    Paste the following dialog text:
 
    ```
-   Hello World!
    This is the tree talking.
    ```
 
