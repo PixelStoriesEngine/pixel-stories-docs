@@ -44,6 +44,28 @@ Since our game engine is web-based, we can automatically support a wide range of
 - .svg
 - .webp
 
+## Auto-tile Terrains Format
+
+In Pixel Stories, terrains are created by providing a source tileset and selecting the type. We currently support 4 types of tilesets.
+
+<pixel-art>
+
+Basic
+![](../../../assets/images/basic-border.png)
+
+Basic full (includes extra tile for border detail)
+![](../../../assets/images/basic-full-border.png)
+
+RPG Maker
+![](../../../assets/images/rpgmaker.png)
+
+<div style="max-width:400px;">
+
+Wang
+![](../../../assets/images/map-editor.png)
+
+</div>
+
 ## Animations Format
 
 To import animations, they must be in the format of single row sprite strips. Such as the one below.
