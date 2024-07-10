@@ -54,7 +54,7 @@ export default defineConfig({
           ],
         },
         {
-          label: "Get Started Tutorial",
+          label: "Introductory Tutorial",
           items: [
             {
               label: "Project Set-up",
@@ -69,11 +69,15 @@ export default defineConfig({
               link: "/tutorials/tutorial-1",
             },
             {
-              label: "Interactive Dialog",
+              label: "Dialog and Interactions",
               link: "/tutorials/tutorial-1",
             },
             {
               label: "Conditional branching",
+              link: "/tutorials/tutorial-1",
+            },
+            {
+              label: "Music/Sound",
               link: "/tutorials/tutorial-1",
             },
             {
