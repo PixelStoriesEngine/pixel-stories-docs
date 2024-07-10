@@ -10,6 +10,9 @@ export default defineConfig({
   adapter: vercel({
     webAnalytics: { enabled: true },
   }),
+  redirects: {
+    "/tutorials/basic": "/tutorials/project-setup",
+  },
   integrations: [
     starlight({
       title: "Pixel Stories User Guide",
@@ -58,31 +61,31 @@ export default defineConfig({
           items: [
             {
               label: "Project Set-up",
-              link: "/tutorials/basic",
+              link: "/tutorials/project-setup",
             },
             {
               label: "Drawing the Map",
-              link: "/tutorials/tutorial-1",
+              link: "/tutorials/mapping",
             },
             {
               label: "Characters",
-              link: "/tutorials/tutorial-1",
+              link: "/tutorials/characters",
             },
             {
               label: "Dialog and Interactions",
-              link: "/tutorials/tutorial-1",
+              link: "/tutorials/interactive-dialog",
             },
             {
               label: "Conditional branching",
-              link: "/tutorials/tutorial-1",
+              link: "/tutorials/conditional-branching",
             },
             {
               label: "Music/Sound",
-              link: "/tutorials/tutorial-1",
+              link: "/tutorials/music-sound",
             },
             {
               label: "Exporting Your Game",
-              link: "/tutorials/tutorial-1",
+              link: "/tutorials/exporting",
             },
           ],
         },
