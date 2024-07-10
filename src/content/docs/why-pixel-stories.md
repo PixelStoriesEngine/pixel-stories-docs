@@ -3,32 +3,53 @@ title: Why Pixel Stories?
 description: Why Pixel Stories?
 ---
 
-Pixel Stories is the no-code game engine designed from the ground up for building top down pixel style story-driven games. We make it easy to add characters, build the game world, create adventures, and have multiple endings. Our game engine leverages modern web technologies and design philosophies to create the best experience for the user. If you are looking to place your focus more on character design, rich narratives, and world-building, then Pixel Stories is for you.
+I’d like to formally introduce something I’ve been working on over the past year. It’s called Pixel Stories, a modern, no-code engine made for story-rich games.
 
-## A Focus on the Creator
+## The Motive
 
-One of the primary goals of Pixel Stories is to eliminate the tedious workflows commonly found in other game engines. We focus on the user experience because we know that a bad user experience leads to frustration and hinders creativity.
+The current no-code engines for story-driven games like RPG Maker are amazing and have inspired so many game creators (including me), but it's tough to break away from the classic JRPG style. I wanted an engine that didn’t get in the way for a simple and unique story-rich game. Whether it was the game aesthetic, style, and feel, or just customizing menus and dialog interfaces, removing grid-based movement, setting the map tile size, and game window resolution. The built-in features were limited, often requiring so many plugins or work arounds to achieve what you want.
 
-Pixel Stories streamlines the game creation process, allowing you to focus on the narrative, world-building, and character design. Our intuitive interfaces, comprehensive tools, and efficient workflows ensure that even those new to game development can create high-quality, immersive games with ease.
+The solutions either required coding, were outdated, or too complex for me at the time when I was 14 years old and full of inspiration and ideas for story-rich games.
 
-## Engine Features
+That’s why I wanted to build an alternative. Something that aims to have all the standard features you’d expect built right into the engine. A modern tool that’s nice to work with and empowers your creativity in story-driven game development. It’s in early access beta and there are definitely bugs I’ve yet to catch, but here is what it looks like! The engine is web-based and free if you’d like to jump right in: [https://pixelstories.io](https://pixelstories.io)
 
-Pixel Stories has the standard features, by default, to create story-rich games. Below are some of the main features.
+## The Features Available Now
 
-### Map Editor
+- Auto-tiling with terrains
+- Sprite placement not locked to grid.
+- Events to control what happens in the game.
+- Simple game variable management to allow for:
+  - puzzles and dynamic game mechanics
+  - branching with multiple endings
+- Dead simple to change game window size
+- Pixel based movement
+- Collisions are implemented by drawing collision boxes on top of your map
+- Free and engine accessible immediately in the browser
+- Replace assets easily with drag and drop.
+- No limits on sprite size, map tile size, or number of animation frames
 
-Our intuitive map editor allows you to easily design and customize your game world. Make edits on the fly and build the world as your story evolves.
+![img](../../assets/images/why-pixel-stories/image-0.png "How collisions are handled.")
 
-### Events System
+![img](../../assets/images/why-pixel-stories/image-1.png "A glipse of how the event system works")
 
-Control your story in the game with events. Trigger events based on player actions, or other conditions to create an interactive game world.
+![img](../../assets/images/why-pixel-stories/image-2.png "Play testing the game")
 
-### Story Progression and Multiple Endings
+![img](../../assets/images/why-pixel-stories/image-3.png "Free default terrain assets")
 
-Build branching storylines and design multiple paths and endings depending on player choices. Our events system combined with variables and conditional branching make it possible.
+## Note on Default Assets
 
-## Let's Create an Amazing Engine, Together
+I want to faciliate creativity with unique games that have unique styles. But I also know that default assets are important for people without the artistic resources or just looking to test the engine. So if you choose to use default assets, they are seamless to replace with custom art once it’s ready.
 
-Our goal and mission is to create the best engine for building story-rich video games. The engine is free and in early access testing. We would really love your feedback or suggestions. Your help will make this engine awesome!
+## Let's Build It Together
 
-Feel free to let us know through our [Discord](https://discord.gg/XN9EaUh26g) or [feedback form](https://forms.gle/76x3G1mkUQpKvbG7A).
+Right now I’m looking for help to test out the foundational features. If nothing blows up, then I can focus my time getting the next features in as soon as possible. Features that will be added in the next release:
+
+- Built-in UI customization - custom menu screens, dialog screens, and put interface elements with any shape any where in the game window.
+- Dialog choices and options.
+- Straight forward dialog editing at scale, with JSON import/export. Localization support.
+
+The engine is free and you can try it out at [https://pixelstories.io](https://pixelstories.io)
+
+Let me know what you think! I hope the Pixel Stories Engine a breath of fresh air and a step in the right direction. (If it’s not, please let me know why as well!) You can find me by email at truman@pixelstories.io.
+
+If you’d like to help drive the development, I am also active on Discord (https://discord.gg/XN9EaUh26g) where you can offer some suggestions, feedback, or just follow along the engine development journey. Thanks for checking it out!

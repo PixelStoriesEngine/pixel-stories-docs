@@ -54,24 +54,36 @@ export default defineConfig({
           ],
         },
         {
-          label: "Getting Started Tutorial",
+          label: "Get Started Tutorial",
           items: [
             {
               label: "Project Set-up",
               link: "/tutorials/basic",
             },
             {
-              label: "Map and Characters",
-              link: "/tutorials/tutorial-1/",
+              label: "Drawing the Map",
+              link: "/tutorials/tutorial-1",
+            },
+            {
+              label: "Characters",
+              link: "/tutorials/tutorial-1",
             },
             {
               label: "Interactive Dialog",
-              link: "/tutorials/tutorial-2/",
+              link: "/tutorials/tutorial-1",
+            },
+            {
+              label: "Conditional branching",
+              link: "/tutorials/tutorial-1",
+            },
+            {
+              label: "Exporting Your Game",
+              link: "/tutorials/tutorial-1",
             },
           ],
         },
         {
-          label: "Features",
+          label: "Learn the Basics",
           items: [
             {
               label: "Events system",
