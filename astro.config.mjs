@@ -15,7 +15,8 @@ export default defineConfig({
   },
   integrations: [
     starlight({
-      title: "Pixel Stories User Guide",
+      title:
+        "Pixel Stories, the modern no-code game engine for story-driven games",
       logo: {
         light: "./src/assets/logo-light.svg",
         dark: "./src/assets/logo-dark.svg",
@@ -90,7 +91,7 @@ export default defineConfig({
           ],
         },
         {
-          label: "Learn the Basics",
+          label: "Core Features",
           items: [
             {
               label: "Events system",
@@ -109,6 +110,10 @@ export default defineConfig({
               link: "/features/asset-management/",
             },
           ],
+        },
+        {
+          label: "Guides",
+          autogenerate: { directory: "/guides" },
         },
         {
           label: "Events Reference",
@@ -135,15 +140,6 @@ export default defineConfig({
             },
           ],
         },
-        // {
-        //   label: "Resources",
-        //   items: [
-        //     {
-        //       label: "How-to Guides",
-        //       link: "/guides/",
-        //     },
-        //   ],
-        // },
       ],
     }),
     tailwind(),

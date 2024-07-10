@@ -9,7 +9,7 @@ I’d like to formally introduce something I’ve been working on over the past 
 
 The current no-code engines for story-driven games like RPG Maker are amazing and have inspired so many game creators (including me), but it's tough to break away from the classic JRPG style. I wanted an engine that didn’t get in the way for a simple and unique story-rich game. Whether it was the game aesthetic, style, and feel, or just customizing menus and dialog interfaces, removing grid-based movement, setting the map tile size, and game window resolution. The built-in features were limited, often requiring so many plugins or work arounds to achieve what you want.
 
-The solutions either required coding, were outdated, or too complex for me at the time when I was 14 years old and full of inspiration and ideas for story-rich games.
+The solutions either required coding, were outdated, or just too complex for me at the time when I was 14 years old and full of inspiration and ideas for story-rich games. I was motivated, but there were just too many hurdles and eventually I gave up.
 
 That’s why I wanted to build an alternative. Something that aims to have all the standard features you’d expect built right into the engine. A modern tool that’s nice to work with and empowers your creativity in story-driven game development. It’s in early access beta and there are definitely bugs I’ve yet to catch, but here is what it looks like! The engine is web-based and free if you’d like to jump right in: [https://pixelstories.io](https://pixelstories.io)
 

@@ -1,5 +1,5 @@
 ---
-title: How to Connect Maps in Pixel Stories
-description: How to...
+title: Connecting Maps
+description: How to Connect Maps in Pixel Stories
 draft: true
 ---
