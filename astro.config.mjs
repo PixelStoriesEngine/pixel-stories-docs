@@ -20,7 +20,7 @@ export default defineConfig({
       },
       social: {
         youtube: "https://www.youtube.com/channel/UC62czApVKmYFH8clyDqKiVQ",
-        github: "https://github.com/tdgao/pixel-stories-docs",
+        github: "https://github.com/PixelStoriesEngine/pixel-stories-docs",
         discord: "https://discord.gg/XN9EaUh26g",
       },
       components: {
@@ -28,7 +28,7 @@ export default defineConfig({
         SocialIcons: "./src/components/NavButtons.astro",
       },
       editLink: {
-        baseUrl: "https://github.com/tdgao/pixel-stories-docs",
+        baseUrl: "https://github.com/PixelStoriesEngine/pixel-stories-docs",
       },
       customCss: [
         // Relative path to your custom CSS file
@@ -117,10 +117,13 @@ export default defineConfig({
           ],
         },
         // {
-        //   label: "How-to Guides",
-        //   autogenerate: {
-        //     directory: "/guides",
-        //   },
+        //   label: "Resources",
+        //   items: [
+        //     {
+        //       label: "How-to Guides",
+        //       link: "/guides/",
+        //     },
+        //   ],
         // },
       ],
     }),
