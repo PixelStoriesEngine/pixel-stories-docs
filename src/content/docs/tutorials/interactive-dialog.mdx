@@ -5,7 +5,7 @@ description: A beginners guide to Pixel Stories
 
 import { Steps } from "@astrojs/starlight/components";
 
-With our map and characters created, now we can add some dialog. After all, they are the bread and butter of story-driven games!
+In this tutorial, we'll see how to add dialog - the bread and butter of story-driven games. We'll create the dialog and implement a player interact trigger to play the dialog.
 
 ## Showing Dialog
 
@@ -76,21 +76,12 @@ Event groups is the feature that allows for multiple endings, dynamic interactio
 
 </Steps>
 
+<div style="max-width:350px">
+
 ![](../../../assets/images/add-event-group.png)
+
+</div>
 
 One thing to note, the event group will not be added until the other events are finished playing.
 
 Now head over to `Play test` and use `Arrow keys` or `WASD` to walk up to the tree. When we press `Enter` or `X`, we should see the dialog play.
-
-## That's All For Now!
-
-Thanks for going through this tutorial! We've gone through creating our map with terrain and objects, adding animations and actors, as well as a bit of the event system. Join us on [Discord](https://discord.gg/XN9EaUh26g) if you'd like to get more help or give feedback/suggestions.
-
-To keep trying the engine, add the free default assets we provide for terrains and map objects! See [how to add default assets](/assets).
-
-Learn more about the engine:
-
-- [The events system](/features/events-system)
-- [Map editor](/features/map-editor)
-- [Variables and branching](/features/variables-and-branching)
-- [Asset management](/features/asset-management)
