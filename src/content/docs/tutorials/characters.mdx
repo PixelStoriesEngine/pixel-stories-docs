@@ -1,90 +1,15 @@
 ---
-title: Maps and Characters
+title: Characters
 description: A beginners guide to Pixel Stories
 ---
 
 import { Steps } from "@astrojs/starlight/components";
 
-In this tutorial, we'll create our first map and add a new character.
-
-<a
-  href="https://api.pixelstories.io/storage/v1/object/public/misc/Basic_Tutorial_Assets.zip"
-  download
->
-  Download the tutorial assets here.
-</a>
-
-## Adding a Map
-
-Right now our game is blank because it doesn't have any maps. Let's add our first map.
-
-### New Map
-
-<Steps>
-
-1. Navigate to `Maps` tab.
-2. Click `Add map` to create a new map.
-3. Name the map "Map 1."
-
-</Steps>
-
-The map's tile size should be `16px by 16px`.
-
-### Terrains
-
-To draw into the map, we first have to add a terrain.
-
-<Steps>
-
-1. Navigate to `Edit map > Edit terrains` section.
-2. Click `+ New terrain` to add a new terrain.
-3. Upload the following asset.
-   <pixel-art>
-   ![](../../../assets/images/terrain-3.png)
-   </pixel-art>
-   _Right click image to copy or save it from browser._ <br/>
-   You should see a preview for the terrain. That's how it will look when used in the map.
-
-4. Add the terrain.
-
-</Steps>
-
-To draw into the map, select the terrain and click in map to draw. We can use the editing
-tools in the tool bar on top of the game window to pan, draw, and erase.
-
-![](../../../assets/images/resulting-map.png)
-
-### Map Objects
-
-Our map feels rather empty now... With just some land and no trees. Let's add in some trees!
-
-<Steps>
-
-1. Navigate to `Edit map > Edit objects` section.
-2. Click `+ New object`.
-3. Upload the following tree sprite asset.
-   <pixel-art>
-   ![](../../../assets/images/tree-2.png)
-   </pixel-art>
-4. Add the object.
-
-</Steps>
-
-To place the object in the map, select the object and use the drawing tool to place into the map. If we want to erase an object, we can use the erase tool.
-
-:::note
-
-Make sure you are under the `Edit map > Edit objects` tab while drawing or erasing map objects.
-
-:::
-
-![](../../../assets/images/resulting-terrain.png)
-
-Now we can try testing the game! Navigate to the `Play test` tab. Click into the game and you can use the `arrow` or `WASD` keys to walk around. The ghost in the screen is the player character.
+In this tutorial, we'll create a new character with custom animations. We'll also go through spawning the character into the map and making them walk around!
 
 ## Adding a Character
 
-Now that we have a map, we can add a new character into it! Characters in Pixel Stories are called `Actors`. We'll create them under the `Game assets` tab.
+From the last tutorial, we created a map. Now, we can add a new character into it. Characters in Pixel Stories are called `Actors`. We'll create them under the `Game assets` tab.
 
 ### New Actor
 
@@ -103,7 +28,7 @@ With this spriteless actor, we can add it into the map with a `Spawn actor` even
 
 <Steps>
 
-1. Navigate to `Maps > Map 1 > Events`.
+1. Navigate to `Maps > Map 1 > Events` at the `Map events` section.
 2. Click `+ Event` and add the `Spawn actor` event.
 3. In the event configuration:
    - Select the actor to spawn as `Joseph`.
@@ -177,15 +102,9 @@ To see the animations take place, let's make our new character walk around.
 3. In the event configuration:
    - Select the actor to move as `Joseph`.
    - Click `Set move path` and click in map to set the movement path. <br/>
-     _Note: currently the game engine does not show the initial position of the actor. It will be added in the next release!_
+     _Note: currently, you can't see the initial position of the actor. It will be added in the next release!_
 4. Navigate to `Play test` and we should see the actor spawned in the map.
 
 </Steps>
 
-:::caution[Remember!]
-
-You can only select an actor to move once they have been spawned in the map with `Spawn actor` event.
-
-:::
-
-In the next part of this tutorial, we'll cover how to add dialog and interactions with event groups.
+Keep in mind, you can only select an actor to move once they have been spawned in the map with `Spawn actor` event.

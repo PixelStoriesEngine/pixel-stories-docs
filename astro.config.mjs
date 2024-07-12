@@ -10,9 +10,13 @@ export default defineConfig({
   adapter: vercel({
     webAnalytics: { enabled: true },
   }),
+  redirects: {
+    "/tutorials/basic": "/tutorials/project-setup",
+  },
   integrations: [
     starlight({
-      title: "Pixel Stories User Guide",
+      title:
+        "Pixel Stories, the modern no-code game engine for story-driven games",
       logo: {
         light: "./src/assets/logo-light.svg",
         dark: "./src/assets/logo-dark.svg",
@@ -20,7 +24,7 @@ export default defineConfig({
       },
       social: {
         youtube: "https://www.youtube.com/channel/UC62czApVKmYFH8clyDqKiVQ",
-        github: "https://github.com/tdgao/pixel-stories-docs",
+        github: "https://github.com/PixelStoriesEngine/pixel-stories-docs",
         discord: "https://discord.gg/XN9EaUh26g",
       },
       components: {
@@ -28,7 +32,7 @@ export default defineConfig({
         SocialIcons: "./src/components/NavButtons.astro",
       },
       editLink: {
-        baseUrl: "https://github.com/tdgao/pixel-stories-docs",
+        baseUrl: "https://github.com/PixelStoriesEngine/pixel-stories-docs",
       },
       customCss: [
         // Relative path to your custom CSS file
@@ -54,24 +58,40 @@ export default defineConfig({
           ],
         },
         {
-          label: "Getting Started Tutorial",
+          label: "Introductory Tutorial",
           items: [
             {
               label: "Project Set-up",
-              link: "/tutorials/basic",
+              link: "/tutorials/project-setup",
             },
             {
-              label: "Map and Characters",
-              link: "/tutorials/tutorial-1/",
+              label: "Drawing the Map",
+              link: "/tutorials/mapping",
             },
             {
-              label: "Interactive Dialog",
-              link: "/tutorials/tutorial-2/",
+              label: "Characters",
+              link: "/tutorials/characters",
+            },
+            {
+              label: "Dialog and Interactions",
+              link: "/tutorials/interactive-dialog",
+            },
+            {
+              label: "Conditional branching",
+              link: "/tutorials/conditional-branching",
+            },
+            {
+              label: "Music/Sound",
+              link: "/tutorials/music-sound",
+            },
+            {
+              label: "Exporting Your Game",
+              link: "/tutorials/exporting",
             },
           ],
         },
         {
-          label: "Features",
+          label: "Core Features",
           items: [
             {
               label: "Events system",
@@ -90,6 +110,10 @@ export default defineConfig({
               link: "/features/asset-management/",
             },
           ],
+        },
+        {
+          label: "Guides",
+          autogenerate: { directory: "/guides" },
         },
         {
           label: "Events Reference",
@@ -116,12 +140,6 @@ export default defineConfig({
             },
           ],
         },
-        // {
-        //   label: "How-to Guides",
-        //   autogenerate: {
-        //     directory: "/guides",
-        //   },
-        // },
       ],
     }),
     tailwind(),

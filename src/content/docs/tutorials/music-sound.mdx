@@ -1,0 +1,64 @@
+---
+title: Music and Sound
+description: A beginners guide to Pixel Stories
+---
+
+import { Steps } from "@astrojs/starlight/components";
+
+In this tutorial, we’ll learn how to add music and sound to your game, enhancing the player's experience with audio effects and background music.
+
+## Adding the Game Assets
+
+First, we need to add our music and sound files to the game.
+
+<Steps>
+
+1. Navigate to `Game assets > Music/Sound`.
+2. Click `+ New sound` and drop your sound file.
+3. Repeat these steps to add your music file.
+
+</Steps>
+
+## Playing Music
+
+Now, we’ll set the background music to play in the game.
+
+<Steps>
+
+1. Navigate to `Maps > Map 1 > Events`.
+2. Click `+ Event` and add the `Set background music` event.
+3. In the event configuration:
+   - Select the music asset we added.
+
+</Steps>
+
+Head to `Play test` and you should hear the background music playing.
+
+In your game, you can control when the background music changes or stops by using the `Set background music` and `Stop background music` events.
+
+## Playing Sound
+
+Next, we’ll create an event that plays a sound when the player walks over a specific area.
+
+<Steps>
+
+1. Create a new event group and name it “Play sound”.
+2. In the event group:
+   - Add the `Play sound` event and select the sound asset we uploaded.
+
+</Steps>
+
+### Adding the Event Group to the Map
+
+<Steps>
+
+1. Navigate to `Maps > Map 1 > Events`.
+2. Add the “Play sound” event group to the map.
+3. Set the trigger to `Touch`.
+4. Place the trigger in the desired location on the map.
+
+</Steps>
+
+## Play Test
+
+Now, play test the game by walking over the event group we added, and you should hear the sound play! Every time you walk over it, the event group will trigger and the sound will play.
