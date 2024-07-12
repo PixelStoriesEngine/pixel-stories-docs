@@ -9,11 +9,7 @@ In this tutorial, we'll see how to add dialog - the bread and butter of story-dr
 
 ## Showing Dialog
 
-The dialog event shows text in a dialog box in the game.
-
-### Dialog Format
-
-Dialog is written in a specific format. Each line within the text area represents a new dialog box in the game. The word within the bracket adds a name for the dialog, e.g. `[Joseph]`. The name will display in the dialog box until it is changed or reset with empty brackets `[]`.
+The `Dialog event` shows text in a dialog box in the game.
 
 ### Adding Dialog
 
@@ -25,12 +21,8 @@ Dialog is written in a specific format. Each line within the text area represent
    Paste the following dialog text:
 
    ```
-   Hello World
-   [Joe]
-   This is written by Joe.
-   Hello from Joe!
-   []
-   Joe doesn't want to talk.
+   Hello World!
+   Welcome to my game.
    ```
 
 4. Navigate to `Play test` and we should see the dialog play after the other events finish. <br/>
@@ -38,9 +30,15 @@ Dialog is written in a specific format. Each line within the text area represent
 
 </Steps>
 
-:::note
+:::note[Event Sequence]
 
 Events play one after another. So if you had an actor move event before the dialog, the dialog only shows after the actor is finished moving.
+
+:::
+
+:::note[Dialog Format]
+
+Dialog is written in a specific format called `BB Code`. You can read about how BB Code works in [this article](https://en.wikipedia.org/wiki/BBCode).
 
 :::
 
@@ -82,6 +80,6 @@ Event groups is the feature that allows for multiple endings, dynamic interactio
 
 </div>
 
-One thing to note, the event group will not be added until the other events are finished playing.
+Keep in mind, since events play one after another, the event group will not be added until the other events are finished playing.
 
 Now head over to `Play test` and use `Arrow keys` or `WASD` to walk up to the tree. When we press `Enter` or `X`, we should see the dialog play.

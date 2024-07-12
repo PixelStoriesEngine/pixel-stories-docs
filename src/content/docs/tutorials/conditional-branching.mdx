@@ -9,9 +9,9 @@ In this tutorial, we’ll learn how to create conditional branching in your game
 
 ## Setting up the Map
 
-First, we need to set up our map with the necessary elements. Add a `tree` and `chest` into your map. You can use the default assets from the `map objects library`. If you haven't already, see the [mapping tutorial](/tutorials/mapping) and [map editor](/features/map-editor) to learn more.
+First, we need to set up our map with the necessary elements. Add a `tree` and `chest` into your map. You can use the default assets from the `Objects library` in your map under the `Edit objects` tab. See [default assets](/assets) to learn more.
 
-TODO: Add map picture
+![](../../../assets/images/tree-chest.png)
 
 ## Creating a Variable
 
@@ -20,7 +20,7 @@ Next, we’ll create a variable to track whether the player has found the key.
 <Steps>
 
 1. Navigate to `Game assets > Variables`.
-2. Click `+ New variable` and select `Switch variable`.
+2. Click `+ New switch` to add a switch (true/false) variable.
 3. Name the variable "Has key".
 
 </Steps>
@@ -38,9 +38,16 @@ Now, we’ll create two event groups: one for finding the key and one for openin
 3. Add the following events:
    - `Dialog`: Add a dialog event with the text “You found a key!”
    - `Set variable`: Add a set variable event to set the "Has key" variable to true.
-   - `Remove event group`: Remove the "Got the Key" event group at the end.
+4. Under `Map events`:
+   - Use the `Add event group` event to add it into the map.
+   - Set the `Interact` trigger to a tree.
+5. Back in the "Got the Key" event group:
+   - Add a `Remove event group` event.
+   - Select "Got the key" as the event group to remove.
 
 </Steps>
+
+Note, we had to add the `Remove event group` event after it was added because the engine only allows you to remove event groups which have been added into the map.
 
 ### Open Chest Event Group
 
@@ -48,26 +55,26 @@ Now, we’ll create two event groups: one for finding the key and one for openin
 
 1. Create another event group and name it "Open chest".
 2. Add two conditional events to check if the "Has key" variable is true:
-   - **If True**: Add a dialog event with the text “You opened the chest!”
-   - **If False**: Add a dialog event with the text “You need the key to open this chest”.
+
+   - **If True**: Add a dialog event with the text:
+
+   ```
+   You opened the chest!
+   ```
+
+   - **If False**: Add a dialog event with the text:
+
+   ```
+   You need the key to open this chest.
+   ```
+
+3. Under `Map events`:
+   - Use the `Add event group` event to add it into the map.
+   - Set the `Interact` trigger to the chest.
 
 </Steps>
 
 You can expand upon this by adding more events for what happens in your game. For example, if the chest is opened, you can spawn a character, make them walk to the player, and create a dramatic scene.
-
-TODO: add picture of final event group settings
-
-## Adding Event Groups to the Map
-
-Next, we’ll add our event groups to the map at specific locations.
-
-<Steps>
-
-1. Navigate to `Maps > Map 1 > Events`.
-2. Add the “Get key” event group at the tree.
-3. Add the “Open chest” event group on the chest.
-
-</Steps>
 
 ## Play Test
 

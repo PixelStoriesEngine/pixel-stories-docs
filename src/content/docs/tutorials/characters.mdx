@@ -5,11 +5,11 @@ description: A beginners guide to Pixel Stories
 
 import { Steps } from "@astrojs/starlight/components";
 
-In this tutorial, we'll create a new character with custom animations. We'll also go through spawning the character into the map and making them move.
+In this tutorial, we'll create a new character with custom animations. We'll also go through spawning the character into the map and making them walk around!
 
 ## Adding a Character
 
-Now that we have a map, we can add a new character into it! Characters in Pixel Stories are called `Actors`. We'll create them under the `Game assets` tab.
+From the last tutorial, we created a map. Now, we can add a new character into it. Characters in Pixel Stories are called `Actors`. We'll create them under the `Game assets` tab.
 
 ### New Actor
 
@@ -28,7 +28,7 @@ With this spriteless actor, we can add it into the map with a `Spawn actor` even
 
 <Steps>
 
-1. Navigate to `Maps > Map 1 > Events`.
+1. Navigate to `Maps > Map 1 > Events` at the `Map events` section.
 2. Click `+ Event` and add the `Spawn actor` event.
 3. In the event configuration:
    - Select the actor to spawn as `Joseph`.
@@ -102,15 +102,9 @@ To see the animations take place, let's make our new character walk around.
 3. In the event configuration:
    - Select the actor to move as `Joseph`.
    - Click `Set move path` and click in map to set the movement path. <br/>
-     _Note: currently the game engine does not show the initial position of the actor. It will be added in the next release!_
+     _Note: currently, you can't see the initial position of the actor. It will be added in the next release!_
 4. Navigate to `Play test` and we should see the actor spawned in the map.
 
 </Steps>
 
-:::caution[Remember!]
-
-You can only select an actor to move once they have been spawned in the map with `Spawn actor` event.
-
-:::
-
-In the next part of this tutorial, we'll cover how to add dialog and interactions with event groups.
+Keep in mind, you can only select an actor to move once they have been spawned in the map with `Spawn actor` event.
