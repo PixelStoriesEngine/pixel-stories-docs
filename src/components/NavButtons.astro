@@ -4,14 +4,20 @@ import Default from "@astrojs/starlight/components/SocialIcons.astro";
 import { Icon } from "@astrojs/starlight/components";
 ---
 
-<a
-  href="https://app.pixelstories.io"
-  class="action sl-flex"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Launch engine <Icon name="external" size="1.25rem" />
-</a>
+<div class="flex gap-2 gap-x-3 w-max">
+  <a href="/getting-started" class="action sl-flex">Pricing</a>
+
+  <a href="/getting-started" class="action sl-flex">Docs</a>
+
+  <a
+    href="https://app.pixelstories.io"
+    class="action sl-flex"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Launch engine <Icon name="external" size="1.25rem" />
+  </a>
+</div>
 
 <Default {...Astro.props}><slot /></Default>
 
@@ -20,7 +26,7 @@ import { Icon } from "@astrojs/starlight/components";
     gap: 0.5em;
     align-items: center;
     border-radius: 999rem;
-    padding: 0.25rem 1rem;
+    padding: 0.25rem 0.5rem;
     color: var(--sl-color-white);
     line-height: 1.1875;
     text-decoration: none;
@@ -30,7 +36,7 @@ import { Icon } from "@astrojs/starlight/components";
   @media (min-width: 50rem) {
     .action {
       font-size: var(--sl-text-sm);
-      padding: 0.5rem 0.5rem;
+      padding: 0.25rem 0.25rem;
     }
   }
 </style>
