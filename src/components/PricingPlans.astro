@@ -35,10 +35,24 @@ const plans = [
 ];
 ---
 
-<div class="not-content">
-  <div class="flex gap-4 flex-grow h-[430px]">
-    <PricingColumn {...plans[0]} />
-    <PricingColumn {...plans[1]} />
-    <PricingColumn {...plans[2]} />
+<div class="not-content flex flex-col gap-10">
+  <div class="flex flex-col items-center gap-2 my-6">
+    <p
+      class="text-base font-medium border-2 rounded-lg p-1 px-3 bg-white bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200"
+    >
+      The Pixel Stories Engine
+    </p>
+    <p class="text-2xl">
+      Get in on the <span class="italic">future</span> of story-driven game development
+    </p>
+  </div>
+
+  <div class="flex flex-col items-center gap-6">
+    <h2 class="text-4xl font-medium">Pricing and Features</h2>
+    <div class="flex gap-4 flex-grow h-[430px]">
+      <PricingColumn {...plans[0]} />
+      <PricingColumn {...plans[1]} />
+      <PricingColumn {...plans[2]} />
+    </div>
   </div>
 </div>
