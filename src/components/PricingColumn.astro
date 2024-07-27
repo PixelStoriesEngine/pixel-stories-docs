@@ -9,29 +9,29 @@ interface Props {
 const { name = "", description = "", price = "", points = [] } = Astro.props;
 ---
 
-<div class="not-content">
-  <div
-    class="flex flex-col justify-between h-full w-[255px] shadow-xl border-2 rounded-2xl p-4 px-6
+<div
+  class="not-content flex flex-col justify-between
+    min-h-[400px] h-full w-[255px] max-sm:w-full
+    shadow-xl border-2 rounded-2xl p-4 px-6
     dark:border dark:border-stone-400 dark:bg-color-black"
-  >
-    <div class="flex flex-col gap-2 justify-center">
-      <div class="flex flex-col gap-1">
-        <h2 class="text-base">{name}</h2>
-        <p class="text-2xl font-bold">{price}</p>
-        <p>{description}</p>
-      </div>
-
-      <ul class="p-0 pl-4 text-left">
-        {
-          points.map((p) => (
-            <li class="pl-0 list-disc list-item list-outside">{p}</li>
-          ))
-        }
-      </ul>
+>
+  <div class="flex flex-col gap-2 justify-center">
+    <div class="flex flex-col gap-1">
+      <h2 class="text-base">{name}</h2>
+      <p class="text-2xl font-bold">{price}</p>
+      <p>{description}</p>
     </div>
 
-    <div class="justify-center mt-6">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
+    <ul class="p-0 pl-4 text-left">
+      {
+        points.map((p) => (
+          <li class="pl-0 list-disc list-item list-outside">{p}</li>
+        ))
+      }
+    </ul>
+  </div>
+
+  <div class="justify-center mt-6">
+    <button class="btn btn-primary">Buy Now</button>
   </div>
 </div>
