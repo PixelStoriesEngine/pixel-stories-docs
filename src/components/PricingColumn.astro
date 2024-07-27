@@ -7,11 +7,13 @@ interface Props {
 }
 
 const { name = "", description = "", price = "", points = [] } = Astro.props;
+
+const href = "https://app.pixelstories.io/editor?purchase";
 ---
 
 <div
   class="not-content flex flex-col justify-between
-    min-h-[400px] h-full w-[255px] max-sm:w-full
+    min-h-[430px] h-full w-[255px] max-sm:w-full
     shadow-xl border-2 rounded-2xl p-4 px-6
     dark:border dark:border-stone-400 dark:bg-color-black"
 >
@@ -32,6 +34,29 @@ const { name = "", description = "", price = "", points = [] } = Astro.props;
   </div>
 
   <div class="justify-center mt-6">
-    <button class="btn btn-primary">Buy Now</button>
+    {
+      name === "Free tier" ? (
+        <a
+          class="btn-primary bg-transparent"
+          href="https://app.pixelstories.io/editor"
+        >
+          Launch engine
+        </a>
+      ) : name === "Starter pack" ? (
+        <a
+          class="btn-primary"
+          href="https://app.pixelstories.io/editor?purchase"
+        >
+          Buy Now
+        </a>
+      ) : (
+        <a
+          class="btn-primary"
+          href="https://app.pixelstories.io/editor?purchase"
+        >
+          Buy Now
+        </a>
+      )
+    }
   </div>
 </div>

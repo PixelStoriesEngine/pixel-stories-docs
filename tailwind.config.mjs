@@ -19,6 +19,7 @@ export default {
         "color-gray-5": "var(--sl-color-gray-5)",
         "color-gray-6": "var(--sl-color-gray-6)",
         "color-black": "var(--sl-color-black)",
+        "color-text-accent": "var(--sl-color-text-accent)",
       },
     },
   },
