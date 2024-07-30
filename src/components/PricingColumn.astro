@@ -3,10 +3,17 @@ interface Props {
   name: string;
   description: string;
   price: string;
+  crossedPrice: string;
   points: string[];
 }
 
-const { name = "", description = "", price = "", points = [] } = Astro.props;
+const {
+  name = "",
+  description = "",
+  price = "",
+  crossedPrice = "",
+  points = [],
+} = Astro.props;
 
 const href = "https://app.pixelstories.io/editor?purchase";
 ---
@@ -21,8 +28,24 @@ const href = "https://app.pixelstories.io/editor?purchase";
   <div class="flex flex-col gap-2 justify-center">
     <div class="flex flex-col gap-1">
       <h2 class="text-base">{name}</h2>
-      <p class="text-2xl font-bold">{price}</p>
+      <p class="text-2xl font-bold flex gap-2">
+        {price}
+        {
+          crossedPrice && (
+            <span class="line-through decoration-color-gray-3 font-normal text-lg">
+              {crossedPrice}
+            </span>
+          )
+        }
+      </p>
       <p>{description}</p>
+      {
+        crossedPrice && (
+          <div class="p-0 px-2 text-xs font-medium bg-color-accent-low w-max rounded-2xl opacity-90">
+            Early access offer
+          </div>
+        )
+      }
     </div>
 
     <ul class="p-0 pl-4 text-left">
@@ -39,21 +62,21 @@ const href = "https://app.pixelstories.io/editor?purchase";
       name === "Free tier" ? (
         <a
           class="btn-primary bg-transparent hover:bg-color-gray-6 transition-all"
-          href="https://app.pixelstories.io/editor"
+          href="http://localhost:5173/editor"
         >
           Launch engine
         </a>
       ) : name === "Starter pack" ? (
         <a
           class="btn-primary hover:opacity-90 transition-all"
-          href="https://app.pixelstories.io/editor?purchase-engine"
+          href="http://localhost:5173/editor?purchase-engine"
         >
           Buy Now
         </a>
       ) : (
         <a
           class="btn-primary hover:opacity-90 transition-all"
-          href="https://app.pixelstories.io/editor?purchase-engine"
+          href="http://localhost:5173/editor?purchase-engine"
         >
           Buy Now
         </a>
