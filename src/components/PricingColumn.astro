@@ -63,20 +63,26 @@ const href = "https://app.pixelstories.io/editor?purchase";
         <a
           class="btn-primary bg-transparent hover:bg-color-gray-6 transition-all"
           href="http://localhost:5173/editor"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Launch engine
         </a>
       ) : name === "Starter pack" ? (
         <a
           class="btn-primary hover:opacity-90 transition-all"
-          href="http://localhost:5173/editor?purchase-engine"
+          href="http://localhost:5173/editor?purchase-engine-tier=starter"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Buy Now
         </a>
       ) : (
         <a
           class="btn-primary hover:opacity-90 transition-all"
-          href="http://localhost:5173/editor?purchase-engine"
+          href="http://localhost:5173/editor?purchase-engine-tier=pro"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Buy Now
         </a>
