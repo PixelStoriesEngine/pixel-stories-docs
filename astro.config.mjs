@@ -30,6 +30,7 @@ export default defineConfig({
       components: {
         // Override the default `SocialIcons` component.
         SocialIcons: "./src/components/NavButtons.astro",
+        Hero: "./src/components/NoTitleHero.astro",
       },
       editLink: {
         baseUrl: "https://github.com/PixelStoriesEngine/pixel-stories-docs",

@@ -1,0 +1,92 @@
+---
+interface Props {
+  name: string;
+  description: string;
+  price: string;
+  crossedPrice?: string;
+  points: string[];
+}
+
+const {
+  name = "",
+  description = "",
+  price = "",
+  crossedPrice = "",
+  points = [],
+} = Astro.props;
+
+const href = "https://app.pixelstories.io/editor?purchase";
+---
+
+<div
+  class="not-content flex flex-col justify-between
+    min-h-[430px] h-full w-[255px] max-sm:w-full
+    shadow-xl border-2 rounded-2xl p-4 px-6
+    bg-white
+    dark:border dark:border-stone-400 dark:bg-color-black"
+>
+  <div class="flex flex-col gap-2 justify-center">
+    <div class="flex flex-col gap-1">
+      <h2 class="text-base">{name}</h2>
+      <p class="text-2xl font-bold flex gap-2">
+        {price}
+        {
+          crossedPrice && (
+            <span class="line-through decoration-color-gray-3 font-normal text-lg">
+              {crossedPrice}
+            </span>
+          )
+        }
+      </p>
+      <p>{description}</p>
+      {
+        crossedPrice && (
+          <div class="p-0 px-2 text-xs font-medium bg-color-accent-low w-max rounded-2xl opacity-90">
+            Early access offer
+          </div>
+        )
+      }
+    </div>
+
+    <ul class="p-0 pl-4 text-left">
+      {
+        points.map((p) => (
+          <li class="pl-0 list-disc list-item list-outside">{p}</li>
+        ))
+      }
+    </ul>
+  </div>
+
+  <div class="justify-center mt-6">
+    {
+      name === "Free tier" ? (
+        <a
+          class="btn-primary bg-transparent hover:bg-color-gray-6 transition-all"
+          href="https://app.pixelstories.io/editor"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Launch engine
+        </a>
+      ) : name === "Starter pack" ? (
+        <a
+          class="btn-primary hover:opacity-90 transition-all"
+          href="https://app.pixelstories.io/editor?purchase-engine-tier=starter"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Buy Now
+        </a>
+      ) : (
+        <a
+          class="btn-primary hover:opacity-90 transition-all"
+          href="https://app.pixelstories.io/editor?purchase-engine-tier=pro"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Buy Now
+        </a>
+      )
+    }
+  </div>
+</div>

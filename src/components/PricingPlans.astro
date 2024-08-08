@@ -1,0 +1,65 @@
+---
+import PricingColumn from "./PricingColumn.astro";
+
+const plans = [
+  {
+    name: "Free tier",
+    description: "Create your game today!",
+    price: "$0",
+    points: [
+      "Access to all engine features",
+      "1 project",
+      "2 maps",
+      "50 events",
+    ],
+  },
+  {
+    name: "Starter pack",
+    description: "One time purchase",
+    price: "$19.99",
+    crossedPrice: "$39.99",
+    points: [
+      "Everything in Free Tier",
+      "Commercial licence",
+      "Share game with link",
+      "Unlimited projects",
+      "Unlimited maps",
+      "500 events",
+    ],
+  },
+  {
+    name: "Pro pack",
+    description: "One time purchase",
+    price: "$34.99",
+    crossedPrice: "$69.99",
+    points: ["Everything in Starter", "1500 events"],
+  },
+];
+---
+
+<div class="not-content flex flex-col gap-10">
+  <div class="flex flex-col items-center gap-2 my-6">
+    <p
+      class="text-base font-medium border rounded-lg p-1 px-3 bg-gradient-to-r
+      text-black from-indigo-200 via-purple-200 to-pink-200"
+    >
+      The Pixel Stories Engine
+    </p>
+    <p class="text-2xl text-center">
+      Get in on the <span class="italic">future</span> of story-driven game development
+    </p>
+  </div>
+
+  <div class="flex flex-col items-center gap-6">
+    <h2 class="text-4xl font-medium text-center dark:text-white">
+      Pricing and Features
+    </h2>
+    <div
+      class="flex gap-4 flex-grow min-h-[430px] flex-wrap justify-center w-full"
+    >
+      <PricingColumn {...plans[0]} />
+      <PricingColumn {...plans[1]} />
+      <PricingColumn {...plans[2]} />
+    </div>
+  </div>
+</div>

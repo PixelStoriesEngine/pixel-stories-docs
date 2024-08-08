@@ -5,7 +5,7 @@
   --sl-color-accent-high: #e3bcca;
   --sl-color-white: #ffffff;
   --sl-color-gray-1: #eeeeee;
-  --sl-color-gray-2: #c2c2c2;
+  --sl-color-gray-2: hsl(0, 0%, 90%);
   --sl-color-gray-3: #8b8b8b;
   --sl-color-gray-4: #585858;
   --sl-color-gray-5: #383838;
@@ -25,6 +25,7 @@
   --sl-color-gray-5: #c2c2c2;
   --sl-color-gray-6: #eeeeee;
   --sl-color-gray-7: #f6f6f6;
+  --sl-color-banner-text: var(--sl-color-white);
   --sl-color-black: #ffffff;
 }
 

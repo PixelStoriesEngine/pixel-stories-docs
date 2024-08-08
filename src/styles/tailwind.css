@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply w-full rounded-xl p-2 flex justify-center no-underline
+      bg-color-text-accent font-medium cursor-pointer
+      text-color-white
+      dark:text-color-black;
+  }
+}
