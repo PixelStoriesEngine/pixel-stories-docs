@@ -4,7 +4,7 @@ import Default from "@astrojs/starlight/components/SocialIcons.astro";
 import { Icon } from "@astrojs/starlight/components";
 ---
 
-<div class="flex gap-2 gap-x-3 w-max">
+<div class="flex gap-2 gap-x-3 w-max font-medium">
   <a href="/pricing" class="action sl-flex">Pricing</a>
 
   <a href="/getting-started" class="action sl-flex">Docs</a>
@@ -31,6 +31,12 @@ import { Icon } from "@astrojs/starlight/components";
     line-height: 1.1875;
     text-decoration: none;
     font-size: var(--sl-text-sm);
+
+    transition: opacity 250ms;
+  }
+
+  .action:hover {
+    opacity: 0.65;
   }
 
   @media (min-width: 50rem) {
