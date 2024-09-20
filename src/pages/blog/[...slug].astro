@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import type { StarlightPageProps } from "@astrojs/starlight/props";
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("blog");
+  console.log(blogEntries);
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const frontmatter = {
+  ...entry.data,
+  template: "splash",
+} as StarlightPageProps["frontmatter"];
+---
+
+<StarlightPage {frontmatter}>
+  <div class="max-w-[800px]">
+    <Content />
+  </div>
+</StarlightPage>

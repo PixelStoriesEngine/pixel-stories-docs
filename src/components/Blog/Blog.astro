@@ -1,0 +1,28 @@
+---
+import BlogCard from "./BlogCard.astro";
+import { getCollection } from "astro:content";
+
+// Get all entries from a collection.
+// Requires the name of the collection as an argument.
+// Example: retrieve `src/content/blog/**`
+const posts = await getCollection("blog");
+---
+
+<div class="not-content">
+  <!-- Features blogs -->
+  <div class="flex gap-3">
+    <BlogCard />
+  </div>
+
+  <div class="grid grid-cols-3">
+    {
+      posts.slice(0, 3).map((post) => (
+        <article>
+          <h2>{post.data.title}</h2>
+          <p>{post.data.description}</p>
+          <a href={"/blog/" + post.slug}>Read more</a>
+        </article>
+      ))
+    }
+  </div>
+</div>
