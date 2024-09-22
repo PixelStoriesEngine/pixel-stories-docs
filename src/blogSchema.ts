@@ -7,6 +7,7 @@ import {
   type ZodString,
   type ZodUnion,
 } from "astro/zod";
+import type { SchemaContext } from "astro:content";
 
 export const blogAuthorSchema = z.object({
   /**
@@ -58,32 +59,16 @@ export const blogEntrySchema = ({ image }: SchemaContext) =>
      * An optional cover image for the blog post.
      */
     cover: z
-      .union([
-        z.object({
-          /**
-           * Alternative text describing the cover image for assistive technologies.
-           */
-          alt: z.string(),
-          /**
-           * Relative path to an image file in your project, e.g. `../../assets/cover.png`.
-           */
-          image: image(),
-        }),
-        z.object({
-          /**
-           * Alternative text describing the cover image for assistive technologies.
-           */
-          alt: z.string(),
-          /**
-           * Relative path to an image file in your project to use in dark mode, e.g. `../../assets/cover-dark.png`.
-           */
-          dark: image(),
-          /**
-           * Relative path to an image file in your project to use in light mode, e.g. `../../assets/cover-light.png`.
-           */
-          light: image(),
-        }),
-      ])
+      .object({
+        /**
+         * Alternative text describing the cover image for assistive technologies.
+         */
+        alt: z.string(),
+        /**
+         * Relative path to an image file in your project, e.g. `../../assets/cover.png`.
+         */
+        image: image(),
+      })
       .optional(),
     /**
      * Defines whether the blog post is featured or not.
@@ -111,12 +96,12 @@ If you believe this is a bug, please file an issue at https://github.com/HiDeoo/
 
 export type StarlightBlogAuthor = z.infer<typeof blogAuthorSchema>;
 
-interface SchemaContext {
-  image: ImageFunction;
-}
+// interface SchemaContext {
+//   image: ImageFunction;
+// }
 
 // https://github.com/withastro/astro/blob/7d597506615fa5a34327304e8321be7b9c4b799d/packages/astro/src/assets/types.ts#L34-L42
-type ImageFunction = () => ZodObject<{
+export type ImageFunction = () => ZodObject<{
   src: ZodString;
   width: ZodNumber;
   height: ZodNumber;

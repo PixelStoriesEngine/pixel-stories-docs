@@ -8,6 +8,12 @@ authors:
     url: https://github.com/ghost
 tags:
   - Starlight
+  - Test
+  - Some really long one
+  - On next line
+cover:
+  alt: Different covers in dark and light mode
+  image: ../../assets/images/assets-2.png
 ---
 
 hello

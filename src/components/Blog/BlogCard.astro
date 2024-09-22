@@ -1,11 +1,80 @@
 ---
-// interface Props {
+import { Image } from "astro:assets";
+import PlaceholderCover from "../../assets/images/placeholder-cover.jpg";
 
-// }
+interface Props {
+  cover?: {
+    alt: string;
+    // from astro image src prop
+    image: {
+      src: string;
+      width: number;
+      height: number;
+      format: "png" | "jpg" | "jpeg" | "tiff" | "webp" | "gif" | "svg" | "avif";
+    };
+  };
+  title: string;
+  date?: Date;
+  excerpt?: string;
+  tags?: string[];
+  url: string;
+}
 
-// const {
-
-// } = Astro.props;
+const { cover, title, date, tags, excerpt, url } = Astro.props;
 ---
 
-<div class="w-40 h-40 border">Blog card</div>
+<!-- This is an example component -->
+<div class="max-w-lg h-full mx-auto dark:text-white">
+  <div
+    class="shadow-lg h-full rounded-lg max-w-sm dark:border dark:border-gray-500"
+  >
+    <a href={url}>
+      <Image
+        class="rounded-t-lg max-w-full w-full h-[200px] object-cover"
+        src={cover?.image || PlaceholderCover}
+        alt={cover?.alt || "Placeholder cover"}
+      />
+    </a>
+
+    <div class="p-5">
+      <a href={url}>
+        <h5
+          class="font-bold text-2xl tracking-tight mb-2
+        hover:opacity-50"
+        >
+          {title}
+        </h5>
+      </a>
+
+      {
+        date && (
+          <p class="font-mono text-sm mb-1">
+            {date.toLocaleDateString("en-us", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })}
+          </p>
+        )
+      }
+
+      {excerpt && <p class="font-normal mb-3 line-clamp-4">{excerpt}</p>}
+
+      <div class="flex gap-2 flex-wrap">
+        {
+          tags?.map((tag) => (
+            <p class="text-sm border border-gray-300 dark:border-gray-500  p-1 px-2 w-max rounded-lg">
+              {tag}
+            </p>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+</style>
