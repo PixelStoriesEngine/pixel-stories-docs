@@ -47,9 +47,6 @@ pixel-art {
 
 img:not(.not-content) {
   min-width: 150px;
-}
-
-img:not(.not-content) {
   max-height: 65vh;
   object-fit: contain;
   width: min-content;
@@ -83,6 +80,7 @@ img:not(.not-content) {
 
 [data-has-hero] .hero > img {
   filter: drop-shadow(0 0 3rem var(--overlay-blurple));
+  width: min(100%, 25rem);
 }
 
 .social-icons::after {
