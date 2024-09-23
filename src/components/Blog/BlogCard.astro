@@ -23,14 +23,13 @@ interface Props {
 const { cover, title, date, tags, excerpt, url } = Astro.props;
 ---
 
-<!-- This is an example component -->
 <div class="max-w-lg h-full mx-auto dark:text-white">
   <div
     class="shadow-lg h-full rounded-lg max-w-sm dark:border dark:border-gray-500"
   >
     <a href={url}>
       <Image
-        class="rounded-t-lg max-w-full w-full h-[200px] object-cover"
+        class="not-content rounded-t-lg max-w-full w-full h-[200px] object-cover"
         src={cover?.image || PlaceholderCover}
         alt={cover?.alt || "Placeholder cover"}
       />
