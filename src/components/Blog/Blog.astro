@@ -10,7 +10,10 @@ const posts = await getCollection("blog");
 ---
 
 <div class="not-content">
-  <div class="grid grid-cols-3 gap-6">
+  <div
+    class="grid gap-6
+  grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:justify-center"
+  >
     {
       posts.map((post) => (
         <BlogCard
