@@ -84,3 +84,7 @@ img:not(.not-content) {
 [data-has-hero] .hero > img {
   filter: drop-shadow(0 0 3rem var(--overlay-blurple));
 }
+
+.social-icons::after {
+  display: none;
+}
