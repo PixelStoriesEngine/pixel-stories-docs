@@ -24,8 +24,8 @@ const { cover, title, date, tags, excerpt, url } = Astro.props;
 ---
 
 <div
-  class="max-w-lg w-full h-full shadow-lg rounded-lg
-  dark:text-white dark:border dark:border-gray-500"
+  class="not-content max-w-lg w-full h-full shadow-lg rounded-lg
+   dark:border dark:border-color-gray-5"
 >
   <a href={url}>
     <Image
@@ -38,8 +38,8 @@ const { cover, title, date, tags, excerpt, url } = Astro.props;
   <div class="p-5">
     <a href={url}>
       <h5
-        class="font-bold text-2xl tracking-tight mb-2
-        hover:opacity-50"
+        class="font-bold text-2xl mb-2 text-color-white
+        hover:opacity-70"
       >
         {title}
       </h5>
