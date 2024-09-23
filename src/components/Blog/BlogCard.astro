@@ -48,13 +48,13 @@ const { cover, title, date, tags, excerpt, url } = Astro.props;
 
       {
         date && (
-          <p class="font-mono text-sm mb-1">
+          <time class="font-mono text-sm mb-1">
             {date.toLocaleDateString("en-us", {
               year: "numeric",
               month: "short",
               day: "numeric",
             })}
-          </p>
+          </time>
         )
       }
 

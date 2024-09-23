@@ -21,26 +21,16 @@ export const blogAuthorSchema = z.object({
   /**
    * The URL or path to the author's picture.
    */
-  picture: z.string().optional(),
-  /**
-   * The URL to the author's website.
-   */
-  url: z.string().url().optional(),
+  picture: z.string(),
 });
 
 export const blogEntrySchema = ({ image }: SchemaContext) =>
   z.object({
     /**
      * The author(s) of the blog post.
-     * If not provided, the authors will be inferred from the `authors` configuration option if defined.
+     * The authors will be inferred from the `authors` configuration option if defined.
      */
-    authors: z
-      .union([
-        z.string(),
-        blogAuthorSchema,
-        z.array(z.union([z.string(), blogAuthorSchema])),
-      ])
-      .optional(),
+    author: z.string().optional(),
     /**
      * The date of the blog post which must be a valid YAML timestamp.
      * @see https://yaml.org/type/timestamp.html
@@ -118,3 +108,14 @@ export type ImageFunction = () => ZodObject<{
     ]
   >;
 }>;
+
+export const AUTHORS: Record<string, StarlightBlogAuthor> = {
+  default: {
+    name: "Pixel Stories Team",
+    picture: "https://avatars.githubusercontent.com/u/175058849?s=200&v=4",
+  },
+  Truman: {
+    name: "Truman Gao",
+    picture: "https://avatars.githubusercontent.com/u/106889354?v=4",
+  },
+};

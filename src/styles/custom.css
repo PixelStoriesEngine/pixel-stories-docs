@@ -45,11 +45,11 @@ pixel-art {
   image-rendering: pixelated;
 }
 
-img {
+img:not(.not-content) {
   min-width: 150px;
 }
 
-img {
+img:not(.not-content) {
   max-height: 65vh;
   object-fit: contain;
   width: min-content;

@@ -1,0 +1,38 @@
+---
+import { AUTHORS, type StarlightBlogAuthor } from "../../blogSchema";
+import { Image } from "astro:assets";
+
+interface Props {
+  author?: string;
+  date?: Date;
+}
+
+const { author: authorKey = "", date } = Astro.props;
+
+const author = AUTHORS[authorKey] || AUTHORS.default; // fallback to default author, i.e. Pixel Stories Team
+---
+
+<div class="not-content flex gap-3 items-center">
+  <Image
+    class="not-content rounded-full object-cover w-[40px] h-[40px]"
+    src={author.picture}
+    alt={author.title || "The author of this post"}
+    width={40}
+    height={40}
+  />
+
+  <div class="flex flex-col">
+    <p class="font-medium text-sm">By {author.name}</p>
+    {
+      date && (
+        <time class="font-mono text-sm" datetime={date.toDateString()}>
+          {date.toLocaleDateString("en-us", {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+          })}
+        </time>
+      )
+    }
+  </div>
+</div>
