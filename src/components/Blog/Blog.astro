@@ -9,22 +9,51 @@ import { getCollection } from "astro:content";
 const posts = await getCollection("blog");
 ---
 
-<div class="not-content">
-  <div
-    class="grid gap-6
-  grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:justify-center"
-  >
-    {
-      posts.map((post) => (
-        <BlogCard
-          cover={post.data.cover}
-          title={post.data.title}
-          date={post.data.date}
-          excerpt={post.data.excerpt}
-          tags={post.data.tags}
-          url={"/blog/" + post.slug}
-        />
-      ))
-    }
+<div class="not-content flex flex-col gap-14 mt-6">
+  <div class="flex flex-col gap-8">
+    <h1 class="font-medium text-3xl">Pixel Stories News</h1>
+    <div
+      class="grid gap-6
+    grid-cols-2 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:justify-center"
+    >
+      {
+        posts
+          .slice(0, 2)
+          .map((post) => (
+            <BlogCard
+              cover={post.data.cover}
+              title={post.data.title}
+              date={post.data.date}
+              excerpt={post.data.excerpt}
+              tags={post.data.tags}
+              url={"/blog/" + post.slug}
+              largeCover
+            />
+          ))
+      }
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-2">
+    <h2 class="font-medium">Latest posts</h2>
+    <div
+      class="grid gap-6
+    grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:justify-center"
+    >
+      {
+        posts
+          .slice(2)
+          .map((post) => (
+            <BlogCard
+              cover={post.data.cover}
+              title={post.data.title}
+              date={post.data.date}
+              excerpt={post.data.excerpt}
+              tags={post.data.tags}
+              url={"/blog/" + post.slug}
+            />
+          ))
+      }
+    </div>
   </div>
 </div>
