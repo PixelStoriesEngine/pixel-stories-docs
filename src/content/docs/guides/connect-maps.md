@@ -15,4 +15,7 @@ Transfer Player will be used primarily as part of an event group. Most often, af
 
 You can add the Transfer Player event when you add a game event in an event group. You can also add it under a conditional event. After you add Transfer Player event, in the drop down menu, you can choose the Map to transfer the player to. Keep in mind, you will have to have created the maps already under the Map tab. 
 
+![img](../../../assets/images/unlock-door-event.png "The event group for unlocking door.")
+
 In the Fetch Quest, we used the Transfer Player function to move the player through a door after obtaining a key from a rock. You can refer to that tutorial to see a detailed example in how we used the function under a conditional event.
+
