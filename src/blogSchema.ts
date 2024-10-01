@@ -32,7 +32,7 @@ export const blogEntrySchema = ({ image }: SchemaContext) =>
      */
     author: z.string().optional(),
     /**
-     * The date of the blog post which must be a valid YAML timestamp.
+     * The publish date of the blog post which must be a valid YAML timestamp.
      * @see https://yaml.org/type/timestamp.html
      */
     date: z.date(),
