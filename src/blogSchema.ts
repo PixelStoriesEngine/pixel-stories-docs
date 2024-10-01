@@ -110,7 +110,7 @@ export type ImageFunction = () => ZodObject<{
 }>;
 
 export const AUTHORS: Record<string, StarlightBlogAuthor> = {
-  default: {
+  Team: {
     name: "Pixel Stories Team",
     picture: "https://avatars.githubusercontent.com/u/175058849?s=200&v=4",
   },

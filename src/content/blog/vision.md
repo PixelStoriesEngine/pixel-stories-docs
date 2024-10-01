@@ -1,6 +1,6 @@
 ---
 title: Introducing Pixel Stories
-date: 2020-10-10
+date: 2020-10-11
 excerpt: What am I building? Why
 author: Truman
 tags:
