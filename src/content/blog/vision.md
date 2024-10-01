@@ -1,7 +1,7 @@
 ---
 title: Introducing Pixel Stories
 date: 2020-10-11
-excerpt: What am I building? Why
+excerpt: What am I building and why do we need another game engine?
 author: Truman
 tags:
   - news
@@ -10,59 +10,26 @@ cover:
   image: ../../assets/images/introduce.png
 ---
 
-## What are we building?
+I’m excited to introduce something I’ve been working on over the past year: Pixel Stories — a modern, no-code engine built specifically for story-rich games.
 
-We are building a platform that lets anybody play and create interactive story-driven RPGs.
+### What is Pixel Stories?
 
-Great stories can be told through 2D role-playing games. There are many examples of this,
-including [Undertale](https://store.steampowered.com/app/391540/Undertale/), [Lisa](https://store.steampowered.com/app/335670/LISA_The_Painful/), and [Omori](https://store.steampowered.com/app/1150690/OMORI/).
+Pixel Stories is a web-based game engine that empowers creators to easily build immersive, story-driven games. Whether you’re an indie developer, writer, or artist, Pixel Stories lets you bring your story game ideas to life without the usual technical hurdles.
 
-What makes these narratives distinct is their interactive nature, which fully immerses the player.
+### Why Do We Need Another Game Engine?
 
-We want to give anyone the power to tell their story in an interactive medium.
+Most existing no-code engines, like [RPG Maker](https://www.rpgmakerweb.com), are often too restrictive for creating unique, story-driven games. They tend to lock creators into specific styles or require challenging workarounds for customization.
 
-To do this we are building a new tool that makes it easy to create story-driven RPGs.
+Pixel Stories was built to offer more freedom and flexibility while staying easy to use and intuitive. It allows you to build top-down 2D story-driven games without the complexity of AAA game engines or the restrictiveness of outdated no-code engines.
 
-## The story editor
+We need a modern engine that’s intuitive, adaptable, and supports creativity — and that’s exactly what Pixel Stories delivers.
 
-Our platform consists of a story editor and a limitless catalog of community-made stories.
+### Who is Pixel Stories For?
 
-The story editor gives you powerful tools to edit the dialog sequences, characters, scenery, and multiple story paths.
+Pixel Stories is made for creating story-driven games. Whether you're an indie game developer, writer, artist, or narrative designer, this engine makes it straight forward to bring your story game idea to life.
 
-The idea is that we will handle the logic, behaviors, graphics, and music, so that you can just focus on crafting a rich narrative.
+The engine is designed to be easy to use, with a focus on building 2D top-down, story-driven games. If that's what you're interested in, then Pixel Stories will be the best way to create that type of game.
 
-Imagine the seamless building experience in [Minecraft](https://www.minecraft.net) or [Factorio](https://www.factorio.com), but focused on interactive stories.
+### Let’s Build It Together
 
-## What makes the stories fun?
-
-Besides playing through rich narratives and building stories, these are some other fun features:
-
-For story builders
-
-- Build multiple story paths and endings
-- Extend another person's story by branching it
-
-For story players
-
-- Play through rich and interactive narratives
-- Choices can control the plot and influence the ending
-
-## Join us
-
-I'm really excited to share this platform with you and to curate a community of interactive story writers.
-
-This project is still in development, but we will notify you once we release early access.
-
-Join the waitlist and you'll be the first to try it out: [mypixelstories.com](https://www.mypixelstories.com/).
-
-## Note on Default Assets
-
-I want to faciliate creativity with unique games that have unique styles. But I also know that default assets are important for people without the artistic resources or just looking to test the engine. So if you choose to use default assets, they are seamless to replace with custom art once it’s ready.
-
-## Let's Build It Together
-
-The engine is free and you can jump right in at [https://pixelstories.io](https://pixelstories.io)
-
-Let me know what you think! I hope the Pixel Stories Engine a breath of fresh air and a step in the right direction. (If it’s not, please let me know why as well!) You can find me by email at truman@pixelstories.io.
-
-If you’d like to help drive the development, I am also active on Discord (https://discord.gg/XN9EaUh26g) where you can offer some suggestions, feedback, or just follow along the engine development journey. Thanks for checking it out!
+The engine is free, and you can try it out now at [pixelstories.io](https://pixelstories.io). I’d love to hear your thoughts! You can also join the conversation on our [official Discord](https://discord.gg/XN9EaUh26g) to help shape the future of Pixel Stories.
