@@ -1,8 +1,8 @@
 ---
 title: Welcome to the Blog!
-date: 2024-10-11
+date: 2024-10-01
 excerpt: Stay in the loop on the latest works in progress and features updates.
-author: Team
+author: Truman
 tags:
   - news
 ---

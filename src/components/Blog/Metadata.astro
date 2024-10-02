@@ -10,6 +10,10 @@ interface Props {
 const { author: authorKey = "", date } = Astro.props;
 
 const author = AUTHORS[authorKey] || AUTHORS.Team; // fallback to default author, i.e. Pixel Stories Team
+
+console.log(date);
+
+const dateString = new Date(date || "");
 ---
 
 <div class="not-content flex gap-3 items-center">
@@ -25,11 +29,12 @@ const author = AUTHORS[authorKey] || AUTHORS.Team; // fallback to default author
     <p class="font-medium text-sm">By {author.name}</p>
     {
       date && (
-        <time class="font-mono text-sm" datetime={date.toDateString()}>
-          {date.toLocaleDateString("en-us", {
+        <time class="font-mono text-sm" datetime={dateString.toDateString()}>
+          {dateString.toLocaleDateString("en-us", {
             year: "numeric",
             month: "short",
             day: "numeric",
+            timeZone: "UTC",
           })}
         </time>
       )
