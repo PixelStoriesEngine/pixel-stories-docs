@@ -7,19 +7,21 @@ import { getCollection } from "astro:content";
 // Requires the name of the collection as an argument.
 // Example: retrieve `src/content/blog/**`
 const posts = await getCollection("blog");
+
+const featured = posts.filter((p) => p.data.featured);
+const latest = posts.filter((p) => !p.data.featured);
 ---
 
-<div class="not-content flex flex-col gap-14 mt-6">
-  <div class="flex flex-col gap-8">
-    <h1 class="font-medium text-3xl">Pixel Stories News</h1>
-    <div
-      class="grid gap-6
+<div class="not-content flex flex-col gap-14 mt-6 min-h-[70vh]">
+  {
+    !!featured.length && (
+      <div class="flex flex-col gap-8">
+        <h1 class="font-medium text-3xl">Pixel Stories News</h1>
+        <div
+          class="grid gap-6
     grid-cols-2 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:justify-center"
-    >
-      {
-        posts
-          .slice(0, 2)
-          .map((post) => (
+        >
+          {featured.map((post) => (
             <BlogCard
               cover={post.data.cover}
               title={post.data.title}
@@ -29,10 +31,11 @@ const posts = await getCollection("blog");
               url={"/blog/" + post.slug}
               largeCover
             />
-          ))
-      }
-    </div>
-  </div>
+          ))}
+        </div>
+      </div>
+    )
+  }
 
   <div class="flex flex-col gap-2">
     <h2 class="font-medium">Latest posts</h2>
@@ -41,18 +44,16 @@ const posts = await getCollection("blog");
     grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:justify-center"
     >
       {
-        posts
-          .slice(2)
-          .map((post) => (
-            <BlogCard
-              cover={post.data.cover}
-              title={post.data.title}
-              date={post.data.date}
-              excerpt={post.data.excerpt}
-              tags={post.data.tags}
-              url={"/blog/" + post.slug}
-            />
-          ))
+        latest.map((post) => (
+          <BlogCard
+            cover={post.data.cover}
+            title={post.data.title}
+            date={post.data.date}
+            excerpt={post.data.excerpt}
+            tags={post.data.tags}
+            url={"/blog/" + post.slug}
+          />
+        ))
       }
     </div>
   </div>
