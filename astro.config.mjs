@@ -29,8 +29,9 @@ export default defineConfig({
       },
       components: {
         // Override the default `SocialIcons` component.
-        SocialIcons: "./src/components/NavButtons.astro",
-        Hero: "./src/components/NoTitleHero.astro",
+        SocialIcons: "./src/overrides/SocialIcons.astro",
+        Hero: "./src/overrides/Hero.astro",
+        ThemeSelect: "./src/overrides/ThemeSelect.astro",
       },
       editLink: {
         baseUrl: "https://github.com/PixelStoriesEngine/pixel-stories-docs",
@@ -47,10 +48,6 @@ export default defineConfig({
             {
               label: "Getting Started",
               link: "/getting-started/",
-            },
-            {
-              label: "Why Pixel Stories?",
-              link: "/why-pixel-stories/",
             },
             {
               label: "Default Assets",

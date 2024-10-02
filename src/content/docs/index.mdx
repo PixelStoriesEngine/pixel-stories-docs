@@ -22,6 +22,7 @@ hero:
 editUrl: false
 ---
 
+import Footer from "../../components/Footer.astro";
 import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 
 <div style="display:flex;flex-direction:column;align-items:center;text-align:center;">
@@ -69,7 +70,7 @@ import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 
 </div>
 
-<div style="display:flex;flex-direction:column;gap:12px;max-width:800px;margin:100px auto;">
+<div style="display:flex;flex-direction:column;gap:12px;max-width:800px;margin:0px auto;">
 
 <h3 style="text-align:center;">Start Your Creation Journey Today</h3>
 
@@ -94,6 +95,4 @@ import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 
 </div>
 
-<code style="text-align:center;background:transparent;">
-  © 2024 Pixel Stories - <a href="/terms">Terms of Use & Privacy</a>
-</code>
+<Footer />

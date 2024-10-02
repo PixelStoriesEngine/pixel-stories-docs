@@ -1,0 +1,60 @@
+---
+import { Icon } from "@astrojs/starlight/components";
+import StarlightThemeSelect from "@astrojs/starlight/components/ThemeSelect.astro";
+import type { Props } from "@astrojs/starlight/props";
+---
+
+<div class="flex gap-2 gap-x-4 w-max font-medium h-full mr-2">
+  <a href="/blog" class="action sl-flex">News</a>
+
+  <a href="/getting-started" class="action sl-flex">Docs</a>
+
+  <a href="/pricing" class="action sl-flex">Pricing</a>
+</div>
+
+<div class="divider">
+  <a
+    href="https://app.pixelstories.io"
+    class="btn-primary p-1.5 px-2.5 mr-1 gap-1 text-sm hover:opacity-90 transition-all"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Launch engine
+    <Icon name="external" size="1.25rem" />
+  </a>
+</div>
+
+<StarlightThemeSelect {...Astro.props}>
+  <slot />
+</StarlightThemeSelect>
+
+<style>
+  .action {
+    gap: 0.5em;
+    align-items: center;
+    border-radius: 999rem;
+    padding: 0.25rem 0.5rem;
+    color: var(--sl-color-gray-2);
+    line-height: 1.1875;
+    text-decoration: none;
+    font-size: var(--sl-text-sm);
+
+    transition: opacity 250ms;
+  }
+
+  .action:hover {
+    opacity: 0.75;
+  }
+
+  .divider {
+    border-inline-end: 1px solid var(--sl-color-gray-5);
+    padding-inline-end: 1rem;
+  }
+
+  @media (min-width: 50rem) {
+    .action {
+      font-size: var(--sl-text-sm);
+      padding: 0.25rem 0.25rem;
+    }
+  }
+</style>
