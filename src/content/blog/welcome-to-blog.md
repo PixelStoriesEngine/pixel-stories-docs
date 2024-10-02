@@ -1,16 +1,19 @@
 ---
 title: Welcome to the Blog!
 date: 2024-10-11
-excerpt: Let's stay connected with the latest news, updates, and announcements.
+excerpt: Stay in the loop on the latest works in progress and features updates.
 author: Team
 tags:
   - news
 ---
 
-We’re thrilled to have you here! This blog is your go-to source for all things Pixel Stories, keeping you updated on the latest developments as we build the engine.
+Today I'm adding a blog to Pixel Stories! The purpose of this blog is to keep our community updated on the latest developments as we build the engine.
 
-Pixel Stories is constantly evolving with new features and improvements being developed every week.
+### Why Have a Blog?
 
-We want to keep our community informed and engaged as the engine grows. That’s why we’ve created this blog — to bring you the latest news, updates, and insights.
+Pixel Stories started as passion project which has now evolved into a game engine built for story-driven games. I've been working on it for the past year and a half, continously improving the engine and adding features. About a week ago, I realized that there was no way for someone to see how the app has progressed since it's conception.
 
-Stay in the loop for exciting new features, behind-the-scenes looks, and progress updates as we continue to build Pixel Stories together!
+That's why I added this blog to the website. I plan to use this blog as a medium to share exciting new
+features as well as showcasing work in progress and keeping a change log.
+
+Thank you for the overwhelming support thus far for Pixel Stories! I'm looking forward to what the future holds.
