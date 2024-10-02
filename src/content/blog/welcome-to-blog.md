@@ -11,7 +11,7 @@ Today I'm adding a blog to Pixel Stories! The purpose of this blog is to keep ou
 
 ### Why Have a Blog?
 
-Pixel Stories started as passion project which has now evolved into a game engine built for story-driven games. I've been working on it for the past year and a half, continously improving the engine and adding features. About a week ago, I realized that there was no way for someone to see how the app has progressed since it's conception.
+Pixel Stories started as passion project which has now evolved into a game engine built for story-driven games. I've been working on it for the past year and a half, continously improving the engine and adding features. About a week ago, I realized that there was no way for someone to see how the engine has progressed since it's conception.
 
 That's why I added this blog to the website. I plan to use this blog as a medium to share exciting new
 features as well as showcasing work in progress and keeping a change log.
