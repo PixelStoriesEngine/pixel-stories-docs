@@ -1,5 +1,5 @@
 ---
-title: Asset Management
+title: Game Assets
 description: How game asset management works in Pixel Stories
 ---
 

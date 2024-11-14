@@ -100,8 +100,8 @@ export default defineConfig({
               link: "/features/map-editor/",
             },
             {
-              label: "Asset Management",
-              link: "/features/asset-management/",
+              label: "Game Assets",
+              link: "/features/game-assets/",
             },
           ],
         },

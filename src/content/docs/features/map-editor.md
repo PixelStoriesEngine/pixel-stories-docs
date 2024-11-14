@@ -7,7 +7,7 @@ The following sections explain how the map editor in Pixel Stories works. The ke
 
 ## Terrains
 
-In Pixel Stories, terrains are created by providing a source tileset and selecting the type. You can find more about how to import terrains from tilesets in the [Asset Management Doc](/features/asset-management/#map-terrains).
+In Pixel Stories, terrains are created by providing a source tileset and selecting the type. You can find more about how to import terrains from tilesets in the [Asset Management Doc](/features/game-assets/#map-terrains).
 
 ### Auto Tiling
 
