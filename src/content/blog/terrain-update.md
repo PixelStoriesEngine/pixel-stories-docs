@@ -15,7 +15,7 @@ With our latest update, creating terrain and editing the map in the editor gets 
 
 You can now place individual tiles directly on the map using an expandedable "single tile tileset." This feature is ideal for adding variety to your terrain, such as different grass or stone tiles and details that don’t align well with autotiling—like waterfalls, staircases, rocks, signs, and flower pots.
 
-Implementing a way to place single tiles also made it possible to fill in a terrain. In the example below, the water with land borders is the auto tile and the grass interior is made up of single green tiles. Without single tile placement, you would have had to hack it in by creating a solid color auto tile.
+Implementing a way to place single tiles also made it possible to fill in a terrain. In the example below, the water with land borders is the auto-tile and the grass interior is made up of single green tiles. Without single tile placement, you would have had to hack it in by creating a solid color auto-tile.
 
 **Note**: If you’re placing tiles that players should walk behind, use the [Map Objects feature](https://pixelstories.io/features/map-editor/#map-objects) instead!
 
@@ -41,17 +41,17 @@ We’ve streamlined the workflow for creating terrain. The updated UI allows for
 
 </div>
 
-### Support for Blob, Wang, and RPG Maker Autotiles
+### Support for Blob, Wang, and RPG Maker Auto-tiles
 
-The editor now supports Blob, Wang, and RPG Maker tileset formats. The good thing about these formats is that I found them to be the most widely used and you can easily transform into them if your tileset isn't in that specific format. If you believe another autotile format should be added which I've missed, let me know in our [official Discord](https://discord.gg/XN9EaUh26g)!
+The editor now supports Blob, Wang, and RPG Maker tileset formats. The good thing about these formats is that I found them to be the most widely used and you can easily transform into them if your tileset isn't in that specific format. If you believe another auto-tile format should be added which I've missed, let me know in our [official Discord](https://discord.gg/XN9EaUh26g)!
 
 ### Change Log
 
 Added
 
 - [Map terrains, Editor] Expandable single tile tileset and individual tile placement
-- [Map terrains] New modal for creating auto tile terrains with clear format mode selection
-- [Map terrains] Support for blob auto tile format
+- [Map terrains] New modal for creating auto-tile terrains with clear format mode selection
+- [Map terrains] Support for blob auto-tile format
 - [Editor] Zoom in and out in editor (ctrl + scroll wheel)
 
 Changed
@@ -62,7 +62,7 @@ Changed
 
 Fixed
 
-- [Map terrains] Fix “Wang” format incorrectly generating the auto tileset at corners
+- [Map terrains] Fix “Wang” format incorrectly generating the auto-tileset at corners
 - [Editor] Restarting game did not properly signal for UI updates
 - [Terrain layers, Editor] Drawing on hidden terrain layers
 - [Customize Dialog] Game camera moving when customizing dialog box

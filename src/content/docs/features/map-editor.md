@@ -33,7 +33,7 @@ Each map has a defined tile size. The tile size can be any size (i.e. 16px, 32px
 
 ### Auto Tiling
 
-Once the terrain is created, an auto tileset is generated in the background and the terrain can now be drawn into the map! Auto tiling uses the auto tileset and determines how each tile connects with its neighboring tiles.
+Once the terrain is created, an auto-tileset is generated in the background and the terrain can now be drawn into the map! Auto tiling uses the auto-tileset and determines how each tile connects with its neighboring tiles.
 
 <div style="max-width:400px;">
 

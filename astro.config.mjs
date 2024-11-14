@@ -49,10 +49,6 @@ export default defineConfig({
               label: "Getting Started",
               link: "/getting-started/",
             },
-            {
-              label: "Default Assets",
-              link: "/assets/",
-            },
           ],
         },
         {
