@@ -15,7 +15,7 @@ With our latest update, creating terrain and editing the map in the editor gets 
 
 You can now place individual tiles directly on the map using an expandedable "single tile tileset." This feature is ideal for adding variety to your terrain, such as different grass or stone tiles and details that don’t align well with autotiling—like waterfalls, staircases, rocks, signs, and flower pots.
 
-Implementing a way to place single tiles also made it possible to fill in a terrain. In the example below, the water with land borders is the auto-tile and the grass interior is made up of single green tiles. Without single tile placement, you would have had to hack it in by creating a solid color auto-tile.
+Adding a way to place single tiles also made it possible to fill in a terrain. In the example below, the water with land borders is the auto-tile and the grass interior is made up of single green tiles. Without single tile placement, you would have had to hack it in by creating a solid color auto-tile.
 
 **Note**: If you’re placing tiles that players should walk behind, use the [Map Objects feature](https://pixelstories.io/features/map-editor/#map-objects) instead!
 

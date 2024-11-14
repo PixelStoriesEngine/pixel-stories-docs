@@ -60,6 +60,8 @@ Choosing between Wang, Blob, or RPG Maker formats ultimately depends on your nee
 
 ### Single Tile Placement
 
+The "single tile tileset" allows you to place individual tiles on the map. This is useful for adding non-autotile details, such as staircases, rocks, signs, and variations in terrain. It also simplifies terrain filling; for example, you can use single green tiles to fill a grass interior within a water-bordered autotile.
+
 Single tile placement is designed to keep your game organized and scalable. Start by adding only the tiles you need in one tileset and then expand to the right and down as your game grows. This way, you can add tiles incrementally as your game grows.
 
 <div style="max-width:300px;">
