@@ -4,7 +4,7 @@ date: 2024-10-01
 excerpt: Stay in the loop on the latest works in progress and features updates.
 author: Truman
 tags:
-  - news
+  - NEWS
 ---
 
 Today I'm adding a blog to Pixel Stories! The purpose of this blog is to keep our community updated on the latest developments as we build the engine.
