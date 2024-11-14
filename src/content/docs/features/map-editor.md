@@ -3,37 +3,15 @@ title: Map Editor
 description: Using the map editor with Pixel Stories
 ---
 
-The following sections explain how the map editor in Pixel Stories works. The key features include terrains, auto tiling, terrain layers, map objects, and collisions. They all work together to create beautiful, interesting, and dynamic game maps.
+The following sections explain how the map editor in Pixel Stories works. The key features include terrains, auto tiling, terrain layers, map objects, and collisions.
 
 ## Terrains
 
-In Pixel Stories, terrains are created by providing a source tileset and selecting the type. We currently support 4 types of tilesets.
-
-<pixel-art>
-
-Basic
-![](../../../assets/images/basic-border.png)
-
-Basic full (includes extra tile for border detail)
-![](../../../assets/images/basic-full-border.png)
-
-RPG Maker
-![](../../../assets/images/rpgmaker.png)
-
-<div style="max-width:400px;">
-
-Wang
-![](../../../assets/images/map-editor.png)
-
-</div>
-
-</pixel-art>
-
-Each map has a defined tile size. The tile size can be any size (i.e. 16px, 32px, 48px, 64px, even 12px). Add tilesets imported in the map must have the same tile size as the map. For instance, a 32px tile size map should only use 32px tilesets to create terrains. Keep in mind, different maps can have different tile sizes.
+In Pixel Stories, terrains are created by providing a source tileset and selecting the type. You can find more about how to import terrains from tilesets in the [Asset Management Doc](/features/asset-management/#map-terrains).
 
 ### Auto Tiling
 
-Once the terrain is created, an auto-tileset is generated in the background and the terrain can now be drawn into the map! Auto tiling uses the auto-tileset and determines how each tile connects with its neighboring tiles.
+Once you've created a terrain, the terrain can now be drawn into the map! The auto tiling will determine how each tile connects with its neighboring tiles.
 
 <div style="max-width:400px;">
 
@@ -43,37 +21,41 @@ Once the terrain is created, an auto-tileset is generated in the background and 
 
 ### Terrain Layers
 
-You also have full control of the layers and how tiles should be placed on top of each other.
+Our terrain layers allow you to have full control of your layers for your map. This gives you a lot of freedom, but the following is a structure we found to work will in organizing your layers.
 
-<div style="max-width:275px">
+1. Details Layer: Use this layer for details like small plants, rocks, or for adding variety to ground tiles.
 
-![](../../../assets/images/map-editor-3.png)
+2. Ground Layer: This is where the main tiles for terrains, walking surfaces, floors, and walls.
 
-</div>
+**Note:** All terrain layers will sit below the player. For any tiles which the player should be able to walk behind (trees, large rocks, houses), add them as [Map Objects](#map-objects).
 
-When you use tiles without borders, you can place them on top of a layer and they will fit in seamlessly. This feature is very useful if you want to connect multiple terrains.
+<div style="max-width:300px">
 
-<div style="max-width:400px;">
-
-![](../../../assets/images/map-editor-2.png)
+![Terrain layers](../../../assets/images/terrain-layers.png)
 
 </div>
 
 ## Map Objects
 
-Each map object is individually added into the game. Instead of building on top of a tileset, when you have a new object to add, you simply add the asset in.
+Map objects are a separate entity from map terrains. They are able to be placed anywhere on the map, not forced to sit on a particular tile, They are also whole sprites, not built up from multiple single tiles.
 
-<div style="max-width:275px">
+Map objects have depth sorting automatically handled, so the player properly goes in front and behind objects accordingly.
 
-![](../../../assets/images/map-editor-5.png)
+In the example below, you can see the ghost player can be both behind and infront of the tree.
+
+<div style="display:flex; gap:4px; width:100%; align-items:end; overflow:hidden;">
+
+<div style="max-width:300px;">
+
+![](../../../assets/images/player-infront-tree.png)
 
 </div>
 
-When you place the object in the map, depth sorting is automatically handled. Meaning any actors or player will show behind the map object.
+<div style="max-width:300px;">
 
-<div style="max-width:275px">
+![](../../../assets/images/player-behind-tree.png)
 
-![](../../../assets/images/map-editor-5.png)
+</div>
 
 </div>
 

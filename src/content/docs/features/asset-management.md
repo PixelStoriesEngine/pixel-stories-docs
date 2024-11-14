@@ -1,6 +1,6 @@
 ---
-title: Game Asset Management
-description: How asset management works in Pixel Stories
+title: Asset Management
+description: How game asset management works in Pixel Stories
 ---
 
 Asset management in Pixel Stories is designed to help users effectively manage all types of game assets. Game assets include images, animations, actors, sounds/music, and variables.
@@ -9,7 +9,7 @@ Uploading assets into Pixel Stories is designed to be simple. Each asset is indi
 
 ## Map Terrains
 
-The following describe how map terrain assets work in Pixel Stories.
+Auto tiling works by creating map terrains in Pixel Stories. Each map has a defined tile size. The tile size can be any size (i.e. 16px, 32px, 48px, 64px, even 12px). The tilesets used in the map must use the same tile size. For instance, a 32px tile size map should only use 32px tilesets to create terrains.
 
 ### Auto-tile Terrains Format
 
