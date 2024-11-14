@@ -92,12 +92,12 @@ export default defineConfig({
               link: "/features/events-system/",
             },
             {
-              label: "Map Editor",
-              link: "/features/map-editor/",
-            },
-            {
               label: "Variables and Branching",
               link: "/features/variables-and-branching/",
+            },
+            {
+              label: "Map Editor",
+              link: "/features/map-editor/",
             },
             {
               label: "Asset Management",
