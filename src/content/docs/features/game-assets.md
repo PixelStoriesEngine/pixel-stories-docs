@@ -15,30 +15,38 @@ Auto tiling works by creating map terrains in Pixel Stories. Each map has a defi
 
 In Pixel Stories, terrains are created by providing a source tileset and selecting the format. Below are the three formats, each with a template and an example:
 
-TODO: Replace images with one example showing template and one with real terrain
+<br/>
 
 <pixel-art>
 
-<div style="max-width:400px;">
+<div style="max-width:300px; display:flex; align-items:end; gap:4px;">
 
-Wang
-![](../../../assets/images/map-editor.png)
+**RPG Maker**
+![](../../../assets/images/rpgmaker-preview.png)
 
-</div>
-
-<div style="max-width:400px;">
-
-Blob
-![](../../../assets/images/map-editor.png)
+![](../../../assets/images/rpgmaker-example.png)
 
 </div>
 
-<div style="max-width:400px;">
+<div style="max-width:300px; display:flex; align-items:end; gap:4px;">
 
-RPG Maker
-![](../../../assets/images/map-editor.png)
+**Wang**
+![](../../../assets/images/wang.png)
+
+![](../../../assets/images/wang-example.png)
 
 </div>
+
+<div style="max-width:300px; display:flex; align-items:end; gap:4px;">
+
+**Blob**
+![](../../../assets/images/blob.png)
+
+![](../../../assets/images/blob-example.png)
+
+</div>
+
+</pixel-art>
 
 ### How do I use the auto-tile templates?
 
@@ -46,13 +54,19 @@ In the auto-tile template, the light gray areas represent the interior of the te
 
 **Note:** In RPG Maker, the first tile doesn’t affect the terrain, as it’s only a thumbnail.
 
-### Which do I choose: Wang, Blob, or RPG Maker format?
+### Wang, Blob, or RPG Maker format?
 
 Choosing between Wang, Blob, or RPG Maker formats ultimately depends on your needs. All three formats produce the same result, an auto-tile terrain. They exist to make importing existing assets easier. If you’re starting from scratch, go with the format you feel most comfortable drawing in. Otherwise, use the one which is the easily rearrange your tileset into.
 
 ### Single Tile Placement
 
-Single tile placement is designed to keep your game organized and scalable. Start by adding only the tiles you need in one tileset and then expand to the right and down as your game grows. This method allows you to build efficiently, adding tiles incrementally rather than overwhelming your setup from the start.
+Single tile placement is designed to keep your game organized and scalable. Start by adding only the tiles you need in one tileset and then expand to the right and down as your game grows. This way, you can add tiles incrementally as your game grows.
+
+<div style="max-width:300px;">
+
+![Single tile placement](../../../assets/images/single-tile-placement.png)
+
+</div>
 
 ## Animations
 
