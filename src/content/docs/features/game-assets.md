@@ -54,7 +54,11 @@ Choosing between Wang, Blob, or RPG Maker formats ultimately depends on your nee
 
 Single tile placement is designed to keep your game organized and scalable. Start by adding only the tiles you need in one tileset and then expand to the right and down as your game grows. This method allows you to build efficiently, adding tiles incrementally rather than overwhelming your setup from the start.
 
-## Animations Format
+## Animations
+
+Pixel Stories supports player and character animations through sprite strips.
+
+### Sprite Format
 
 To import animations, they must be in the format of single row sprite strips. Such as the one below.
 
@@ -68,7 +72,11 @@ If you asset came in a spritesheet grid, you can use a spritesheet editing tool 
 
 The engine does not currently support animations that come in a GIF format. To use a gif, [EZGif gif to spritesheet](https://ezgif.com/gif-to-sprite) can convert to a sprite strip.
 
-## File Types
+## Audio and Images
+
+Audio and images can also be imported into your game in Pixel Stories.
+
+### File Types
 
 Since our game engine is web-based, we can automatically support a wide range of file types. The following are what's supported.
 
