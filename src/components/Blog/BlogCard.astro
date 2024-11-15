@@ -65,7 +65,7 @@ const { cover, title, date, tags, excerpt, url, largeCover } = Astro.props;
     <div class="flex gap-2 flex-wrap">
       {
         tags?.map((tag) => (
-          <p class="text-sm border border-gray-300 dark:border-gray-500  p-1 px-2 w-max rounded-lg">
+          <p class="text-xs border border-gray-300 dark:border-gray-500  p-1 px-2 w-max rounded-lg">
             {tag}
           </p>
         ))

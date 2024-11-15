@@ -49,10 +49,6 @@ export default defineConfig({
               label: "Getting Started",
               link: "/getting-started/",
             },
-            {
-              label: "Default Assets",
-              link: "/assets/",
-            },
           ],
         },
         {
@@ -96,16 +92,16 @@ export default defineConfig({
               link: "/features/events-system/",
             },
             {
-              label: "Map Editor",
-              link: "/features/map-editor/",
-            },
-            {
               label: "Variables and Branching",
               link: "/features/variables-and-branching/",
             },
             {
-              label: "Asset Management",
-              link: "/features/asset-management/",
+              label: "Map Editor",
+              link: "/features/map-editor/",
+            },
+            {
+              label: "Game Assets",
+              link: "/features/game-assets/",
             },
           ],
         },
