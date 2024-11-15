@@ -21,7 +21,7 @@ In Pixel Stories, terrains are created by providing a source tileset and selecti
 
 <div style="max-width:300px; display:flex; align-items:end; gap:4px;">
 
-**RPG Maker**
+**RPG Maker format**
 ![](../../../assets/images/rpgmaker-preview.png)
 
 ![](../../../assets/images/rpgmaker-example.png)
@@ -30,7 +30,7 @@ In Pixel Stories, terrains are created by providing a source tileset and selecti
 
 <div style="max-width:300px; display:flex; align-items:end; gap:4px;">
 
-**Wang**
+**Wang format**
 ![](../../../assets/images/wang.png)
 
 ![](../../../assets/images/wang-example.png)
@@ -39,10 +39,17 @@ In Pixel Stories, terrains are created by providing a source tileset and selecti
 
 <div style="max-width:300px; display:flex; align-items:end; gap:4px;">
 
-**Blob**
+**Blob format**
 ![](../../../assets/images/blob.png)
 
 ![](../../../assets/images/blob-example.png)
+
+</div>
+
+<div style="max-width:500px;">
+
+_Example of terrain in a map_
+![Drawn terrain example](../../../assets/images/terrain-drawn-example.png)
 
 </div>
 
@@ -52,7 +59,7 @@ In Pixel Stories, terrains are created by providing a source tileset and selecti
 
 In the auto-tile template, the light gray areas represent the interior of the terrain, and the dark gray areas outline the borders. The darkest gray areas mark the corners of the border. When transformed into an auto-tile, these corners will connect to form a continuous border around the terrain.
 
-**Note:** In RPG Maker, the first tile doesn’t affect the terrain, as it’s only a thumbnail.
+**Note:** In the RPG Maker format, the top left tile doesn’t affect the terrain, as it’s only a thumbnail.
 
 ### Wang, Blob, or RPG Maker format?
 

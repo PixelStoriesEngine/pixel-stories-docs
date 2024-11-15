@@ -24,7 +24,6 @@ Once you've created a terrain, the terrain can now be drawn into the map! The au
 Our terrain layers allow you to have full control of your layers for your map. This gives you a lot of freedom, but the following is a structure we found to work will in organizing your layers.
 
 1. Details Layer: Use this layer for details like small plants, rocks, or for adding variety to ground tiles.
-
 2. Ground Layer: This is where the main tiles for terrains, walking surfaces, floors, and walls.
 
 **Note:** All terrain layers will sit below the player. For any tiles which the player should be able to walk behind (trees, large rocks, houses), add them as [Map Objects](#map-objects).
@@ -41,7 +40,7 @@ Map objects are a separate entity from map terrains. They are able to be placed 
 
 Map objects have depth sorting automatically handled, so the player properly goes in front and behind objects accordingly.
 
-In the example below, you can see the ghost player can be both behind and infront of the tree.
+The example below shows the ghost character can be both behind and infront of the tree.
 
 <div style="display:flex; gap:4px; width:100%; align-items:end; overflow:hidden;">
 
