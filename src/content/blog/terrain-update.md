@@ -3,6 +3,9 @@ title: Improved Terrain Creation and Map Editing
 date: 2024-11-13
 excerpt: Creating map terrains and editing the map in the editor gets a refresh to be more flexible than ever.
 author: Truman
+cover:
+  image: /src/assets/images/new-terrain-thumbnail.png
+  alt: A terrain in Pixel Stories
 tags:
   - ENGINE UPDATE
 ---
