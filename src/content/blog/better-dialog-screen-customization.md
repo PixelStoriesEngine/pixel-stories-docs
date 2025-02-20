@@ -1,7 +1,7 @@
 ---
 title: Better Dialog Screen Customization
 date: 2025-01-14
-excerpt: Revamped dialog screens offer a modern, streamlined layout with enhanced customization options and sensible defaults for new users.
+excerpt: New dialog screens offer a straight forward layout with customization options and sensible defaults for new users.
 author: Truman
 cover:
   image: /src/assets/images/better-dialog-screen-customization.png
