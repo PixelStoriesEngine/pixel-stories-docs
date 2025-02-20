@@ -4,7 +4,7 @@ date: 2025-01-14
 excerpt: New dialog screens offer a straight forward customization and out of the box defaults for new users.
 author: Truman
 cover:
-  image: /src/assets/images/better-dialog-screen-customization.png
+  image: ../../assets/images/better-dialog-screen-customization.png
   alt: Dialog screen customization preview
 tags:
   - ENGINE UPDATE
