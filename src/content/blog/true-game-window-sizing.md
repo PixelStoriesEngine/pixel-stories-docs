@@ -14,16 +14,20 @@ tags:
 
 Our latest update brings a smarter approach to game scaling that makes more sense. We’ve removing redundant game size settings and introduced “true game size,” where every game pixel directly corresponds to a screen pixel. In addition, a new zoom setting is added for pixel art at the small pixel sizes. You can now also choose between fitting or filling the game window for improved responsiveness.
 
+<div style="max-width:500px;">
+
 ![Responsive Options](/src/assets/images/true-game-window-sizing-2.png)
 
-## Changelog
+</div>
 
-### Added
+### Changelog
+
+Added
 
 - [Game settings] Add game size fit or fill window option
 - [Game settings] Add game zoom option
 
-### Changed
+Changed
 
 - [Game] Set game scale to envelope
 - [Game] Replace game size config with true game width and height
