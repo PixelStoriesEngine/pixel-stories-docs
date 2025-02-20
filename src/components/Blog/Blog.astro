@@ -21,17 +21,23 @@ const latest = posts.filter((p) => !p.data.featured);
           class="grid gap-6
     grid-cols-2 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:justify-center"
         >
-          {featured.map((post) => (
-            <BlogCard
-              cover={post.data.cover}
-              title={post.data.title}
-              date={post.data.date}
-              excerpt={post.data.excerpt}
-              tags={post.data.tags}
-              url={"/blog/" + post.slug}
-              largeCover
-            />
-          ))}
+          {featured
+            .sort(
+              (a, b) =>
+                new Date(b.data.date ?? "1970-01-01").getTime() -
+                new Date(a.data.date ?? "1970-01-01").getTime()
+            )
+            .map((post) => (
+              <BlogCard
+                cover={post.data.cover}
+                title={post.data.title}
+                date={post.data.date}
+                excerpt={post.data.excerpt}
+                tags={post.data.tags}
+                url={"/blog/" + post.slug}
+                largeCover
+              />
+            ))}
         </div>
       </div>
     )
@@ -44,16 +50,22 @@ const latest = posts.filter((p) => !p.data.featured);
     grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:justify-center"
     >
       {
-        latest.map((post) => (
-          <BlogCard
-            cover={post.data.cover}
-            title={post.data.title}
-            date={post.data.date}
-            excerpt={post.data.excerpt}
-            tags={post.data.tags}
-            url={"/blog/" + post.slug}
-          />
-        ))
+        latest
+          .sort(
+            (a, b) =>
+              new Date(b.data.date ?? "1970-01-01").getTime() -
+              new Date(a.data.date ?? "1970-01-01").getTime()
+          )
+          .map((post) => (
+            <BlogCard
+              cover={post.data.cover}
+              title={post.data.title}
+              date={post.data.date}
+              excerpt={post.data.excerpt}
+              tags={post.data.tags}
+              url={"/blog/" + post.slug}
+            />
+          ))
       }
     </div>
   </div>
