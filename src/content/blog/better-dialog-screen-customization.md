@@ -1,7 +1,7 @@
 ---
 title: Better Dialog Screen Customization
 date: 2025-01-14
-excerpt: New dialog screens offer a straight forward layout with customization options and sensible defaults for new users.
+excerpt: New dialog screens offer a straight forward customization and out of the box defaults for new users.
 author: Truman
 cover:
   image: /src/assets/images/better-dialog-screen-customization.png
@@ -12,7 +12,7 @@ tags:
 
 # Better Dialog Screen Customization
 
-Our latest update revitalizes the dialog screen with a modern, simplified layout and a more intuitive configuration process. Legacy UI elements have been replaced with cleaner, straightforward options, ensuring a better customization experience. We've also added a sensible default setup for new users and expanded our font library with a variety of web safe fonts supported by all major browsers.
+Our latest update revitalizes the dialog screen with a simplified configuration. The previous confusing configuration have been replaced with more straightforward customization. We've also added an out of the box default setup for new users and expanded our font library with a variety of web safe fonts supported by all major browsers!
 
 ### Changelog
 
