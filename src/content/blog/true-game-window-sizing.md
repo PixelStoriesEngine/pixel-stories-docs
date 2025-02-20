@@ -12,7 +12,7 @@ tags:
 
 # True Game Window Sizing!
 
-Our latest update brings a smarter approach to game scaling that makes more sense. We’ve removing redundant game size settings and introduced “true game size,” where every game pixel directly corresponds to a screen pixel. In addition, a new zoom setting is added for pixel art at the small pixel sizes. You can now also choose between fitting or filling the game window for improved responsiveness.
+Our latest update brings a better approach to game scaling that makes more sense. We’ve removing redundant game size settings and introduced “true game size,” where every game pixel directly corresponds to a screen pixel. In addition, a new zoom setting is added for pixel art since pixel sizes are super small. You can now also choose between fitting or filling the game window for improved responsiveness.
 
 <div style="max-width:500px;">
 

@@ -21,7 +21,7 @@ been added, with more asset packs on the way!
 
 ### Better Organization
 
-Previously, these assets were managed and edited directly in the map editor, which was not ideal. They have now been moved to the game assets section for a more logical workflow.
+Previously, these assets were managed and edited directly in the map editor, which was not ideal and added confusion since we had a "Game assets" tab. They have now been moved to the game assets section for a more logical workflow.
 
 <div style="max-width:500px;">
 
