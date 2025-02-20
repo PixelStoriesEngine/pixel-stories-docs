@@ -4,7 +4,7 @@ date: 2025-02-19
 excerpt: Improved asset organization with search and tagging, plus a better workflow for managing terrains and map objects.
 author: Truman
 cover:
-  image: /src/assets/images/new-open-source-assets-1.png
+  image: ../../assets/images/new-open-source-assets-1.png
   alt: Asset management update preview
 tags:
   - ENGINE UPDATE
@@ -25,8 +25,8 @@ Previously, these assets were managed and edited directly in the map editor, whi
 
 <div style="max-width:500px;">
 
-![Asset Management Preview](/src/assets/images/new-open-source-assets-2.png)
-![Asset Management Preview](/src/assets/images/new-open-source-assets-3.png)
+![Asset Management Preview](../../assets/images/new-open-source-assets-2.png)
+![Asset Management Preview](../../assets/images/new-open-source-assets-3.png)
 
 </div>
 

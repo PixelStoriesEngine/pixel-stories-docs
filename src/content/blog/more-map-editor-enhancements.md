@@ -4,7 +4,7 @@ date: 2024-12-03
 excerpt: Enjoy smoother map zooming, a fixed grid, and an improved map editing user experience.
 author: Truman
 cover:
-  image: /src/assets/images/map-editor-enhancement.png
+  image: ../../assets/images/map-editor-enhancement.png
   alt: Map editor enhancement preview
 tags:
   - ENGINE UPDATE

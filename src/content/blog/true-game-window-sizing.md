@@ -4,7 +4,7 @@ date: 2024-12-18
 excerpt: An updated game size configuration ensures game size is the "real" size with scaling.
 author: Truman
 cover:
-  image: /src/assets/images/true-game-window-sizing-1.png
+  image: ../../assets/images/true-game-window-sizing-1.png
   alt: Game scaling and responsiveness update preview
 tags:
   - ENGINE UPDATE
@@ -16,7 +16,7 @@ Our latest update brings a better approach to game scaling that makes more sense
 
 <div style="max-width:500px;">
 
-![Responsive Options](/src/assets/images/true-game-window-sizing-2.png)
+![Responsive Options](../../assets/images/true-game-window-sizing-2.png)
 
 </div>
 
