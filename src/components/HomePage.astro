@@ -1,35 +1,69 @@
 ---
 import Footer from "./Footer.astro";
 import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("blog");
+const sortedPosts = posts.sort(
+  (a, b) =>
+    new Date(b.data.date || "").getTime() -
+    new Date(a.data.date || "").getTime()
+);
+const recentPosts = sortedPosts.slice(0, 3);
 ---
 
 <div class="not-content flex flex-col gap-3 max-w-[800px] mx-auto">
-  <div class="flex flex-col gap-3 max-w-[800px] mx-auto">
-    <h3 class="text-center">Make Your First Game Today!</h3>
+  <div class="flex flex-col gap-8 max-w-[800px] mx-auto">
+    {/* Links Section */}
+    <section class="flex flex-col gap-3">
+      <h3 class="text-center">Make Your First Game Today!</h3>
+      <div class="flex flex-wrap gap-2 items-stretch">
+        <div class="flex-1 h-full min-w-[200px]">
+          <LinkCard
+            title="Engine Docs"
+            description="See our quick guide on getting started!"
+            href="/getting-started"
+          />
+        </div>
+        <div class="flex-1 h-full min-w-[200px]">
+          <LinkCard
+            title="Get Started Tutorial"
+            description="Get familiar with the engine with our tutorial."
+            href="/tutorials/basic"
+          />
+        </div>
+        <div class="flex-1 h-full min-w-[200px]">
+          <LinkCard
+            title="Official  Discord"
+            description="See our official Discord server."
+            href="https://discord.gg/XN9EaUh26g"
+          />
+        </div>
+      </div>
+    </section>
 
-    <div class="flex flex-wrap gap-2 items-stretch">
-      <div class="flex-1 h-full min-w-[200px]">
-        <LinkCard
-          title="Engine Docs"
-          description="See our quick guide on getting started!"
-          href="/getting-started"
-        />
+    {/* News & Updates Section */}
+    <section class="news-updates my-8">
+      <h3 class="text-center">Latest News</h3>
+      <ul class="mt-4 space-y-4">
+        {
+          recentPosts.map((post) => (
+            <li class="border-b pb-2">
+              <a href={`/blog/${post.slug}`} class="hover:underline">
+                <h4 class="text-lg font-semibold">{post.data.title}</h4>
+              </a>
+              <p class="text-sm">{post.data.excerpt}</p>
+              <span class="text-xs text-gray-500">
+                {new Date(post.data.date || "").toLocaleDateString()}
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+      <div class="mt-6 text-center">
+        <a href="/blog"> See News </a>
       </div>
-      <div class="flex-1 h-full min-w-[200px]">
-        <LinkCard
-          title="Get Started Tutorial"
-          description="Get familiar with the engine with our tutorial."
-          href="/tutorials/basic"
-        />
-      </div>
-      <div class="flex-1 h-full min-w-[200px]">
-        <LinkCard
-          title="Official  Discord"
-          description="See our official Discord server."
-          href="https://discord.gg/XN9EaUh26g"
-        />
-      </div>
-    </div>
+    </section>
 
     <Footer />
   </div>
