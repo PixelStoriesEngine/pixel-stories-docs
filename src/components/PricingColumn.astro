@@ -20,7 +20,7 @@ const href = "https://app.pixelstories.io/editor?purchase";
 
 <div
   class="not-content flex flex-col justify-between
-    min-h-[430px] h-full w-[255px] max-sm:w-full
+    min-h-[450px] h-full w-[300px] max-sm:w-full
     shadow-xl border-2 rounded-2xl p-4 px-6
     bg-white
     dark:border dark:border-stone-400 dark:bg-color-black"
@@ -59,16 +59,7 @@ const href = "https://app.pixelstories.io/editor?purchase";
 
   <div class="justify-center mt-6">
     {
-      name === "Free tier" ? (
-        <a
-          class="btn-primary bg-transparent hover:bg-color-gray-6 transition-all dark:text-color-gray-1"
-          href="https://app.pixelstories.io/editor"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Launch engine
-        </a>
-      ) : name === "Starter pack" ? (
+      name === "Professional" ? (
         <a
           class="btn-primary hover:opacity-90 transition-all"
           href="https://app.pixelstories.io/editor?purchase-engine-tier=starter"
@@ -77,14 +68,23 @@ const href = "https://app.pixelstories.io/editor?purchase";
         >
           Buy Now
         </a>
-      ) : (
+      ) : name === "Indie Studio" ? (
         <a
           class="btn-primary hover:opacity-90 transition-all"
-          href="https://app.pixelstories.io/editor?purchase-engine-tier=pro"
+          href="mailto:truman@pixelstories.io"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Buy Now
+          Contact us
+        </a>
+      ) : (
+        <a
+          class="btn-primary bg-transparent hover:bg-color-gray-6 transition-all dark:text-color-gray-1"
+          href="https://app.pixelstories.io/editor"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Launch engine
         </a>
       )
     }

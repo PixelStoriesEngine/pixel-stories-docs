@@ -78,9 +78,9 @@ img:not(.not-content) {
   backdrop-filter: blur(16px);
 }
 
+[data-has-hero] .hero > .hero-html,
 [data-has-hero] .hero > img {
   filter: drop-shadow(0 0 3rem var(--overlay-blurple));
-  width: min(100%, 25rem);
 }
 
 .social-icons::after {
