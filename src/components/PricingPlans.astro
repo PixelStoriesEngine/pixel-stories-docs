@@ -3,36 +3,39 @@ import PricingColumn from "./PricingColumn.astro";
 
 const plans = [
   {
-    name: "Free tier",
+    name: "Free",
     description: "Create your game today!",
     price: "$0",
     points: [
       "Access to all engine features",
-      "1 project",
-      "2 maps",
-      "50 events",
+      "Unlimited events",
+      "Unlimited custom assets",
+      "Desktop export",
+      "Mobile export",
+      "Web export",
+      "10-map limit",
     ],
   },
   {
-    name: "Starter pack",
-    description: "One time purchase",
-    price: "$19.99",
-    crossedPrice: "$39.99",
+    name: "Hobbyist",
+    description: "One-time purchase",
+    price: "$49.99",
     points: [
-      "Everything in Free Tier",
-      "Commercial licence",
-      "Share game with link",
-      "Unlimited projects",
+      "Everything in Free",
       "Unlimited maps",
-      "500 events",
+      "Commercial licence",
+      "Remove watermarks",
     ],
   },
   {
-    name: "Pro pack",
-    description: "One time purchase",
-    price: "$34.99",
-    crossedPrice: "$69.99",
-    points: ["Everything in Starter", "1500 events"],
+    name: "Indie Studio",
+    description: "Contact us for details",
+    price: "Contact us",
+    points: [
+      "Everything in Hobbyist",
+      "Commercial licence",
+      "Dedicated support",
+    ],
   },
 ];
 ---
@@ -57,9 +60,7 @@ const plans = [
     <div
       class="flex gap-4 flex-grow min-h-[430px] flex-wrap justify-center w-full"
     >
-      <PricingColumn {...plans[0]} />
-      <PricingColumn {...plans[1]} />
-      <PricingColumn {...plans[2]} />
+      {plans.map((plan) => <PricingColumn {...plan} />)}
     </div>
   </div>
 </div>
