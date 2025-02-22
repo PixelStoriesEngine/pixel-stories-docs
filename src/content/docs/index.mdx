@@ -3,13 +3,13 @@ title: Pixel Stories
 description: Pixel Stories empowers you to create captivating narrative adventures with an intuitive, no-code game engine.
 template: splash
 hero:
-  title: The Game Engine for Building Story-rich Games
-  tagline: Our modern no-code engine lets you focus on storytelling, world-building, and character design to create captivating games.
+  title: <p> A Game Engine For <span class="bg-gradient-to-r from-pink-600 via-pink-600 to-pink-700 bg-clip-text text-transparent text-nowrap"> Story-driven </span> Games </p>
+  tagline: Pixel Stories is a web based no-code game engine for making top down story-driven games.
   image:
     alt: A glittering, interested, happy ghost
     file: ../../assets/logo-outline.svg
   actions:
-    - text: Launch engine (It's free!)
+    - text: Launch engine
       link: https://app.pixelstories.io
       icon: external
       attrs:
@@ -22,77 +22,6 @@ hero:
 editUrl: false
 ---
 
-import Footer from "../../components/Footer.astro";
-import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
+import HomePage from "../../components/HomePage.astro";
 
-<div style="display:flex;flex-direction:column;align-items:center;text-align:center;">
-  <h3>Made with the Pixel Stories Engine</h3>
-  <iframe
-    src="https://app.pixelstories.io/embed/nCxTyr5YeB"
-    style="border-radius:20px;width:100vw;max-width:900px;max-height:75vh;aspect-ratio:4/3;"
-    frameBorder="0"
-  ></iframe>
-</div>
-
-<div style="display:flex;flex-direction:column;gap:12px;max-width:800px;margin:100px auto;">
-
-<h3 style="text-align:center;">Our Features Make it Easy</h3>
-
-<div style="display:flex;flex-direction:column;gap-12px;">
-
-<div>
-  <Card title="Built for Story-driven Games" icon="open-book">
-    Our engine is designed specifically for creating immersive, story-rich
-    adventure games.
-  </Card>
-</div>
-
-<div>
-  <Card title="Modern No-code Interface" icon="star">
-    Easily create story-rich games without any coding skills required.
-  </Card>
-</div>
-
-<div>
-  <Card title="Web-based Game Engine" icon="laptop">
-    Start creating immediately by accessing the engine in any browser.
-  </Card>
-</div>
-
-<div>
-  <Card title="Simple Share and Export" icon="rocket">
-    Simply share your game with a link. Your game is compatible on desktop and
-    mobile in browser.
-  </Card>
-</div>
-
-</div>
-
-</div>
-
-<div style="display:flex;flex-direction:column;gap:12px;max-width:800px;margin:0px auto;">
-
-<h3 style="text-align:center;">Start Your Creation Journey Today</h3>
-
-<div>
-  <LinkCard
-    title="Getting started with Pixel Stories"
-    description="See our quick guide on getting started!"
-    href="/getting-started"
-  ></LinkCard>
-  <LinkCard
-    title="Getting Started Tutorial"
-    description="Get familiar with the engine with our Basics tutorial."
-    href="/tutorials/basic"
-  ></LinkCard>
-  <LinkCard
-    title="Join our Discord"
-    description="Get support, share your work, and see what's happening in our growing community on Discord!"
-    icon="discord"
-    href="https://discord.gg/XN9EaUh26g"
-  ></LinkCard>
-</div>
-
-</div>
-
-<Footer />
+<HomePage />
