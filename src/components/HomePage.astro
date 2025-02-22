@@ -3,28 +3,34 @@ import Footer from "./Footer.astro";
 import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 ---
 
-<div class="flex flex-col gap-3 max-w-[800px] my-[100px] mx-auto">
+<div class="not-content flex flex-col gap-3 max-w-[800px] mx-auto">
   <div class="flex flex-col gap-3 max-w-[800px] mx-auto">
     <h3 class="text-center">Make Your First Game Today!</h3>
 
-    <div>
-      <LinkCard
-        title="Getting started with Pixel Stories"
-        description="See our quick guide on getting started!"
-        href="/getting-started"
-      />
-      <LinkCard
-        title="Getting Started Tutorial"
-        description="Get familiar with the engine with our Basics tutorial."
-        href="/tutorials/basic"
-      />
-      <LinkCard
-        title="Join our Discord"
-        description="Get support, share your work, and see what's happening in our growing community on Discord!"
-        href="https://discord.gg/XN9EaUh26g"
-      />
+    <div class="flex flex-wrap gap-2 items-stretch">
+      <div class="flex-1 h-full min-w-[200px]">
+        <LinkCard
+          title="Engine Docs"
+          description="See our quick guide on getting started!"
+          href="/getting-started"
+        />
+      </div>
+      <div class="flex-1 h-full min-w-[200px]">
+        <LinkCard
+          title="Get Started Tutorial"
+          description="Get familiar with the engine with our tutorial."
+          href="/tutorials/basic"
+        />
+      </div>
+      <div class="flex-1 h-full min-w-[200px]">
+        <LinkCard
+          title="Official  Discord"
+          description="See our official Discord server."
+          href="https://discord.gg/XN9EaUh26g"
+        />
+      </div>
     </div>
-  </div>
 
-  <Footer />
+    <Footer />
+  </div>
 </div>
