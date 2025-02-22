@@ -9,14 +9,14 @@ const sortedPosts = posts.sort(
     new Date(b.data.date || "").getTime() -
     new Date(a.data.date || "").getTime()
 );
-const recentPosts = sortedPosts.slice(0, 3);
+const recentPosts = sortedPosts.slice(0, 4);
 ---
 
 <div class="not-content flex flex-col gap-3 max-w-[800px] mx-auto">
-  <div class="flex flex-col gap-8 max-w-[800px] mx-auto">
+  <div class="flex flex-col gap-24 max-w-[800px] mx-auto">
     {/* Links Section */}
-    <section class="flex flex-col gap-3">
-      <h3 class="text-center">Make Your First Game Today!</h3>
+    <section class="flex flex-col gap-4 max-w-full">
+      <h2 class="text-center">Make Your First Game Today!</h2>
       <div class="flex flex-wrap gap-2 items-stretch">
         <div class="flex-1 h-full min-w-[200px]">
           <LinkCard
@@ -43,25 +43,44 @@ const recentPosts = sortedPosts.slice(0, 3);
     </section>
 
     {/* News & Updates Section */}
-    <section class="news-updates my-8">
-      <h3 class="text-center">Latest News</h3>
-      <ul class="mt-4 space-y-4">
-        {
-          recentPosts.map((post) => (
-            <li class="border-b pb-2">
-              <a href={`/blog/${post.slug}`} class="hover:underline">
-                <h4 class="text-lg font-semibold">{post.data.title}</h4>
+    <section class="max-w-full">
+      <div class="flex flex-col gap-4">
+        <h2 class="text-center">Latest News</h2>
+        <ul class="pl-0 list-none flex flex-col gap-2 w-full">
+          {
+            recentPosts.map((post) => (
+              <a
+                href={`/blog/${post.slug}`}
+                class="hover:border-color-accent-high border border-transparent no-underline text-current w-full p-2 px-4 rounded-lg transition-all"
+              >
+                <li class="pb-2">
+                  <h4 class="text-lg font-semibold w-max">{post.data.title}</h4>
+
+                  <time
+                    class="font-mono text-sm"
+                    datetime={new Date(post.data.date || "").toDateString()}
+                  >
+                    Published on
+                    {new Date(post.data.date || "").toLocaleDateString(
+                      "en-us",
+                      {
+                        year: "numeric",
+                        month: "short",
+                        day: "numeric",
+                        timeZone: "UTC",
+                      }
+                    )}
+                  </time>
+
+                  <p class="text-sm mt-1">{post.data.excerpt}</p>
+                </li>
               </a>
-              <p class="text-sm">{post.data.excerpt}</p>
-              <span class="text-xs text-gray-500">
-                {new Date(post.data.date || "").toLocaleDateString()}
-              </span>
-            </li>
-          ))
-        }
-      </ul>
+            ))
+          }
+        </ul>
+      </div>
       <div class="mt-6 text-center">
-        <a href="/blog"> See News </a>
+        <a href="/blog" class="text-current"> See news and updates </a>
       </div>
     </section>
 
