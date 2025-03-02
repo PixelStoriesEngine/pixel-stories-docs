@@ -14,7 +14,7 @@ Our game engine is quick to learn and easy to work with. This let’s you to foc
 - **Dialog System** let’s you write branching dialogs.
 - **Map editor** makes map creation easy with auto tile terrains and map objects.
 - **Custom assets** support importing your own art, music, and sounds.
-- **Cross‑platform** export support let’s you to export games for desktop, mobile, and web.
+- **Cross‑platform** support let’s you to share your game for desktop, mobile, and web.
 
 ## Pixel Stories vs. Other Engines
 
@@ -22,7 +22,7 @@ Unlike other general game engines that demand a lot of coding to get started, Pi
 
 It’s made for 2D top down story-driven games, so it comes with all the necessary tools for that purpose. That includes an events system, dialogue editor, map editor, and default assets to help you get started. Additionally, you can easily import your own custom assets and customize different features of your game, so it has its own unique style rather than a cookie-cutter look.
 
-We designed our game engine with accessibility in mind so that anyone can create their own game. Being web‑based, it only requires a modern browser, and its cross‑platform exports ensure your game is can be shared on desktop, mobile, or anywhere on the web!
+We designed our game engine with accessibility in mind so that anyone can create their own game. Being web‑based, it only requires a modern browser, and its cross‑platform support ensure your game is can be shared on desktop, mobile, or anywhere on the web!
 
 Note for those coming from RPG Maker: We don’t have abritrary restrictions on game resolution, tile size or sprite animation formats! You also have full control over map editing layers. To avoid reliance on community plugins, we've tried to integrate all the essential features for making story-driven games directly into the engine. If you think a feature is missing, feel free to [make a feature suggestion](https://forms.gle/76x3G1mkUQpKvbG7A)!
 
