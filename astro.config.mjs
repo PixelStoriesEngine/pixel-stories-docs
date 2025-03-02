@@ -85,7 +85,7 @@ export default defineConfig({
           ],
         },
         {
-          label: "Guides",
+          label: "How-to guides",
           autogenerate: { directory: "/guides" },
         },
         {
@@ -94,6 +94,16 @@ export default defineConfig({
             {
               label: "Events reference",
               link: "/events/",
+            },
+            {
+              label: "Video tutorials",
+              link: "https://www.youtube.com/@PixelStoriesEngine",
+              attrs: { target: "_blank" },
+            },
+            {
+              label: "Official Discord",
+              link: "https://discord.gg/XN9EaUh26g",
+              attrs: { target: "_blank" },
             },
           ],
         },
