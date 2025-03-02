@@ -1,6 +1,6 @@
 ---
-title: Getting Started
-description: Getting started with Pixel Stories
+title: Overview
+description: What is Pixel Stories?
 ---
 
 Pixel Stories is a no-code game engine designed specifically for story-driven adventures games. Our game engine can be launched in any modern web browser. The engine is free and in early access alpha. You can jump right into the engine <a href="https://app.pixelstories.io" target="_blank">here</a>!

@@ -53,14 +53,14 @@ export default defineConfig({
               label: "Quick start",
               link: "/getting-started/",
             },
-            {
-              label: "Interface tour",
-              link: "/",
-            },
-            {
-              label: "Examples",
-              link: "/",
-            },
+            // {
+            //   label: "Interface tour",
+            //   link: "/",
+            // },
+            // {
+            //   label: "Examples",
+            //   link: "/",
+            // },
           ],
         },
         {
@@ -71,15 +71,15 @@ export default defineConfig({
               link: "/features/events-system/",
             },
             {
-              label: "Variables and Branching",
+              label: "Conditional branching",
               link: "/features/variables-and-branching/",
             },
             {
-              label: "Map Editor",
+              label: "Map editor",
               link: "/features/map-editor/",
             },
             {
-              label: "Game Assets",
+              label: "Game assets",
               link: "/features/game-assets/",
             },
           ],
