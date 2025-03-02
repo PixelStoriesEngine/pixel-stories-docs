@@ -43,49 +43,28 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: "Start Here",
+          label: "Getting started",
           items: [
             {
-              label: "Getting Started",
+              label: "Overview",
+              link: "/overview",
+            },
+            {
+              label: "Quick start",
               link: "/getting-started/",
             },
-          ],
-        },
-        {
-          label: "Introductory Tutorial",
-          items: [
             {
-              label: "Project Set-up",
-              link: "/tutorials/project-setup",
+              label: "Interface tour",
+              link: "/",
             },
             {
-              label: "Drawing the Map",
-              link: "/tutorials/mapping",
-            },
-            {
-              label: "Characters",
-              link: "/tutorials/characters",
-            },
-            {
-              label: "Dialog and Interactions",
-              link: "/tutorials/interactive-dialog",
-            },
-            {
-              label: "Conditional branching",
-              link: "/tutorials/conditional-branching",
-            },
-            {
-              label: "Music/Sound",
-              link: "/tutorials/music-sound",
-            },
-            {
-              label: "Exporting Your Game",
-              link: "/tutorials/exporting",
+              label: "Examples",
+              link: "/",
             },
           ],
         },
         {
-          label: "Core Features",
+          label: "Concepts",
           items: [
             {
               label: "Events system",
@@ -110,27 +89,11 @@ export default defineConfig({
           autogenerate: { directory: "/guides" },
         },
         {
-          label: "Events Reference",
+          label: "Resources",
           items: [
             {
-              label: "Spawn Actor",
-              link: "/events/spawn-actor/",
-            },
-            {
-              label: "Remove Actor",
-              link: "/events/remove-actor/",
-            },
-            {
-              label: "Move Actor",
-              link: "/events/move-actor/",
-            },
-            {
-              label: "Transfer Player",
-              link: "/events/transfer-player/",
-            },
-            {
-              label: "Dialog",
-              link: "/events/dialog/",
+              label: "Events reference",
+              link: "/events/",
             },
           ],
         },
