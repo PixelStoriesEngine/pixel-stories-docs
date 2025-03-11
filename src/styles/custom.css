@@ -11,6 +11,7 @@
   --sl-color-gray-5: #383838;
   --sl-color-gray-6: #272727;
   --sl-color-black: #181818;
+  --sl-color-link: hsl(326, 70%, 50%);
 }
 /* Light mode colors. */
 :root[data-theme="light"] {
@@ -40,6 +41,10 @@
 :root[data-theme="light"] [aria-current="page"]:hover,
 :root[data-theme="light"] [aria-current="page"]:focus {
   color: var(--sl-color-white);
+}
+
+.sl-markdown-content a {
+  color: var(--sl-color-link);
 }
 
 pixel-art {
