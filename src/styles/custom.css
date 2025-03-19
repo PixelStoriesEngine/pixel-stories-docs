@@ -11,6 +11,7 @@
   --sl-color-gray-5: #383838;
   --sl-color-gray-6: #272727;
   --sl-color-black: #181818;
+  --sl-color-link: hsl(326, 70%, 50%);
 }
 /* Light mode colors. */
 :root[data-theme="light"] {
@@ -27,6 +28,7 @@
   --sl-color-gray-7: #f6f6f6;
   --sl-color-banner-text: var(--sl-color-white);
   --sl-color-black: #ffffff;
+  --sl-color-bg-nav: var(--sl-color-black);
 }
 
 :root[data-theme="light"] .action.primary {
@@ -39,6 +41,10 @@
 :root[data-theme="light"] [aria-current="page"]:hover,
 :root[data-theme="light"] [aria-current="page"]:focus {
   color: var(--sl-color-white);
+}
+
+.sl-markdown-content a:not(:where(.not-content *)) {
+  color: var(--sl-color-link);
 }
 
 pixel-art {

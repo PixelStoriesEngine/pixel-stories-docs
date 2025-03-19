@@ -95,6 +95,18 @@ If you asset came in a spritesheet grid, you can use a spritesheet editing tool 
 
 The engine does not currently support animations that come in a GIF format. To use a gif, [EZGif gif to spritesheet](https://ezgif.com/gif-to-sprite) can convert to a sprite strip.
 
+# Animation Configuration
+
+This configuration object allows you to customize your animation by setting various properties. Each field is optional, and only the defined properties will be applied.
+
+| Field        | Description                                                                   |
+| ------------ | ----------------------------------------------------------------------------- |
+| frame width  | The width for each frame in the animation.                                    |
+| frame height | The height for each frame in the animation.                                   |
+| frame rate   | The frame rate for the animation (frames per second).                         |
+| margin       | The margin around the edge of the frames, i.e., the space between each frame. |
+| spacing      | The spacing between each frame in the image.                                  |
+
 ## Audio and Images
 
 Audio and images can also be imported into your game in Pixel Stories.

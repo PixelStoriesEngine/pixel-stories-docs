@@ -43,94 +43,67 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: "Start Here",
+          label: "Getting started",
           items: [
             {
-              label: "Getting Started",
+              label: "Overview",
+              link: "/overview",
+            },
+            {
+              label: "Quick start",
               link: "/getting-started/",
             },
+            // {
+            //   label: "Interface tour",
+            //   link: "/",
+            // },
+            // {
+            //   label: "Examples",
+            //   link: "/",
+            // },
           ],
         },
         {
-          label: "Introductory Tutorial",
-          items: [
-            {
-              label: "Project Set-up",
-              link: "/tutorials/project-setup",
-            },
-            {
-              label: "Drawing the Map",
-              link: "/tutorials/mapping",
-            },
-            {
-              label: "Characters",
-              link: "/tutorials/characters",
-            },
-            {
-              label: "Dialog and Interactions",
-              link: "/tutorials/interactive-dialog",
-            },
-            {
-              label: "Conditional branching",
-              link: "/tutorials/conditional-branching",
-            },
-            {
-              label: "Music/Sound",
-              link: "/tutorials/music-sound",
-            },
-            {
-              label: "Exporting Your Game",
-              link: "/tutorials/exporting",
-            },
-          ],
-        },
-        {
-          label: "Core Features",
+          label: "Concepts",
           items: [
             {
               label: "Events system",
               link: "/features/events-system/",
             },
             {
-              label: "Variables and Branching",
+              label: "Conditional branching",
               link: "/features/variables-and-branching/",
             },
             {
-              label: "Map Editor",
+              label: "Map editor",
               link: "/features/map-editor/",
             },
             {
-              label: "Game Assets",
+              label: "Game assets",
               link: "/features/game-assets/",
             },
           ],
         },
         {
-          label: "Guides",
+          label: "How-to guides",
           autogenerate: { directory: "/guides" },
         },
         {
-          label: "Events Reference",
+          label: "Resources",
           items: [
             {
-              label: "Spawn Actor",
-              link: "/events/spawn-actor/",
+              label: "Events reference",
+              link: "/events/",
             },
             {
-              label: "Remove Actor",
-              link: "/events/remove-actor/",
+              label: "Video tutorials 🔗",
+              link: "https://www.youtube.com/@PixelStoriesEngine",
+              attrs: { target: "_blank" },
             },
             {
-              label: "Move Actor",
-              link: "/events/move-actor/",
-            },
-            {
-              label: "Transfer Player",
-              link: "/events/transfer-player/",
-            },
-            {
-              label: "Dialog",
-              link: "/events/dialog/",
+              label: "Official Discord 🔗",
+              link: "https://discord.gg/XN9EaUh26g",
+              attrs: { target: "_blank" },
             },
           ],
         },

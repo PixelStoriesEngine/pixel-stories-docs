@@ -1,5 +1,5 @@
 ---
-title: Fetch Quest
+title: Making a quest
 description: How to Create a Fetch Quest in Pixel Stories
 ---
 
