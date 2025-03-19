@@ -1,5 +1,97 @@
 ---
-title: Events reference
-description: Using the events system in Pixel Stories
-draft: true
+title: Events Reference
+description: A reference document detailing the configuration and behavior of events in Pixel Stories.
 ---
+
+This document provides detailed reference information for various events in Pixel Stories. Below you'll find configuration details and important notes about how each event works. This guide will be updated as new events and options are added.
+
+To learn about the events system: See [Concepts: Events system](/features/events-system)
+
+---
+
+## Move Actor Event
+
+The move actor event moves an actor along a specified path in the game.
+
+#### Configuration
+
+| Name                    | Description                                                                |
+| ----------------------- | -------------------------------------------------------------------------- |
+| Actor                   | The actor to move                                                          |
+| Movement path           | The path the actor follows as defined by points in the map                 |
+| Walk speed              | The speed at which the actor moves                                         |
+| Immediate to next event | Whether to play the next event immediately after the actor finishes moving |
+
+#### Event Notes
+
+Since the actor may not be at the specified starting position, it will first move towards the first point on the path before following the rest of the points.
+
+Actors are not affected by map collisions, which only restrict the player's movement. This means that while an actor is moving, it may pass over collision areas.
+
+Actors' depth sorting is automatically calculated based on their position on the map. Actors or objects drawn lower on the map will appear above those higher up. You can adjust the depth sorting origin for your map objects if needed.
+
+![](../../../assets/images/dse.png)  
+_Example: When the player is lower than the map object_
+
+![](../../../assets/images/dse2.png)  
+_Example: When the player is higher than the map object_
+
+---
+
+## Remove Actor Event
+
+The remove actor event removes an actor from the game map. This is useful for simulating actions like a character going through a door or leaving a scene.
+
+#### Configuration
+
+| Name            | Description                      |
+| --------------- | -------------------------------- |
+| Actor to remove | The actor to remove from the map |
+
+#### Event Notes
+
+The actor to remove is chosen from the list of actors spawned into the game by the `Spawn actor` event.
+
+If the actor is not present in the game map (for example, if the event is triggered under an event group by `Interact` or `Touch`), nothing happens.
+
+---
+
+## Spawn Actor Event
+
+The spawn actor event adds an actor to the game map at a specified location. This event is key for bringing characters from your game assets into the map.
+
+#### Configuration
+
+| Name           | Description                        |
+| -------------- | ---------------------------------- |
+| Actor to spawn | The actor to spawn into the map    |
+| Spawn location | The position to spawn the actor at |
+
+#### Event Notes
+
+The actor to spawn is selected from the list of actors created under `Game assets > Actors`.
+
+If the spawn actor event is triggered repeatedly (such as by `Interact` or `Touch` triggers under an event group), the game will not spawn a new actor if the actor is already present in the map.
+
+---
+
+## Transfer Player Event
+
+The transfer player event moves the player to a new position on a different map, connecting various areas of the game.
+
+#### Configuration
+
+| Name     | Description                                          |
+| -------- | ---------------------------------------------------- |
+| Map      | The map the player transfers to                      |
+| Position | The position where the player appears on the new map |
+
+#### Event Notes
+
+Place the transfer event in an event group activated by `Interact` or `Touch` triggers. The player is moved only when the event group is triggered, simulating the effect of entering a door.
+
+No events following the transfer player event will play, as the map switch stops the execution of subsequent events.
+
+---
+
+This reference document will be updated with more event details and new events as they are added to Pixel Stories.
