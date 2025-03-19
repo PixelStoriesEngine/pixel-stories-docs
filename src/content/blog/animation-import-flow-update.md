@@ -30,3 +30,4 @@ Idle animations for the player and characters are also added to make your games 
   - Introduced a default animation configuration for characters.
   - Animation settings inherit default values defined in the character unless explicitly overridden.
 - [Editor] Renamed “Actor” to “Character” in UI copy and asset paths.
+- [Player] Implement default config inheritance for player as well
