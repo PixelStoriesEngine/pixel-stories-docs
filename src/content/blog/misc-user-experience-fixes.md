@@ -32,3 +32,4 @@ Alongside the new adjustable side panel, we've squashed several bugs affecting g
 - [Editor] Fix not going back to editor mode after visiting playtest
 - [Editor, Map objects] Fix different objects can't be placed at the same tile
 - [Editor, zoom] Have map editor zoom persist through playtest and reloads
+- [Editor] fix when no show grid, zooming map enables grid again
