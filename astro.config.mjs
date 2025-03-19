@@ -96,12 +96,12 @@ export default defineConfig({
               link: "/events/",
             },
             {
-              label: "Video tutorials",
+              label: "Video tutorials 🔗",
               link: "https://www.youtube.com/@PixelStoriesEngine",
               attrs: { target: "_blank" },
             },
             {
-              label: "Official Discord",
+              label: "Official Discord 🔗",
               link: "https://discord.gg/XN9EaUh26g",
               attrs: { target: "_blank" },
             },
