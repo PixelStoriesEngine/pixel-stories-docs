@@ -1,0 +1,50 @@
+---
+import FooterColumn from "./FooterColumn.astro";
+import FooterLink from "./FooterLink.astro";
+import FooterLogo from "./FooterLogo.astro";
+---
+
+<footer class="mt-40 mb-20 border-t border-gray-200 py-10">
+  <div
+    class="container mx-auto flex flex-col md:flex-row justify-between items-start px-4"
+  >
+    <FooterLogo />
+
+    <div
+      class="flex flex-wrap md:flex-nowrap justify-between grow max-w-[500px] gap-x-14"
+    >
+      <!-- Engine -->
+      <FooterColumn name="Engine">
+        <FooterLink href="/docs">Documentation</FooterLink>
+        <FooterLink href="/launch-engine">Launch Engine</FooterLink>
+        <FooterLink href="/pricing">Pricing</FooterLink>
+        <FooterLink href="/releases">Releases</FooterLink>
+      </FooterColumn>
+
+      <!-- Company -->
+      <FooterColumn name="Company">
+        <FooterLink href="/blog">Blog</FooterLink>
+        <FooterLink href="/terms"> Terms of Service </FooterLink>
+        <FooterLink href="/terms#privacy-policy"> Privacy </FooterLink>
+      </FooterColumn>
+
+      <!-- Community -->
+      <FooterColumn name="Community">
+        <FooterLink
+          href="https://www.youtube.com/@PixelStoriesEngine"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          YouTube
+        </FooterLink>
+        <FooterLink
+          href="https://discord.com/invite/XN9EaUh26g"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Discord
+        </FooterLink>
+      </FooterColumn>
+    </div>
+  </div>
+</footer>

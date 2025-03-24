@@ -31,7 +31,7 @@ export default defineConfig({
         // Override the default `SocialIcons` component.
         SocialIcons: "./src/overrides/SocialIcons.astro",
         Hero: "./src/overrides/Hero.astro",
-        Footer: "./src/overrides/Footer.astro",
+        Footer: "./src/overrides/Footer/Footer.astro",
         ThemeSelect: "./src/overrides/ThemeSelect.astro",
       },
       editLink: {
