@@ -1,5 +1,4 @@
 ---
-import Footer from "./Footer.astro";
 import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 import { getCollection } from "astro:content";
 
@@ -13,7 +12,7 @@ const recentPosts = sortedPosts.slice(0, 4);
 ---
 
 <div class="not-content flex flex-col gap-3 max-w-[800px] mx-auto">
-  <div class="flex flex-col gap-24 max-w-[800px] mx-auto">
+  <div class="flex flex-col gap-24 max-w-[800px] mx-auto w-full">
     {/* Links Section */}
     <section class="flex flex-col gap-4 max-w-full">
       <h2 class="text-center">Make Your First Game Today!</h2>
@@ -43,18 +42,20 @@ const recentPosts = sortedPosts.slice(0, 4);
     </section>
 
     {/* News & Updates Section */}
-    <section class="max-w-full">
-      <div class="flex flex-col gap-4">
+    <section class="w-full max-w-[600px] mx-auto">
+      <div class="flex flex-col gap-4 w-full">
         <h2 class="text-center">Latest News</h2>
-        <ul class="pl-0 list-none flex flex-col gap-2 w-full">
+        <ul class="pl-0 list-none flex flex-col gap-2">
           {
             recentPosts.map((post) => (
               <a
                 href={`/blog/${post.slug}`}
-                class="hover:border-color-accent-high border border-transparent no-underline text-current w-full p-2 px-4 rounded-lg transition-all"
+                class="hover:border-color-accent-high border border-transparent no-underline text-current p-2 px-4 rounded-lg transition-all "
               >
                 <li class="pb-2">
-                  <h4 class="text-lg font-semibold w-max">{post.data.title}</h4>
+                  <h4 class="text-lg font-semibold w-max max-w-full">
+                    {post.data.title}
+                  </h4>
 
                   <time
                     class="font-mono text-sm"
@@ -85,7 +86,5 @@ const recentPosts = sortedPosts.slice(0, 4);
         >
       </div>
     </section>
-
-    <Footer />
   </div>
 </div>
