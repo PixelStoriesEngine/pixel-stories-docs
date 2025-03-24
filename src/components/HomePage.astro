@@ -1,6 +1,7 @@
 ---
 import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 import { getCollection } from "astro:content";
+import Footer from "./Footer/Footer.astro";
 
 const posts = await getCollection("blog");
 const sortedPosts = posts.sort(
@@ -88,3 +89,5 @@ const recentPosts = sortedPosts.slice(0, 4);
     </section>
   </div>
 </div>
+
+<Footer />

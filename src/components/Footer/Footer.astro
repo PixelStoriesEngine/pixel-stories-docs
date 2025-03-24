@@ -4,7 +4,7 @@ import FooterLink from "./FooterLink.astro";
 import FooterLogo from "./FooterLogo.astro";
 ---
 
-<footer class="mt-40 mb-20 border-t border-gray-200 py-10">
+<footer class="not-content !mt-40 mb-0 border-t border-gray-200 py-10">
   <div
     class="container mx-auto flex flex-col md:flex-row justify-between items-start px-4"
   >
@@ -15,15 +15,17 @@ import FooterLogo from "./FooterLogo.astro";
     >
       <!-- Engine -->
       <FooterColumn name="Engine">
-        <FooterLink href="/docs">Documentation</FooterLink>
-        <FooterLink href="/launch-engine">Launch Engine</FooterLink>
+        <FooterLink href="/overview">Documentation</FooterLink>
+        <FooterLink href="/guides">Guides</FooterLink>
         <FooterLink href="/pricing">Pricing</FooterLink>
-        <FooterLink href="/releases">Releases</FooterLink>
+        <FooterLink href="https://app.pixelstories.io/">
+          Launch Engine
+        </FooterLink>
       </FooterColumn>
 
       <!-- Company -->
       <FooterColumn name="Company">
-        <FooterLink href="/blog">Blog</FooterLink>
+        <FooterLink href="/blog">News</FooterLink>
         <FooterLink href="/terms"> Terms of Service </FooterLink>
         <FooterLink href="/terms#privacy-policy"> Privacy </FooterLink>
       </FooterColumn>
