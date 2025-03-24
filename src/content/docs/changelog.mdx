@@ -1,0 +1,84 @@
+---
+title: Pixel Stories Changelog
+description: Find specific releases and changelogs for the engine.
+---
+
+{/\*
+
+NOTE: Source of truth from pixel-stories-app repo at CHANGELOG.md
+
+Upon releases, update this doc to sync with pixel-stories-app
+
+\*/}
+
+All notable changes to the Pixel Stories Engine will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## v0.2.0 Show Image and Set NPC Animation Events
+
+**March 18, 2025**
+
+**Misc user experience fixes**
+
+- [Routing] Fix infinite reload when going to an undefined path
+- [Side panel] Add slideable side panel to adjust width
+- [Projects] Fix double game canvas when switching projects from playtest and settings
+- [Editor] Fix not going back to editor mode after visiting playtest
+- [Editor, Map objects] Fix different objects cant be placed at same tile
+- [Editor, zoom] Have map editor zoom to persist through playtest and reloads
+- [Editor] Rename “Actor” to “Character” in UI copy and assets path.
+- [Editor] fix when no show grid, zooming map enables grid again
+
+**New Show image and Set Character Animation Events**
+
+- [Event] Add show image event
+- [Event] Add Set NPC Animation Set event
+- [Event] Fix NPC walk event to use duration parameter to determine when NPC has finished walking.
+
+**Improvement to custom character animation import flow**
+
+- [Characters] Change animation settings to inheritance from settings defined in character
+  - Remove copy-paste in animation config.
+  - Introduce a default animation configuration for characters.
+  - Animation settings now inherit default settings defined in character unless explicitly overridden.
+- [Character] Enable idle animation
+- [Player] Implement default config inheritance for player as well
+
+**Easier event group clean up and less jank map switching**
+
+- [Event] Tranfer player event to fade for a fix 350ms amount between maps
+- [Event] Remove own event group after finish playing from Add event group event:
+  - Keep in Map: Group remains until explicitly removed by a Remove Group Event.
+  - Remove on Finish: Group is automatically removed after playing once.
+  - Remove after N Plays: Group is automatically removed after a specified number of plays.
+
+## v0.1.0 Asset Management, Enhanced Map Tools and Dialog UI
+
+Feb 19, 2025
+
+- Set default map editing tool to be "pan"
+- Set game scale to envope
+- Remove game size config
+- Redo game size to be "true game size"
+- Add game size fit or fill window option
+- Add default map zoom and map zoom
+- Fix map editor grid rendering bugs
+- Json schema change: new ui config json format
+- - rename story.ui to story.gameUI
+- Completely revamp dialog screen view layout and simplify configuration flow
+- - Add web safe fonts
+  - Add dialog box background and border color customization
+  - Change dialog box size defined from px to percentage of screen
+  - Remove NineSlice background option
+  - Remove concept of widgets, including image widget
+- Move adding and editing terrains and map objects to game assets page
+- Add map zoom input for precise zoom adjustment
+- Move map settings from a modal to a dropdown
+- Add new assets from OpenGameArt
+- - zelda like assets
+- Add tags to assets for organization
+- Add search and filter for assets
+- Adds single tile terrain mode
+- sort editor drawer stories by last edited

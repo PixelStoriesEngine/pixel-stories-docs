@@ -96,6 +96,10 @@ export default defineConfig({
               link: "/events/",
             },
             {
+              label: "Engine changelog",
+              link: "/changelog/",
+            },
+            {
               label: "Video tutorials 🔗",
               link: "https://www.youtube.com/@PixelStoriesEngine",
               attrs: { target: "_blank" },
