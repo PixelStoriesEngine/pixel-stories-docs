@@ -3,8 +3,6 @@ title: Pixel Stories Engine Changelog
 description: Find specific releases and changelogs for the engine.
 ---
 
-import ChangelogRelease from "../../components/ChangelogRelease.astro";
-
 ## 0.8.0
 
 **March 18, 2025** ([Release notes](http://localhost:4321/blog/show-image-set-character-anim))
