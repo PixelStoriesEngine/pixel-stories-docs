@@ -1,22 +1,15 @@
 ---
-title: Pixel Stories Changelog
+title: Pixel Stories Engine Changelog
 description: Find specific releases and changelogs for the engine.
 ---
 
-{/*NOTE: Source of truth from pixel-stories-app repo at CHANGELOG.md
+import ChangelogRelease from "../../components/ChangelogRelease.astro";
 
-Upon releases, update this doc to sync with pixel-stories-app*/}
+## 0.8.0
 
-All notable changes to the Pixel Stories Engine will be documented in this file.
+**March 18, 2025** ([Release notes](http://localhost:4321/blog/show-image-set-character-anim))
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-## v0.2.0 Show Image and Set NPC Animation Events
-
-**March 18, 2025**
-
-**Misc user experience fixes**
+Misc user experience fixes
 
 - [Routing] Fix infinite reload when going to an undefined path
 - [Side panel] Add slideable side panel to adjust width
@@ -27,13 +20,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [Editor] Rename “Actor” to “Character” in UI copy and assets path.
 - [Editor] fix when no show grid, zooming map enables grid again
 
-**New Show image and Set Character Animation Events**
+New Show image and Set Character Animation Events
 
 - [Event] Add show image event
 - [Event] Add Set NPC Animation Set event
 - [Event] Fix NPC walk event to use duration parameter to determine when NPC has finished walking.
 
-**Improvement to custom character animation import flow**
+Improvement to custom character animation import flow
 
 - [Characters] Change animation settings to inheritance from settings defined in character
   - Remove copy-paste in animation config.
@@ -42,7 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [Character] Enable idle animation
 - [Player] Implement default config inheritance for player as well
 
-**Easier event group clean up and less jank map switching**
+Easier event group clean up and less jank map switching
 
 - [Event] Tranfer player event to fade for a fix 350ms amount between maps
 - [Event] Remove own event group after finish playing from Add event group event:
@@ -50,31 +43,176 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Remove on Finish: Group is automatically removed after playing once.
   - Remove after N Plays: Group is automatically removed after a specified number of plays.
 
-## v0.1.0 Asset Management, Enhanced Map Tools and Dialog UI
+---
 
-Feb 19, 2025
+## 0.7.1
 
-- Set default map editing tool to be "pan"
+**February 19, 2025**
+
+- Fix wrong dialog box size and position
+
+---
+
+## 0.7.0
+
+**February 19, 2025**
+
+Asset Management, Enhanced Map Tools and Dialog UI
+
+Key changes:
+
+- Adds Zelda-like open source assets
+- Implements a better game window size, along with better map tools including zoom
+- Fixes DialogUI to include good default settings
+
+Changelog
+
+- Set default map editing tool to be “pan”
 - Set game scale to envope
 - Remove game size config
-- Redo game size to be "true game size"
+- Redo game size to be “true game size”
 - Add game size fit or fill window option
 - Add default map zoom and map zoom
 - Fix map editor grid rendering bugs
 - Json schema change: new ui config json format
-- - rename story.ui to story.gameUI
+  - rename story.ui to story.gameUI
 - Completely revamp dialog screen view layout and simplify configuration flow
-- - Add web safe fonts
+  - Add web safe fonts
   - Add dialog box background and border color customization
   - Change dialog box size defined from px to percentage of screen
   - Remove NineSlice background option
   - Remove concept of widgets, including image widget
 - Move adding and editing terrains and map objects to game assets page
 - Add map zoom input for precise zoom adjustment
-- Move map settings from a modal to a dropdown
 - Add new assets from OpenGameArt
-- - zelda like assets
+  - zelda like assets
 - Add tags to assets for organization
 - Add search and filter for assets
-- Adds single tile terrain mode
 - sort editor drawer stories by last edited
+
+---
+
+## 0.6.0
+
+**November 13, 2024**
+
+Improved Terrain Creation and Mapping
+
+Added
+
+- [Map terrains, Editor] Expandable single tile tileset and individual tile placement
+- [Map terrains] New modal for creating auto tile terrains with clear format mode selection
+- [Map terrains] Support for blob auto tile format
+- [Editor] Zoom in and out in editor (ctrl + scroll wheel)
+
+Changed
+
+- [Editor] Game window in editor takes up entire screen view instead of only limiting to game’s view
+- [Terrain layers] New layer is added on top of list instead of below
+- [Map terrains, Map objects] Temporarily remove terrain and objects library (better default assets coming soon)
+
+Fixed
+
+- [Map terrains] Fix “Wang” format incorrectly generating the auto tileset at corners
+- [Editor] Restarting game did not properly signal for UI updates
+- [Terrain layers, Editor] Drawing on hidden terrain layers
+
+---
+
+## 0.5.0
+
+**September 10, 2024**
+
+Customize UI Feature Release
+
+- Dialog box customization via Game Assets
+- Dialog screen customization button
+- Face sprite support and customization
+- New dialog text editor experience
+- Remove “Textbox” RexUI component
+- Add “Text player” RexUI component
+- Integrate Monaco Editor
+- Add widget and tag system
+- Add face sprite widget
+- Implement tag parser for Text player
+- Update image and sound asset system
+- Support replaceable assets
+
+---
+
+## 0.4.3
+
+**Aug 8, 2024**
+
+- Fix total events infinite loading
+
+---
+
+## 0.4.2
+
+**July 15, 2024**
+
+- Hot fix for clipped dialog box
+
+---
+
+## 0.4.1
+
+**July 15, 2024**
+
+- Fix default dialog box size to fit in game window
+
+---
+
+## 0.4.0
+
+**July 15, 2024**
+
+Better Drawing Tools and Input Fixes
+
+- Add rectangle and ellipse tools for terrains and collisions
+- Change interact key from `X` to `Z`
+- Improve input handling and story store update logic
+
+---
+
+## 0.3.0
+
+**July 10, 2024**
+
+Choices event and UI Upgrade
+
+- Redo dialog box using Phaser Rex UI
+- Add choices UI and choices event
+- Add resources section to project page
+- Remove unused queries:
+  - `purchased_stories`
+  - `is_paid`
+  - `is_listed`
+  - `published_date`
+
+---
+
+## 0.2.0
+
+**June 22, 2024**
+
+- Add foundational mapping features and map editing tools
+
+---
+
+## 0.1.0
+
+**April 10, 2024**
+
+- Core engine features
+
+---
+
+## 0.0.0
+
+**July 21, 2023**
+
+Initial Commit
+
+- Begin development of Pixel Stories Engine
