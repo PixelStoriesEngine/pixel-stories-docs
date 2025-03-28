@@ -1,0 +1,14 @@
+---
+const { href, target, rel } = Astro.props;
+---
+
+<li>
+  <a
+    class="text-current no-underline hover:opacity-70 transition-opacity"
+    {href}
+    {target}
+    {rel}
+  >
+    <slot />
+  </a>
+</li>
