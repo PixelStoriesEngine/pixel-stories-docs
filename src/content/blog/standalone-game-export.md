@@ -12,15 +12,13 @@ tags:
 
 # Standalone Game Web Export
 
-Previously, you could only share your game via a Pixel Stories link. While this is convenient, those that play your game need an internet connection to play your game. Not to mention, in the very unlikely event that Pixel Stories went down due to some catastrophic failure, your games would also go down! To fix those things, we added standalone game exports to web.
+Previously, you could only share your game via a Pixel Stories link. While this is convenient, those that play your game need an internet connection. Not to mention, in the very unlikely event that Pixel Stories goes down due to some catastrophic failure, your games would also go down! To fix those things, we added standalone game exports.
 
-You can now export your games directly to HTML, CSS, and JavaScript, making them playable in any modern web browser as long as it's served with a web browser. So now, your game is no longer dependant on an internet connection or to the Pixel Stories website.
+You can now export your games directly to HTML, CSS, and JavaScript, making them playable in any modern web browser as long as it's served with a web browser, [which can be done locally](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/set_up_a_local_testing_server). So now, your game is no longer dependant on an internet connection or to the Pixel Stories website.
 
 ## Changelog with Development History
 
-With this standalone game export, we realized that we need to provide a good sense of versioning for your games. When you export a game, it will export with the latest version of the game container, which is the engine which runs your game. Right now there is only one release of the game container, so all exports will come with that. In the future, we will add an export release selector so you have that granular control over your game exports!
-
-You can find [the changelog here](https://pixelstories.io/changelog/).
+With this standalone game export, we realized that we need to provide a good sense of versioning for your games and which version of game engine it was made with. If the game engine has a breaking change update, your game will still work with the engine version it was exported with. Right now there is only one release of the game container, so the export will come with that version. In the future, we will add an export release selector so you can have the granular control over your game export. You can find [the changelog here](/changelog/).
 
 ### Changelog
 
