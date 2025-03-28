@@ -3,9 +3,21 @@ title: Pixel Stories Engine Changelog
 description: Find specific releases and changelogs for the engine.
 ---
 
+## 0.9.0
+
+[See release notes](https://pixelstories.io/blog/standalone-game-export)
+
+Added
+
+- [Editor] Add game export for web HTML/CSS/JS
+- [Misc] Add standalone game build
+- [Changelog] Add a rough history of development in the Pixel Stories Engine
+
+---
+
 ## 0.8.0
 
-**March 18, 2025** ([Release notes](http://localhost:4321/blog/show-image-set-character-anim))
+**March 18, 2025**
 
 Misc user experience fixes
 
