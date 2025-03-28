@@ -211,6 +211,4 @@ Choices event and UI Upgrade
 
 **July 21, 2023**
 
-Initial Commit
-
-- Begin development of Pixel Stories Engine
+Begin development of Pixel Stories Engine
