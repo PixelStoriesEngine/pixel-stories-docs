@@ -5,6 +5,8 @@ description: Find specific releases and changelogs for the engine.
 
 ## 0.9.0
 
+**March 27, 2025**
+
 [See release notes](https://pixelstories.io/blog/standalone-game-export)
 
 Added
