@@ -3,6 +3,51 @@ title: Pixel Stories Engine Changelog
 description: Find specific releases and changelogs for the engine.
 ---
 
+## 0.10.1
+
+**May 1, 2025** ([Release notes](https://pixelstories.io/blog/choice-event-upgrade))
+
+Added
+
+- [Event groups] Event group now has an `Add to map` button which adds an `Add event group` event to the top of initial map events with the event group already selected.
+
+Changed
+
+- [Event] Show Choices event plays user events on choice selection instead of setting variable
+- [Editor] New project game config: size mode default to "fit" instead of "fill", Game size to 800 by 800
+- [Editor] New project includes an empty default map "Map 1"
+- [Animations] Set better fallback values (16x16 size, 4 fps) for missing animation config to help see error
+
+Fixed
+
+- [Editor] Stale mouse events triggered from outside game canvas
+- [Editor] Back button navigates to session history, last-visited URL by default, instead of page structure.
+- [Assets library] A more focused asset library that does not overwhelm the user by showing everything. Skips asset library to go to asset pack right away instead, since there is only one right now.
+- [Assets library] Fix duplicate asset ids
+- [Game UI] Remove choices UI config, instead inherit UI style config from dialog box
+- [Editor] Remove ability to drag and move nested events in or out of their nested positions due to buggy behaviour
+- [Animations] Crash due to undefined frame configuration
+
+---
+
+## 0.10.0
+
+**April 11, 2025** ([Release notes](https://pixelstories.io/blog/introducing-code-event))
+
+Added
+
+- [Navigation] Bring out map terrain and objects so its not nested in navigation
+- [Navigation] Enable back button from playtest page
+- [Map objects] Integrate collision boxes into map objects
+- [Player] Enable adjusting collision box for player
+- [Events] New event: Add Run Code event. Lets users execute custom client-side code at specific points during gameplay to directly manipulate game objects, camera, scene behavior, or anything else.
+
+Fixed
+
+- [Transfer player event] Fix transfer player event setting player position while map not loaded
+
+---
+
 ## 0.9.0
 
 **March 27, 2025** ([Release notes](https://pixelstories.io/blog/standalone-game-export))
