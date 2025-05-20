@@ -3,6 +3,24 @@ title: Pixel Stories Engine Changelog
 description: Find specific releases and changelogs for the engine.
 ---
 
+## 0.11.0
+
+**May 13, 2025**
+
+Added
+
+- [Map objects] Animated Map Objects, added the option for static and animated map objects, and configuration for animation strip.
+
+Changed
+
+- [Terrains] Added confirm delete pop up for deleting terrains in the edit terrains modal
+
+Fixed
+
+- [Editor] Optimize handling of state when editing terrains
+
+---
+
 ## 0.10.1
 
 **May 1, 2025** ([Release notes](https://pixelstories.io/blog/choice-event-upgrade))
