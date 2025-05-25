@@ -3,6 +3,17 @@ title: Pixel Stories Engine Changelog
 description: Find specific releases and changelogs for the engine.
 ---
 
+## 0.12.0
+
+**May 25, 2025** ([Release notes](https://pixelstories.io/blog/release-0.12.0))
+
+- [Editor] Added offline mode and syncing local/remote project data
+- [Editor] Added guest mode for editing guest project without remote save
+- [Auth] Remove legacy auth service and replace with updated auth service from provider
+- [Editor] Added a safe guard against saving an empty project file to the cloud
+
+---
+
 ## 0.11.0
 
 **May 13, 2025**
