@@ -3,6 +3,22 @@ title: Pixel Stories Engine Changelog
 description: Find specific releases and changelogs for the engine.
 ---
 
+## 0.13.0
+
+**June 16, 2025** ([Release notes](https://pixelstories.io/blog/release-0.13.0))
+
+- [Editor] Fix empty project name. Set default name "A New Beginning."
+- [Terrain Tilesets] Support for multiple tilesets in a map. **Breaking change**, all previous maps that used the single tileset will not be supported.
+- [Editor] Game canvas now uses all screen space.
+- [Editor] Added undo redo for all map editor tool actions.
+- [Editor] Fixed buggy panning in game canvas when panning slowly.
+- [Editor] Added new way to add map collisions, with dragging and resizing map collisions rectangles.
+- [Editor] Consolidated how map switching is done by moving the map switcher to the map editor.
+- [Editor] Added search and categorization functionality to map objects.
+- [Assets] Moved terrains and map objects configuration from assets page to map editor side panel.
+- [Terrain Tilesets] Added functionality to draw a rectangular selection of tiles from tilesets.
+- [Misc] Update dependencies
+
 ## 0.12.0
 
 **May 25, 2025** ([Release notes](https://pixelstories.io/blog/release-0.12.0))
