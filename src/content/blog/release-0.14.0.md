@@ -1,5 +1,5 @@
 ---
-title: Better Base Asset Pack to get Started
+title: Better Base Asset Pack To Get Started
 date: 2025-07-02
 excerpt: This update ships a revamped asset library and starter asset pack, plus improvements to tilesets and editor usability.
 author: Truman
@@ -9,7 +9,9 @@ tags:
 
 ## Better Base Asset Pack to get Started
 
-With this release, Pixel Stories introduces a new asset library. The library is organized into thoughtful categories and includes a base asset pack with more than 100 assets ready to drop into your projects. Tilesets are front and center for map editing, while map objects help place props and terrains/auto-tiles make paths and roads easy. Overall, the editor experience should feel smoother when using tilesets and stamping large selections.
+With this release, Pixel Stories introduces a new asset library. The library is organized into thoughtful categories and includes a base asset pack with more than 100 assets ready to drop into your projects. New projects can start from scratch, ready for custom assets, or start with all default assets added in.
+
+Tilesets are now at the front and center for map editing, while map objects help place environmental props and terrains/auto-tiles make paths and roads easy. Overall, the editor experience should feel smoother when using tilesets and stamping large selections.
 
 ### Changelog
 
