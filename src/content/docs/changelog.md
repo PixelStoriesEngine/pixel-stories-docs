@@ -3,6 +3,24 @@ title: Pixel Stories Engine Changelog
 description: Find specific releases and changelogs for the engine.
 ---
 
+## 0.14.0
+
+**July 2, 2025** ([Release notes](https://pixelstories.io/blog/release-0.14.0))
+
+- [Asset Library] Added new and better organized zelda-like asset pack with tilesets
+- [Asset Library] Added a new asset library which includes search and filters.
+- [Editor] Added start project with default asset pack or from scratch
+- [Tilesets] Added tilesets to asset library
+- [Tilesets] Moved edit tilesets to its own tab section
+- [Tilesets] Improved efficiency of tile stamping which used to cause a lot of lag when stamping a big selection
+- [Editor] Added press escape to cancel active tool (set tool to pan)
+- [Maps] Fixed deleting the last map in project leading to broken state.
+- [Editor] Uploading a new asset sets the asset name to the file name when no name exists.
+- [Editor] Fixed blank unmodified guest project being transferred to user's projects
+- [Map objects] Fixed broken animated map objects
+- [Map objects] Added correct draw preview for animated map objects
+- [Editor] Fixed browser back button on going to project from projects list
+
 ## 0.13.0
 
 **June 16, 2025** ([Release notes](https://pixelstories.io/blog/release-0.13.0))
