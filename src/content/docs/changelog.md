@@ -3,6 +3,18 @@ title: Pixel Stories Engine Changelog
 description: Find specific releases and changelogs for the engine.
 ---
 
+## 0.15.0
+
+**July 8, 2025** ([Release notes](https://pixelstories.io/blog/release-0.15.0))
+
+- [Inventory] Added inventory system with support for creating custom inventory items.
+- [Inventory] Added game UI for inventory bar and inventory item slide out panel to display item name, description and icon.
+- [Inventory] Added events for adding and removing items from player's inventory
+- [Events] Fixed conditional blocks not updating after being added or deleted
+- [Tools] Fixed incorrect tool state surrounding editing map and editing events.
+- [Editor] Fixed double game canvas loading when switching out of playtest before game fully loads.
+- [Game] Added loading bars for game load
+
 ## 0.14.0
 
 **July 2, 2025** ([Release notes](https://pixelstories.io/blog/release-0.14.0))
