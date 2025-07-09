@@ -9,7 +9,7 @@ tags:
 
 ## Introducing Inventory System
 
-The 0.15.0 release brings a brand new inventory system. You can now create custom items and display them in a sleek inventory bar with a slide-out panel showing each item's details. New events let you add or remove items while playing, opening the door to fetch quests and other exploration mechanics.
+The 0.15.0 release brings a brand new inventory system. You can now create custom items and display them in the game's inventory bar with a slide-out panel showing each item's details. New events let you add or remove items while playing, opening the possibilities for puzzles, quests, and other exploration mechanics.
 
 Each item also exposes a variable you can check in conditional events. This means you can branch your story depending on whether or not the player has a particular item. Combined with the new UI, the system supports dynamic puzzles and interactions that react to your player's choices.
 
@@ -22,4 +22,3 @@ Each item also exposes a variable you can check in conditional events. This mean
 - [Tools] Fixed incorrect tool state surrounding editing map and editing events.
 - [Editor] Fixed double game canvas loading when switching out of playtest before game fully loads.
 - [Game] Added loading bars for game load
-
