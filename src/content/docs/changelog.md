@@ -3,6 +3,21 @@ title: Pixel Stories Engine Changelog
 description: Find specific releases and changelogs for the engine.
 ---
 
+## 0.16.0
+
+**July 17, 2025** ([Release notes](https://pixelstories.io/blog/release-0.16.0))
+
+- [Event groups] Added option for event group position to follow an NPC
+- [Events] Added NPC chase player event - NPC chases the player until stopped, with options to trigger follow-up events.
+- [Events] Added Stop NPC Chase event – Stops a specific NPC from chasing.
+- [Events] Added NPC Patrol Path event – NPC walks a looped path until stopped.
+- [Events] Added Stop Patrol Path event – Stops an NPC's patrol and leaves it at its current position.
+- [Editor] Fixed issue where player movement was not disabled during dialog or in editor mode.
+- [Events] Fixed incorrect "Event does not exist" message when the game map is not loaded.
+- [Editor] Fixed issue where starting a project from scratch still added Zelda-like assets.
+- [Editor] Fixed switching map editing section not updating to the associated tool.
+- [Map Editor] Improved active tool state handling by remembering the last tool used in each editor mode, including selection previews.
+
 ## 0.15.0
 
 **July 8, 2025** ([Release notes](https://pixelstories.io/blog/release-0.15.0))
