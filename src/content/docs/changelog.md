@@ -1,5 +1,5 @@
 ---
-title: Pixel Stories Game Maker Changelog
+title: Pixel Stories Changelog
 description: Find specific releases and changelogs for the game maker.
 ---
 

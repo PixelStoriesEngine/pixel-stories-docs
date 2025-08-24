@@ -96,7 +96,7 @@ export default defineConfig({
               link: "/events/",
             },
             {
-              label: "Game Maker changelog",
+              label: "Changelog",
               link: "/changelog/",
             },
             {

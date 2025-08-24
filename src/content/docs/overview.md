@@ -3,7 +3,7 @@ title: What is Pixel Stories?
 description: An overview of the Pixel Stories game maker.
 ---
 
-Pixel Stories is a game maker built specifically for creating 2D top down story-driven games.
+Pixel Stories is a game creation tool built specifically for creating 2D top down story-driven games.
 
 Our game creation tool is quick to learn and easy to work with. This lets you focus on creating unique and immersive stories without being overwhelmed by the complexities in game development with a general tool.
 
