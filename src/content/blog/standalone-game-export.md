@@ -7,7 +7,7 @@ cover:
   image: ../../assets/images/web-export-standalone-builds.png
   alt: Screenshot showcasing the new web export and standalone build features
 tags:
-  - ENGINE UPDATE
+  - GAME MAKER UPDATE
 ---
 
 # Standalone Game Web Export
@@ -18,7 +18,7 @@ You can now export your games directly to HTML, CSS, and JavaScript, making them
 
 ## Changelog with Development History
 
-With this standalone game export, we realized that we need to provide a good sense of versioning for your games and which version of game engine it was made with. If the game engine has a breaking change update, your game will still work with the engine version it was exported with. Right now there is only one release of the game container, so the export will come with that version. In the future, we will add an export release selector so you can have the granular control over your game export. You can find [the changelog here](/changelog/).
+With this standalone game export, we realized that we need to provide a good sense of versioning for your games and which version of the game maker it was made with. If the game maker has a breaking change update, your game will still work with the game maker version it was exported with. Right now there is only one release of the game container, so the export will come with that version. In the future, we will add an export release selector so you can have the granular control over your game export. You can find [the changelog here](/changelog/).
 
 ### Changelog
 
@@ -26,4 +26,4 @@ With this standalone game export, we realized that we need to provide a good sen
 
 - [Editor] Export games to web platforms using HTML, CSS, and JavaScript.
 - [Misc] Support for creating standalone game builds.
-- [Changelog] Comprehensive development history of the Pixel Stories Engine.
+- [Changelog] Comprehensive development history of the Pixel Stories game maker.

@@ -1,6 +1,6 @@
 ---
-title: Pixel Stories Engine Changelog
-description: Find specific releases and changelogs for the engine.
+title: Pixel Stories Changelog
+description: Find specific releases and changelogs for the game maker.
 ---
 
 ## 0.16.0
@@ -146,7 +146,7 @@ Added
 
 - [Editor] Add game export for web HTML/CSS/JS
 - [Misc] Add standalone game build
-- [Changelog] Add a rough history of development in the Pixel Stories Engine
+- [Changelog] Add a rough history of development in the Pixel Stories game maker
 
 ---
 
@@ -350,7 +350,7 @@ Choices event and UI Upgrade
 
 **April 10, 2024**
 
-- Core engine features
+- Core game maker features
 
 ---
 
@@ -358,4 +358,4 @@ Choices event and UI Upgrade
 
 **July 21, 2023**
 
-Begin development of Pixel Stories Engine
+Begin development of Pixel Stories game maker

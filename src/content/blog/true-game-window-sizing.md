@@ -7,7 +7,7 @@ cover:
   image: ../../assets/images/true-game-window-sizing-1.png
   alt: Game scaling and responsiveness update preview
 tags:
-  - ENGINE UPDATE
+  - GAME MAKER UPDATE
 ---
 
 # True Game Window Sizing!

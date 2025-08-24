@@ -7,7 +7,7 @@ cover:
   image: ../../assets/images/map-editor-enhancement.png
   alt: Map editor enhancement preview
 tags:
-  - ENGINE UPDATE
+  - GAME MAKER UPDATE
 ---
 
 # More Map Editor Enhancements

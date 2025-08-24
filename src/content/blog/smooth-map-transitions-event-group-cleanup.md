@@ -7,7 +7,7 @@ cover:
   image: ../../assets/images/smooth-map-transitions.png
   alt: Preview of smooth map transition effect
 tags:
-  - ENGINE UPDATE
+  - GAME MAKER UPDATE
 ---
 
 # Smooth Map Transitions and Event Group Cleanup

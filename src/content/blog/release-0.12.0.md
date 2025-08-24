@@ -4,7 +4,7 @@ date: 2025-05-25
 excerpt: This update brings two big changes to help you build games more reliably and make it easier for new creators to get started.
 author: Truman
 tags:
-  - ENGINE UPDATE
+  - GAME MAKER UPDATE
 ---
 
 ## Guest Mode: Start Creating Instantly

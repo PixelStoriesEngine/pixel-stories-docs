@@ -4,7 +4,7 @@ date: 2025-06-16
 excerpt: The old map editor UI had some glaring design issues. This update brings a fresh look and feel to the editor to make map creation better than before!
 author: Truman
 tags:
-  - ENGINE UPDATE
+  - GAME MAKER UPDATE
 ---
 
 ## Major Map Editor Overhaul
