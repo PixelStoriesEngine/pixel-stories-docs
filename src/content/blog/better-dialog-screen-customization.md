@@ -7,7 +7,7 @@ cover:
   image: ../../assets/images/better-dialog-screen-customization.png
   alt: Dialog screen customization preview
 tags:
-  - ENGINE UPDATE
+  - GAME MAKER UPDATE
 ---
 
 # Better Dialog Screen Customization

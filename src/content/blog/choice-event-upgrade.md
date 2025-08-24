@@ -4,7 +4,7 @@ date: 2025-05-01
 excerpt: This update improves polish and usability across the board. More intuitive defaults, better error handling, and cleaner editing.
 author: Truman
 tags:
-  - ENGINE UPDATE
+  - GAME MAKER UPDATE
 ---
 
 ### Smoother Setup, Smarter Defaults, and a Cleaner Editor

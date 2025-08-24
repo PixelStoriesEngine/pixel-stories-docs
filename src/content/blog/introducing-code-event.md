@@ -4,7 +4,7 @@ date: 2025-04-11
 excerpt: With the new Run Code event, you can now write custom JavaScript to control game objects, the camera, scene behavior, and more, right from within your events.
 author: Truman
 tags:
-  - ENGINE UPDATE
+  - GAME MAKER UPDATE
 ---
 
 ### Run Custom Code at Any Point in Your Game
@@ -15,7 +15,7 @@ Inspired by the flexibility of command-line tools and frameworks like Phaser (wh
 
 This new event lets you inject your own JavaScript directly into your game. That means full access to the Phaser `game` object, open-ended control over game objects, camera, scene behavior, and much more. Want to shake the camera? Add a screen effect? Spawn enemies based on dynamic logic? Now you can.
 
-Instead of building a growing library of plugins that risk conflicts and complexity, we’re giving you the power to customize behavior in small, focused pieces, similar to other game engines.
+Instead of building a growing library of plugins that risk conflicts and complexity, we’re giving you the power to customize behavior in small, focused pieces, similar to other game makers.
 
 Whether you’re an experienced developer or just starting to learn, this unlocks a whole new layer of creativity in your game.
 

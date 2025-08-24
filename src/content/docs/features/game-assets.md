@@ -5,7 +5,7 @@ description: How game asset management works in Pixel Stories
 
 Game Assets in Pixel Stories is designed to help users effectively manage all types of game assets. Game assets include images, animations, actors, sounds/music, and variables.
 
-Uploading assets into Pixel Stories is designed to be simple. Each asset is individually uploaded into the game engine and always replaceable.
+Uploading assets into Pixel Stories is designed to be simple. Each asset is individually uploaded into the game maker and always replaceable.
 
 ## Map Terrains
 
@@ -93,7 +93,7 @@ To import animations, they must be in the format of single row sprite strips. Su
 
 If you asset came in a spritesheet grid, you can use a spritesheet editing tool like [EZGif Spritesheet cutter](https://ezgif.com/sprite-cutter) to slice the spritesheet into rows.
 
-The engine does not currently support animations that come in a GIF format. To use a gif, [EZGif gif to spritesheet](https://ezgif.com/gif-to-sprite) can convert to a sprite strip.
+The game maker does not currently support animations that come in a GIF format. To use a gif, [EZGif gif to spritesheet](https://ezgif.com/gif-to-sprite) can convert to a sprite strip.
 
 # Animation Configuration
 
@@ -113,7 +113,7 @@ Audio and images can also be imported into your game in Pixel Stories.
 
 ### File Types
 
-Since our game engine is web-based, we can automatically support a wide range of file types. The following are what's supported.
+Since our game maker is web-based, we can automatically support a wide range of file types. The following are what's supported.
 
 **Audio:**
 

@@ -4,7 +4,7 @@ date: 2025-03-11
 excerpt: Animation configuration now inherits default settings from character definitions, reducing redundancy and enabling idle animations.
 author: Truman
 tags:
-  - ENGINE UPDATE
+  - GAME MAKER UPDATE
 ---
 
 # Less Redundancy in Animation Import Flow
