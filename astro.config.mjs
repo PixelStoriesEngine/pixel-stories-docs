@@ -50,51 +50,74 @@ export default defineConfig({
               link: "/overview",
             },
             {
-              label: "Quick start",
+              label: "Features",
+              link: "/features",
+            },
+            {
+              label: "Quick start tutorial",
               link: "/getting-started/",
             },
-            // {
-            //   label: "Interface tour",
-            //   link: "/",
-            // },
-            // {
-            //   label: "Examples",
-            //   link: "/",
-            // },
+            {
+              label: "Interface tour",
+              link: "/tour/",
+            },
           ],
         },
         {
-          label: "Concepts",
+          label: "Map editor",
           items: [
-            {
-              label: "Events system",
-              link: "/features/events-system/",
-            },
-            {
-              label: "Conditional branching",
-              link: "/features/variables-and-branching/",
-            },
-            {
-              label: "Map editor",
-              link: "/features/map-editor/",
-            },
-            {
-              label: "Game assets",
-              link: "/features/game-assets/",
-            },
+            { label: "Overview", link: "/map-editor/overview" }, // goes through interface, toolbar, map switcher, Map settings & grid
+            { label: "Tilesets", link: "/map-editor/tilesets" }, // goes through Terrain layers
+            { label: "Auto-tiles", link: "/map-editor/auto-tile" },
+            { label: "Map objects", link: "/map-editor/objects" },
+            { label: "Collisions", link: "/map-editor/collisions" },
           ],
         },
         {
-          label: "How-to guides",
-          autogenerate: { directory: "/guides" },
+          label: "Events editor",
+          items: [
+            { label: "Overview", link: "/events-editor/overview" }, // goes through how events play and map initial events play on first load
+            { label: "Event groups & triggers", link: "/events-editor/groups" },
+            { label: "Conditional branches", link: "/events-editor/branches" },
+            { label: "Dialogue event", link: "/events-editor/dialogue" },
+            { label: "Player events", link: "/events-editor/transfer" },
+            { label: "NPC events", link: "/events-editor/actors" },
+            { label: "Inventory events", link: "/events-editor/actors" },
+          ],
         },
+        {
+          label: "Game assets",
+          items: [
+            { label: "Asset library", link: "/map-editor/assets" },
+            { label: "NPCs & animations", link: "/assets/characters" },
+            { label: "Inventory items", link: "/assets/items" },
+            { label: "Dialogue UI", link: "/assets/dialogue-ui" },
+          ],
+        },
+        // {
+        //   label: "Guides",
+        //   autogenerate: { directory: "/guides" },
+        // },
+        /*
+          Build a Door (map transfer + trigger)
+
+          NPC Basics: Spawn, Talk, Despawn
+
+          Choices & Branching Dialogue
+
+          Chase & Patrol (ties together movement + triggers)
+
+          Inventory Pickup & Use
+
+          Switch Maps from a Cutscene
+
+          Customize the Dialogue Box Theme
+
+          Each guide uses the standard page template (What/When/Steps/Tips/Related).
+            */
         {
           label: "Resources",
           items: [
-            {
-              label: "Events reference",
-              link: "/events/",
-            },
             {
               label: "Changelog",
               link: "/changelog/",
