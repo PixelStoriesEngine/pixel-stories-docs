@@ -66,8 +66,8 @@ export default defineConfig({
         {
           label: "Map editor",
           items: [
-            { label: "Overview", link: "/map-editor/overview" }, // goes through interface, toolbar, map switcher, Map settings & grid
-            { label: "Tilesets", link: "/map-editor/tilesets" }, // goes through Terrain layers
+            { label: "Overview", link: "/map-editor/overview" },
+            { label: "Tilesets", link: "/map-editor/tilesets" },
             { label: "Auto-tiles", link: "/map-editor/auto-tile" },
             { label: "Map objects", link: "/map-editor/objects" },
             { label: "Collisions", link: "/map-editor/collisions" },
