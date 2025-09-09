@@ -86,8 +86,8 @@ export default defineConfig({
               link: "/events-editor/conditionals",
             },
             {
-              label: "Dialog & choice events",
-              link: "/events-editor/dialog-and-choice-events",
+              label: "Dialog event",
+              link: "/events-editor/dialog-event",
             },
             {
               label: "Player events",
