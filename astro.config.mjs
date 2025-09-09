@@ -68,7 +68,7 @@ export default defineConfig({
           items: [
             { label: "Overview", link: "/map-editor/overview" },
             { label: "Tilesets", link: "/map-editor/tilesets" },
-            { label: "Auto-tiles", link: "/map-editor/auto-tile" },
+            { label: "Autotile terrains", link: "/map-editor/autotile" },
             { label: "Map objects", link: "/map-editor/objects" },
             { label: "Collisions", link: "/map-editor/collisions" },
           ],
