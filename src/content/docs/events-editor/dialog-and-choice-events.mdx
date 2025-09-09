@@ -1,16 +1,9 @@
 ---
-title: "Dialog and Choices Events"
-description: Show dialog and present choices in Pixel Stories. Write lines, style them with BBCode, add paging tags, and run events based on the player’s selection.
+title: "Dialog Event"
+description: Show dialog in Pixel Stories. Write lines, style them with BBCode, add paging tags.
 ---
 
-Dialog and choices are how you talk to the player and let them decide what happens next. Use dialog for lines of text, and choices for branching paths that trigger different events.
-
-## Common Uses
-
-- Branching conversations that react to player actions
-- Accept or decline a quest and run different outcomes
-- Teach mechanics with a safe choice and a risky choice
-- Gate progress until the correct answer is chosen
+The Dialog event is used to show text to the player inside a dialog box. It delivers story, instructions, or character speech during your game. You control the content, style, and flow of the text, while Pixel Stories handles how it appears on screen.
 
 📸 _\[Screenshot: Conversation tree using Dialog and Choices together]_
 
@@ -47,19 +40,3 @@ The dialog box supports **BBCode** for emphasis and readability, for example bol
 See the **[BBCode Guide](https://www.bbcode.org/reference.php)** for supported tags.
 
 📸 _\[Screenshot: Styled dialog line using bold and color]_
-
-## The Choices Event
-
-The **Choices** event shows a dialog box with multiple options. When the player selects an option, the game runs the events linked to that choice.
-
-📸 _\[Screenshot: Choices event with three options visible]_
-
-### Adding Choices
-
-1. Click **+ Events…** and select **Choices**
-2. Add one or more options
-3. For each option, add the events that should run when it is selected
-
-Choices can lead to different dialogs, scene changes, item rewards, or endings.
-
-📸 _\[Screenshot: Choice configuration with per-choice event lists]_
