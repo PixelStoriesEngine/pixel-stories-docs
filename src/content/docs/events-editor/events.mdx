@@ -1,5 +1,5 @@
 ---
-title: "Events Editor Overview"
+title: "Events in Pixel Stories"
 description: Build story mechanics with Events in Pixel Stories. Add actions, set triggers, branch choices, and control maps and NPCs with a simple, sequential editor.
 ---
 
@@ -37,34 +37,9 @@ Click **+ Events…** to open the event menu, then choose your event. After addi
 
 📸 _\[Screenshot: Add Event menu]_
 
-## Event Groups and Triggers
-
-An **event group** is a sequence of events that runs when a trigger activates it. You can place a group in the map and choose how it activates:
-
-- **No trigger:** Runs as soon as it is added
-- **On interact:** Runs when the player presses the interact key inside the trigger area
-- **On touch:** Runs when the player collides with the trigger area
-
-You can set the trigger size and position in pixels. Triggers can be static at a location or attached to an NPC for NPC specific interactions. You can also set what happens after the event group plays, whether it stays in the map or disappears after one use.
-
-📸 _\[Screenshot: Event Group config panel with trigger type, size, and attach-to-NPC options]_
-
-## Conditional Branches
-
-Use **Conditionals** to change what happens based on game state. Conditions can check switches, numbers, text values, or inventory items. This is how you build choices that matter and multiple endings.
-
-- **Variables:** Create them in **Assets**
-- Types: **Switch** (true or false), **Number**, **Text**
-- Set values with the **Set Variable** event
-
-:::tip
-Name variables clearly so you can find them later. Conditions run in sequence, so be careful that one branch does not accidentally make another branch below activate.
-:::
-
-📸 _\[Screenshot: Conditional block with If, Else If, Else]_
-📸 _\[Screenshot: Assets page showing variable list and types]_
-
 ## Next Steps
+
+Events are the foundation, but by themselves they only create linear sequences. To make your game dynamic and engaging, you need to combine them with **event groups** for interactivity and **conditional branches** for choices and branching stories. These tools take your events from simple actions to full gameplay mechanics.
 
 - [Event Groups and Triggers](./event-groups.md)
 - [Conditional Branches and Variables](./conditional-branches.md)
