@@ -3,15 +3,15 @@ title: "Map Objects"
 description: Add trees, houses, furniture, and animated sprites with map objects in Pixel Stories. Bring detail and depth to your maps with flexible tools.
 ---
 
-Map objects bring personality and depth to your world. They are everything that sits on top of the terrain: trees, houses, furniture, signs, and even animated sprites. Objects make your maps feel alive.
+Map objects bring personality and depth to your world. They are everything that sits on top of the terrain, such as trees, houses, furniture, signs. They can even be animated. Map objects make your maps feel alive.
 
 ## What Is a Map Object
 
-A **map object** is a sprite that you place onto your map. Unlike tiles, objects are not locked to the grid size and can be any dimensions you want. They also handle depth automatically, so you do not need to mess around with layers.
+A **map object** is a sprite that you place onto your map. Unlike tiles, objects are not locked to the tile size and can be any dimensions you want. They also handle depth automatically, meaning if an object is infront of the player, the player will correctly render behind the object.
 
 📸 _\[Screenshot: Example map with trees and houses placed as objects]_
 
-## Why Use Objects
+## Why Use Map Objects
 
 Objects give you more flexibility than tiles:
 
@@ -19,9 +19,11 @@ Objects give you more flexibility than tiles:
 - **Free dimensions:** Objects can be any size, even something unusual like 11 × 8 pixels
 - **Better organization:** Large maps with lots of detail are easier to manage when objects are separate from tiles
 
-Note: Map objects are static in the map and cannot be controlled by events. If you are looking for a dynamic and controllable object, use [NPCs](../game-assets/npcs.mdx) instead!
+:::note
+Map objects are static in the map and cannot be controlled by events. If you are looking for a dynamic and controllable object, use [NPCs](../game-assets/npcs.mdx) instead!
+:::
 
-📸 _\[Screenshot: Player walking behind a tree object]_
+📸 _\[Gif: Player walking behind a tree object]_
 
 ## Adding Objects
 
@@ -35,42 +37,33 @@ You can add objects in two ways:
 
 ## Animated Objects
 
-Objects can also be animated. Use a sprite strip (a series of frames in one image) and tell the editor the frame width, height, and frame rate. Pixel Stories will loop the animation automatically.
+Objects can also be animated. Use a sprite strip (a series of frames in one image) and tell the editor the frame width, height, and frame rate. Your object will play that animation on loop in the map.
 
-📸 _\[Screenshot: Example sprite strip for an animated campfire]_
-📸 _\[Screenshot: Animated campfire placed on a map]_
+📸 _\[Screenshot: Example sprite strip]_
+📸 _\[Gif: Animated version of that sprite strip in the game map]_
 
-## Organizing Objects
-
-- Assign categories to objects so your asset library stays clean
-- Use categories like “Trees,” “Furniture,” or “Buildings” for easier navigation in large projects
-
-📸 _\[Screenshot: Object category dropdown menu]_
+:::tip
+Large projects incur a lot of map objects. To keep everything organized, make sure use descriptive names and assign categories such as Nature, Furniture, or Buildings.
+:::
 
 ## Depth Origin
 
-The **depth origin** sets the point of the object that counts as “on the ground.”
+The **depth origin** option sets the point of the object that counts as “on the ground.”
 
 - 0 percent means the bottom of the sprite
 - 100 percent means the top
 - Usually, 0 works fine, but you can adjust it for tall objects
 
-📸 _\[Screenshot: Depth origin slider being adjusted]_
-
 ## Object Collisions
 
 By default, objects do not block the player. You can add collisions by clicking **Set Collision** and resizing the red rectangle to match the solid area.
 
-📸 _\[Screenshot: Collision box being added to a tree object]_
+📸 _\[Screenshot: Collision box for a map object]_
 
 ## Using the Toolbar
 
-Once you have objects ready, use the top toolbar to:
+Once you have objects ready, in the "Objects" tab, select an object and use the top toolbar to:
 
 - Place objects into the map
 - Move them around
 - Erase them when needed
-
-📸 _\[Screenshot: Toolbar with object placement tools]_
-
-✨ **Tip:** Use objects for anything that should feel unique. Tiles are for repeating patterns, but objects are for details that stand out.
