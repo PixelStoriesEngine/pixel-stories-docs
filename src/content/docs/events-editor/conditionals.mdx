@@ -3,11 +3,7 @@ title: "Conditional Branches"
 description: Use conditional branches in Pixel Stories to change events based on player choices, variables, and inventory, creating dynamic stories with multiple outcomes.
 ---
 
-Conditional branches let your events react to what the player has done. They check variables or inventory and decide which path to take, making your story interactive and flexible.
-
-## What Is a Conditional Branch
-
-A **conditional branch** is a check that runs during an event sequence. If the condition is true, the game plays one set of events. If false, it can play something else or do nothing.
+Conditional branches let your events respond to the player’s actions. They check variables or inventory and decide what happens next. If the condition is true, one set of events plays; if false, the events do not play.
 
 📸 _\[Screenshot: Conditional block with If, Else If, and Else options]_
 
@@ -18,28 +14,9 @@ A **conditional branch** is a check that runs during an event sequence. If the c
 - Triggering different endings based on player choices
 - Unlocking puzzles only if certain switches are active
 
-📸 _\[Screenshot: Example door event with condition requiring key item]_
-
-## Adding a Conditional
-
-Click **+ Conditional** in the event list. Add your condition, then place events inside each branch. Conditions are tested in order, so the first true condition runs its events.
-
-📸 _\[Screenshot: Adding a conditional in the event list]_
-
-## Supported Conditions
-
-You can check for:
-
-- **Switch variables:** True or false values
-- **Number variables:** Greater, less, or equal to a number
-- **Text variables:** Matches specific text
-- **Inventory items:** Whether the player has or does not have an item
-
-📸 _\[Screenshot: Condition config panel with variable types]_
-
 ## Variables
 
-Create variables in the **Assets** page. Variables cannot change type once created. Types include:
+To use conditionals, you must first create variables in the **Assets** page. Variables cannot change type once created. Types include:
 
 - **Switch:** On or off (true/false)
 - **Number:** Any numeric value
@@ -51,12 +28,15 @@ Update values with the **Set Variable** event. Clear names like `hasKey` or `met
 Name variables clearly so you can find them later. Conditions run in sequence, so be careful that one branch does not accidentally make another branch below activate.
 :::
 
-📸 _\[Screenshot: Assets page showing variable list with types]_
+## Adding a Conditional
 
-## Tips for Using Conditionals
+Click **+ Conditional** in the event list. Add your condition, then place events inside each branch. Conditions are tested in order, so the first true condition runs its events.
 
-- Keep variable names distinct and descriptive
-- Remember conditions run in sequence, so one condition can affect the next
-- Use conditions to build branching stories, puzzles, and multiple endings
+You can check for:
 
-📸 _\[Screenshot: Conditional chain for different story outcomes]_
+- **Switch variables:** True or false values
+- **Number variables:** Greater, less, or equal to a number
+- **Text variables:** Matches specific text
+- **Inventory items:** Whether the player has or does not have an item
+
+📸 _\[Screenshot: Condition config panel with variable types]_
