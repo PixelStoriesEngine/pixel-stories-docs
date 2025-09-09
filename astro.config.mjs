@@ -69,7 +69,7 @@ export default defineConfig({
             { label: "Overview", link: "/map-editor/overview" },
             { label: "Tilesets", link: "/map-editor/tilesets" },
             { label: "Autotile terrains", link: "/map-editor/autotile" },
-            { label: "Map objects", link: "/map-editor/objects" },
+            { label: "Map objects", link: "/map-editor/map-objects" },
             { label: "Collisions", link: "/map-editor/collisions" },
           ],
         },
@@ -102,9 +102,9 @@ export default defineConfig({
         {
           label: "Game assets",
           items: [
-            { label: "Asset library", link: "/map-editor/assets" },
-            { label: "NPCs & animations", link: "/assets/characters" },
-            { label: "Inventory items", link: "/assets/items" },
+            { label: "Asset library", link: "/assets/asset-library" },
+            { label: "NPCs", link: "/assets/npcs" },
+            { label: "Inventory items", link: "/assets/inventory-items" },
             { label: "Dialog UI", link: "/assets/dialog-ui" },
           ],
         },
