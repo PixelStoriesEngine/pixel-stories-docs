@@ -1,0 +1,65 @@
+---
+title: "Dialog and Choices Events"
+description: Show dialog and present choices in Pixel Stories. Write lines, style them with BBCode, add paging tags, and run events based on the player’s selection.
+---
+
+Dialog and choices are how you talk to the player and let them decide what happens next. Use dialog for lines of text, and choices for branching paths that trigger different events.
+
+## Common Uses
+
+- Branching conversations that react to player actions
+- Accept or decline a quest and run different outcomes
+- Teach mechanics with a safe choice and a risky choice
+- Gate progress until the correct answer is chosen
+
+📸 _\[Screenshot: Conversation tree using Dialog and Choices together]_
+
+## The Dialog Event
+
+The **Dialog** event opens a dialog box and displays text for the player to read. You write your lines in the text area, then the game shows them during the event sequence.
+
+📸 _\[Screenshot: Dialog event with text area and preview]_
+
+### Adding Dialog
+
+To add dialog, click **+ Events…** and select the **Dialog event**. Then within the event config, enter your dialog into the text box.
+
+📸 _\[Screenshot: Event list showing Dialog between other events]_
+
+### Inline Tags
+
+Dialog supports inline tags to control flow:
+
+- **`[r]`**: Continue on a new line in the same dialog box
+- **`[pb]`**: Continue in the next dialog box (page break)
+
+Overflow is handled automatically. When text is too long, it moves to the next box.
+
+📸 _\[Screenshot: Dialog preview showing use of \[r] and \[pb]]_
+
+### Styling With BBCode
+
+The dialog box supports **BBCode** for emphasis and readability, for example bold, italics, and color.
+
+- Keep styles consistent across your project
+- Use emphasis for important names, clues, and items
+
+See the **[BBCode Guide](https://www.bbcode.org/reference.php)** for supported tags.
+
+📸 _\[Screenshot: Styled dialog line using bold and color]_
+
+## The Choices Event
+
+The **Choices** event shows a dialog box with multiple options. When the player selects an option, the game runs the events linked to that choice.
+
+📸 _\[Screenshot: Choices event with three options visible]_
+
+### Adding Choices
+
+1. Click **+ Events…** and select **Choices**
+2. Add one or more options
+3. For each option, add the events that should run when it is selected
+
+Choices can lead to different dialogs, scene changes, item rewards, or endings.
+
+📸 _\[Screenshot: Choice configuration with per-choice event lists]_

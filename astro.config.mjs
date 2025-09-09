@@ -77,12 +77,26 @@ export default defineConfig({
           label: "Events editor",
           items: [
             { label: "Overview", link: "/events-editor/overview" }, // goes through how events play and map initial events play on first load
-            { label: "Event groups & triggers", link: "/events-editor/groups" },
-            { label: "Conditional branches", link: "/events-editor/branches" },
-            { label: "Dialogue event", link: "/events-editor/dialogue" },
-            { label: "Player events", link: "/events-editor/transfer" },
-            { label: "NPC events", link: "/events-editor/actors" },
-            { label: "Inventory events", link: "/events-editor/actors" },
+            {
+              label: "Event groups & triggers",
+              link: "/events-editor/event-groups",
+            },
+            {
+              label: "Conditional branches",
+              link: "/events-editor/conditionals",
+            },
+            {
+              label: "Dialog & choice events",
+              link: "/events-editor/dialog-and-choice-events",
+            },
+            {
+              label: "Player events",
+              link: "/events-editor/player-events",
+            },
+            {
+              label: "NPC events",
+              link: "/events-editor/npc-events",
+            },
           ],
         },
         {
@@ -91,7 +105,7 @@ export default defineConfig({
             { label: "Asset library", link: "/map-editor/assets" },
             { label: "NPCs & animations", link: "/assets/characters" },
             { label: "Inventory items", link: "/assets/items" },
-            { label: "Dialogue UI", link: "/assets/dialogue-ui" },
+            { label: "Dialog UI", link: "/assets/dialog-ui" },
           ],
         },
         // {
