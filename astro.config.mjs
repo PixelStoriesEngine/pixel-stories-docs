@@ -97,6 +97,10 @@ export default defineConfig({
               label: "NPC events",
               link: "/events-editor/npc-events",
             },
+            {
+              label: "Control flow events",
+              link: "/events-editor/control-flow-events",
+            },
           ],
         },
         {
