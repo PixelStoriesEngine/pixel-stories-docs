@@ -1,37 +1,30 @@
 ---
-title: What is Pixel Stories?
-description: An overview of the Pixel Stories game maker.
+title: Introduction
+description: Welcome to the Pixel Stories documentation. Learn how to use the editor, explore features, and start building your own story-driven game.
 ---
 
-Pixel Stories is a game creation tool built specifically for creating 2D top down story-driven games.
+Welcome to the **Pixel Stories documentation**. These guides are here to help you learn the editor, explore features, and build your own 2D top-down story-driven games.
 
-Our game creation tool is quick to learn and easy to work with. This lets you focus on creating unique and immersive stories without being overwhelmed by the complexities in game development with a general tool.
+Whether you are just getting started or looking up a specific feature, you can use this documentation as a reference whenever you feel stuck.
 
-## The Core of Pixel Stories
+## What You’ll Find Here
 
-- **Story-driven game** maker designed for top‑down games.
-- **Events system** allows you to build dynamic and interactive gameplay.
-- **Dialog System** let’s you write branching dialogs.
-- **Map editor** makes map creation easy with auto tile terrains and map objects.
-- **Custom assets** support importing your own art, music, and sounds.
-- **Cross‑platform** support let’s you to share your game for desktop, mobile, and web.
+- **Quick start tutorial** that introduce the basics of Pixel Stories
+- **Concepts and features** such as the map editor, events system, dialog, and NPCs
+- **Reference pages** with details on assets, variables, and customization options
 
-## Pixel Stories vs. Other Game Makers
+## What is Pixel Stories?
 
-Unlike other general game makers that demand a lot of coding to get started, Pixel Stories offers a straightforward game making workflow.
+Pixel Stories is a no-code game maker designed for building 2D top-down story-driven games. If you are new to game development, it gives you approachable tools like the **map editor**, **events system**, and **dialog editor** to bring your ideas to life without needing to code.
 
-It’s made for 2D top down story-driven games, so it comes with all the necessary tools for that purpose. That includes an events system, dialogue editor, map editor, and default assets to help you get started. Additionally, you can easily import your own custom assets and customize different features of your game, so it has its own unique style rather than a cookie-cutter look.
+If you are coming from another engine, you will find that Pixel Stories focuses specifically on storytelling features, so you can spend less time configuring and more time creating.
 
-We designed our game maker with accessibility in mind so that anyone can create their own game. Being web‑based, it only requires a modern browser, and its cross‑platform support ensure your game can be shared on desktop, mobile, or anywhere on the web!
+## Tips for Using the Docs
 
-Note for those coming from RPG Maker: We don’t have abritrary restrictions on game resolution, tile size or sprite animation formats! You also have full control over map editing layers. To avoid reliance on community plugins, we've tried to integrate all the essential features for making story-driven games directly into the game maker. If you think a feature is missing, feel free to [make a feature suggestion](https://forms.gle/76x3G1mkUQpKvbG7A)!
+- Start with the [Quick start tutorial](./getting-started.md) if you are new
+- Use the **search** to quickly find topics or reference pages
+- Join our [Discord community](https://discord.gg/XN9EaUh26g) if you need help or want to share ideas
 
-## Early Access Beta
+## Early Access
 
-The Pixel Stories game maker is in a late-stage beta, so you might encounter some bugs in making your game.
-
-Please report any bugs, feedback, or suggestions you have through our [feedback form](https://forms.gle/76x3G1mkUQpKvbG7A). Thank you and we appreciate your support as an early adopter!
-
-## Community
-
-Ask questions, get support in using the game maker, share your projects, or give feedback on our [official Discord server](https://discord.gg/XN9EaUh26g).
+Pixel Stories is currently in late-stage beta. Features are being refined and bugs may appear. If you run into issues, please let us know through the [feedback form](https://forms.gle/76x3G1mkUQpKvbG7A). Your feedback helps improve both the tool and the documentation.

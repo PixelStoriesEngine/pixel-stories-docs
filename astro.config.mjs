@@ -54,12 +54,12 @@ export default defineConfig({
               link: "/features",
             },
             {
-              label: "Quick start tutorial",
-              link: "/getting-started/",
-            },
-            {
               label: "Interface tour",
               link: "/tour/",
+            },
+            {
+              label: "Beginner tutorial",
+              link: "/getting-started/",
             },
           ],
         },
