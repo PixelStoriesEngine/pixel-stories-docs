@@ -102,10 +102,10 @@ export default defineConfig({
         {
           label: "Game assets",
           items: [
-            { label: "Asset library", link: "/assets/asset-library" },
-            { label: "NPCs", link: "/assets/npcs" },
-            { label: "Inventory items", link: "/assets/inventory-items" },
-            { label: "Dialog UI", link: "/assets/dialog-ui" },
+            { label: "Asset library", link: "/game-assets/asset-library" },
+            { label: "NPCs", link: "/game-assets/npcs" },
+            { label: "Inventory items", link: "/game-assets/inventory-items" },
+            { label: "Dialog UI", link: "/game-assets/dialog-ui" },
           ],
         },
         // {
