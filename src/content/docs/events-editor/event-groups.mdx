@@ -3,28 +3,28 @@ title: "Event Groups"
 description: Use event groups in Pixel Stories to bundle actions together and trigger them on interact, touch, or automatically for flexible gameplay.
 ---
 
-Event groups let you link multiple events into a sequence. They are reusable blocks that can be triggered when the player interacts, touches an area, or immediately when the group is added.
-
-## What Is an Event Group
-
-An **event group** is a collection of events that run one after another. Place them on the map to create interactive moments such as opening a door, talking to an NPC, or starting an NPC chase.
+An **event group** is a collection of events that run one after another. They are put into the map and activated by the player interacting on it or touching it. They create interactive moments such as opening a door, talking to an NPC, picking up an item, or starting an NPC chase.
 
 📸 _\[Screenshot: Event Groups tab with an event group open in the editor]_
 
 ## Common Uses
 
 - A note on a table the player can read many times
-- A door that disappears after being opened
-- NPC interactions that trigger dialog or chase sequences
-- Puzzle triggers that run once when solved
+- An item that disappears after being picked up
+- NPC interactions that trigger dialog
+- Puzzle mechanics with inventory items
 
 📸 _\[Screenshot: NPC interaction event group example]_
 
-## Adding Event Groups
+## Creating an Event Group
 
-Add an event group using the **Add Event Group** option. Once created, you can fill it with dialog, choices, player transfers, or any other events you need.
+To create an event group, go to Events > Event Groups and make a new group. Add the events you want inside it, then place the group into your map so it can run during gameplay.
 
-📸 _\[Screenshot: Add Event Group button in the editor]_
+## Adding Event Groups to the Map
+
+You can add an event group to the map by clicking "Add to Map" on the event group card. This creates the Add Event Group event automatically. Alternatively, you can do it manually by adding an Add Event Group event and selecting the group yourself.
+
+📸 _\[Screenshot: Add event group event config]_
 
 ### Trigger Types
 
@@ -34,8 +34,6 @@ Each event group can be set to trigger in different ways:
 - **On interact:** Runs when the player presses the interact key inside the trigger area
 - **On touch:** Runs when the player collides with the trigger area
 
-📸 _\[Screenshot: Trigger type dropdown with No Trigger, On Interact, On Touch]_
-
 ### Trigger Settings
 
 You can customize how the trigger works:
@@ -43,5 +41,3 @@ You can customize how the trigger works:
 - **Trigger size:** Adjust the area in pixels
 - **Position:** Place it at a static point on the map or attach it to an NPC
 - **Repeat or disappear:** Choose whether the group can be triggered multiple times or only once
-
-📸 _\[Screenshot: Event group config showing trigger size, position, and repeat options]_
