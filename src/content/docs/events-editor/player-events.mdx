@@ -3,9 +3,9 @@ title: "Player Events"
 description: Move the player between maps or to exact coordinates in Pixel Stories using Transfer Player and Set Player Location for smooth scene changes.
 ---
 
-Player events control the player in your game world. There are two main player events, the transfer player and set player position events.
+Player events control the player in your game world. There are four main player events: transfer player, set player location, add inventory item, and remove inventory item.
 
-📸 _\[Screenshot: Player events in the Add Event menu]_
+📸 _[Screenshot: Player events in the Add Event menu]_
 
 ## Common Uses
 
@@ -14,13 +14,15 @@ Player events control the player in your game world. There are two main player e
 - Cutscenes that reposition the player before or after a sequence
 - Puzzle resets that return the player to a safe location
 - Spawn-in points after dialog, choices, or NPC interactions
+- Giving or taking away inventory items as part of quests or puzzles
 
-📸 _\[Screenshot: Small house interior with a door transfer marker]_
-Here’s a tighter version of the **Player Events** table with shorter descriptions:
+📸 _[Screenshot: Small house interior with a door transfer marker]_
 
 ## Player Events
 
-| Event                   | Description                                                                                             |
-| ----------------------- | ------------------------------------------------------------------------------------------------------- |
-| **Transfer Player**     | Moves the player to another map and sets the arrival spot. Ideal for doors, portals, and scene changes. |
-| **Set Player Location** | Teleports the player within the current map. Useful for cutscenes, resets, and repositioning.           |
+| Event                     | Description                                                                                             |
+| ------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **Transfer Player**       | Moves the player to another map and sets the arrival spot. Ideal for doors, portals, and scene changes. |
+| **Set Player Location**   | Teleports the player within the current map. Useful for cutscenes, resets, and repositioning.           |
+| **Add Inventory Item**    | Gives the player an item, adding it to their inventory.                                                 |
+| **Remove Inventory Item** | Takes an item from the player, removing it from their inventory.                                        |
