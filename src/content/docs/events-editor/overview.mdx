@@ -7,58 +7,59 @@ The **Events Editor** is where you turn ideas into gameplay. You add events, set
 
 ## What Is an Event
 
-An **event** is a single action the game can perform. Examples include showing dialog, presenting choices, moving the player, spawning an NPC, or switching maps. You combine events to build complete moments in your story.
+An **event** is a single action the game can perform. Examples include showing dialog, presenting choices, moving the player, spawning an NPC, or switching maps. You combine events to build complete game mechanics in your story.
 
 📸 _\[Screenshot: Events Editor main view with Map Events and Event Groups tabs]_
 
-## What's Possible
+### What's Possible
+
+There are limitless ways to use events in your story. Below are some examples:
 
 - Dialog and choices for story scenes
 - Doors or portals that transfer the player to other maps
 - NPC movement, patrols, and chase sequences
-- Puzzles using switches, numbers, and inventory checks
+- Puzzles or quest mechanics using inventory items
 
-📸 _\[Screenshot: Small scene with dialog, a door transfer, and an NPC interaction]_
+📸 _\[Gif: Small scene with dialog, a door transfer, and an NPC walks up]_
 
-## Where Events Run
+### Where Events Run
 
-There are two places where events live and play:
+There are two places where events go:
 
 - **Map Events:** Events that run when a map first loads
-- **Event Groups:** Reusable sequences that run when triggered in the map
+- **Event Groups:** Reusable events that run together when triggered in the map
 
-Map Events are great for intros or cutscenes. Event Groups handle interactions and touch areas that the player can activate during gameplay.
-
-📸 _\[Screenshot: Map Events list with “+ Events…” menu open]_
-📸 _\[Screenshot: Event Groups tab with a sample group selected]_
+Map Events are great for setup, intros or cutscenes. Event Groups handle interactions that the player can activate during gameplay.
 
 ## Adding Events
 
 Click **+ Events…** to open the event menu, then choose your event. After adding an event, configure its settings in the panel on the right. Events play from top to bottom unless a branch changes the flow.
 
-📸 _\[Screenshot: Add Event menu showing Dialog, Choices, Transfer Player, Show Image]_
+📸 _\[Screenshot: Add Event menu]_
 
 ## Event Groups and Triggers
 
-An **event group** is a sequence of events that runs when a trigger fires. You can place a group in the map and choose how it activates:
+An **event group** is a sequence of events that runs when a trigger activates it. You can place a group in the map and choose how it activates:
 
 - **No trigger:** Runs as soon as it is added
 - **On interact:** Runs when the player presses the interact key inside the trigger area
 - **On touch:** Runs when the player collides with the trigger area
 
-You can set the trigger size and position in pixels. Triggers can be static at a location or attached to an NPC for talk prompts or chase mechanics. You can also decide if a group can repeat or if it should disappear after one use.
+You can set the trigger size and position in pixels. Triggers can be static at a location or attached to an NPC for NPC specific interactions. You can also set what happens after the event group plays, whether it stays in the map or disappears after one use.
 
 📸 _\[Screenshot: Event Group config panel with trigger type, size, and attach-to-NPC options]_
 
 ## Conditional Branches
 
-Use **Conditional** to change what happens based on game state. Conditions can check switches, numbers, text values, or inventory items. This is how you build choices that matter and multiple endings.
+Use **Conditionals** to change what happens based on game state. Conditions can check switches, numbers, text values, or inventory items. This is how you build choices that matter and multiple endings.
 
 - **Variables:** Create them in **Assets**
 - Types: **Switch** (true or false), **Number**, **Text**
 - Set values with the **Set Variable** event
 
-Tip: Name variables clearly so you can find them later. Conditions run in sequence, so be careful that one branch does not accidentally make another branch true.
+:::tip
+Name variables clearly so you can find them later. Conditions run in sequence, so be careful that one branch does not accidentally make another branch below activate.
+:::
 
 📸 _\[Screenshot: Conditional block with If, Else If, Else]_
 📸 _\[Screenshot: Assets page showing variable list and types]_
