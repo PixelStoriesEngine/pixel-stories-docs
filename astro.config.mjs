@@ -74,11 +74,11 @@ export default defineConfig({
           ],
         },
         {
-          label: "Events editor",
+          label: "Events system",
           items: [
-            { label: "Overview", link: "/events-editor/overview" }, // goes through how events play and map initial events play on first load
+            { label: "Events", link: "/events-editor/events" }, // goes through how events play and map initial events play on first load
             {
-              label: "Event groups & triggers",
+              label: "Event groups",
               link: "/events-editor/event-groups",
             },
             {
