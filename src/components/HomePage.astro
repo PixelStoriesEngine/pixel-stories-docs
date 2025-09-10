@@ -20,10 +20,10 @@ import Footer from "./Footer/Footer.astro";
   <!-- HERO -->
   <section class="mt-10 flex flex-col items-center gap-8 text-center">
     <div
-      class="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium"
+      class="inline-flex items-center gap-2 rounded-full border border-neutral-500 px-3 py-1 text-xs font-medium"
     >
       <span>Late‑stage beta</span>
-      <span class="opacity-30">·</span>
+      <span>·</span>
       <a
         href="/blog"
         class="underline-offset-2 hover:underline text-color-white"
@@ -52,7 +52,7 @@ import Footer from "./Footer/Footer.astro";
         class="aspect-video w-full bg-[repeating-linear-gradient(135deg,theme(colors.gray.200),theme(colors.gray.200)_12px,transparent_12px,transparent_24px)] dark:bg-[repeating-linear-gradient(135deg,theme(colors.gray.800),theme(colors.gray.800)_12px,transparent_12px,transparent_24px)] grid place-items-center"
       >
         <span class="text-sm text-gray-600 dark:text-gray-400"
-          >Hero GIF / video of editing a map → play test</span
+          >Hero GIF / video of editing a map {">"} play test</span
         >
       </div>
     </div>
@@ -81,7 +81,7 @@ import Footer from "./Footer/Footer.astro";
       <a
         href="/features/map-editor"
         class="mt-auto text-sm font-semibold text-color-white hover:underline"
-        >See map editor →</a
+        >See map editor {">"}</a
       >
     </article>
 
@@ -106,7 +106,7 @@ import Footer from "./Footer/Footer.astro";
       <a
         href="/features/events-system"
         class="mt-auto text-sm font-semibold text-color-white hover:underline"
-        >See events system →</a
+        >See events system {">"}</a
       >
     </article>
 
@@ -131,38 +131,24 @@ import Footer from "./Footer/Footer.astro";
       <a
         href="/features#game-mechanics"
         class="mt-auto text-sm font-semibold text-color-white hover:underline"
-        >See what’s possible →</a
+        >See what’s possible {">"}</a
       >
     </article>
   </section>
 
-  <!-- SHARE WITH THE WORLD -->
+  <!-- COMMUNITY -->
   <section
-    class="grid items-center gap-10 rounded-3xl border bg-white p-8 shadow-sm dark:bg-gray-900 lg:grid-cols-2"
+    class="flex flex-col items-center justify-center text-center px-6 py-8"
   >
-    <div class="order-2 lg:order-1">
-      <h2 class="text-2xl font-bold">Share with the world</h2>
-      <p class="mt-3 text-sm leading-6 text-gray-700 dark:text-gray-300">
-        Publish instantly and invite friends, players, and the Pixel Stories
-        community. No installs required.
+    <div class="max-w-xl flex flex-col gap-4 items-center">
+      <h2 class="text-3xl font-bold">Share with the world!</h2>
+      <p class="text-base text-gray-700 dark:text-gray-300">
+        Share instantly with friends, players, and the Pixel Stories community.
+        Cross-platform, in browser, no installs required.
       </p>
-      <ul class="mt-4 space-y-2 text-sm text-gray-700 dark:text-gray-300">
-        <li>Playable right away</li>
-        <li>Works in any browser on desktop or mobile</li>
-        <li>Share a link and let others jump in</li>
-      </ul>
-      <div class="mt-6 flex gap-3">
-        <a href="https://app.pixelstories.io/" class="btn-primary"
-          >Start creating now</a
-        >
-      </div>
-    </div>
-    <div
-      class="order-1 lg:order-2 overflow-hidden rounded-2xl border bg-gray-100 dark:bg-gray-800 aspect-video grid place-items-center"
-    >
-      <span class="text-sm text-gray-600 dark:text-gray-400"
-        >Share flow placeholder (copy link → open in phone)</span
-      >
+      <a href="https://app.pixelstories.io/" class="btn-primary w-max px-6">
+        Start creating now
+      </a>
     </div>
   </section>
 
@@ -173,6 +159,11 @@ import Footer from "./Footer/Footer.astro";
       <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
         Designed for creators who want to tell stories—not wrestle with code.
       </p>
+      <a
+        href="/features"
+        class="text-sm font-semibold text-color-white hover:underline"
+        >See features {">"}</a
+      >
     </div>
     <ul class="col-span-2 grid gap-3 sm:grid-cols-2">
       <li
@@ -230,7 +221,7 @@ import Footer from "./Footer/Footer.astro";
 
   <!-- FINAL CTA -->
   <section
-    class="mb-20 overflow-hidden rounded-3xl border bg-gradient-to-r from-slate-600 to-slate-800 p-8 text-white shadow-sm"
+    class="mb-20 overflow-hidden rounded-3xl border bg-gradient-to-r from-slate-600 to-slate-800 p-8 py-14 text-white shadow-sm"
   >
     <div class="mx-auto grid max-w-5xl items-center gap-8 lg:grid-cols-3">
       <div class="lg:col-span-2">
