@@ -1,93 +1,251 @@
 ---
-import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 import { getCollection } from "astro:content";
 import Footer from "./Footer/Footer.astro";
-
-const posts = await getCollection("blog");
-const sortedPosts = posts.sort(
-  (a, b) =>
-    new Date(b.data.date || "").getTime() -
-    new Date(a.data.date || "").getTime()
-);
-const recentPosts = sortedPosts.slice(0, 4);
 ---
 
-<div class="not-content flex flex-col gap-3 max-w-[800px] mx-auto">
-  <div class="flex flex-col gap-24 max-w-[800px] mx-auto w-full">
-    {/* Links Section */}
-    <section class="flex flex-col gap-4 max-w-full">
-      <h2 class="text-center">Make Your First Game Today!</h2>
-      <div class="flex flex-wrap gap-2 items-stretch">
-        <div class="flex-1 h-full min-w-[200px]">
-          <LinkCard
-            title="Pixel Stories Docs"
-            description="See our quick guide on getting started!"
-            href="/getting-started"
-          />
-        </div>
-        <div class="flex-1 h-full min-w-[200px]">
-          <LinkCard
-            title="Get Started Tutorial"
-            description="Get familiar with the editor with our tutorial."
-            href="/tutorials/basic"
-          />
-        </div>
-        <div class="flex-1 h-full min-w-[200px]">
-          <LinkCard
-            title="Official  Discord"
-            description="See our official Discord server."
-            href="https://discord.gg/XN9EaUh26g"
-          />
-        </div>
-      </div>
-    </section>
+<main
+  class="not-content relative mx-auto flex max-w-7xl flex-col gap-24 px-4 sm:px-6 lg:px-8"
+>
+  <!-- Background Decoration -->
+  <div
+    aria-hidden="true"
+    class="pointer-events-none fixed inset-0 -z-10 overflow-hidden"
+  >
+    <div
+      class="opacity-30 absolute -top-32 left-1/2 h-[600px] w-[1200px] -translate-x-1/2 rounded-full bg-gradient-to-r from-indigo-500/20 via-fuchsia-500/20 to-emerald-500/20 blur-3xl"
+    >
+    </div>
+  </div>
 
-    {/* News & Updates Section */}
-    <section class="w-full max-w-[600px] mx-auto">
-      <div class="flex flex-col gap-4 w-full">
-        <h2 class="text-center">Latest News</h2>
-        <ul class="pl-0 list-none flex flex-col gap-2">
-          {
-            recentPosts.map((post) => (
-              <a
-                href={`/blog/${post.slug}`}
-                class="hover:border-color-accent-high border border-transparent no-underline text-current p-2 px-4 rounded-lg transition-all "
-              >
-                <li class="pb-2">
-                  <h4 class="text-lg font-semibold w-max max-w-full">
-                    {post.data.title}
-                  </h4>
+  <!-- HERO -->
+  <section class="mt-10 flex flex-col items-center gap-8 text-center">
+    <div
+      class="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium"
+    >
+      <span>Late‑stage beta</span>
+      <span class="opacity-30">·</span>
+      <a
+        href="/blog"
+        class="underline-offset-2 hover:underline text-color-white"
+        >See what’s new</a
+      >
+    </div>
 
-                  <time
-                    class="font-mono text-sm"
-                    datetime={new Date(post.data.date || "").toDateString()}
-                  >
-                    Published on
-                    {new Date(post.data.date || "").toLocaleDateString(
-                      "en-us",
-                      {
-                        year: "numeric",
-                        month: "short",
-                        day: "numeric",
-                        timeZone: "UTC",
-                      }
-                    )}
-                  </time>
+    <h1
+      class="mx-auto max-w-3xl text-balance text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
+    >
+      Make story‑driven games in your browser
+    </h1>
+    <p
+      class="mx-auto max-w-2xl text-pretty text-base/7 text-gray-700 dark:text-gray-300 sm:text-lg"
+    >
+      Pixel Stories gives you visual tools to build maps, write dialog, and
+      create gameplay. No code required. Play test instantly and share with a
+      link.
+    </p>
 
-                  <p class="text-sm mt-1">{post.data.excerpt}</p>
-                </li>
-              </a>
-            ))
-          }
-        </ul>
-      </div>
-      <div class="mt-6 text-center">
-        <a href="/blog" class="text-current no-underline hover:underline">
-          See news and updates</a
+    <!-- Hero media placeholder -->
+    <div
+      class="mt-10 w-full max-w-5xl overflow-hidden rounded-2xl border bg-white shadow-xl dark:bg-gray-900"
+    >
+      <div
+        class="aspect-video w-full bg-[repeating-linear-gradient(135deg,theme(colors.gray.200),theme(colors.gray.200)_12px,transparent_12px,transparent_24px)] dark:bg-[repeating-linear-gradient(135deg,theme(colors.gray.800),theme(colors.gray.800)_12px,transparent_12px,transparent_24px)] grid place-items-center"
+      >
+        <span class="text-sm text-gray-600 dark:text-gray-400"
+          >Hero GIF / video of editing a map → play test</span
         >
       </div>
-    </section>
-  </div>
-</div>
+    </div>
+  </section>
+
+  <!-- THREE PILLARS -->
+  <section class="grid gap-8 lg:grid-cols-3">
+    <!-- Build your world -->
+    <article
+      class="group relative flex flex-col gap-4 rounded-3xl border bg-white p-6 shadow-sm transition hover:shadow-md dark:bg-gray-900"
+    >
+      <div
+        class="aspect-[4/3] w-full overflow-hidden rounded-xl border bg-gray-100 dark:bg-gray-800"
+      >
+        <div
+          class="grid h-full place-items-center text-sm text-gray-600 dark:text-gray-400"
+        >
+          Map editor placeholder
+        </div>
+      </div>
+      <h2 class="text-xl font-semibold">Build your world</h2>
+      <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
+        Design maps with tiles, terrains, and objects. Autotiles handle borders;
+        objects support depth and collisions.
+      </p>
+      <a
+        href="/features/map-editor"
+        class="mt-auto text-sm font-semibold text-color-white hover:underline"
+        >See map editor →</a
+      >
+    </article>
+
+    <!-- Tell your story -->
+    <article
+      class="group relative flex flex-col gap-4 rounded-3xl border bg-white p-6 shadow-sm transition hover:shadow-md dark:bg-gray-900"
+    >
+      <div
+        class="aspect-[4/3] w-full overflow-hidden rounded-xl border bg-gray-100 dark:bg-gray-800"
+      >
+        <div
+          class="grid h-full place-items-center text-sm text-gray-600 dark:text-gray-400"
+        >
+          Events system placeholder
+        </div>
+      </div>
+      <h2 class="text-xl font-semibold">Tell your story</h2>
+      <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
+        Create interactions, dialog, choices, and branching paths with the
+        Events system. Test changes instantly.
+      </p>
+      <a
+        href="/features/events-system"
+        class="mt-auto text-sm font-semibold text-color-white hover:underline"
+        >See events system →</a
+      >
+    </article>
+
+    <!-- Add mechanics -->
+    <article
+      class="group relative flex flex-col gap-4 rounded-3xl border bg-white p-6 shadow-sm transition hover:shadow-md dark:bg-gray-900"
+    >
+      <div
+        class="aspect-[4/3] w-full overflow-hidden rounded-xl border bg-gray-100 dark:bg-gray-800"
+      >
+        <div
+          class="grid h-full place-items-center text-sm text-gray-600 dark:text-gray-400"
+        >
+          Mechanics montage placeholder
+        </div>
+      </div>
+      <h2 class="text-xl font-semibold">Add game mechanics</h2>
+      <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
+        Build fetch quests, chase sequences, patrols, and puzzles by combining
+        events, NPCs, and inventory.
+      </p>
+      <a
+        href="/features#game-mechanics"
+        class="mt-auto text-sm font-semibold text-color-white hover:underline"
+        >See what’s possible →</a
+      >
+    </article>
+  </section>
+
+  <!-- SHARE WITH THE WORLD -->
+  <section
+    class="grid items-center gap-10 rounded-3xl border bg-white p-8 shadow-sm dark:bg-gray-900 lg:grid-cols-2"
+  >
+    <div class="order-2 lg:order-1">
+      <h2 class="text-2xl font-bold">Share with the world</h2>
+      <p class="mt-3 text-sm leading-6 text-gray-700 dark:text-gray-300">
+        Publish instantly and invite friends, players, and the Pixel Stories
+        community. No installs required.
+      </p>
+      <ul class="mt-4 space-y-2 text-sm text-gray-700 dark:text-gray-300">
+        <li>Playable right away</li>
+        <li>Works in any browser on desktop or mobile</li>
+        <li>Share a link and let others jump in</li>
+      </ul>
+      <div class="mt-6 flex gap-3">
+        <a href="https://app.pixelstories.io/" class="btn-primary"
+          >Start creating now</a
+        >
+      </div>
+    </div>
+    <div
+      class="order-1 lg:order-2 overflow-hidden rounded-2xl border bg-gray-100 dark:bg-gray-800 aspect-video grid place-items-center"
+    >
+      <span class="text-sm text-gray-600 dark:text-gray-400"
+        >Share flow placeholder (copy link → open in phone)</span
+      >
+    </div>
+  </section>
+
+  <!-- WHY DIFFERENT -->
+  <section class="grid gap-8 p-8 lg:grid-cols-3">
+    <div class="col-span-1 flex flex-col gap-3">
+      <h2 class="text-2xl font-bold">What makes Pixel Stories different?</h2>
+      <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
+        Designed for creators who want to tell stories—not wrestle with code.
+      </p>
+    </div>
+    <ul class="col-span-2 grid gap-3 sm:grid-cols-2">
+      <li
+        class="list-none rounded-2xl border bg-white p-5 text-sm shadow-sm dark:bg-gray-900"
+      >
+        <h3 class="font-semibold">Story-first design</h3>
+        <p class="mt-1 text-gray-700 dark:text-gray-300">
+          Built from the ground up for top-down, story-driven games.
+        </p>
+      </li>
+      <li
+        class="list-none rounded-2xl border bg-white p-5 text-sm shadow-sm dark:bg-gray-900"
+      >
+        <h3 class="font-semibold">No-code editor</h3>
+        <p class="mt-1 text-gray-700 dark:text-gray-300">
+          Visual tools for maps, dialog, and mechanics. Focus on your world and
+          characters.
+        </p>
+      </li>
+      <li
+        class="list-none rounded-2xl border bg-white p-5 text-sm shadow-sm dark:bg-gray-900"
+      >
+        <h3 class="font-semibold">Built-in assets</h3>
+        <p class="mt-1 text-gray-700 dark:text-gray-300">
+          Start fast with free tiles, objects, and terrains. Upload your own
+          anytime.
+        </p>
+      </li>
+      <li
+        class="list-none rounded-2xl border bg-white p-5 text-sm shadow-sm dark:bg-gray-900"
+      >
+        <h3 class="font-semibold">Play test instantly</h3>
+        <p class="mt-1 text-gray-700 dark:text-gray-300">
+          Hit play, try it, tweak it. Share a link when it feels right.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section
+    class="flex flex-col items-center justify-center text-center px-6 py-8"
+  >
+    <div class="max-w-xl flex flex-col gap-4 items-center">
+      <h2 class="text-3xl font-bold">Join our creator community</h2>
+      <p class="text-base text-gray-700 dark:text-gray-300">
+        You don’t have to build alone. Share progress, get feedback, and make
+        friends who love story games.
+      </p>
+      <a href="https://discord.gg/XN9EaUh26g" class="w-max text-color-white">
+        Join the Discord
+      </a>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section
+    class="mb-20 overflow-hidden rounded-3xl border bg-gradient-to-r from-slate-600 to-slate-800 p-8 text-white shadow-sm"
+  >
+    <div class="mx-auto grid max-w-5xl items-center gap-8 lg:grid-cols-3">
+      <div class="lg:col-span-2">
+        <h2 class="text-3xl font-extrabold">Ready to start?</h2>
+        <p class="mt-2 text-xl leading-6 text-white">
+          Create your first game in minutes. Free to try. Runs in your browser.
+        </p>
+      </div>
+      <div class="flex items-center gap-3 lg:justify-end">
+        <a href="https://app.pixelstories.io/" class="btn-primary"
+          >Start creating now</a
+        >
+      </div>
+    </div>
+  </section>
+</main>
 
 <Footer />
