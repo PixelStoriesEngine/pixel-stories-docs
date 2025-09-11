@@ -32,7 +32,7 @@ import Footer from "./Footer/Footer.astro";
     </div>
 
     <h1
-      class="mx-auto max-w-3xl text-balance text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
+      class="mx-auto max-w-3xl text-balance text-4xl font-bold tracking-tight sm:text-5xl lg:text-5xl"
     >
       Make story‑driven games in your browser
     </h1>
@@ -46,23 +46,23 @@ import Footer from "./Footer/Footer.astro";
 
     <!-- Hero media placeholder -->
     <div
-      class="mt-10 w-full max-w-5xl overflow-hidden rounded-2xl border bg-white shadow-xl dark:bg-gray-900"
+      class="mt-10 w-full max-w-5xl overflow-hidden rounded-2xl border bg-[var(--sl-color-bg)] shadow-xl"
     >
       <div
         class="aspect-video w-full bg-[repeating-linear-gradient(135deg,theme(colors.gray.200),theme(colors.gray.200)_12px,transparent_12px,transparent_24px)] dark:bg-[repeating-linear-gradient(135deg,theme(colors.gray.800),theme(colors.gray.800)_12px,transparent_12px,transparent_24px)] grid place-items-center"
       >
         <span class="text-sm text-gray-600 dark:text-gray-400"
-          >Hero GIF / video of editing a map {">"} play test</span
+          >Hero GIF / video of editing a map play test</span
         >
       </div>
     </div>
   </section>
 
   <!-- THREE PILLARS -->
-  <section class="grid gap-8 lg:grid-cols-3">
+  <section class="grid gap-8 md:grid-cols-3">
     <!-- Build your world -->
     <article
-      class="group relative flex flex-col gap-4 rounded-3xl border bg-white p-6 shadow-sm transition hover:shadow-md dark:bg-gray-900"
+      class="group relative flex flex-col gap-4 rounded-3xl border bg-[var(--sl-color-bg)] p-6 shadow-sm transition"
     >
       <div
         class="aspect-[4/3] w-full overflow-hidden rounded-xl border bg-gray-100 dark:bg-gray-800"
@@ -73,21 +73,21 @@ import Footer from "./Footer/Footer.astro";
           Map editor placeholder
         </div>
       </div>
-      <h2 class="text-xl font-semibold">Build your world</h2>
+      <h2 class="text-2xl font-bold">Build your world</h2>
       <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
         Design maps with tiles, terrains, and objects. Autotiles handle borders;
         objects support depth and collisions.
       </p>
       <a
         href="/features/map-editor"
-        class="mt-auto text-sm font-semibold text-color-white hover:underline"
-        >See map editor {">"}</a
+        class="mt-auto text-sm w-max text-color-white hover:underline"
+        >See map editor</a
       >
     </article>
 
     <!-- Tell your story -->
     <article
-      class="group relative flex flex-col gap-4 rounded-3xl border bg-white p-6 shadow-sm transition hover:shadow-md dark:bg-gray-900"
+      class="group relative flex flex-col gap-4 rounded-3xl border bg-[var(--sl-color-bg)] p-6 shadow-sm transition"
     >
       <div
         class="aspect-[4/3] w-full overflow-hidden rounded-xl border bg-gray-100 dark:bg-gray-800"
@@ -98,21 +98,21 @@ import Footer from "./Footer/Footer.astro";
           Events system placeholder
         </div>
       </div>
-      <h2 class="text-xl font-semibold">Tell your story</h2>
+      <h2 class="text-2xl font-bold">Tell your story</h2>
       <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
         Create interactions, dialog, choices, and branching paths with the
         Events system. Test changes instantly.
       </p>
       <a
         href="/features/events-system"
-        class="mt-auto text-sm font-semibold text-color-white hover:underline"
-        >See events system {">"}</a
+        class="mt-auto text-sm w-max text-color-white hover:underline"
+        >See events system</a
       >
     </article>
 
     <!-- Add mechanics -->
     <article
-      class="group relative flex flex-col gap-4 rounded-3xl border bg-white p-6 shadow-sm transition hover:shadow-md dark:bg-gray-900"
+      class="group relative flex flex-col gap-4 rounded-3xl border bg-[var(--sl-color-bg)] p-6 shadow-sm transition"
     >
       <div
         class="aspect-[4/3] w-full overflow-hidden rounded-xl border bg-gray-100 dark:bg-gray-800"
@@ -123,15 +123,15 @@ import Footer from "./Footer/Footer.astro";
           Mechanics montage placeholder
         </div>
       </div>
-      <h2 class="text-xl font-semibold">Add game mechanics</h2>
+      <h2 class="text-2xl font-bold">Fun game mechanics</h2>
       <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
         Build fetch quests, chase sequences, patrols, and puzzles by combining
         events, NPCs, and inventory.
       </p>
       <a
         href="/features#game-mechanics"
-        class="mt-auto text-sm font-semibold text-color-white hover:underline"
-        >See what’s possible {">"}</a
+        class="mt-auto text-sm w-max text-color-white hover:underline"
+        >See what’s possible</a
       >
     </article>
   </section>
@@ -155,19 +155,17 @@ import Footer from "./Footer/Footer.astro";
   <!-- WHY DIFFERENT -->
   <section class="grid gap-8 p-8 lg:grid-cols-3">
     <div class="col-span-1 flex flex-col gap-3">
-      <h2 class="text-2xl font-bold">What makes Pixel Stories different?</h2>
+      <h2 class="text-4xl font-bold">What makes Pixel Stories different?</h2>
       <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
         Designed for creators who want to tell stories—not wrestle with code.
       </p>
-      <a
-        href="/features"
-        class="text-sm font-semibold text-color-white hover:underline"
-        >See features {">"}</a
+      <a href="/features" class="text-sm w-max text-color-white hover:underline"
+        >See features</a
       >
     </div>
     <ul class="col-span-2 grid gap-3 sm:grid-cols-2">
       <li
-        class="list-none rounded-2xl border bg-white p-5 text-sm shadow-sm dark:bg-gray-900"
+        class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm"
       >
         <h3 class="font-semibold">Story-first design</h3>
         <p class="mt-1 text-gray-700 dark:text-gray-300">
@@ -175,7 +173,7 @@ import Footer from "./Footer/Footer.astro";
         </p>
       </li>
       <li
-        class="list-none rounded-2xl border bg-white p-5 text-sm shadow-sm dark:bg-gray-900"
+        class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm"
       >
         <h3 class="font-semibold">No-code editor</h3>
         <p class="mt-1 text-gray-700 dark:text-gray-300">
@@ -184,7 +182,7 @@ import Footer from "./Footer/Footer.astro";
         </p>
       </li>
       <li
-        class="list-none rounded-2xl border bg-white p-5 text-sm shadow-sm dark:bg-gray-900"
+        class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm"
       >
         <h3 class="font-semibold">Built-in assets</h3>
         <p class="mt-1 text-gray-700 dark:text-gray-300">
@@ -193,7 +191,7 @@ import Footer from "./Footer/Footer.astro";
         </p>
       </li>
       <li
-        class="list-none rounded-2xl border bg-white p-5 text-sm shadow-sm dark:bg-gray-900"
+        class="list-none rounded-2xl border p-5 text-sm shadow-sm bg-[var(--sl-color-bg)]"
       >
         <h3 class="font-semibold">Play test instantly</h3>
         <p class="mt-1 text-gray-700 dark:text-gray-300">
@@ -221,7 +219,7 @@ import Footer from "./Footer/Footer.astro";
 
   <!-- FINAL CTA -->
   <section
-    class="mb-20 overflow-hidden rounded-3xl border bg-gradient-to-r from-slate-600 to-slate-800 p-8 py-14 text-white shadow-sm"
+    class="mb-20 overflow-hidden rounded-3xl border bg-gradient-to-r from-slate-600 to-slate-800 dark:from-slate-800 dark:to-slate-900 p-8 py-14 text-white shadow-sm"
   >
     <div class="mx-auto grid max-w-5xl items-center gap-8 lg:grid-cols-3">
       <div class="lg:col-span-2">
