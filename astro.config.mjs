@@ -25,7 +25,7 @@ export default defineConfig({
       social: {
         youtube: "https://www.youtube.com/channel/UC62czApVKmYFH8clyDqKiVQ",
         github: "https://github.com/PixelStoriesEngine/pixel-stories-docs",
-        discord: "https://discord.gg/XN9EaUh26g",
+        discord: "https://discord.gg/WTxUC4hEnS",
       },
       components: {
         // Override the default `SocialIcons` component.
@@ -50,51 +50,92 @@ export default defineConfig({
               link: "/overview",
             },
             {
-              label: "Quick start",
+              label: "Features",
+              link: "/features",
+            },
+            {
+              label: "Interface tour",
+              link: "/tour/",
+            },
+            {
+              label: "Beginner tutorial",
               link: "/getting-started/",
             },
-            // {
-            //   label: "Interface tour",
-            //   link: "/",
-            // },
-            // {
-            //   label: "Examples",
-            //   link: "/",
-            // },
           ],
         },
         {
-          label: "Concepts",
+          label: "Map editor",
           items: [
+            { label: "Overview", link: "/map-editor/overview" },
+            { label: "Tilesets", link: "/map-editor/tilesets" },
+            { label: "Autotile terrains", link: "/map-editor/autotile" },
+            { label: "Map objects", link: "/map-editor/map-objects" },
+            { label: "Collisions", link: "/map-editor/collisions" },
+          ],
+        },
+        {
+          label: "Event system",
+          items: [
+            { label: "Events", link: "/event-system/events" }, // goes through how events play and map initial events play on first load
             {
-              label: "Events system",
-              link: "/features/events-system/",
+              label: "Event groups",
+              link: "/event-system/event-groups",
             },
             {
-              label: "Conditional branching",
-              link: "/features/variables-and-branching/",
+              label: "Conditional branches",
+              link: "/event-system/conditionals",
             },
             {
-              label: "Map editor",
-              link: "/features/map-editor/",
+              label: "Dialog event",
+              link: "/event-system/dialog-event",
             },
             {
-              label: "Game assets",
-              link: "/features/game-assets/",
+              label: "Player events",
+              link: "/event-system/player-events",
+            },
+            {
+              label: "NPC events",
+              link: "/event-system/npc-events",
+            },
+            {
+              label: "Control flow events",
+              link: "/event-system/control-flow-events",
             },
           ],
         },
         {
-          label: "How-to guides",
-          autogenerate: { directory: "/guides" },
+          label: "Game assets",
+          items: [
+            { label: "Asset library", link: "/game-assets/asset-library" },
+            { label: "NPCs", link: "/game-assets/npcs" },
+            { label: "Inventory items", link: "/game-assets/inventory-items" },
+            { label: "Dialog UI", link: "/game-assets/dialog-ui" },
+          ],
         },
+        // {
+        //   label: "Guides",
+        //   autogenerate: { directory: "/guides" },
+        // },
+        /*
+          Build a Door (map transfer + trigger)
+
+          NPC Basics: Spawn, Talk, Despawn
+
+          Choices & Branching Dialogue
+
+          Chase & Patrol (ties together movement + triggers)
+
+          Inventory Pickup & Use
+
+          Switch Maps from a Cutscene
+
+          Customize the Dialogue Box Theme
+
+          Each guide uses the standard page template (What/When/Steps/Tips/Related).
+            */
         {
           label: "Resources",
           items: [
-            {
-              label: "Events reference",
-              link: "/events/",
-            },
             {
               label: "Changelog",
               link: "/changelog/",
@@ -106,7 +147,7 @@ export default defineConfig({
             },
             {
               label: "Official Discord 🔗",
-              link: "https://discord.gg/XN9EaUh26g",
+              link: "https://discord.gg/WTxUC4hEnS",
               attrs: { target: "_blank" },
             },
           ],

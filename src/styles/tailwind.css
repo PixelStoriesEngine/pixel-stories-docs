@@ -9,4 +9,12 @@
       text-color-white
       dark:text-color-black;
   }
+
+  .btn-ghost {
+    @apply w-full rounded-xl p-2 flex justify-center items-center no-underline
+      border border-color-text-accent font-medium cursor-pointer
+      text-color-text-accent bg-transparent
+      hover:bg-color-text-accent hover:text-color-white
+      dark:hover:text-color-black;
+  }
 }

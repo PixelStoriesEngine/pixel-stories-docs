@@ -1,186 +1,154 @@
 ---
-title: "Quick Start Tutorial"
+title: "Making Your First Game"
 description: Getting started with Pixel Stories
 ---
 
 import { Steps } from "@astrojs/starlight/components";
 
-The goal of this guide is to show you all the core functionality in the Pixel Stories game maker. After this quick guide, you’ll be primed with all the basic knowledge you need to explore more as well as start creating your first story game!
+We’ll build a simple game from scratch. By the end of this tutorial you’ll have:
 
-We’ll be building a simple game from scratch. In the tutorial, we go through setting up the project and game assets, building a game map, and adding game interactions with events.
+- A decorated map
+- An intro dialog message
+- An interactable NPC that talks back
 
 ## Project Setup
 
-First let’s make a project in the game maker.
+First, let’s set up your project.
 
-<Steps>
+1. Open the <a href="https://app.pixelstories.io/" target="_blank">Pixel Stories editor</a>
+2. Create an account.
+3. Create a new project, with default asset pack.
 
-1.  Open the [Pixel Stories editor](https://app.pixelstories.io/).
-2.  Log in or create an account.
-3.  Create a new blank project.
+![](../../assets/docs-images/getting-started/image-1.png)
 
-</Steps>
+## Building a Map
 
-## Game Assets
+A game needs a world. We’ll create a small starting map using the built-in assets.
 
-Now that you have a project, we need to add some game assets to start building our map. For now we’ll use the default assets the game maker provides.
+### Draw the Terrain
 
-<Steps>
+1. Go to **Edit Map > Tilesets**.
+2. Select the grass tile.
+3. Select the rectangle shape, and paint the ground of your map.
 
-1. In the `Game assets` tab, and open the Assets library.
-2. Click on the zelta-like asset pack
-3. Add the following:
-   <br />• A grass terrain
-   <br />• A few rock variations
+The top toolbar is where you'll find all the tools for the tab you are on. Right now, we see the tileset draw and erase tools.
 
-</Steps>
+![](../../assets/docs-images/getting-started/image-2.png)
 
-After adding those to your project, you’ll find those assets under `Game assets > Map assets`.
-
-These assets will just serve as placeholders for now. Later on, you can [see how to add custom assets](https://pixelstories.io/features/game-assets/).
-
-## Game Map
-
-With our assets in place, we can start creating the game map. This section goes though using terrains, placing map objects, and map collision boundaries.
-
-### Drawing Terrains
-
-Terrains allow you to draw into the map without worrying about connecting each individual tile. [Learn more about terrains.](/features/map-editor/#terrains)
-
-Drawing terrains in the map is done through the map's `Edit map` section. Select a terrain and click in the map to draw. There are also useful tools above the game window to pan, draw, and erase.
-
-:::note[Terrain layers]
-The ground layer is to place main terrain tiles, floors, walls, and walkable surfaces. The Details Layer is for detail adding terrains like grass, flowers, or ground tile variations.
+:::tip
+Use [autotiles](../map-editor/autotile) for borders if you want patches of dirt or paths.
 :::
 
-### Placing Map Objects
+### Place Objects
 
-Map objects in the game are free to be placed anywhere, have no limitations in size, and are meant to be the “objects” in your map. [Learn more about map objects.](/features/map-editor/#map-objects)
+1. Switch to **Edit Map > Objects**.
+2. Select a rock and add a few into the map.
 
-Similar to terrains, you can place map objects into the game in the `Edit map > Map objects` section.
+Similar to the tileset tools, you can find the map object tools. Besides place and erase, you'll also find a select tool that can move the objects around.
 
-:::note[Map grid settings]
-Change how map objects snap to the grid with the map settings on the top right of game window.
-:::
+![](../../assets/docs-images/getting-started/image-3.png)
 
-### Map Collisions
+## Your First Event
 
-If you play test your game in `Play test` tab, you'll find the player can walk anywhere, even off the map. We can fix that by adding map collisions
+Before we add NPCs or interactions, let’s try a simple dialog event. This will show a message as soon as the map loads, so you can see how events run in sequence.
 
-Navigate to `Edit map > Edit collisions`. Put collision boxes around your map and at any map objects that require a collision box.
+### Add a Dialog Event
 
-## Event System
-
-Events are the building blocks for your game in Pixel Stories. We'll be working with the `Spawn character`, `Move character`, and `Dialog` events. Later, you'll see how we can use event groups to combine events and trigger it from player interaction.
-
-### New Character
-
-In this section, we're going to spawn a character into the map using the `Spawn character` event.
-
-But before we can do that, we have to first add a new character into our game in the `Game assets` tab.
-
-Navigate to the `Game assets` tab and create a new character. The character will have the default ghost walking animations so we don't have to worry about putting in animations for now.
-
-Now that you have a character in the game, lets add it into the map.
-
-<Steps>
-
-1. Navigate to your map and to the initial events section.
-2. Add a new event: `Spawn character`.
-3. Select the new character you created to spawn.
-4. Set the spawn position in the map.
-
-</Steps>
-
-You won't see the character in the editor game window for now. But if you go to the `Play test` tab, then the initial map events will be executed, and the character will be in the map.
-
-### Playing Dialog
-
-The `Dialog` event shows text in a dialog box in the game.
-
-In the same way we added the spawn character event, add a `Dialog` event. Within the dialog event configuration, you'll find a big text box, In that text box you can write all your dialog.
-
-Dialog is written in a specific format. If you type an opening bracket `[`, you can find all the tags that control how the dialog plays.
-
-The most useful ones are:
-
-- `[r]` for playing the text on a new line
-- `[pb]` for playing the text on the next dialog box
-
-Feel free to copy the following into your `Dialog` event:
+1. Go to **Events > Map Events**.
+2. Click **+ Events…** and select **Dialog**.
+3. In the text box, type a short message, for example:
 
 ```
-Hello world! Coming from the dialog event.
 
-[r]
+Welcome to my very first Pixel Stories game!
 
-This text is on a newline.
+```
 
+4. Go to the **Play test** page. As soon as the map loads, the dialog will appear.
+
+![](../../assets/docs-images/getting-started/image-8.png)
+
+## Adding an NPC
+
+Next we’ll add a character who can speak with the player.
+
+### Create an NPC
+
+1. Go to the **Assets > NPCs** page.
+2. Click **Add NPC**.
+3. Name it **"Ghost friend"**
+4. Set each movement animation to the default ghost animation.
+
+![](../../assets/docs-images/getting-started/image-4.png)
+
+### Spawn the NPC
+
+1. Go back to the **Edit map** page.
+2. In **Events > Map Events**, add a **Spawn NPC** event.
+   <br /> You'll find it under the **Manage NPCs** section
+3. Select **"Ghost friend"** as the NPC to spawn
+   <br /> Click to set a position on the map.
+
+When you run the game from the **Play test** page, the NPC will appear.
+
+![](../../assets/docs-images/getting-started/image-5.png)
+
+![](../../assets/docs-images/getting-started/image-6.png)
+
+## Dialog With the NPC
+
+We’ll make the NPC speak when the player interacts.
+
+### Create an Event Group
+
+1. Go to **Events > Event Groups**.
+2. Create a new group called `Talk to Ghost friend`.
+3. Add a **Dialog** event with some text, for example:
+
+```
+Hello traveler! Welcome to my village.
 [pb]
-
-And this text is on the next dialog box!
-
+It’s dangerous to go alone...
 ```
 
-:::note[Event Sequence]
+The special tag `[pb]` continues the message in a new dialog box.
 
-Events play one after another. So if you had an actor move event before the dialog, the dialog only shows after the actor is finished moving.
+### Add the Trigger
 
-:::
+1. Back in the event group, click on **Add to map**.
+   <br /> This adds an event to put the event group into the map.
+2. Set the trigger to **Interact**.
+3. Set the trigger position to **Attach to NPC**, and onto **"Ghost friend"**
 
-### Triggering Events
+Now, in the **Play test** page, when you walk up to the NPC and press **Enter** or **Z**, the dialog will play.
 
-You'll notice the current events in the game automatically play right away when the map loads. That's because they are in the initial events section. To play an event when a player triggers it, we need to use an event group.
+:::tip
 
-#### How Event Groups Work
+1. It's important to for the event group to **attach to NPC** so if the NPC moves, the
+   event group will stay with it.
 
-Event groups are a group of events separate from the map's initial events which play when the map loads.
+2. Events run one after another. Make sure events that use an NPC run after the NPC spawn event!
+   :::
 
-To use event groups, first you define the event group and add events to it, then you add the event group to the map with the `Add event group` event. Once its added to the map, they can be triggered by player `Interact` or `Touch`.
-
-#### New Event Group
-
-Let's add an event group to our game.
-
-<Steps>
-
-1. Define a new event group in the map's event groups section.
-   <br />• Name the event group `My dialog trigger`.
-   <br />• Add a new `Dialog` event into the event group.
-2. Add an `Add event group` event in the initial events section of the map.
-   <br />• Select the event group you've defined.
-   <br />• Set the trigger type to interact.
-   <br />• Set the position in the map for the trigger.
-
-</Steps>
-
-Now head over to `Play test` tab and use the `Arrow keys` to walk to where you set the trigger. Press `Enter` or `z` and you should see the dialog play!
-
-**The possibilities...** Now with this system, you can implement story-driven game mechanics such as:
-
-- Map exploration from interacting on map objects and showing pieces of lore, using `Dialog` or `Show image` events.
-- Traversing to different maps with doors or portals by using the `Transfer player` event.
-- Quests, such as ones where the player must find a key to a door before they can progress.
-- Jump scares by using `Play sound` along with `Show image` events when the player walks into an area.
-- Completely new mechanics that I never dared think about...
-
-This document goes more in depth about [how event groups work](/features/events-system/#how-group-events-work). For more complex mechanics such as branching dialog and multiple endings, it's good to look into [Variables and Conditional Branching](/features/variables-and-branching) as well.
+![](../../assets/docs-images/getting-started/image-7.png)
 
 ## Sharing Your Game
 
-Share your game by copying the link found in the `Share game` button at the top right. Through the link, your friends and other players will be able to play your game in the browser.
+Click **Share** at the top right to copy a link. Send it to friends so they can play your creation instantly in their browser.
 
-## What's next?
+## What’s Next?
 
-Now you're primed with all the basic knowledge to start building a story game, we recommend to start building out your idea right away and learn as you go!
+You now know the basics of maps, NPCs, and events. From here, the fun begins!
 
-Below are some guides and concepts which go in more depth on how to use the Pixel Stories game maker for special mechanics and features.
+The rest of the docs has a lot of good information. Try building more maps, playing with the event system, and seeing how different mechanics come together. The more you experiment, the more you'll discover what possible in Pixel Stories.
 
-- [Moving your player between maps](/guides/moving-your-player-between-maps)
-- [Making a quest](/guides/fetch-quest)
-- [The events system](/features/events-system)
-- [Map editor](/features/map-editor)
-- [Variables and branching](/features/variables-and-branching)
-- [Game Assets](/features/game-assets)
+Here are a few good next steps:
 
-Thanks for going through the tutorial! Join us on [Discord](https://discord.gg/XN9EaUh26g) if you'd like to get help or give feedback/suggestions.
+- [Tilesets](../map-editor/tilesets): Add terrain and shape the foundation of your world
+- [Autotiles](../map-editor/autotile): Speed up map design with smart borders and corners
+- [Event System](../event-system/events): Learn how to create dialog, choices, and gameplay mechanics
+- [NPCs](../game-assets/npcs): Bring characters to life with animations and interactions
+
+Have fun building maps, exploring the event system, and creating stories that are uniquely yours!
+
+Join our [Discord community](https://discord.gg/WTxUC4hEnS) if you’d like help or want to share what you’ve built!

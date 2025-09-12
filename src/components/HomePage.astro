@@ -1,93 +1,219 @@
 ---
-import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 import { getCollection } from "astro:content";
 import Footer from "./Footer/Footer.astro";
-
-const posts = await getCollection("blog");
-const sortedPosts = posts.sort(
-  (a, b) =>
-    new Date(b.data.date || "").getTime() -
-    new Date(a.data.date || "").getTime()
-);
-const recentPosts = sortedPosts.slice(0, 4);
+import image1 from "../assets/docs-images/home/image-1.png";
+import { Image } from "astro:assets";
 ---
 
-<div class="not-content flex flex-col gap-3 max-w-[800px] mx-auto">
-  <div class="flex flex-col gap-24 max-w-[800px] mx-auto w-full">
-    {/* Links Section */}
-    <section class="flex flex-col gap-4 max-w-full">
-      <h2 class="text-center">Make Your First Game Today!</h2>
-      <div class="flex flex-wrap gap-2 items-stretch">
-        <div class="flex-1 h-full min-w-[200px]">
-          <LinkCard
-            title="Pixel Stories Docs"
-            description="See our quick guide on getting started!"
-            href="/getting-started"
-          />
-        </div>
-        <div class="flex-1 h-full min-w-[200px]">
-          <LinkCard
-            title="Get Started Tutorial"
-            description="Get familiar with the editor with our tutorial."
-            href="/tutorials/basic"
-          />
-        </div>
-        <div class="flex-1 h-full min-w-[200px]">
-          <LinkCard
-            title="Official  Discord"
-            description="See our official Discord server."
-            href="https://discord.gg/XN9EaUh26g"
-          />
-        </div>
+<main
+  class="not-content relative mx-auto flex max-w-7xl flex-col gap-24 px-0 sm:px-6 lg:px-8"
+>
+  <!-- Background Decoration -->
+  <div
+    aria-hidden="true"
+    class="pointer-events-none fixed inset-0 -z-10 overflow-hidden"
+  >
+    <div
+      class="opacity-30 absolute -top-32 left-1/2 h-[600px] w-[1200px] -translate-x-1/2 rounded-full bg-gradient-to-r from-indigo-500/20 via-fuchsia-500/20 to-emerald-500/20 blur-3xl"
+    >
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="mt-10 flex flex-col items-center gap-8 text-center">
+    <div
+      class="inline-flex items-center gap-2 rounded-full border border-neutral-500 px-3 py-1 text-xs font-medium"
+    >
+      <span>Late‑stage beta</span>
+      <span>·</span>
+      <a
+        href="/blog"
+        class="underline-offset-2 hover:underline text-color-white"
+        >See what’s new</a
+      >
+    </div>
+
+    <h1
+      class="mx-auto max-w-3xl text-balance text-4xl font-bold tracking-tight sm:text-5xl lg:text-5xl"
+    >
+      Make story‑driven games in your browser
+    </h1>
+    <p
+      class="mx-auto max-w-2xl text-pretty text-base/7 text-gray-700 dark:text-gray-300 sm:text-lg"
+    >
+      Pixel Stories lets you tell immersive and captivating stories through
+      games.
+      <br />
+      No code required. Share instantly with friends!
+    </p>
+
+    <div class="mt-10 w-max max-w-full">
+      <Image
+        src={image1}
+        alt="Pixel Stories Game Editor"
+        class="!w-full !h-full rounded-2xl border shadow-xl"
+      />
+    </div>
+  </section>
+
+  <!-- THREE PILLARS -->
+  <section class="grid gap-8 md:grid-cols-3">
+    <!-- Build your world -->
+    <article
+      class="group relative flex flex-col gap-4 rounded-3xl border bg-[var(--sl-color-bg)] p-6 py-5 shadow-sm transition"
+    >
+      <h2 class="text-2xl font-bold">Build your world</h2>
+      <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
+        Design maps with tiles, terrains, and objects. Our intuitive map editor
+        makes it easy to build 2D worlds!
+      </p>
+      <a
+        href="/features#map-editor"
+        class="mt-auto text-sm w-max text-color-white hover:underline"
+        >See map editor</a
+      >
+    </article>
+
+    <!-- Tell your story -->
+    <article
+      class="group relative flex flex-col gap-4 rounded-3xl border bg-[var(--sl-color-bg)] p-6 py-5 shadow-sm transition"
+    >
+      <h2 class="text-2xl font-bold">Tell your story</h2>
+      <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
+        Create interactions, dialog, choices, and branching paths with the Event
+        system to tell your story.
+      </p>
+      <a
+        href="/features#event-system"
+        class="mt-auto text-sm w-max text-color-white hover:underline"
+        >See event system</a
+      >
+    </article>
+
+    <!-- Add mechanics -->
+    <article
+      class="group relative flex flex-col gap-4 rounded-3xl border bg-[var(--sl-color-bg)] p-6 py-5 shadow-sm transition"
+    >
+      <h2 class="text-2xl font-bold">Create fun mechanics</h2>
+      <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
+        Build quests, puzzles, and chase sequences by combining events, NPCs,
+        and inventory systems.
+      </p>
+      <a
+        href="/features#game-mechanics"
+        class="mt-auto text-sm w-max text-color-white hover:underline"
+        >See what’s possible</a
+      >
+    </article>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section
+    class="flex flex-col items-center justify-center text-center p-4 py-8"
+  >
+    <div class="max-w-xl flex flex-col gap-4 items-center">
+      <h2 class="text-3xl font-bold">Share with the world!</h2>
+      <p class="text-base text-gray-700 dark:text-gray-300">
+        Share instantly with friends, players, and the Pixel Stories community.
+        Cross-platform, in browser, no installs required.
+      </p>
+      <a href="https://app.pixelstories.io/" class="btn-primary w-max px-6">
+        Start creating now
+      </a>
+    </div>
+  </section>
+
+  <!-- WHY DIFFERENT -->
+  <section class="grid gap-8 p-4 lg:grid-cols-5">
+    <div class="lg:col-span-2 flex flex-col gap-6">
+      <h2 class="text-3xl font-bold">
+        What makes <span class="text-nowrap">Pixel Stories</span> different?
+      </h2>
+      <p class="text-base leading-6 text-gray-700 dark:text-gray-300">
+        Pixel Stories is made for creators who want to tell immersive and
+        captivating stories through games, and not wrestle endlessly with code.
+      </p>
+      <a href="/features" class="text-sm w-max text-color-white hover:underline"
+        >See features</a
+      >
+    </div>
+    <ul class="p-0 lg:col-span-3 grid gap-3 sm:grid-cols-2">
+      <li
+        class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm"
+      >
+        <h3 class="font-semibold">For 2D story-driven games</h3>
+        <p class="mt-3 text-gray-700 dark:text-gray-300">
+          Built from the ground up for top-down, story-driven games.
+        </p>
+      </li>
+      <li
+        class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm"
+      >
+        <h3 class="font-semibold">No-code editor</h3>
+        <p class="mt-3 text-gray-700 dark:text-gray-300">
+          Tools for maps, dialog, and mechanics, so you can focus on your story.
+        </p>
+      </li>
+      <li
+        class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm"
+      >
+        <h3 class="font-semibold">Free, built-in assets</h3>
+        <p class="mt-3 text-gray-700 dark:text-gray-300">
+          Start fast with free tiles, objects, and terrains. Upload custom
+          assets anytime.
+        </p>
+      </li>
+      <li
+        class="list-none rounded-2xl border p-5 text-sm shadow-sm bg-[var(--sl-color-bg)]"
+      >
+        <h3 class="font-semibold">Share your game</h3>
+        <p class="mt-3 text-gray-700 dark:text-gray-300">
+          Instantly share your game with friends. Playable cross-platform in the
+          web.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section
+    class="flex flex-col items-center justify-center text-center p-4 py-8"
+  >
+    <div class="max-w-xl flex flex-col gap-4 items-center">
+      <h2 class="text-3xl font-bold">Join our creator community</h2>
+      <p class="text-base text-gray-700 dark:text-gray-300">
+        You don’t have to build alone. Share progress, get feedback, and make
+        friends who love creating story-driven games.
+      </p>
+      <a
+        href="https://discord.gg/WTxUC4hEnS"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-max text-color-white"
+      >
+        Join the Discord
+      </a>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section
+    class="mb-20 overflow-hidden rounded-3xl border bg-gradient-to-r from-slate-600 to-slate-800 dark:from-slate-800 dark:to-slate-900 p-8 py-14 text-white shadow-sm"
+  >
+    <div class="mx-auto grid max-w-5xl items-center gap-8 lg:grid-cols-3">
+      <div class="lg:col-span-2">
+        <h2 class="text-3xl font-extrabold">Ready to start?</h2>
+        <p class="mt-2 text-xl leading-6 text-white">
+          Create your first game in minutes. Free to try. Runs in your browser.
+        </p>
       </div>
-    </section>
-
-    {/* News & Updates Section */}
-    <section class="w-full max-w-[600px] mx-auto">
-      <div class="flex flex-col gap-4 w-full">
-        <h2 class="text-center">Latest News</h2>
-        <ul class="pl-0 list-none flex flex-col gap-2">
-          {
-            recentPosts.map((post) => (
-              <a
-                href={`/blog/${post.slug}`}
-                class="hover:border-color-accent-high border border-transparent no-underline text-current p-2 px-4 rounded-lg transition-all "
-              >
-                <li class="pb-2">
-                  <h4 class="text-lg font-semibold w-max max-w-full">
-                    {post.data.title}
-                  </h4>
-
-                  <time
-                    class="font-mono text-sm"
-                    datetime={new Date(post.data.date || "").toDateString()}
-                  >
-                    Published on
-                    {new Date(post.data.date || "").toLocaleDateString(
-                      "en-us",
-                      {
-                        year: "numeric",
-                        month: "short",
-                        day: "numeric",
-                        timeZone: "UTC",
-                      }
-                    )}
-                  </time>
-
-                  <p class="text-sm mt-1">{post.data.excerpt}</p>
-                </li>
-              </a>
-            ))
-          }
-        </ul>
-      </div>
-      <div class="mt-6 text-center">
-        <a href="/blog" class="text-current no-underline hover:underline">
-          See news and updates</a
+      <div class="flex items-center gap-3 lg:justify-end">
+        <a href="https://app.pixelstories.io/" class="btn-primary"
+          >Start creating now</a
         >
       </div>
-    </section>
-  </div>
-</div>
+    </div>
+  </section>
+</main>
 
 <Footer />

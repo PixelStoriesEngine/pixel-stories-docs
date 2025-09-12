@@ -46,7 +46,7 @@ We’ve streamlined the workflow for creating terrain. The updated UI allows for
 
 ### Support for Blob, Wang, and RPG Maker Auto-tiles
 
-The editor now supports Blob, Wang, and RPG Maker tileset formats. The good thing about these formats is that I found them to be the most widely used and you can easily transform into them if your tileset isn't in that specific format. If you believe another auto-tile format should be added which I've missed, let me know in our [official Discord](https://discord.gg/XN9EaUh26g)!
+The editor now supports Blob, Wang, and RPG Maker tileset formats. The good thing about these formats is that I found them to be the most widely used and you can easily transform into them if your tileset isn't in that specific format. If you believe another auto-tile format should be added which I've missed, let me know in our [official Discord](https://discord.gg/WTxUC4hEnS)!
 
 ### Change Log
 
