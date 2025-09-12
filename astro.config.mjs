@@ -74,32 +74,32 @@ export default defineConfig({
           ],
         },
         {
-          label: "Events system",
+          label: "Event system",
           items: [
-            { label: "Events", link: "/events-editor/events" }, // goes through how events play and map initial events play on first load
+            { label: "Events", link: "/event-system/events" }, // goes through how events play and map initial events play on first load
             {
               label: "Event groups",
-              link: "/events-editor/event-groups",
+              link: "/event-system/event-groups",
             },
             {
               label: "Conditional branches",
-              link: "/events-editor/conditionals",
+              link: "/event-system/conditionals",
             },
             {
               label: "Dialog event",
-              link: "/events-editor/dialog-event",
+              link: "/event-system/dialog-event",
             },
             {
               label: "Player events",
-              link: "/events-editor/player-events",
+              link: "/event-system/player-events",
             },
             {
               label: "NPC events",
-              link: "/events-editor/npc-events",
+              link: "/event-system/npc-events",
             },
             {
               label: "Control flow events",
-              link: "/events-editor/control-flow-events",
+              link: "/event-system/control-flow-events",
             },
           ],
         },

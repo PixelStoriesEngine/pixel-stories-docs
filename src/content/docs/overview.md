@@ -10,12 +10,12 @@ Whether you are just getting started or looking up a specific feature, you can u
 ## What You’ll Find Here
 
 - **Beginner tutorial** that introduce the basics of Pixel Stories
-- **Concepts and features** such as the map editor, events system, dialog, and NPCs
+- **Concepts and features** such as the map editor, event system, dialog, and NPCs
 - **Reference pages** with details on assets, variables, and customization options
 
 ## What is Pixel Stories?
 
-Pixel Stories is a no-code game maker designed for building 2D top-down story-driven games. If you are new to game development, it gives you approachable tools like the **map editor**, **events system**, and **dialog editor** to to tell immersive stories without needing to code.
+Pixel Stories is a no-code game maker designed for building 2D top-down story-driven games. If you are new to game development, it gives you approachable tools like the **map editor**, **event system**, and **dialog editor** to to tell immersive stories without needing to code.
 
 If you are coming from another engine, you will find that Pixel Stories focuses specifically on storytelling features, so you can spend less time configuring and more time creating.
 
