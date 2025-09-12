@@ -9,7 +9,7 @@ Whether you are just getting started or looking up a specific feature, you can u
 
 ## What You’ll Find Here
 
-- **Quick start tutorial** that introduce the basics of Pixel Stories
+- **Beginner tutorial** that introduce the basics of Pixel Stories
 - **Concepts and features** such as the map editor, events system, dialog, and NPCs
 - **Reference pages** with details on assets, variables, and customization options
 
@@ -21,9 +21,9 @@ If you are coming from another engine, you will find that Pixel Stories focuses 
 
 ## Tips for Using the Docs
 
-- Start with the [Quick start tutorial](./getting-started.md) if you are new
+- Start with the [Beginner tutorial](./getting-started.md) if you are new
 - Use the **search** to quickly find topics or reference pages
-- Join our [Discord community](https://discord.gg/XN9EaUh26g) if you need help or want to share ideas
+- Join our [Discord community](https://discord.gg/WTxUC4hEnS) if you need help or want to share ideas
 
 ## Early Access
 

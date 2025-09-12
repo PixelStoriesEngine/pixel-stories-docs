@@ -25,7 +25,7 @@ export default defineConfig({
       social: {
         youtube: "https://www.youtube.com/channel/UC62czApVKmYFH8clyDqKiVQ",
         github: "https://github.com/PixelStoriesEngine/pixel-stories-docs",
-        discord: "https://discord.gg/XN9EaUh26g",
+        discord: "https://discord.gg/WTxUC4hEnS",
       },
       components: {
         // Override the default `SocialIcons` component.
@@ -147,7 +147,7 @@ export default defineConfig({
             },
             {
               label: "Official Discord 🔗",
-              link: "https://discord.gg/XN9EaUh26g",
+              link: "https://discord.gg/WTxUC4hEnS",
               attrs: { target: "_blank" },
             },
           ],
