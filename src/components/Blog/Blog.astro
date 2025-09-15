@@ -63,7 +63,7 @@ const latest = posts.filter((p) => !p.data.featured);
               date={post.data.date}
               excerpt={post.data.excerpt}
               tags={post.data.tags}
-              url={"/blog/" + post.slug}
+              url={"/blog/" + post.id}
             />
           ))
       }
