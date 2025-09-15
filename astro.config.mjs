@@ -19,8 +19,7 @@ export default defineConfig({
 
   integrations: [
     starlight({
-      title:
-        "Pixel Stories, the modern no-code game maker for story-driven games",
+      title: "Pixel Stories",
       logo: {
         light: "./src/assets/logo-light.svg",
         dark: "./src/assets/logo-dark.svg",
