@@ -1,0 +1,197 @@
+---
+import { getCollection } from "astro:content";
+import Footer from "./Footer/Footer.astro";
+import image1 from "../assets/docs-images/home/image-1.png";
+import { Image } from "astro:assets";
+---
+
+<main
+  class="not-content relative mx-auto flex max-w-7xl flex-col gap-24 px-0 sm:px-6 lg:px-8"
+>
+  <!-- Background Decoration -->
+  <div
+    aria-hidden="true"
+    class="pointer-events-none fixed inset-0 -z-10 overflow-hidden"
+  >
+    <div
+      class="opacity-30 absolute -top-32 left-1/2 h-[600px] w-[1200px] -translate-x-1/2 rounded-full bg-gradient-to-r from-indigo-500/20 via-fuchsia-500/20 to-emerald-500/20 blur-3xl"
+    >
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="mt-10 flex flex-col items-center gap-8 text-center">
+    <div
+      class="inline-flex items-center gap-2 rounded-full border border-neutral-500 px-3 py-1 text-xs font-medium"
+    >
+      <span>Late‑stage beta</span>
+      <span>·</span>
+      <a href="/blog" class="underline-offset-2 hover:underline text-white"
+        >See what’s new</a
+      >
+    </div>
+
+    <h1
+      class="mx-auto max-w-3xl text-pretty text-4xl font-bold tracking-tight sm:text-5xl lg:text-5xl leading-tight"
+    >
+      PS Maker: A game maker for story‑driven games
+    </h1>
+    <p
+      class="mx-auto max-w-2xl text-balance text-base/7 text-gray-700 dark:text-gray-300 sm:text-lg"
+    >
+      PS Maker lets you tell immersive and captivating stories through games. No
+      code required. Share instantly with friends!
+    </p>
+
+    <div class="mt-10 w-max max-w-full">
+      <Image
+        src={image1}
+        alt="PS Maker Game Editor"
+        class="!w-full !h-full rounded-2xl border shadow-xl"
+      />
+    </div>
+  </section>
+
+  <!-- THREE PILLARS -->
+  <section class="grid gap-8 md:grid-cols-3">
+    <!-- Build your world -->
+    <article
+      class="group relative flex flex-col gap-4 rounded-3xl border bg-[var(--sl-color-bg)] p-6 py-5 shadow-sm transition"
+    >
+      <h2 class="text-2xl font-bold">Build your world</h2>
+      <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
+        Design maps with tiles, terrains, and objects. Our intuitive map editor
+        makes it easy to build 2D worlds!
+      </p>
+      <a
+        href="/features#map-editor"
+        class="mt-auto text-sm w-max text-white hover:underline"
+        >See map editor</a
+      >
+    </article>
+
+    <!-- Tell your story -->
+    <article
+      class="group relative flex flex-col gap-4 rounded-3xl border bg-[var(--sl-color-bg)] p-6 py-5 shadow-sm transition"
+    >
+      <h2 class="text-2xl font-bold">Tell your story</h2>
+      <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
+        Create interactions, dialog, choices, and branching paths with the Event
+        system to tell your story.
+      </p>
+      <a
+        href="/features#event-system"
+        class="mt-auto text-sm w-max text-white hover:underline"
+        >See event system</a
+      >
+    </article>
+
+    <!-- Add mechanics -->
+    <article
+      class="group relative flex flex-col gap-4 rounded-3xl border bg-[var(--sl-color-bg)] p-6 py-5 shadow-sm transition"
+    >
+      <h2 class="text-2xl font-bold">Create fun mechanics</h2>
+      <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
+        Build quests, puzzles, and chase sequences by combining events, NPCs,
+        and inventory systems.
+      </p>
+      <a
+        href="/features#game-mechanics"
+        class="mt-auto text-sm w-max text-white hover:underline"
+        >See what’s possible</a
+      >
+    </article>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section
+    class="flex flex-col items-center justify-center text-center p-4 py-8"
+  >
+    <div class="max-w-xl flex flex-col gap-4 items-center">
+      <h2 class="text-3xl font-bold">Share with the world!</h2>
+      <p class="text-base text-gray-700 dark:text-gray-300">
+        Share instantly with friends, players, and the PS Maker community.
+        Cross-platform, in browser, no installs required.
+      </p>
+      <a href="https://app.pixelstories.io/" class="btn-primary w-max px-6">
+        Start creating for free
+      </a>
+    </div>
+  </section>
+
+  <!-- WHY DIFFERENT -->
+  <section class="grid gap-8 p-4 lg:grid-cols-5">
+    <div class="lg:col-span-2 flex flex-col gap-6">
+      <h2 class="text-3xl font-bold">
+        What makes <span class="text-nowrap">PS Maker</span> different?
+      </h2>
+      <p class="text-base leading-6 text-gray-700 dark:text-gray-300">
+        PS Maker is made for creators who want to tell immersive and captivating
+        stories through games, and not wrestle endlessly with code.
+      </p>
+      <a href="/features" class="text-sm w-max text-white hover:underline"
+        >See features</a
+      >
+    </div>
+    <ul class="p-0 lg:col-span-3 grid gap-3 sm:grid-cols-2">
+      <li
+        class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm"
+      >
+        <h3 class="font-semibold">For 2D story-driven games</h3>
+        <p class="mt-3 text-gray-700 dark:text-gray-300">
+          Built from the ground up for top-down, story-driven games.
+        </p>
+      </li>
+      <li
+        class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm"
+      >
+        <h3 class="font-semibold">No-code editor</h3>
+        <p class="mt-3 text-gray-700 dark:text-gray-300">
+          Tools for maps, dialog, and mechanics, so you can focus on your story.
+        </p>
+      </li>
+      <li
+        class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm"
+      >
+        <h3 class="font-semibold">Free, built-in assets</h3>
+        <p class="mt-3 text-gray-700 dark:text-gray-300">
+          Start fast with free tiles, objects, and terrains. Upload custom
+          assets anytime.
+        </p>
+      </li>
+      <li
+        class="list-none rounded-2xl border p-5 text-sm shadow-sm bg-[var(--sl-color-bg)]"
+      >
+        <h3 class="font-semibold">Share your game</h3>
+        <p class="mt-3 text-gray-700 dark:text-gray-300">
+          Instantly share your game with friends. Playable cross-platform in the
+          web.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section
+    class="mb-20 overflow-hidden rounded-3xl border bg-gradient-to-r from-slate-600 to-slate-800 dark:from-slate-800 dark:to-slate-900 p-8 py-14 text-white shadow-sm"
+  >
+    <div
+      class="mx-auto grid max-w-5xl items-center gap-8 lg:grid-cols-3 text-black dark:text-white"
+    >
+      <div class="lg:col-span-2 space-y-4">
+        <h2 class="text-3xl font-extrabold">Shape the future of PS Maker.</h2>
+        <p class="mt-2 text-lg leading-6">
+          Love making story-driven games? Join our Discord to help shape what's
+          next in PS Maker Maker.
+        </p>
+      </div>
+      <div class="flex items-center gap-3 lg:justify-end">
+        <a href="https://app.pixelstories.io/" class="btn-primary"
+          >Join our Discord</a
+        >
+      </div>
+    </div>
+  </section>
+</main>
+
+<Footer />

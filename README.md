@@ -1,4 +1,3 @@
-# The Official Pixel Stories User Guide
+# The Official PS Maker User Guide
 
-This repository contains all the information and documentation for the Pixel Stories Editor.
-
+This repository contains all the information and documentation for the PS Maker Editor.

@@ -1,36 +1,50 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
-import tailwind from "@astrojs/tailwind";
 import vercel from "@astrojs/vercel/serverless";
+
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://pixelstories.io",
   output: "server",
+
   adapter: vercel({
     webAnalytics: { enabled: true },
   }),
+
   redirects: {
     "/tutorials/basic": "/tutorials/project-setup",
   },
+
   integrations: [
     starlight({
-      title:
-        "Pixel Stories, the modern no-code game maker for story-driven games",
+      title: "Pixel Stories",
       logo: {
         light: "./src/assets/logo-light.svg",
         dark: "./src/assets/logo-dark.svg",
         replacesTitle: true,
       },
-      social: {
-        youtube: "https://www.youtube.com/channel/UC62czApVKmYFH8clyDqKiVQ",
-        github: "https://github.com/PixelStoriesEngine/pixel-stories-docs",
-        discord: "https://discord.gg/WTxUC4hEnS",
-      },
+      social: [
+        {
+          icon: "youtube",
+          label: "YouTube",
+          href: "https://www.youtube.com/channel/UC62czApVKmYFH8clyDqKiVQ",
+        },
+        {
+          icon: "github",
+          label: "GitHub",
+          href: "https://github.com/PixelStoriesEngine/pixel-stories-docs",
+        },
+        {
+          icon: "discord",
+          label: "Discord",
+          href: "https://discord.gg/WTxUC4hEnS",
+        },
+      ],
       components: {
         // Override the default `SocialIcons` component.
         SocialIcons: "./src/overrides/SocialIcons.astro",
-        Hero: "./src/overrides/Hero.astro",
         ThemeSelect: "./src/overrides/ThemeSelect.astro",
       },
       editLink: {
@@ -40,6 +54,42 @@ export default defineConfig({
         // Relative path to your custom CSS file
         "./src/styles/tailwind.css",
         "./src/styles/custom.css",
+      ],
+      favicon: "/favicon.ico",
+      head: [
+        {
+          tag: "link",
+          attrs: {
+            rel: "apple-touch-icon",
+            sizes: "180x180",
+            href: "/apple-touch-icon.png",
+          },
+        },
+        {
+          tag: "link",
+          attrs: {
+            rel: "icon",
+            type: "image/png",
+            sizes: "32x32",
+            href: "/favicon-32x32.png",
+          },
+        },
+        {
+          tag: "link",
+          attrs: {
+            rel: "icon",
+            type: "image/png",
+            sizes: "16x16",
+            href: "/favicon-16x16.png",
+          },
+        },
+        {
+          tag: "link",
+          attrs: {
+            rel: "manifest",
+            href: "/site.webmanifest",
+          },
+        },
       ],
       sidebar: [
         {
@@ -154,6 +204,9 @@ export default defineConfig({
         },
       ],
     }),
-    tailwind(),
   ],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

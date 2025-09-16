@@ -1,7 +1,7 @@
 /* Dark mode colors. */
 :root {
-  --sl-color-accent-low: #361925;
-  --sl-color-accent: #eb8ec3;
+  --sl-color-accent-low: #f8add8;
+  --sl-color-accent: #f8add8;
   --sl-color-accent-high: #e3bcca;
   --sl-color-white: #ffffff;
   --sl-color-gray-1: #eeeeee;
@@ -15,7 +15,7 @@
 }
 /* Light mode colors. */
 :root[data-theme="light"] {
-  --sl-color-accent-low: #ebced8;
+  --sl-color-accent-low: #f5b9db;
   --sl-color-accent: #f8add8;
   --sl-color-accent-high: #4e2134;
   --sl-color-white: #181818;
@@ -31,7 +31,7 @@
   --sl-color-bg-nav: var(--sl-color-black);
 }
 
-:root[data-theme="light"] .action.primary {
+:root[data-theme="light"] .sl-link-button.primary {
   background: var(--sl-color-text-accent);
   color: var(--sl-color-white);
   font-weight: 500;
@@ -51,7 +51,7 @@ pixel-art {
   image-rendering: pixelated;
 }
 
-img:not(.not-content) {
+.sl-markdown-content img:not(.not-content) {
   min-width: 150px;
   max-height: 65vh;
   object-fit: contain;
@@ -70,9 +70,10 @@ img:not(.not-content) {
 }
 
 [data-has-hero] .page {
-  background: linear-gradient(215deg, var(--overlay-blurple), transparent 40%),
-    radial-gradient(var(--overlay-blurple), transparent 40%) no-repeat -60vw -40vh /
-      105vw 200vh,
+  background:
+    linear-gradient(215deg, var(--overlay-blurple), transparent 40%),
+    radial-gradient(var(--overlay-blurple), transparent 40%)
+      no-repeat -60vw -40vh / 105vw 200vh,
     radial-gradient(var(--overlay-blurple), transparent 65%) no-repeat 50%
       calc(100% + 20rem) / 60rem 30rem;
 }

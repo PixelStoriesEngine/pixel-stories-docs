@@ -1,6 +1,6 @@
 ---
 title: Making a quest
-description: How to Create a Fetch Quest in Pixel Stories
+description: How to Create a Fetch Quest in PS Maker
 ---
 
 In this tutorial, we will create a "fetch quest" — a common game scenario where the player must obtain one or more objects and deliver them to a specific character or location before proceeding with the story.

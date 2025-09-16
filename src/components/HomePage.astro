@@ -1,8 +1,6 @@
 ---
-import { getCollection } from "astro:content";
 import Footer from "./Footer/Footer.astro";
-import image1 from "../assets/docs-images/home/image-1.png";
-import { Image } from "astro:assets";
+import { Icon } from "@astrojs/starlight/components";
 ---
 
 <main
@@ -19,157 +17,79 @@ import { Image } from "astro:assets";
     </div>
   </div>
 
-  <!-- HERO -->
-  <section class="mt-10 flex flex-col items-center gap-8 text-center">
-    <div
-      class="inline-flex items-center gap-2 rounded-full border border-neutral-500 px-3 py-1 text-xs font-medium"
-    >
-      <span>Late‑stage beta</span>
-      <span>·</span>
-      <a
-        href="/blog"
-        class="underline-offset-2 hover:underline text-color-white"
-        >See what’s new</a
-      >
-    </div>
-
-    <h1
-      class="mx-auto max-w-3xl text-balance text-4xl font-bold tracking-tight sm:text-5xl lg:text-5xl"
-    >
-      Make story‑driven games in your browser
-    </h1>
-    <p
-      class="mx-auto max-w-2xl text-pretty text-base/7 text-gray-700 dark:text-gray-300 sm:text-lg"
-    >
-      Pixel Stories lets you tell immersive and captivating stories through
-      games.
-      <br />
-      No code required. Share instantly with friends!
-    </p>
-
-    <div class="mt-10 w-max max-w-full">
-      <Image
-        src={image1}
-        alt="Pixel Stories Game Editor"
-        class="!w-full !h-full rounded-2xl border shadow-xl"
-      />
-    </div>
-  </section>
-
-  <!-- THREE PILLARS -->
-  <section class="grid gap-8 md:grid-cols-3">
-    <!-- Build your world -->
-    <article
-      class="group relative flex flex-col gap-4 rounded-3xl border bg-[var(--sl-color-bg)] p-6 py-5 shadow-sm transition"
-    >
-      <h2 class="text-2xl font-bold">Build your world</h2>
-      <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
-        Design maps with tiles, terrains, and objects. Our intuitive map editor
-        makes it easy to build 2D worlds!
-      </p>
-      <a
-        href="/features#map-editor"
-        class="mt-auto text-sm w-max text-color-white hover:underline"
-        >See map editor</a
-      >
-    </article>
-
-    <!-- Tell your story -->
-    <article
-      class="group relative flex flex-col gap-4 rounded-3xl border bg-[var(--sl-color-bg)] p-6 py-5 shadow-sm transition"
-    >
-      <h2 class="text-2xl font-bold">Tell your story</h2>
-      <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
-        Create interactions, dialog, choices, and branching paths with the Event
-        system to tell your story.
-      </p>
-      <a
-        href="/features#event-system"
-        class="mt-auto text-sm w-max text-color-white hover:underline"
-        >See event system</a
-      >
-    </article>
-
-    <!-- Add mechanics -->
-    <article
-      class="group relative flex flex-col gap-4 rounded-3xl border bg-[var(--sl-color-bg)] p-6 py-5 shadow-sm transition"
-    >
-      <h2 class="text-2xl font-bold">Create fun mechanics</h2>
-      <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
-        Build quests, puzzles, and chase sequences by combining events, NPCs,
-        and inventory systems.
-      </p>
-      <a
-        href="/features#game-mechanics"
-        class="mt-auto text-sm w-max text-color-white hover:underline"
-        >See what’s possible</a
-      >
-    </article>
-  </section>
-
-  <!-- COMMUNITY -->
-  <section
-    class="flex flex-col items-center justify-center text-center p-4 py-8"
-  >
-    <div class="max-w-xl flex flex-col gap-4 items-center">
-      <h2 class="text-3xl font-bold">Share with the world!</h2>
-      <p class="text-base text-gray-700 dark:text-gray-300">
-        Share instantly with friends, players, and the Pixel Stories community.
-        Cross-platform, in browser, no installs required.
-      </p>
-      <a href="https://app.pixelstories.io/" class="btn-primary w-max px-6">
-        Start creating now
-      </a>
-    </div>
-  </section>
-
-  <!-- WHY DIFFERENT -->
+  <!-- WHY JOIN -->
   <section class="grid gap-8 p-4 lg:grid-cols-5">
     <div class="lg:col-span-2 flex flex-col gap-6">
       <h2 class="text-3xl font-bold">
-        What makes <span class="text-nowrap">Pixel Stories</span> different?
+        Why join the <span class="text-nowrap">Pixel Stories</span> community?
       </h2>
       <p class="text-base leading-6 text-gray-700 dark:text-gray-300">
-        Pixel Stories is made for creators who want to tell immersive and
-        captivating stories through games, and not wrestle endlessly with code.
+        A welcoming hub for story-driven game creators to connect, brainstorm,
+        build teams, share feedback, playtest, and showcase their work.
       </p>
-      <a href="/features" class="text-sm w-max text-color-white hover:underline"
-        >See features</a
+      <a href="https://discord.gg/your-invite" class="btn-outline w-max"
+        >Join our Discord</a
       >
     </div>
+
     <ul class="p-0 lg:col-span-3 grid gap-3 sm:grid-cols-2">
       <li
-        class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm"
+        class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm space-y-2"
       >
-        <h3 class="font-semibold">For 2D story-driven games</h3>
-        <p class="mt-3 text-gray-700 dark:text-gray-300">
-          Built from the ground up for top-down, story-driven games.
+        <Icon name="star" color="goldenrod" size="2rem" />
+        <h3 class="font-semibold">Community for Story Creators</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          Meet others making top-down, narrative-focused 2D games.
         </p>
       </li>
+
       <li
-        class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm"
+        class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm space-y-2"
       >
-        <h3 class="font-semibold">No-code editor</h3>
-        <p class="mt-3 text-gray-700 dark:text-gray-300">
-          Tools for maps, dialog, and mechanics, so you can focus on your story.
+        <Icon name="pencil" color="goldenrod" size="2rem" />
+        <h3 class="font-semibold">Brainstorm Ideas Together</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          Share ideas, refine concepts, and spark new directions.
         </p>
       </li>
+
       <li
-        class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm"
+        class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm space-y-2"
       >
-        <h3 class="font-semibold">Free, built-in assets</h3>
-        <p class="mt-3 text-gray-700 dark:text-gray-300">
-          Start fast with free tiles, objects, and terrains. Upload custom
-          assets anytime.
+        <Icon name="add-document" color="goldenrod" size="2rem" />
+        <h3 class="font-semibold">Build a Team</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          Post your project, find collaborators, and start strong.
         </p>
       </li>
+
       <li
-        class="list-none rounded-2xl border p-5 text-sm shadow-sm bg-[var(--sl-color-bg)]"
+        class="list-none rounded-2xl border p-5 text-sm shadow-sm space-y-2 bg-[var(--sl-color-bg)]"
       >
-        <h3 class="font-semibold">Share your game</h3>
-        <p class="mt-3 text-gray-700 dark:text-gray-300">
-          Instantly share your game with friends. Playable cross-platform in the
-          web.
+        <Icon name="document" color="goldenrod" size="2rem" />
+        <h3 class="font-semibold">Share & Get Feedback</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          Get constructive feedback on story, art, music, and design.
+        </p>
+      </li>
+
+      <li
+        class="list-none rounded-2xl border p-5 text-sm shadow-sm space-y-2 bg-[var(--sl-color-bg)]"
+      >
+        <Icon name="laptop" color="goldenrod" size="2rem" />
+        <h3 class="font-semibold">Playtest Together</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          Exchange demo and improve game pacing, mechanics, and polish.
+        </p>
+      </li>
+
+      <li
+        class="list-none rounded-2xl border p-5 text-sm shadow-sm space-y-2 bg-[var(--sl-color-bg)]"
+      >
+        <Icon name="rocket" color="goldenrod" size="2rem" />
+        <h3 class="font-semibold">Celebrate Game Releases!</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          Showcase finished games and celebrate that big milestone.
         </p>
       </li>
     </ul>
@@ -180,19 +100,16 @@ import { Image } from "astro:assets";
     class="flex flex-col items-center justify-center text-center p-4 py-8"
   >
     <div class="max-w-xl flex flex-col gap-4 items-center">
-      <h2 class="text-3xl font-bold">Join our creator community</h2>
+      <h2 class="text-4xl font-bold">
+        A community that loves making 2D story-driven games
+      </h2>
       <p class="text-base text-gray-700 dark:text-gray-300">
-        You don’t have to build alone. Share progress, get feedback, and make
-        friends who love creating story-driven games.
+        Share your work, get feedback, playtest, and connect with creators who
+        love story-driven games!
       </p>
-      <a
-        href="https://discord.gg/WTxUC4hEnS"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="w-max text-color-white"
+      <a href="https://discord.gg/your-invite" class="btn-primary w-max px-6"
+        >Join our Discord</a
       >
-        Join the Discord
-      </a>
     </div>
   </section>
 
@@ -200,20 +117,26 @@ import { Image } from "astro:assets";
   <section
     class="mb-20 overflow-hidden rounded-3xl border bg-gradient-to-r from-slate-600 to-slate-800 dark:from-slate-800 dark:to-slate-900 p-8 py-14 text-white shadow-sm"
   >
-    <div class="mx-auto grid max-w-5xl items-center gap-8 lg:grid-cols-3">
-      <div class="lg:col-span-2">
-        <h2 class="text-3xl font-extrabold">Ready to start?</h2>
-        <p class="mt-2 text-xl leading-6 text-white">
-          Create your first game in minutes. Free to try. Runs in your browser.
+    <div
+      class="mx-auto grid max-w-5xl items-center gap-8 lg:grid-cols-3 text-black dark:text-white"
+    >
+      <div class="lg:col-span-2 space-y-4">
+        <h2 class="text-3xl font-extrabold">
+          Help shape the Pixel Stories community.
+        </h2>
+        <p class="mt-2 text-lg leading-6">
+          Have ideas to make it better? Drop them in <span class="font-semibold"
+            >#suggestions</span
+          > channel. We want to make this a great community!
         </p>
       </div>
       <div class="flex items-center gap-3 lg:justify-end">
-        <a href="https://app.pixelstories.io/" class="btn-primary"
-          >Start creating now</a
+        <a href="https://discord.gg/your-invite" class="btn-primary"
+          >Join our Discord</a
         >
       </div>
     </div>
   </section>
-</main>
 
-<Footer />
+  <Footer />
+</main>

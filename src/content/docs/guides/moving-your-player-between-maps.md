@@ -1,6 +1,6 @@
 ---
 title: Moving the player between maps
-description: How to move your player between maps in Pixel Stories.
+description: How to move your player between maps in PS Maker.
 ---
 
 In this guide, we will explore how to connect maps using the Transfer Player event.
