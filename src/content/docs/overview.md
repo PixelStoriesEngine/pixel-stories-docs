@@ -7,17 +7,17 @@ Welcome to the **PS Maker documentation**. These guides are here to help you lea
 
 Whether you are just getting started or looking up a specific feature, you can use this documentation as a reference whenever you feel stuck.
 
-## What You’ll Find Here
-
-- **Beginner tutorial** that introduce the basics of PS Maker
-- **Concepts and features** such as the map editor, event system, dialog, and NPCs
-- **Reference pages** with details on assets, variables, and customization options
-
 ## What is PS Maker?
 
 PS Maker is a no-code game maker designed for building 2D top-down story-driven games. If you are new to game development, it gives you approachable tools like the **map editor**, **event system**, and **dialog editor** to to tell immersive stories without needing to code.
 
 If you are coming from another engine, you will find that PS Maker focuses specifically on storytelling features, so you can spend less time configuring and more time creating.
+
+## What You’ll Find Here
+
+- **Beginner tutorial** that introduce the basics of PS Maker
+- **Concepts and features** such as the map editor, event system, dialog, and NPCs
+- **Reference pages** with details on assets, variables, and customization options
 
 ## Tips for Using the Docs
 
