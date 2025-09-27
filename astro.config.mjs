@@ -14,7 +14,7 @@ export default defineConfig({
   }),
 
   redirects: {
-    "/tutorials/basic": "/tutorials/project-setup",
+    "/tutorials/basic": "/getting-started/",
   },
 
   integrations: [
