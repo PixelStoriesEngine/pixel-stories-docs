@@ -1,27 +1,25 @@
 ---
-title: Immersive Audio Controls and Touch-Ready Adventures
-date: 2025-09-26
-excerpt: Release 0.18.0 introduces in-game audio settings, PS Maker sound management, and touch controls so players can enjoy Pixel Stories anywhere.
+title: Audio Events, Touch Controls for Mobile, and General Fixes!
+date: 2025-09-27
+excerpt: Release 0.18.0 introduces an in-game settings menu, PS Maker audio management, and touch controls so players play on mobile.
 author: Truman
 tags:
   - GAME MAKER UPDATE
 ---
 
-## Fine-tune every playthrough
+Pixel Stories 0.18.0 gives both creators and players more ways to play their stories. Open the new in-game settings panel to see sound volume settings and controls, manage audio tracks directly inside PS Maker, and bring your adventures to mobile with touch-friendly controls.
 
-Pixel Stories 0.18.0 gives both creators and players more ways to tailor their stories. Open the new in-game settings panel to balance music and sound effects, manage soundtracks directly inside PS Maker, and bring your adventures to mobile with touch-friendly controls.
-
-### Adjust audio without leaving the story
+### Game Settings Menu
 
 Players can now open an in-story settings menu to tweak music and sound volumes on the fly. The panel also collects other presentation toggles, making it easy to customize how a story looks and sounds without interrupting the moment.
 
-### Manage music and sound in PS Maker
+### Manage Audio in PS Maker
 
 Audio joins the list of game components in PS Maker. Creators can upload, organize, and preview tracks alongside the rest of their project assets, keeping every scene’s soundtrack ready for playtesting.
 
-### Touch-first play on phones and tablets
+### Touch Controls on Phones and Tablets
 
-This release brings a full touch control layout for mobile players. Swipe and tap to move your character, trigger actions with an on-screen button, and optionally surface keyboard hints so anyone can jump into the adventure.
+This release brings touch controls for mobile players. You can move your character and trigger interactions with the action button. Creators who are making stories will have them automatically be mobile ready.
 
 ### Full changelog
 
@@ -35,3 +33,5 @@ This release brings a full touch control layout for mobile players. Swipe and ta
 - [Game] Added touch controls for moving character and touch action button
 - [Game] Added crash guard to suggest for user to refresh page
 - [Game] Added default aspect ratio game resolution options
+- [Dialog] Fixed game events stuck when dialog event is empty
+- [Game] Added a simple NPC preview for spawn NPC event
