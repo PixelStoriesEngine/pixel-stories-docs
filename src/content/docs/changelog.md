@@ -3,6 +3,53 @@ title: Pixel Stories Changelog
 description: Find specific releases and changelogs for the game maker.
 ---
 
+## 0.18.0
+
+**September 27, 2025** ([Release notes](https://pixelstories.io/blog/release-0_18_0))
+
+- [Docs] Changed release docs md file naming scheme to use underscore instead of dot for release version number.
+- [Editor] Fixed dark theme still existing when browser has default dark theme.
+- [Editor] Redirect directly to projects page in /editor when user lands on app's root path.
+- [Dialog box] Set default font in dialog box to be cursive system font.
+- [Editor] Renamed game assets to game components for better representation.
+- [Audio] Added audio into game components list, including uploading and previewing audio.
+- [Game] Added game settings for players to adjust music/sound levels, enable touch controls, and show keyboard controls
+- [Game] Added touch controls for moving character and touch action button
+- [Game] Added crash guard to suggest for user to refresh page
+- [Game] Added default aspect ratio game resolution options
+- [Dialog] Fixed game events stuck when dialog event is empty
+- [Game] Added a simple NPC preview for spawn NPC event
+
+## 0.17.0
+
+**September 11, 2025** ([Release notes](https://pixelstories.io/blog/release-0.17.0))
+
+- [Editor] Fixed restart game resetting editor mode and map editing mode
+- [Map editor] Fixed switch to rectangle/circle for tileset if its a single tile
+- [Editor] Fixed discrepancy between character and NPC event names
+- [Map editor, tileset] Fixed tiles selection going out of bounds of tileset and breaking tile stamping
+- [Map editor] Fixed deleting map layer not actually deleting map layer
+- [Map editor] Fixed reordering map layers not reordering
+- [Map editor] Fixed broken create new maps
+- [Map editor] Fixed deleting map leading to broken state
+- [Map editor] Added right click for draw tools to switch to erase tool counterpart
+- [Events editor] Separated event groups and map events (On load events) to their own tabs
+- [Events editor] Revamped add game event modal
+- [Show image] Simplified show image event configuration and removed unnecessary features
+- [Game variables] Fixed bug where inventory variables interfering with user variables
+- [Events editor] Removed unfinished image, music, and sound management, and music/sound events
+- [Events editor] Fixed bug where add event group to map is did not add instance Id
+- [Dialog event] Fixed awkward space present after [pb] and [r] tags in dialog rendering. Also adjusted default text size to be smaller.
+- [Chase event] Fixed overlapping player touch/collision activated events with chase end touch events and event group following NPC touch event. Priorty is given to chase event touch, event group touch is disabled until NPC is done chasing and finishes on chase end events.
+- [Add event group event] Added trigger area size for event group triggers.
+- [Game] Fixed collision detection between player, event group triggers, and NPCs to be based on rectangle overlap instead of distance.
+- [Characters] Renamed all character related titles to use NPC instead
+- [NPCs] Fixed back button loop after deleting an animation
+- [NPCs] Moved player out of NPC list, into own asset
+- [Game] Fixed game restart not keeping active map after restarting
+- [Asset library] Fixed asset library access for guest users
+- [Game] Fixed long loading times for projects with a lot of assets during game restart
+
 ## 0.16.0
 
 **July 17, 2025** ([Release notes](https://pixelstories.io/blog/release-0.16.0))
