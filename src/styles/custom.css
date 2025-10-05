@@ -93,3 +93,8 @@ pixel-art {
 .social-icons::after {
   display: none;
 }
+
+iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
