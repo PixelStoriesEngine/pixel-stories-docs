@@ -3,6 +3,19 @@ title: Pixel Stories Changelog
 description: Find specific releases and changelogs for the game maker.
 ---
 
+## 0.19.0
+
+**October 4, 2025** ([Release notes](https://pixelstories.io/blog/release-0_19_0))
+
+- [Editor] Added a log for crashes on unhandled rejection event
+- [Events] Added stop/resume player movement events
+- [Events] Added move and shake camera events
+- [Dialog layouts] Added dialog layout feature: allowing for customization of text box, name box, and portraits.
+  - Name and portrait can be set in dialog content with tags.
+  - Each dialog screen component has rich customization options.
+- [Game] Add share button in game settings menu
+- [Game] Add fullscreen button in game settings menu
+
 ## 0.18.0
 
 **September 27, 2025** ([Release notes](https://pixelstories.io/blog/release-0_18_0))
