@@ -46,8 +46,8 @@
 
   .btn-ghost {
     @apply w-full rounded-xl p-2 flex justify-center items-center no-underline
-      border border-text-accent font-medium cursor-pointer
-      text-text-accent bg-transparent
+      border font-medium cursor-pointer
+      bg-transparent
       hover:bg-text-accent hover:text-white
       dark:hover:text-black;
   }
