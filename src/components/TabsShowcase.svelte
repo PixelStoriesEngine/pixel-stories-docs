@@ -55,17 +55,17 @@
   <div
     role="tablist"
     aria-label="Features"
-    class="flex flex-wrap justify-center gap-2 rounded-2xl border"
+    class="flex flex-wrap justify-center gap-2 rounded-2xl"
   >
     {#each items as tab, i}
       <button
         role="tab"
         type="button"
-        class="btn-ghost rounded-full p-1.5 px-3 border-none text-sm w-max"
+        class="btn-ghost rounded-full p-1.5 px-3 w-30 text-sm border"
         class:bg-slate-800={i === active}
         class:text-black={i === active}
         class:dark:text-black={i === active}
-        class:hover:bg-gray-100={i !== active}
+        class:hover:bg-slate-100={i !== active}
         class:dark:hover\:bg-gray-700={i !== active}
         onclick={() => setActive(i)}
       >
@@ -74,13 +74,13 @@
     {/each}
   </div>
 
-  <!-- Description -->
-  {#each items as current, i}
-    {#if i === active}
+  <div class="w-full aspect-video relative mb-20">
+    <!-- Description -->
+    {#each items as current, i}
       <div
-        class="flex flex-col items-center gap-2 w-full"
-        out:fade={{ delay: 0, duration: 100 }}
-        in:fade={{ delay: 110, duration: 300 }}
+        class="absolute flex flex-col items-center gap-2 w-full opacity-0 transition-opacity duration-300"
+        class:opacity-100={i === active}
+        class:z-10={i === active}
       >
         <p class="text-center text-pretty">
           {current.description}
@@ -94,6 +94,6 @@
           class="w-full max-w-full h-full rounded-2xl border shadow-xl"
         />
       </div>
-    {/if}
-  {/each}
+    {/each}
+  </div>
 </div>
