@@ -62,8 +62,8 @@
         role="tab"
         type="button"
         class="btn-ghost rounded-full p-1.5 px-3 border-none text-sm w-max"
-        class:bg-text-accent={i === active}
-        class:text-white={i === active}
+        class:bg-slate-800={i === active}
+        class:text-black={i === active}
         class:dark:text-black={i === active}
         class:hover:bg-gray-100={i !== active}
         class:dark:hover\:bg-gray-700={i !== active}
