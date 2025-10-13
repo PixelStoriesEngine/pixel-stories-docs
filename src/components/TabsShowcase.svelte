@@ -61,12 +61,10 @@
       <button
         role="tab"
         type="button"
-        class="btn-ghost rounded-full p-1.5 px-3 w-30 text-sm border"
+        class="btn-ghost w-30 px-0"
         class:bg-slate-800={i === active}
         class:text-black={i === active}
-        class:dark:text-black={i === active}
-        class:hover:bg-slate-100={i !== active}
-        class:dark:hover\:bg-gray-700={i !== active}
+        class:dark:text-white={i === active}
         onclick={() => setActive(i)}
       >
         {tab.title}
