@@ -1,7 +1,8 @@
 ---
-import { getCollection } from "astro:content";
 import Footer from "./Footer/Footer.astro";
 import TabsShowcase from "./TabsShowcase.svelte";
+import img from "../assets/images/dead-friend-horror.png";
+import Image from "astro/components/Image.astro";
 ---
 
 <main
@@ -75,7 +76,7 @@ import TabsShowcase from "./TabsShowcase.svelte";
         Create game now
       </a>
     </div>
-    <ul class="p-0 lg:col-span-3 grid gap-3 sm:grid-cols-2">
+    <ul class="p-0 lg:col-span-3 grid gap-3 sm:grid-cols-2 sm:grid-rows-2">
       <li
         class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm"
       >
@@ -111,6 +112,47 @@ import TabsShowcase from "./TabsShowcase.svelte";
         </p>
       </li>
     </ul>
+  </section>
+
+  <!-- FEATURED GAME / SPLASH SECTION -->
+  <section
+    class="grid gap-8 p-4 mx-auto justify-items-center md:grid-cols-2 max-md:max-w-lg"
+  >
+    <a
+      href="https://app.pixelstories.io/embed/ucUR89FNTR"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Image
+        src={img}
+        alt="Gameplay screenshot"
+        class="not-content aspect-[5/4] w-full max-md:aspect-[4/3] h-auto rounded-[2.25rem] object-cover"
+      />
+    </a>
+
+    <div class="max-w-xl py-6 space-y-6">
+      <div class="space-y-2">
+        <p class="text-lg font-medium italic">Made with PS Maker</p>
+
+        <h2 class="text-pretty text-3xl font-bold tracking-tight sm:text-5xl">
+          Dead Friend Horror
+        </h2>
+      </div>
+
+      <p class="text-base leading-7 text-gray-700 dark:text-gray-300">
+        A fun hangout with your best friend suddenly turns sideways when a
+        killer in the night "takes" your friend.
+      </p>
+
+      <div>
+        <a
+          href="https://app.pixelstories.io/embed/ucUR89FNTR"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-ghost">Play now</a
+        >
+      </div>
+    </div>
   </section>
 
   <!-- COMMUNITY -->
