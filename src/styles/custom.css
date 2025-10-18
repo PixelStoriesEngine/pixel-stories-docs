@@ -98,3 +98,7 @@ iframe {
   aspect-ratio: 16 / 9;
   width: 100%;
 }
+
+.header > div.sl-hidden {
+  display: flex;
+}
