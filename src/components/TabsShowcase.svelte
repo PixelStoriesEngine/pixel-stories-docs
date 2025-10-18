@@ -62,7 +62,7 @@
         role="tab"
         type="button"
         class="btn-ghost w-30 px-0"
-        class:bg-slate-800={i === active}
+        class:bg-gray-800={i === active}
         class:text-black={i === active}
         class:dark:text-white={i === active}
         onclick={() => setActive(i)}

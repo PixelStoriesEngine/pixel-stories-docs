@@ -50,7 +50,7 @@
       text-white
       rounded-full text-sm
       bg-transparent
-      hover:bg-slate-200 
+      hover:bg-gray-200 
       hover:text-white
       dark:text-white
       dark:hover:text-black;

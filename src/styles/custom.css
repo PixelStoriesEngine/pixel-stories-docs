@@ -69,6 +69,10 @@ pixel-art {
   --purple-hsl: 240, 85%, 65%;
 }
 
+:root[data-theme="dark"] .border {
+  border-color: var(--sl-color-gray-3);
+}
+
 [data-has-hero] .page {
   background:
     linear-gradient(215deg, var(--overlay-blurple), transparent 40%),
