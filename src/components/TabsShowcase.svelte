@@ -72,24 +72,21 @@
     {/each}
   </div>
 
-  <div class="w-full aspect-video relative mb-20">
-    <!-- Description -->
+  <div class="w-full aspect-video flex flex-col items-center justify-center">
     {#each items as current, i}
       <div
-        class="absolute flex flex-col items-center gap-2 w-full opacity-0 transition-opacity duration-300"
-        class:opacity-100={i === active}
-        class:z-10={i === active}
+        class="flex flex-col items-center gap-2 w-full transition-opacity duration-300"
+        class:opacity-0={i !== active}
+        class:hidden={i !== active}
       >
-        <p class="text-center text-pretty">
-          {current.description}
-        </p>
+        <p class="text-center text-pretty">{current.description}</p>
 
         <img
-          id={"panel-" + active}
-          aria-labelledby={"tab-" + active}
+          id={"panel-" + i}
+          aria-labelledby={"tab-" + i}
           src={current.imgSrc.src}
           alt={current.alt ?? current.title}
-          class="w-full max-w-full h-full rounded-2xl border shadow-xl"
+          class="w-full max-w-full h-full rounded-2xl shadow-xl object-contain"
         />
       </div>
     {/each}
