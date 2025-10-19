@@ -139,7 +139,7 @@ export default defineConfig({
               link: "/event-system/conditionals",
             },
             {
-              label: "Dialog event",
+              label: "dialogue event",
               link: "/event-system/dialog-event",
             },
             {
@@ -162,7 +162,7 @@ export default defineConfig({
             { label: "Asset library", link: "/game-assets/asset-library" },
             { label: "NPCs", link: "/game-assets/npcs" },
             { label: "Inventory items", link: "/game-assets/inventory-items" },
-            { label: "Dialog UI", link: "/game-assets/dialog-ui" },
+            { label: "dialogue UI", link: "/game-assets/dialog-ui" },
           ],
         },
         // {

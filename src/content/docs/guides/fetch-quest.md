@@ -5,7 +5,7 @@ description: How to Create a Fetch Quest in PS Maker
 
 In this tutorial, we will create a "fetch quest" — a common game scenario where the player must obtain one or more objects and deliver them to a specific character or location before proceeding with the story.
 
-We will create a quest in which the player will have to get a key from a rock to unlock a door. Along the way, we'll combine map events, event groups, dialogs, and conditional branching.
+We will create a quest in which the player will have to get a key from a rock to unlock a door. Along the way, we'll combine map events, event groups, dialogues, and conditional branching.
 
 First, we’ll set up the maps and game assets. Then we’ll go through adding the group events. Finally we’ll put it all together within the map’s starting events.
 
@@ -28,7 +28,7 @@ We will need to create a few game assets that will be used in the fetch quest. R
 
 ## Event Groups
 
-Now, we need to create three event groups that will occur in this quest - when the player interacts with the door, Tom, or the rock. Refer to the section “Dialog and Interactions” under the Introductory Tutorial for steps on how to add dialog in the event group.
+Now, we need to create three event groups that will occur in this quest - when the player interacts with the door, Tom, or the rock. Refer to the section “dialogue and Interactions” under the Introductory Tutorial for steps on how to add dialogue in the event group.
 
 Remember, event groups **do not** have to be created in order of when they happen. Event groups are merely groups of events that happen when a player interacts with an object or character. Map events, on the other hand, are initial events that happen automatically when the map first loads. They happen in the sequence they are created.
 
@@ -41,30 +41,30 @@ This event group will include the events that happen when the player interacts w
 3. Name it “Unlock door”
 4. Click on “+ Conditional” to add a conditional event.
 5. Set the conditional event to read “If player has key” = False. This is the scenario is which the player does not have the key.
-6. Add dialog to the conditional event and name it “Door locked”
+6. Add dialogue to the conditional event and name it “Door locked”
 7. In the textbox, write “The door is locked”. This will make it so the textbox stating the door is locked will appear when the player does not have the key and interacts with the door.
 8. Set the other conditional event to read “If player has key” = True
 9. Add an event within the conditional event. You should notice that it will be indented under this conditional event. Add the event “TransferPlayer”. In the drop down, set the map to transfer to as “Map 2”. Don’t forget to set the position in the map as the same position as where the door is. This will ensure interacting with the door will transfer the player to the 2nd map and allow them to proceed through the game.
 
 ### What happens when the player interacts with Tom?
 
-This event group will include the events that happen when the player interacts with Tom. This will be a conditional event group, because Tom’s dialog will change depending on whether the player has the key or not. The setup is very similar to the “Unlock door” event group, because they both contain conditional events.
+This event group will include the events that happen when the player interacts with Tom. This will be a conditional event group, because Tom’s dialogue will change depending on whether the player has the key or not. The setup is very similar to the “Unlock door” event group, because they both contain conditional events.
 
 1. Add another event group and name it “Tom interaction”.
 2. Add a conditional event. Set the conditional event to read “If player has key” = False
-3. Add dialog to the conditional event and name it “Don’t have key”
-4. In the textbox, write “You have to get the key from the rock”. This is the dialog that Tom plays when the player doesn’t have the key.
+3. Add dialogue to the conditional event and name it “Don’t have key”
+4. In the textbox, write “You have to get the key from the rock”. This is the dialogue that Tom plays when the player doesn’t have the key.
 5. Set the other conditional event to read “If player has key” = True
-6. Add dialog and name it “Has key”
-7. In the textbox, write “You can proceed”. This is the dialog that Tom plays when the player has the key.
+6. Add dialogue and name it “Has key”
+7. In the textbox, write “You can proceed”. This is the dialogue that Tom plays when the player has the key.
 
 ### What happens when the player interacts with the rock?
 
 This event group will include the events that happen when the player interacts with the rock. Unlike in the other event groups, there will be no conditional events because only one interaction can happen.
 
 1. Add an event group and name it “Get key from rock”.
-2. Add dialog and name it “Found key dialog.”
-3. In the text box, write “Found key!” This is the dialog that plays when the player interacts with the rock.
+2. Add dialogue and name it “Found key dialogue.”
+3. In the text box, write “Found key!” This is the dialogue that plays when the player interacts with the rock.
 4. Now, we will need to set a variable event. This makes it so that the game knows the player has the key now. Click “+ Event…” > “Set variable”
 5. Under “Event name”, name the event “Set has key”
 6. In the drop down box, change the “variable to set” as “Player has key”, set the value to “True”.
