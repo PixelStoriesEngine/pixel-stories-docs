@@ -3,6 +3,23 @@ title: Pixel Stories Changelog
 description: Find specific releases and changelogs for the game maker.
 ---
 
+## 0.20.0
+
+**October 18, 2025** ([Release notes](https://pixelstories.io/blog/release-0_20_0))
+
+- [Editor] Added onboarding interface tour for new users.
+- [Editor] Replaced all instances of "dialog" with "dialogue" for correct spelling given story content.
+- [Game, Editor] Consolidated editor and game state for modes with clear editor, play, and playtest modes.
+- [Game settings] Updated game settings to new config UI.
+- [NPC] Fixed NPC animations playing the correct walk cycles.
+- [Sound] Fixed play sound to end event after sound finishes playing.
+- [Events] Added back the Fade Transition event.
+- [Events] Added Play Character Animation event which plays a one-shot animation for characters.
+- [Events] Renamed "Set NPC Animation Set" to "Set Character Movement Animations."
+- [Events] Added option to set movement animations on the player.
+- [Events] Added Set Camera Effect event, allowing for horror camera filters and other effects.
+- [UI] Moved UI elements to a separate scene, allowing for higher text resolution and avoiding camera effects.
+
 ## 0.19.0
 
 **October 4, 2025** ([Release notes](https://pixelstories.io/blog/release-0_19_0))
