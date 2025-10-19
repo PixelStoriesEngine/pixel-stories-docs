@@ -140,7 +140,7 @@ export default defineConfig({
             },
             {
               label: "dialogue event",
-              link: "/event-system/dialog-event",
+              link: "/event-system/dialogue-event",
             },
             {
               label: "Player events",
@@ -162,7 +162,7 @@ export default defineConfig({
             { label: "Asset library", link: "/game-assets/asset-library" },
             { label: "NPCs", link: "/game-assets/npcs" },
             { label: "Inventory items", link: "/game-assets/inventory-items" },
-            { label: "dialogue UI", link: "/game-assets/dialog-ui" },
+            { label: "dialogue UI", link: "/game-assets/dialogue-ui" },
           ],
         },
         // {
