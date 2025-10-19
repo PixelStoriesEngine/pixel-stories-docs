@@ -1,5 +1,5 @@
 ---
-title: New character animation events, camera effects, and onboarding for new users
+title: New Character Animation Events, Camera Effects, and Onboarding for New Users
 date: 2025-10-18
 excerpt: Pixel Stories 0.20.0 introduces an onboarding tour, refreshed animation events, and new camera effects to help you build richer scenes faster.
 author: truman
@@ -13,7 +13,7 @@ Pixel Stories 0.20.0 focuses on smoothing out the first moments in the editor an
 
 New projects now open with an onboarding tour that walks through the Pixel Stories Maker interface. The tour highlights the most important panels so first-time builders can find maps, events, and assets without bouncing between menus.
 
-We also tidied up terminology across the editor—dialog boxes now consistently use the "dialogue" spelling to better match narrative content.
+We also tidied up terminology across the editor, dialog boxes now consistently use the "dialogue" spelling to better match narrative content.
 
 ## Animate characters with confidence
 
