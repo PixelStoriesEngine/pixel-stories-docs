@@ -72,7 +72,7 @@
     {/each}
   </div>
 
-  <div class="w-full aspect-video flex flex-col items-center justify-center">
+  <div class="w-full aspect-[16/9] flex flex-col items-center justify-center">
     {#each items as current, i}
       <div
         class="flex flex-col items-center gap-2 w-full transition-opacity duration-300"
