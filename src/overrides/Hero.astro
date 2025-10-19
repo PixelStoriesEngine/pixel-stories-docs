@@ -1,0 +1,7 @@
+---
+import StarlightHero from "@astrojs/starlight/components/Hero.astro";
+
+const currentPath = Astro.url.pathname;
+---
+
+{currentPath !== "/" && <StarlightHero {...Astro.props} />}

@@ -4,6 +4,8 @@ import vercel from "@astrojs/vercel/serverless";
 
 import tailwindcss from "@tailwindcss/vite";
 
+import svelte from "@astrojs/svelte";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://pixelstories.io",
@@ -43,9 +45,10 @@ export default defineConfig({
         },
       ],
       components: {
-        // Override the default `SocialIcons` component.
         SocialIcons: "./src/overrides/SocialIcons.astro",
+        Hero: "./src/overrides/Hero.astro",
         ThemeSelect: "./src/overrides/ThemeSelect.astro",
+        Search: "./src/overrides/Search.astro",
       },
       editLink: {
         baseUrl: "https://github.com/PixelStoriesEngine/pixel-stories-docs",
@@ -167,22 +170,22 @@ export default defineConfig({
         //   autogenerate: { directory: "/guides" },
         // },
         /*
-          Build a Door (map transfer + trigger)
+        Build a Door (map transfer + trigger)
 
-          NPC Basics: Spawn, Talk, Despawn
+        NPC Basics: Spawn, Talk, Despawn
 
-          Choices & Branching Dialogue
+        Choices & Branching Dialogue
 
-          Chase & Patrol (ties together movement + triggers)
+        Chase & Patrol (ties together movement + triggers)
 
-          Inventory Pickup & Use
+        Inventory Pickup & Use
 
-          Switch Maps from a Cutscene
+        Switch Maps from a Cutscene
 
-          Customize the Dialogue Box Theme
+        Customize the Dialogue Box Theme
 
-          Each guide uses the standard page template (What/When/Steps/Tips/Related).
-            */
+        Each guide uses the standard page template (What/When/Steps/Tips/Related).
+          */
         {
           label: "Resources",
           items: [
@@ -204,6 +207,7 @@ export default defineConfig({
         },
       ],
     }),
+    svelte(),
   ],
 
   vite: {

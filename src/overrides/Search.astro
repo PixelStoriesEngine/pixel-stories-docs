@@ -1,0 +1,9 @@
+---
+import StarlightSearch from "@astrojs/starlight/components/Search.astro";
+
+const currentPath = Astro.url.pathname;
+
+const hideSearch = currentPath === "/" || currentPath === "/community";
+---
+
+{!hideSearch && <StarlightSearch {...Astro.props} />}

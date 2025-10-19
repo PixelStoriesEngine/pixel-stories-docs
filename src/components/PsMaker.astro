@@ -1,8 +1,8 @@
 ---
-import { getCollection } from "astro:content";
 import Footer from "./Footer/Footer.astro";
-import image1 from "../assets/docs-images/home/image-1.png";
-import { Image } from "astro:assets";
+import TabsShowcase from "./TabsShowcase.svelte";
+import img from "../assets/images/dead-friend-horror.png";
+import Image from "astro/components/Image.astro";
 ---
 
 <main
@@ -20,7 +20,7 @@ import { Image } from "astro:assets";
   </div>
 
   <!-- HERO -->
-  <section class="mt-10 flex flex-col items-center gap-8 text-center">
+  <section class="mt-10 flex flex-col items-center gap-4 text-center">
     <div
       class="inline-flex items-center gap-2 rounded-full border border-neutral-500 px-3 py-1 text-xs font-medium"
     >
@@ -34,7 +34,7 @@ import { Image } from "astro:assets";
     <h1
       class="mx-auto max-w-3xl text-pretty text-4xl font-bold tracking-tight sm:text-5xl lg:text-5xl leading-tight"
     >
-      PS Maker: A game maker for story‑driven games
+      PS Maker: A Game Maker for Story‑Driven Games
     </h1>
     <p
       class="mx-auto max-w-2xl text-balance text-base/7 text-gray-700 dark:text-gray-300 sm:text-lg"
@@ -43,80 +43,18 @@ import { Image } from "astro:assets";
       code required. Share instantly with friends!
     </p>
 
-    <div class="mt-10 w-max max-w-full">
-      <Image
-        src={image1}
-        alt="PS Maker Game Editor"
-        class="!w-full !h-full rounded-2xl border shadow-xl"
-      />
-    </div>
+    <a
+      href="https://app.pixelstories.io"
+      class="btn-primary"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Create game now
+    </a>
   </section>
 
-  <!-- THREE PILLARS -->
-  <section class="grid gap-8 md:grid-cols-3">
-    <!-- Build your world -->
-    <article
-      class="group relative flex flex-col gap-4 rounded-3xl border bg-[var(--sl-color-bg)] p-6 py-5 shadow-sm transition"
-    >
-      <h2 class="text-2xl font-bold">Build your world</h2>
-      <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
-        Design maps with tiles, terrains, and objects. Our intuitive map editor
-        makes it easy to build 2D worlds!
-      </p>
-      <a
-        href="/features#map-editor"
-        class="mt-auto text-sm w-max text-white hover:underline"
-        >See map editor</a
-      >
-    </article>
-
-    <!-- Tell your story -->
-    <article
-      class="group relative flex flex-col gap-4 rounded-3xl border bg-[var(--sl-color-bg)] p-6 py-5 shadow-sm transition"
-    >
-      <h2 class="text-2xl font-bold">Tell your story</h2>
-      <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
-        Create interactions, dialog, choices, and branching paths with the Event
-        system to tell your story.
-      </p>
-      <a
-        href="/features#event-system"
-        class="mt-auto text-sm w-max text-white hover:underline"
-        >See event system</a
-      >
-    </article>
-
-    <!-- Add mechanics -->
-    <article
-      class="group relative flex flex-col gap-4 rounded-3xl border bg-[var(--sl-color-bg)] p-6 py-5 shadow-sm transition"
-    >
-      <h2 class="text-2xl font-bold">Create fun mechanics</h2>
-      <p class="text-sm leading-6 text-gray-700 dark:text-gray-300">
-        Build quests, puzzles, and chase sequences by combining events, NPCs,
-        and inventory systems.
-      </p>
-      <a
-        href="/features#game-mechanics"
-        class="mt-auto text-sm w-max text-white hover:underline"
-        >See what’s possible</a
-      >
-    </article>
-  </section>
-
-  <!-- COMMUNITY -->
-  <section
-    class="flex flex-col items-center justify-center text-center p-4 py-8"
-  >
-    <div class="max-w-xl flex flex-col gap-4 items-center">
-      <h2 class="text-3xl font-bold">Share with the world!</h2>
-      <p class="text-base text-gray-700 dark:text-gray-300">
-        Share instantly with friends, players, and the PS Maker community.
-        Cross-platform, in browser, no installs required.
-      </p>
-      <a href="https://app.pixelstories.io/" class="btn-primary w-max px-6">
-        Start creating for free
-      </a>
-    </div>
+  <section>
+    <TabsShowcase client:load />
   </section>
 
   <!-- WHY DIFFERENT -->
@@ -129,11 +67,16 @@ import { Image } from "astro:assets";
         PS Maker is made for creators who want to tell immersive and captivating
         stories through games, and not wrestle endlessly with code.
       </p>
-      <a href="/features" class="text-sm w-max text-white hover:underline"
-        >See features</a
+      <a
+        href="https://app.pixelstories.io"
+        class="btn-primary px-10"
+        target="_blank"
+        rel="noopener noreferrer"
       >
+        Create game now
+      </a>
     </div>
-    <ul class="p-0 lg:col-span-3 grid gap-3 sm:grid-cols-2">
+    <ul class="p-0 lg:col-span-3 grid gap-3 sm:grid-cols-2 sm:grid-rows-2">
       <li
         class="list-none rounded-2xl border bg-[var(--sl-color-bg)] p-5 text-sm shadow-sm"
       >
@@ -171,23 +114,81 @@ import { Image } from "astro:assets";
     </ul>
   </section>
 
+  <!-- FEATURED GAME / SPLASH SECTION -->
+  <section
+    class="grid gap-8 p-4 mx-auto justify-items-center md:grid-cols-2 max-md:max-w-lg"
+  >
+    <a
+      href="https://app.pixelstories.io/embed/ucUR89FNTR"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Image
+        src={img}
+        alt="Gameplay screenshot"
+        class="not-content aspect-[5/4] w-full max-md:aspect-[4/3] h-auto rounded-[2.25rem] object-cover"
+      />
+    </a>
+
+    <div class="max-w-xl py-6 space-y-6">
+      <div class="space-y-2">
+        <p class="text-lg font-medium">Made with PS Maker</p>
+
+        <h2 class="text-pretty text-3xl font-bold tracking-tight sm:text-5xl">
+          Dead Friend Horror
+        </h2>
+      </div>
+
+      <p class="text-base leading-7 text-gray-700 dark:text-gray-300">
+        A fun hangout with your best friend suddenly turns sideways when a
+        killer in the night "takes" your friend.
+      </p>
+
+      <div>
+        <a
+          href="https://app.pixelstories.io/embed/ucUR89FNTR"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-ghost">Play now</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section
+    class="flex flex-col items-center justify-center text-center p-4 py-8"
+  >
+    <div class="max-w-xl flex flex-col gap-4 items-center">
+      <h2 class="text-4xl font-bold">
+        A community that loves making 2D story-driven games
+      </h2>
+      <p class="text-base text-gray-700 dark:text-gray-300">
+        Share your work, get feedback, playtest, and connect with creators who
+        love story-driven games!
+      </p>
+      <a href="https://discord.gg/your-invite" class="btn-ghost"
+        >Join our Discord</a
+      >
+    </div>
+  </section>
+
   <!-- FINAL CTA -->
   <section
-    class="mb-20 overflow-hidden rounded-3xl border bg-gradient-to-r from-slate-600 to-slate-800 dark:from-slate-800 dark:to-slate-900 p-8 py-14 text-white shadow-sm"
+    class="mb-20 overflow-hidden rounded-3xl border bg-gradient-to-r from-gray-600 to-gray-800 dark:from-gray-800 dark:to-gray-900 p-8 py-14 text-white shadow-sm"
   >
     <div
       class="mx-auto grid max-w-5xl items-center gap-8 lg:grid-cols-3 text-black dark:text-white"
     >
       <div class="lg:col-span-2 space-y-4">
-        <h2 class="text-3xl font-extrabold">Shape the future of PS Maker.</h2>
+        <h2 class="text-3xl font-extrabold">Ready to start?</h2>
         <p class="mt-2 text-lg leading-6">
-          Love making story-driven games? Join our Discord to help shape what's
-          next in PS Maker Maker.
+          Create your first game in minutes. Free to try. Runs in your browser.
         </p>
       </div>
       <div class="flex items-center gap-3 lg:justify-end">
-        <a href="https://app.pixelstories.io/" class="btn-primary"
-          >Join our Discord</a
+        <a href="https://app.pixelstories.io/" class="btn-primary w-full"
+          >Create game now</a
         >
       </div>
     </div>

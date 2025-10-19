@@ -12,6 +12,7 @@
   --sl-color-gray-6: #272727;
   --sl-color-black: #181818;
   --sl-color-link: hsl(326, 70%, 50%);
+  --sl-color-text-invert: var(--sl-color-black);
 }
 /* Light mode colors. */
 :root[data-theme="light"] {
@@ -29,18 +30,13 @@
   --sl-color-banner-text: var(--sl-color-white);
   --sl-color-black: #ffffff;
   --sl-color-bg-nav: var(--sl-color-black);
+  --sl-color-text-invert: var(--sl-color-white);
 }
 
 :root[data-theme="light"] .sl-link-button.primary {
   background: var(--sl-color-text-accent);
   color: var(--sl-color-white);
   font-weight: 500;
-}
-
-:root[data-theme="light"] [aria-current="page"],
-:root[data-theme="light"] [aria-current="page"]:hover,
-:root[data-theme="light"] [aria-current="page"]:focus {
-  color: var(--sl-color-white);
 }
 
 .sl-markdown-content a:not(:where(.not-content *)) {
@@ -67,6 +63,10 @@ pixel-art {
 
 :root[data-theme="light"] {
   --purple-hsl: 240, 85%, 65%;
+}
+
+:root[data-theme="dark"] .border {
+  border-color: var(--sl-color-gray-3);
 }
 
 [data-has-hero] .page {
@@ -97,4 +97,8 @@ pixel-art {
 iframe {
   aspect-ratio: 16 / 9;
   width: 100%;
+}
+
+.header > div.sl-hidden {
+  display: flex;
 }

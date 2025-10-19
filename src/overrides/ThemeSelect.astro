@@ -1,53 +1,135 @@
 ---
 import { Icon } from "@astrojs/starlight/components";
 import StarlightThemeSelect from "@astrojs/starlight/components/ThemeSelect.astro";
-import type { Props } from "@astrojs/starlight/props";
+
+const currentPath = Astro.url.pathname;
+
+const showHamburger = currentPath === "/" || currentPath === "/community";
 ---
 
-<div class="flex gap-2 gap-x-4 w-max font-medium h-full mr-2">
-  <a href="/blog" class="action sl-flex">News</a>
-  <a
-    href="https://discord.gg/WTxUC4hEnS"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="action sl-flex"
-  >
-    Discord
-  </a>
+<nav class="flex items-center gap-3">
+  {
+    showHamburger && (
+      <button
+        id="nav-toggle"
+        class="inline-flex items-center justify-center rounded-full p-2 ring-1 ring-gray-300/60 md:hidden"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <Icon name="bars" size="1.25rem" />
+      </button>
+    )
+  }
 
-  <a href="/overview" class="action sl-flex">PS Maker Docs</a>
+  <!-- Desktop: Inline links -->
+  <div class="hidden md:flex gap-2 w-max font-medium h-full">
+    <a href="/community" class="action sl-flex">Community</a>
+    <a href="/features" class="action sl-flex">Features</a>
+
+    <a
+      href="https://www.youtube.com/playlist?list=PLAugdrGHTh7LLhKS8tcofeuz5jjIK6_-K"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="action sl-flex"
+    >
+      Showcase <Icon name="external" size="1rem" class="opacity-65" />
+    </a>
+
+    <a
+      href="https://discord.gg/WTxUC4hEnS"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="action sl-flex"
+    >
+      Discord <Icon name="external" size="1rem" class="opacity-65" />
+    </a>
+
+    <a href="/overview" class="action sl-flex">PS Maker Docs</a>
+  </div>
+
+  <div class="hidden md:block divider">
+    <a
+      href="https://app.pixelstories.io"
+      class="btn-primary p-1.5 px-3 mr-1 gap-0.5 text-sm hover:opacity-90 transition-all"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Launch PS Maker
+    </a>
+  </div>
+
+  <!-- Desktop: Theme selector -->
+  <div class="hidden md:block">
+    <StarlightThemeSelect {...Astro.props}>
+      <slot />
+    </StarlightThemeSelect>
+  </div>
+</nav>
+
+<div
+  id="backdrop"
+  class="fixed w-dvh h-dvh inset-0 z-40 hidden data-[open=true]:block"
+>
 </div>
 
-<div class="divider">
-  <a
-    href="https://app.pixelstories.io"
-    class="btn-primary p-1.5 px-2.5 mr-1 gap-1 text-sm hover:opacity-90 transition-all"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Open PS Maker
-    <Icon name="external" size="1.25rem" />
-  </a>
-</div>
+<div
+  id="mobile-menu"
+  class="fixed left-3 right-3 top-14 z-50 hidden rounded-2xl border bg-[var(--sl-color-bg)]
+          p-3 shadow-xl data-[open=true]:block md:hidden"
+  role="dialog"
+  aria-modal="true"
+>
+  <div class="flex flex-col gap-1.5 font-medium">
+    <a href="/community" class="mobile-link">Community</a>
+    <a href="/features" class="mobile-link">Features</a>
+    <a
+      href="https://www.youtube.com/playlist?list=PLAugdrGHTh7LLhKS8tcofeuz5jjIK6_-K"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mobile-link"
+      >Showcase <Icon name="external" size="0.9rem" class="opacity-65" /></a
+    >
+    <a
+      href="https://discord.gg/WTxUC4hEnS"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mobile-link"
+      >Discord <Icon name="external" size="0.9rem" class="opacity-65" /></a
+    >
+    <a href="/overview" class="mobile-link">PS Maker Docs</a>
+  </div>
 
-<StarlightThemeSelect {...Astro.props}>
-  <slot />
-</StarlightThemeSelect>
+  <div class="mt-3 flex items-center justify-between gap-2">
+    <a
+      href="https://app.pixelstories.io"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn-primary w-max justify-center p-2 px-4 text-sm"
+      >Launch PS Maker</a
+    >
+
+    <!-- Mobile Theme select -->
+    <div class="shrink-0">
+      <StarlightThemeSelect {...Astro.props}>
+        <slot />
+      </StarlightThemeSelect>
+    </div>
+  </div>
+</div>
 
 <style>
   .action {
-    gap: 0.5em;
+    gap: 0.25em;
     align-items: center;
     border-radius: 999rem;
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 0.75rem;
     color: var(--sl-color-gray-2);
     line-height: 1.1875;
     text-decoration: none;
     font-size: var(--sl-text-sm);
-
     transition: opacity 250ms;
   }
-
   .action:hover {
     opacity: 0.6;
   }
@@ -57,10 +139,52 @@ import type { Props } from "@astrojs/starlight/props";
     padding-inline-end: 1rem;
   }
 
-  @media (min-width: 50rem) {
-    .action {
-      font-size: var(--sl-text-sm);
-      padding: 0.25rem 0.25rem;
-    }
+  .mobile-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.625rem 0.75rem;
+    border-radius: 0.75rem;
+    color: var(--sl-color-gray-2);
+    text-decoration: none;
+  }
+  .mobile-link:hover {
+    background: color-mix(in oklab, currentColor 8%, transparent);
   }
 </style>
+
+<script>
+  const btn = document.getElementById("nav-toggle");
+  const closeBtn = document.getElementById("nav-close");
+  const menu = document.getElementById("mobile-menu");
+  const backdrop = document.getElementById("backdrop");
+
+  const open = () => {
+    if (!menu || !backdrop || !btn || !menu) return;
+
+    menu.dataset.open = "true";
+    backdrop.dataset.open = "true";
+    btn.setAttribute("aria-expanded", "true");
+    // focus first link for accessibility
+    const first = menu.querySelector("a");
+    first && first.focus();
+  };
+  const close = () => {
+    if (!menu || !backdrop || !btn || !menu) return;
+
+    delete menu.dataset.open;
+    delete backdrop.dataset.open;
+    btn.setAttribute("aria-expanded", "false");
+    btn.focus();
+  };
+
+  btn?.addEventListener("click", () => {
+    if (!menu) return;
+    menu.dataset.open === "true" ? close() : open();
+  });
+  closeBtn?.addEventListener("click", close);
+  backdrop?.addEventListener("click", close);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") close();
+  });
+</script>
