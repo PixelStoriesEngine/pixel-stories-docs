@@ -1,8 +1,8 @@
 /* Dark mode colors. */
 :root {
-  --sl-color-accent-low: #f8add8;
+  --sl-color-accent-low: #e3bcca;
   --sl-color-accent: #f8add8;
-  --sl-color-accent-high: #e3bcca;
+  --sl-color-accent-high: #f8add8;
   --sl-color-white: #ffffff;
   --sl-color-gray-1: #eeeeee;
   --sl-color-gray-2: hsl(0, 0%, 90%);
@@ -11,7 +11,7 @@
   --sl-color-gray-5: #383838;
   --sl-color-gray-6: #272727;
   --sl-color-black: #181818;
-  --sl-color-link: hsl(326, 70%, 50%);
+  --sl-color-link: hsl(326, 70%, 80%);
   --sl-color-text-invert: var(--sl-color-black);
 }
 /* Light mode colors. */
@@ -31,6 +31,7 @@
   --sl-color-black: #ffffff;
   --sl-color-bg-nav: var(--sl-color-black);
   --sl-color-text-invert: var(--sl-color-white);
+  --sl-color-link: hsl(326, 70%, 50%);
 }
 
 :root[data-theme="light"] .sl-link-button.primary {

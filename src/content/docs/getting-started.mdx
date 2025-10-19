@@ -8,7 +8,7 @@ import { Steps } from "@astrojs/starlight/components";
 We’ll build a simple game from scratch. By the end of this tutorial you’ll have:
 
 - A decorated map
-- An intro dialog message
+- An intro dialogue message
 - An interactable NPC that talks back
 
 <iframe
@@ -61,12 +61,12 @@ Similar to the tileset tools, you can find the map object tools. Besides place a
 
 ## Your First Event
 
-Before we add NPCs or interactions, let’s try a simple dialog event. This will show a message as soon as the map loads, so you can see how events run in sequence.
+Before we add NPCs or interactions, let’s try a simple dialogue event. This will show a message as soon as the map loads, so you can see how events run in sequence.
 
-### Add a Dialog Event
+### Add a dialogue Event
 
 1. Go to **Events > Map Events**.
-2. Click **+ Events…** and select **Dialog**.
+2. Click **+ Events…** and select **dialogue**.
 3. In the text box, type a short message, for example:
 
 ```
@@ -75,7 +75,7 @@ Welcome to my very first PS Maker game!
 
 ```
 
-4. Go to the **Play test** page. As soon as the map loads, the dialog will appear.
+4. Go to the **Play test** page. As soon as the map loads, the dialogue will appear.
 
 ![](../../assets/docs-images/getting-started/image-8.png)
 
@@ -106,7 +106,7 @@ When you run the game from the **Play test** page, the NPC will appear.
 
 ![](../../assets/docs-images/getting-started/image-6.png)
 
-## Dialog With the NPC
+## dialogue With the NPC
 
 We’ll make the NPC speak when the player interacts.
 
@@ -114,7 +114,7 @@ We’ll make the NPC speak when the player interacts.
 
 1. Go to **Events > Event Groups**.
 2. Create a new group called `Talk to Ghost friend`.
-3. Add a **Dialog** event with some text, for example:
+3. Add a **dialogue** event with some text, for example:
 
 ```
 Hello traveler! Welcome to my village.
@@ -122,7 +122,7 @@ Hello traveler! Welcome to my village.
 It’s dangerous to go alone...
 ```
 
-The special tag `[pb]` continues the message in a new dialog box.
+The special tag `[pb]` continues the message in a new dialogue box.
 
 ### Add the Trigger
 
@@ -131,7 +131,7 @@ The special tag `[pb]` continues the message in a new dialog box.
 2. Set the trigger to **Interact**.
 3. Set the trigger position to **Attach to NPC**, and onto **"Ghost friend"**
 
-Now, in the **Play test** page, when you walk up to the NPC and press **Enter** or **Z**, the dialog will play.
+Now, in the **Play test** page, when you walk up to the NPC and press **Enter** or **Z**, the dialogue will play.
 
 :::tip
 
@@ -157,7 +157,7 @@ Here are a few good next steps:
 
 - [Tilesets](../map-editor/tilesets): Add terrain and shape the foundation of your world
 - [Autotiles](../map-editor/autotile): Speed up map design with smart borders and corners
-- [Event System](../event-system/events): Learn how to create dialog, choices, and gameplay mechanics
+- [Event System](../event-system/events): Learn how to create dialogue, choices, and gameplay mechanics
 - [NPCs](../game-assets/npcs): Bring characters to life with animations and interactions
 
 Have fun building maps, exploring the event system, and creating stories that are uniquely yours!
