@@ -86,7 +86,7 @@
           aria-labelledby={"tab-" + i}
           src={current.imgSrc.src}
           alt={current.alt ?? current.title}
-          class="w-full max-w-full h-full rounded-2xl shadow-xl object-contain"
+          class="w-full rounded-2xl shadow-xl object-contain"
         />
       </div>
     {/each}
